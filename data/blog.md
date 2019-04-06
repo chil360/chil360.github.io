@@ -1,3 +1,11 @@
+### GZOSP 9 Beta 2.0 - Monthly Build
+
+**Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190406-1257.zip](https://www.androidfilehost.com/?fid=1395089523397934522)
+
+GZOSP monthly build with April security update.
+
+<hr>
+
 ### Dirty Unicorns 13.1 - Weekly Build
 
 **Download:** [du_osprey-v13.1-20190405-1732-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397933958)
