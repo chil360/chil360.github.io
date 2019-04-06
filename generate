@@ -1,0 +1,54 @@
+#!/usr/bin/php
+<?php
+
+require "vendor/autoload.php";
+use PHPHtmlParser\Dom;
+
+define(OUT_DIR, './data/');
+
+// Map roms to a folder id on AFH
+$map = ['du' => '272894', 'aicp' => '287995', 'los' => '270857', 'gzosp' => '291559'];
+
+function generate($target, $afh)
+{
+	$dom = new Dom;
+	$dom->loadFromUrl('https://androidfilehost.com/?w=files&flid='.$afh);
+
+	// Developer Name
+	$dev = $dom->find('.developer-info');
+	$a = $dev->find('a')[0];
+	$developerName = $a->text;
+
+	// Folder Name
+	$dev = $dom->find('.folder-info');
+	$h = $dev->find('h3')[0];
+	$folderName = $h->text;
+
+	// Files
+	$roms = [];
+	$files = $dom->find('.file');
+	foreach ($files as $file)
+	{
+	    $rom = [];
+
+	    $link = $file->find('a')[0];
+	    $rom['filename'] = $link->text;
+	    $rom['url'] = "https://androidfilehost.com" . $link->getAttribute('href');
+
+	    $rom['downloads'] = $file->find('.file-attr-value')[0]->text;
+	    $rom['filesize'] = $file->find('.file-attr-value')[1]->text;
+	    $rom['date'] = $file->find('.file-attr-value')[2]->text;
+
+	    $roms[] = $rom;
+	}
+
+	$data = [];
+	$data = ['rom' => $folderName, 'developer' => $developerName, 'data' => $roms];
+	file_put_contents(OUT_DIR."/$target.json", json_encode($data));
+
+}
+
+foreach($map as $target => $afh)
+{
+	generate($target, $afh);
+}

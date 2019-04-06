@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Android custom ROMs built for the Moto G 2015 (Osprey) by Chil360">
+    <meta name="author" content="Chil360">
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <title>Chil360 - Android Custom Roms</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="index.html">Chil360</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="downloads.html">Downloads</a>
+      </li>
+
+    </ul>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="m-1 text-white" href="http://t.me/chil360"><i class="fa fa-2x fa-telegram"
+                                                                        aria-hidden="true"></i></a>
+                <a class="m-1 text-white" href="http://github.com/chil360"><i class="fa fa-2x fa-github"
+                                                                              aria-hidden="true"></i></a>
+            </nav>
+  </div>
+</nav>
+
+<main role="main" class="container mt-3">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="rom-title"></h4>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-sm-12">
+            <table class="table table-striped" id="romlist" style="width: 100%;">
+                <thead>
+                <tr>
+                    <th>Filename</th>
+                    <th>Size</th>
+                    <th>Upload Date</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/datetime-moment.js"></script>
+<script type="text/javascript">
+
+    $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        }
+        return decodeURI(results[1]) || 0;
+    }
+
+    function loadRom(rom) {
+        $.getJSON('data/' + rom + '.json', function (data) {
+            $('.rom-title').html(data.rom);
+        });
+    }
+
+    $(document).ready(function () {
+        var rom = $.urlParam("rom");
+        loadRom(rom);
+
+	// Sort Date/Time using Moment.js
+	$.fn.dataTable.moment( 'MMM DD, YYYY | HH:mmA' );
+
+        $('#romlist').DataTable({
+            "searching": false,
+            "ajax": 'data/' + rom + '.json',
+            "order": [[0, "desc"]],
+            "columns": [
+                {"data": "filename"},
+                {"data": "filesize"},
+                {"data": "date"},
+            ],
+            "columnDefs": [
+                {
+                    "render": function (data, type, row) {
+                        return '<a href="' + row.url + '">' + data + '</a>';
+                    },
+                    "targets": 0
+                },
+            ]
+        });
+    });
+</script>
+</body>
+</html>
