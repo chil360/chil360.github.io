@@ -1,3 +1,15 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190407.zip](https://www.androidfilehost.com/?fid=1395089523397935468)
+
+AICP 14 monthly build with April security update
+
+**Device changes since last month's build:**
+- Sepolicy updates
+- Manual network selection fixes (credits [https://github.com/nicorg2515](https://github.com/nicorg2515))
+
+<hr>
+
 ### GZOSP 9 Beta 2.0 - Monthly Build
 
 **Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190406-1257.zip](https://www.androidfilehost.com/?fid=1395089523397934522)
