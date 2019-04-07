@@ -1,3 +1,15 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20190407-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397935875)
+
+Lineage 16 monthly build with April security update
+
+**Device changes since last month's build:**
+- Sepolicy updates
+- Manual network selection fixes (credits [https://github.com/nicorg2515](https://github.com/nicorg2515))
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190407.zip](https://www.androidfilehost.com/?fid=1395089523397935468)
