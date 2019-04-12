@@ -1,3 +1,16 @@
+### Dirty Unicorns 13.1 - Weekly Build
+
+**Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397940581)
+
+Dirty Unicorns 13.1 weekly update
+
+**Rom Changelog:** See [Gerrit](https://gerrit.dirtyunicorns.com/#/q/status:merged)
+
+**Device Changelog:**
+ - No device specific changes.
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20190407-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397935875)
