@@ -7,7 +7,7 @@ use PHPHtmlParser\Dom;
 define(OUT_DIR, './data/');
 
 // Map roms to a folder id on AFH
-$map = ['du' => '272894', 'aicp' => '287995', 'los' => '270857', 'gzosp' => '291559'];
+$map = ['du' => '272894', 'aicp' => '287995', 'los' => '270857', 'gzosp' => '291559', 'revenge' => '292955'];
 
 function generate($target, $afh)
 {

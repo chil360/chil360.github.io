@@ -1,3 +1,15 @@
+### RevengeOS 2.3 Pasta
+
+**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190414-1145.zip](https://www.androidfilehost.com/?fid=1395089523397943036)
+
+This is a test build of RevengeOS which is a new CAF based rom that seems quite promising.
+
+Note: GAPPS IS INCLUDED in the rom.
+
+Try it out and see what you think. If people like it, I will try and make regular builds.
+
+<hr>
+
 ### Dirty Unicorns 13.1 - Weekly Build
 
 **Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397940581)
@@ -100,33 +112,3 @@ This is built from the stable 13.0 release sources. (See [https://dirtyunicorns.
 Thank you to everyone who has tested my roms during the RC phase and provided feedback.
 
 **Note:** Now that DU 13.X is officially released, I intend to provide weekly builds for Osprey from now on. This will usually be on Friday/Saturday once DU announce their weekly updates.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190308-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397910085)
-
-Latest LOS sources with March security update.
-
-**Device changes since last month's build:**
-- Update to Oreo based RIL (all credit to [https://github.com/nicorg2515](https://github.com/nicorg2515))
-- Add back Volte support (all credit to [https://github.com/nicorg2515](https://github.com/nicorg2515))
-- Some cleanups - remove ril wrapper
-- Added lag fix commits from Syberia Project (thanks to @adi153)
-- Add Trust HAL
-- Livedisplay 2.0
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190306.zip](https://www.androidfilehost.com/?fid=1395089523397908594)
-
-Latest AICP sources with March security update.
-
-**Device changes since last month's build:**
-- Update to Oreo based RIL (all credit to [https://github.com/nicorg2515](https://github.com/nicorg2515))
-- Add back Volte support (all credit to [https://github.com/nicorg2515](https://github.com/nicorg2515))
-- Some cleanups - remove ril wrapper and some redundant overlays
-- Added lag fix commits from Syberia Project (thanks to @adi153)
