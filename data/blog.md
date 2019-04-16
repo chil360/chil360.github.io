@@ -1,3 +1,19 @@
+### Dirty Unicorns 13.1 - Test Build
+
+**Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397944555)
+
+New build to test out a few things...
+
+**Changes:**
+- Kernel built with updated GCC 8.3-2019.03 toolchain
+- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
+- Audio: Revert XML audio policy commits
+- Power config: enable core_ctl, configure cpusets, interactive govenor tweaks
+
+Please test general stablily after kernel & toolchain updates, check for audio crackling issue & test for any improvement in battery life.
+
+<hr>
+
 ### RevengeOS 2.3 Pasta - Test Build 2
 
 **Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190415-1957.zip](https://www.androidfilehost.com/?fid=1395089523397944194)
@@ -103,13 +119,3 @@ Device tree updated in line with my other roms so:
  - Oreo RIL
  - Volte support
  - Lag fixes
-
-<hr>
-
-### Dirty Unicorns 13.0 - Weekly Build
-
-**Download:** [du_osprey-v13.0-20190315-2032-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397917450)
-
-Weekly update - not much has been has been added this week. The main changes are to the volume panel. See gerrit for full changelog: https://gerrit.dirtyunicorns.com/#/q/status:merged
-
-No device specific changes.
