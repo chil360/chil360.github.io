@@ -1,4 +1,17 @@
-### RevengeOS 2.3 Pasta
+### RevengeOS 2.3 Pasta - Test Build 2
+
+**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190415-1957.zip](https://www.androidfilehost.com/?fid=1395089523397944194)
+
+**Test Build 2 changes:**
+- Add lag fixes
+- SEpolicy fixes
+- Built without GApps to better evaluate the stability the ROM
+
+**Note:** Clean flash is required.
+
+<hr>
+
+### RevengeOS 2.3 Pasta - Test Build 1
 
 **Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190414-1145.zip](https://www.androidfilehost.com/?fid=1395089523397943036)
 
@@ -100,15 +113,3 @@ Device tree updated in line with my other roms so:
 Weekly update - not much has been has been added this week. The main changes are to the volume panel. See gerrit for full changelog: https://gerrit.dirtyunicorns.com/#/q/status:merged
 
 No device specific changes.
-
-<hr>
-
-### Dirty Unicorns 13.0 - Release
-
-**Download:** [du_osprey-v13.0-20190305-1913-UNOFFICIAL.zip](https://androidfilehost.com/?fid=1395089523397907873)
-
-This is built from the stable 13.0 release sources. (See [https://dirtyunicorns.com/2019/03/08/du13-is-here/](https://dirtyunicorns.com/2019/03/08/du13-is-here/))
-
-Thank you to everyone who has tested my roms during the RC phase and provided feedback.
-
-**Note:** Now that DU 13.X is officially released, I intend to provide weekly builds for Osprey from now on. This will usually be on Friday/Saturday once DU announce their weekly updates.
