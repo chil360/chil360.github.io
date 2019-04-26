@@ -1,3 +1,17 @@
+### Dirty Unicorns 13.1 - Weekly Build
+
+**Download:** [du_osprey-v13.1-20190426-1152-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397953532)
+
+**Changes:**
+- Kernel built with updated GCC 8.3-2019.03 toolchain
+- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
+- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
+- Audio: Use deep_buffer instead of low_latency - this, hopefully, now fixes the audio crackling issue.
+- Audio: Uprev Audio HALs to 4.0
+- Actions: Integrate MotoActions into DU-Tweaks under 'Device Extras'
+
+<hr>
+
 ### Dirty Unicorns 13.1 - Test Build
 
 **Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397944555)
@@ -106,16 +120,3 @@ Dirty Unicorns 13.1 with April security update
 **Device Changelog:**
  - Sepolicy updates
  - Audio Effects: Add f/av patch to fix pop noise at the begining of a track.
-
-<hr>
-
-### GZOSP 9 Beta 2.0
-
-**Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190317-1717.zip](https://www.androidfilehost.com/?fid=1395089523397919257)
-
-GZOSP Beta with March security update
-
-Device tree updated in line with my other roms so:
- - Oreo RIL
- - Volte support
- - Lag fixes
