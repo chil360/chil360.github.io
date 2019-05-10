@@ -1,3 +1,19 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20190510-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397963295)
+
+Lineage 16 monthly build with May security update
+
+**Device changes since last month's build:**
+- Kernel built with updated GCC 8.3-2019.03 toolchain
+- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
+- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
+- Audio: Use deepbuffer instead of lowlatency - this, hopefully, now fixes the audio crackling issue.
+- Audio: Uprev Audio HALs to 4.0
+- Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
+
+<hr>
+
 ### Dirty Unicorns 13.2 - Monthly Build
 
 **Download:** [du_osprey-v13.2-20190510-1325-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397963054)
@@ -106,16 +122,3 @@ AICP 14 monthly build with April security update
 **Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190406-1257.zip](https://www.androidfilehost.com/?fid=1395089523397934522)
 
 GZOSP monthly build with April security update.
-
-<hr>
-
-### Dirty Unicorns 13.1 - Weekly Build
-
-**Download:** [du_osprey-v13.1-20190405-1732-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397933958)
-
-Dirty Unicorns 13.1 with April security update
-
-**Rom Changelog:** See [https://dirtyunicorns.com/2019/04/05/official-13-1/](https://dirtyunicorns.com/2019/04/05/official-13-1/)
-
-**Device Changelog:**
- - Manual network selection fixes (credits nicorg2515)
