@@ -1,3 +1,14 @@
+### Dirty Unicorns 13.2 - Monthly Build
+
+**Download:** [du_osprey-v13.2-20190510-1325-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397963054)
+
+**Changes:**
+ - Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
+
+**Note:** DU builds will be monthly from now on as there has been very few changes to the rom source recently.
+
+<hr>
+
 ### Dirty Unicorns 13.1 - Weekly Build
 
 **Download:** [du_osprey-v13.1-20190426-1152-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397953532)
@@ -108,15 +119,3 @@ Dirty Unicorns 13.1 with April security update
 
 **Device Changelog:**
  - Manual network selection fixes (credits nicorg2515)
-
-<hr>
-
-### Dirty Unicorns 13.0 - Weekly Build
-
-**Download:** [du_osprey-v13.0-20190329-1717-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397928717)
-
-**Rom Changelog:** See [Gerrit](https://gerrit.dirtyunicorns.com/#/q/status:merged)
-
-**Device Changelog:**
- - Sepolicy updates
- - Audio Effects: Add f/av patch to fix pop noise at the begining of a track.
