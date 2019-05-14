@@ -1,8 +1,24 @@
+### GZOSP Beta.2.0 - Monthly Build
+
+**Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190514-1240.zip](https://www.androidfilehost.com/?fid=1395089523397965709)
+
+GZOSP Beta.2.0 monthly build with May security update
+
+**Device changes since last month's build:**
+- Kernel built with updated GCC 8.3-2019.03 toolchain
+- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
+- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
+- Audio: Use deepbuffer instead of lowlatency - this, hopefully, now fixes the audio crackling issue.
+- Audio: Uprev Audio HALs to 4.0
+- Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190512.zip](https://www.androidfilehost.com/?fid=1395089523397964656)
 
-Lineage 16 monthly build with May security update
+AICP 14.0 monthly build with May security update
 
 **Device changes since last month's build:**
 - Kernel built with updated GCC 8.3-2019.03 toolchain
@@ -114,18 +130,6 @@ Dirty Unicorns 13.1 weekly update
 **Download:** [lineage-16.0-20190407-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397935875)
 
 Lineage 16 monthly build with April security update
-
-**Device changes since last month's build:**
-- Sepolicy updates
-- Manual network selection fixes (credits [https://github.com/nicorg2515](https://github.com/nicorg2515))
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190407.zip](https://www.androidfilehost.com/?fid=1395089523397935468)
-
-AICP 14 monthly build with April security update
 
 **Device changes since last month's build:**
 - Sepolicy updates
