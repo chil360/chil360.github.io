@@ -1,3 +1,17 @@
+### RevengeOS 2.3 Pasta - [17/05/2019]
+
+**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190517-1055.zip](https://www.androidfilehost.com/?fid=1395089523397967749)
+
+New build from latest sources.
+
+**Device changes:**
+ - Includes all of the recent device tree updates from my other osprey builds.
+ - Build LiveDisplay HALs as RevengeOS have now added support for this.
+
+**Note:** This a modified build of RevengeOS which does NOT have built-in GApps.
+
+<hr>
+
 ### GZOSP Beta.2.0 - Monthly Build
 
 **Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190514-1240.zip](https://www.androidfilehost.com/?fid=1395089523397965709)
@@ -122,16 +136,3 @@ Dirty Unicorns 13.1 weekly update
 
 **Device Changelog:**
  - No device specific changes.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190407-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1395089523397935875)
-
-Lineage 16 monthly build with April security update
-
-**Device changes since last month's build:**
-- Sepolicy updates
-- Manual network selection fixes (credits [https://github.com/nicorg2515](https://github.com/nicorg2515))
-
