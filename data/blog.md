@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Initial build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20190523.zip](https://www.androidfilehost.com/?fid=3556969557455274906)
+
+Initial AOSiP build for Osprey (Unofficial) with May security updates.
+
+<hr>
+
 ### RevengeOS 2.3 Pasta - [17/05/2019]
 
 **Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190517-1055.zip](https://www.androidfilehost.com/?fid=1395089523397967749)
@@ -124,15 +132,3 @@ Note: GAPPS IS INCLUDED in the rom.
 
 Try it out and see what you think. If people like it, I will try and make regular builds.
 
-<hr>
-
-### Dirty Unicorns 13.1 - Weekly Build
-
-**Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397940581)
-
-Dirty Unicorns 13.1 weekly update
-
-**Rom Changelog:** See [Gerrit](https://gerrit.dirtyunicorns.com/#/q/status:merged)
-
-**Device Changelog:**
- - No device specific changes.
