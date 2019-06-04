@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Monthly build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20190604.zip](https://www.androidfilehost.com/?fid=6006931924117888219)
+
+New build with latest sources including the June security update.
+
+<hr>
+
 ### AOSiP 9.0 Pizza - Initial build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190523.zip](https://www.androidfilehost.com/?fid=3556969557455274906)
@@ -119,16 +127,3 @@ Please test general stablily after kernel & toolchain updates, check for audio c
 - Built without GApps to better evaluate the stability the ROM
 
 **Note:** Clean flash is required.
-
-<hr>
-
-### RevengeOS 2.3 Pasta - Test Build 1
-
-**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190414-1145.zip](https://www.androidfilehost.com/?fid=1395089523397943036)
-
-This is a test build of RevengeOS which is a new CAF based rom that seems quite promising.
-
-Note: GAPPS IS INCLUDED in the rom.
-
-Try it out and see what you think. If people like it, I will try and make regular builds.
-
