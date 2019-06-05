@@ -1,3 +1,11 @@
+### GZOSP 2.1 Stable - Monthly build
+
+**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190605-2020.zip](https://www.androidfilehost.com/?fid=6006931924117889083)
+
+GZOSP 2.1 Stable build with June security updates.
+
+<hr>
+
 ### AOSiP 9.0 Pizza - Monthly build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190604.zip](https://www.androidfilehost.com/?fid=6006931924117888219)
@@ -114,16 +122,3 @@ New build to test out a few things...
 - Power config: enable core_ctl, configure cpusets, interactive govenor tweaks
 
 Please test general stablily after kernel & toolchain updates, check for audio crackling issue & test for any improvement in battery life.
-
-<hr>
-
-### RevengeOS 2.3 Pasta - Test Build 2
-
-**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190415-1957.zip](https://www.androidfilehost.com/?fid=1395089523397944194)
-
-**Test Build 2 changes:**
-- Add lag fixes
-- SEpolicy fixes
-- Built without GApps to better evaluate the stability the ROM
-
-**Note:** Clean flash is required.
