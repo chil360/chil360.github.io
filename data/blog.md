@@ -1,3 +1,14 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190606.zip](https://www.androidfilehost.com/?fid=6006931924117889410)
+
+Monthly update for AICP with June security patches.
+
+**Device changes since last month's build:**
+- Add and enable LiveDisplay support as AICP has now included this feature.
+
+<hr>
+
 ### GZOSP 2.1 Stable - Monthly build
 
 **Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190605-2020.zip](https://www.androidfilehost.com/?fid=6006931924117889083)
@@ -106,19 +117,3 @@ Lineage 16 monthly build with May security update
 - Audio: Use deep_buffer instead of low_latency - this, hopefully, now fixes the audio crackling issue.
 - Audio: Uprev Audio HALs to 4.0
 - Actions: Integrate MotoActions into DU-Tweaks under 'Device Extras'
-
-<hr>
-
-### Dirty Unicorns 13.1 - Test Build
-
-**Download:** [du_osprey-v13.1-20190412-1825-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397944555)
-
-New build to test out a few things...
-
-**Changes:**
-- Kernel built with updated GCC 8.3-2019.03 toolchain
-- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
-- Audio: Revert XML audio policy commits
-- Power config: enable core_ctl, configure cpusets, interactive govenor tweaks
-
-Please test general stablily after kernel & toolchain updates, check for audio crackling issue & test for any improvement in battery life.
