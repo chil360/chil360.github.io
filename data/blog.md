@@ -1,3 +1,11 @@
+### Dirty Unicorns 13.3 - Monthly Build
+
+**Download:** [du_osprey-v13.3-20190607-1158-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117890118)
+
+Monthly update build with June security patches.
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190606.zip](https://www.androidfilehost.com/?fid=6006931924117889410)
@@ -103,17 +111,3 @@ Lineage 16 monthly build with May security update
  - Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
 
 **Note:** DU builds will be monthly from now on as there has been very few changes to the rom source recently.
-
-<hr>
-
-### Dirty Unicorns 13.1 - Weekly Build
-
-**Download:** [du_osprey-v13.1-20190426-1152-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397953532)
-
-**Changes:**
-- Kernel built with updated GCC 8.3-2019.03 toolchain
-- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
-- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
-- Audio: Use deep_buffer instead of low_latency - this, hopefully, now fixes the audio crackling issue.
-- Audio: Uprev Audio HALs to 4.0
-- Actions: Integrate MotoActions into DU-Tweaks under 'Device Extras'
