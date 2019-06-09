@@ -1,3 +1,11 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20190609-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117891528)
+
+Monthly build of Lineage 16.0 with June security update.
+
+<hr>
+
 ### Dirty Unicorns 13.3 - Monthly Build
 
 **Download:** [du_osprey-v13.3-20190607-1158-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117890118)
@@ -100,14 +108,3 @@ Lineage 16 monthly build with May security update
 - Audio: Use deepbuffer instead of lowlatency - this, hopefully, now fixes the audio crackling issue.
 - Audio: Uprev Audio HALs to 4.0
 - Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
-
-<hr>
-
-### Dirty Unicorns 13.2 - Monthly Build
-
-**Download:** [du_osprey-v13.2-20190510-1325-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=1395089523397963054)
-
-**Changes:**
- - Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
-
-**Note:** DU builds will be monthly from now on as there has been very few changes to the rom source recently.
