@@ -39,6 +39,7 @@ function generate($target, $afh)
 	    $rom['filesize'] = $file->find('.file-attr-value')[1]->text;
 	    $rom['date'] = $file->find('.file-attr-value')[2]->text;
 
+            echo $rom['filename']."  ".$rom['date']."  DL:".$rom['downloads'].PHP_EOL;
 	    $roms[] = $rom;
 	}
 
