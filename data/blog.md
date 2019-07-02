@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Monthly build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20190702.zip](https://www.androidfilehost.com/?fid=6006931924117907838)
+
+Monthly build using latest sources including the July security update.
+
+<hr>
+
 ### RevengeOS 2.4 Pasta - [10/06/2019]
 
 **Download:** [RevengeOS-2.4-Pasta-UNOFFICIAL-osprey-20190610-1150.zip](https://www.androidfilehost.com/?fid=6006931924117892369)
