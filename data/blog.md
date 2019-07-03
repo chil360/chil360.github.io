@@ -1,3 +1,11 @@
+### GZOSP 2.1 Stable - Monthly build
+
+**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190703-1138.zip](https://www.androidfilehost.com/?fid=6006931924117908091)
+
+Monthly build using latest sources including the July security update.
+
+<hr>
+
 ### AOSiP 9.0 Pizza - Monthly build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190702.zip](https://www.androidfilehost.com/?fid=6006931924117907838)
@@ -78,35 +86,3 @@ New build from latest sources.
  - Build LiveDisplay HALs as RevengeOS have now added support for this.
 
 **Note:** This a modified build of RevengeOS which does NOT have built-in GApps.
-
-<hr>
-
-### GZOSP Beta.2.0 - Monthly Build
-
-**Download:** [Gzosp-osprey-9.Beta.2.0-UNOFFICIAL-20190514-1240.zip](https://www.androidfilehost.com/?fid=1395089523397965709)
-
-GZOSP Beta.2.0 monthly build with May security update
-
-**Device changes since last month's build:**
-- Kernel built with updated GCC 8.3-2019.03 toolchain
-- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
-- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
-- Audio: Use deepbuffer instead of lowlatency - this, hopefully, now fixes the audio crackling issue.
-- Audio: Uprev Audio HALs to 4.0
-- Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190512.zip](https://www.androidfilehost.com/?fid=1395089523397964656)
-
-AICP 14.0 monthly build with May security update
-
-**Device changes since last month's build:**
-- Kernel built with updated GCC 8.3-2019.03 toolchain
-- Kernel changes: backported binder updates, add core_ctl, some additional cpufreq commits
-- Power config: configure cpusets, interactive govenor tweaks (core_ctl is disabled as was found to be too aggressive)
-- Audio: Use deepbuffer instead of lowlatency - this, hopefully, now fixes the audio crackling issue.
-- Audio: Uprev Audio HALs to 4.0
-- Kill pinner service: Don't hold core system components in memory as it consumes too much RAM (especially for 1Gb devices) with little performance benefit.
