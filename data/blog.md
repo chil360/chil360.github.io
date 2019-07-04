@@ -1,3 +1,11 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190704.zip](https://www.androidfilehost.com/?fid=6006931924117908824)
+
+Monthly build using latest sources including the July security update.
+
+<hr>
+
 ### GZOSP 2.1 Stable - Monthly build
 
 **Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190703-1138.zip](https://www.androidfilehost.com/?fid=6006931924117908091)
@@ -72,17 +80,3 @@ New build with latest sources including the June security update.
 **Download:** [AOSiP-9.0-Pizza-osprey-20190523.zip](https://www.androidfilehost.com/?fid=3556969557455274906)
 
 Initial AOSiP build for Osprey (Unofficial) with May security updates.
-
-<hr>
-
-### RevengeOS 2.3 Pasta - [17/05/2019]
-
-**Download:** [RevengeOS-2.3-Pasta-UNOFFICIAL-osprey-20190517-1055.zip](https://www.androidfilehost.com/?fid=1395089523397967749)
-
-New build from latest sources.
-
-**Device changes:**
- - Includes all of the recent device tree updates from my other osprey builds.
- - Build LiveDisplay HALs as RevengeOS have now added support for this.
-
-**Note:** This a modified build of RevengeOS which does NOT have built-in GApps.
