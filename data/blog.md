@@ -1,3 +1,11 @@
+### Dirty Unicorns 13.4 - Monthly Build
+
+**Download:** [du_osprey-v13.4-20190705-1427-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117909692)
+
+Monthly build using latest sources including the July security update.
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190704.zip](https://www.androidfilehost.com/?fid=6006931924117908824)
@@ -73,10 +81,3 @@ GZOSP 2.1 Stable build with June security updates.
 
 New build with latest sources including the June security update.
 
-<hr>
-
-### AOSiP 9.0 Pizza - Initial build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20190523.zip](https://www.androidfilehost.com/?fid=3556969557455274906)
-
-Initial AOSiP build for Osprey (Unofficial) with May security updates.
