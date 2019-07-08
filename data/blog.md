@@ -1,3 +1,14 @@
+### RevengeOS 2.5 Pasta - [08/07/2019]
+
+**Download:** [RevengeOS-2.5-Pasta-UNOFFICIAL-osprey-20190708-1140.zip](https://www.androidfilehost.com/?fid=6006931924117912114)
+
+Monthly build based on latest sources.
+Changelog: [https://get.revengeos.com/changelog](https://get.revengeos.com/changelog)
+
+**Note:** This build of RevengeOS does NOT have built-in GApps.
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20190707-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117911312)
@@ -72,12 +83,4 @@ Monthly update for AICP with June security patches.
 
 **Device changes since last month's build:**
 - Add and enable LiveDisplay support as AICP has now included this feature.
-
-<hr>
-
-### GZOSP 2.1 Stable - Monthly build
-
-**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190605-2020.zip](https://www.androidfilehost.com/?fid=6006931924117889083)
-
-GZOSP 2.1 Stable build with June security updates.
 
