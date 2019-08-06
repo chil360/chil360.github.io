@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Monthly build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20190806.zip](https://www.androidfilehost.com/?fid=6006931924117931181)
+
+New build of AOSiP including the August security updates from AOSP.
+
+<hr>
+
 ### RevengeOS 2.5 Pasta - [08/07/2019]
 
 **Download:** [RevengeOS-2.5-Pasta-UNOFFICIAL-osprey-20190708-1140.zip](https://www.androidfilehost.com/?fid=6006931924117912114)
@@ -73,14 +81,4 @@ Monthly build of Lineage 16.0 with June security update.
 
 Monthly update build with June security patches.
 
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190606.zip](https://www.androidfilehost.com/?fid=6006931924117889410)
-
-Monthly update for AICP with June security patches.
-
-**Device changes since last month's build:**
-- Add and enable LiveDisplay support as AICP has now included this feature.
 
