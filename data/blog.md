@@ -1,3 +1,14 @@
+### GZOSP 2.1 Stable - Monthly build
+
+**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190807-1348.zip](https://www.androidfilehost.com/?fid=6006931924117931612)
+
+New build of GZOSP including the August security updates from AOSP.
+
+**Device changes:**
+- overlay: Enable Swipe Up gesture navigation
+
+<hr>
+
 ### AOSiP 9.0 Pizza - Monthly build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190806.zip](https://www.androidfilehost.com/?fid=6006931924117931181)
@@ -72,13 +83,5 @@ New build from latest sources.
 **Download:** [lineage-16.0-20190609-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117891528)
 
 Monthly build of Lineage 16.0 with June security update.
-
-<hr>
-
-### Dirty Unicorns 13.3 - Monthly Build
-
-**Download:** [du_osprey-v13.3-20190607-1158-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117890118)
-
-Monthly update build with June security patches.
 
 
