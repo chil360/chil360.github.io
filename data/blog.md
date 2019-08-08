@@ -1,3 +1,15 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190808.zip](https://www.androidfilehost.com/?fid=6006931924117932153)
+
+New build of AICP including the August security updates from AOSP.
+
+**Device changes:**
+- Use updated lag fix commits from AICP source (remove existing patches)
+- msm8916-common: Enable memory optimizations
+
+<hr>
+
 ### GZOSP 2.1 Stable - Monthly build
 
 **Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190807-1348.zip](https://www.androidfilehost.com/?fid=6006931924117931612)
@@ -75,13 +87,4 @@ Monthly build using latest sources including the July security update.
 New build from latest sources.
 
 **Note:** This a modified build of RevengeOS which does NOT have built-in GApps.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190609-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117891528)
-
-Monthly build of Lineage 16.0 with June security update.
-
 
