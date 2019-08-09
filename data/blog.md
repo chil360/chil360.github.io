@@ -1,3 +1,15 @@
+### Dirty Unicorns 13.5 - Monthly Build
+
+**Download:** [du_osprey-v13.5-20190809-1138-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117933248)
+
+New build of Dirty Unicorns including the August security updates from AOSP.
+
+**Device changes:**
+- Update lag fix patches to the new versions taken from LOS 16.
+
+<hr>
+
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190808.zip](https://www.androidfilehost.com/?fid=6006931924117932153)
@@ -78,13 +90,4 @@ Monthly build using latest sources including the July security update.
 
 Monthly build using latest sources including the July security update.
 
-<hr>
-
-### RevengeOS 2.4 Pasta - [10/06/2019]
-
-**Download:** [RevengeOS-2.4-Pasta-UNOFFICIAL-osprey-20190610-1150.zip](https://www.androidfilehost.com/?fid=6006931924117892369)
-
-New build from latest sources.
-
-**Note:** This a modified build of RevengeOS which does NOT have built-in GApps.
 
