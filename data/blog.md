@@ -1,3 +1,17 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20190811-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117934600)
+
+New build of LineageOS including the August security updates from AOSP.
+
+**Device changes:**
+
+- Use updated lag fix commits now merged in LOS (so, remove existing patches)
+- msm8916-common: Enable memory optimizations
+
+<hr>
+
+
 ### Dirty Unicorns 13.5 - Monthly Build
 
 **Download:** [du_osprey-v13.5-20190809-1138-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117933248)
@@ -81,13 +95,4 @@ Monthly build using latest sources including the July security update.
 **Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190703-1138.zip](https://www.androidfilehost.com/?fid=6006931924117908091)
 
 Monthly build using latest sources including the July security update.
-
-<hr>
-
-### AOSiP 9.0 Pizza - Monthly build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20190702.zip](https://www.androidfilehost.com/?fid=6006931924117907838)
-
-Monthly build using latest sources including the July security update.
-
 
