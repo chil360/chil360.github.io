@@ -1,3 +1,16 @@
+### RevengeOS 2.5 Pasta - [12/08/2019]
+
+**Download:** [RevengeOS-2.5-Pasta-UNOFFICIAL-osprey-20190812-1049.zip](https://www.androidfilehost.com/?fid=6006931924117935473)
+
+Monthly build of RevengeOS from latest sources.
+
+**Device changes:**
+- Use updated lag fix commits now merged in RevengeOS (so, remove existing patches)
+
+**Note:** This build of RevengeOS does NOT have built-in GApps.
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20190811-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117934600)
@@ -88,11 +101,4 @@ Monthly build using latest sources including the July security update.
 
 Monthly build using latest sources including the July security update.
 
-<hr>
-
-### GZOSP 2.1 Stable - Monthly build
-
-**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190703-1138.zip](https://www.androidfilehost.com/?fid=6006931924117908091)
-
-Monthly build using latest sources including the July security update.
 
