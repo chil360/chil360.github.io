@@ -1,3 +1,14 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20190910-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962581808)
+
+New build of LineageOS including the September ASB.
+
+**Device changes:**
+- msm8916-common: Fix privapp-permissions whitelist
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190910.zip](https://www.androidfilehost.com/?fid=1899786940962581589)
@@ -46,7 +57,6 @@ New build of LineageOS including the August security updates from AOSP.
 - msm8916-common: Enable memory optimizations
 
 <hr>
-
 
 ### Dirty Unicorns 13.5 - Monthly Build
 
@@ -99,12 +109,4 @@ Monthly build based on latest sources.
 Changelog: [https://get.revengeos.com/changelog](https://get.revengeos.com/changelog)
 
 **Note:** This build of RevengeOS does NOT have built-in GApps.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190707-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117911312)
-
-Monthly build using latest sources including the July security update.
 
