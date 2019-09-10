@@ -1,3 +1,13 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190910.zip](https://www.androidfilehost.com/?fid=1899786940962581589)
+
+New build of AICP including the September ASB.
+
+**Device changes:**
+- Sepolicy update for LiveDisplay
+
+<hr>
 ### AOSiP 9.0 Pizza - Monthly build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190909.zip](https://www.androidfilehost.com/?fid=1899786940962580578)
@@ -95,14 +105,6 @@ Changelog: [https://get.revengeos.com/changelog](https://get.revengeos.com/chang
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20190707-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117911312)
-
-Monthly build using latest sources including the July security update.
-
-<hr>
-
-### Dirty Unicorns 13.4 - Monthly Build
-
-**Download:** [du_osprey-v13.4-20190705-1427-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117909692)
 
 Monthly build using latest sources including the July security update.
 
