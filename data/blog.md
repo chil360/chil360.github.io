@@ -1,3 +1,17 @@
+### AOSP 10 for Osprey [ALPHA BUILD]
+
+**Download:** [aosp-10-ALPHA-20190918-1314-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962588652)
+
+This is an ALPHA build that is untested apart from on my own device.
+Please test and report back your findings on what does and doesn't work.
+
+**Notes:**
+- TWRP: Tested with Squid TWRP 3.2.3-r1 but should be fine with newer official/unofficial versions.
+- Magisk: Do NOT attempt to install Magisk - current versions will bootloop the phone. 
+- GApps: BiTGApps Q - [BiTGApps-arm-10.0.0-v0.1_BETA1.zip](https://www.mediafire.com/download/4dnqrgqbhrhk8y2)
+
+** USE AT YOUR OWN RISK! **
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20190910-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962581808)
@@ -98,15 +112,4 @@ New build of GZOSP including the August security updates from AOSP.
 **Download:** [AOSiP-9.0-Pizza-osprey-20190806.zip](https://www.androidfilehost.com/?fid=6006931924117931181)
 
 New build of AOSiP including the August security updates from AOSP.
-
-<hr>
-
-### RevengeOS 2.5 Pasta - [08/07/2019]
-
-**Download:** [RevengeOS-2.5-Pasta-UNOFFICIAL-osprey-20190708-1140.zip](https://www.androidfilehost.com/?fid=6006931924117912114)
-
-Monthly build based on latest sources.
-Changelog: [https://get.revengeos.com/changelog](https://get.revengeos.com/changelog)
-
-**Note:** This build of RevengeOS does NOT have built-in GApps.
 
