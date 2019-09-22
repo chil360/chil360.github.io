@@ -1,3 +1,19 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20190921-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962590640)
+
+This is an ALPHA build that is untested apart from on my own device.
+Please test and report back your findings on what does and doesn't work.
+
+**Notes:**
+- TWRP: Tested with Squid TWRP 3.2.3-r1 but should be fine with newer official/unofficial versions.
+- Magisk: Do NOT attempt to install Magisk - current versions will bootloop the phone. 
+- GApps: BiTGApps Q - [BiTGApps-arm-10.0.0-v0.1_BETA1.zip](https://www.mediafire.com/download/4dnqrgqbhrhk8y2)
+
+** USE AT YOUR OWN RISK! **
+
+<hr>
+
 ### AOSP 10 for Osprey [ALPHA BUILD]
 
 **Download:** [aosp-10-ALPHA-20190918-1314-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962588652)
@@ -11,6 +27,8 @@ Please test and report back your findings on what does and doesn't work.
 - GApps: BiTGApps Q - [BiTGApps-arm-10.0.0-v0.1_BETA1.zip](https://www.mediafire.com/download/4dnqrgqbhrhk8y2)
 
 ** USE AT YOUR OWN RISK! **
+
+<hr>
 
 ### Lineage 16.0 - Monthly Build
 
@@ -104,12 +122,4 @@ New build of GZOSP including the August security updates from AOSP.
 
 **Device changes:**
 - overlay: Enable Swipe Up gesture navigation
-
-<hr>
-
-### AOSiP 9.0 Pizza - Monthly build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20190806.zip](https://www.androidfilehost.com/?fid=6006931924117931181)
-
-New build of AOSiP including the August security updates from AOSP.
 
