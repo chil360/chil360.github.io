@@ -1,5 +1,16 @@
 ### Lineage 17.0 [ALPHA BUILD]
 
+**Download:** [lineage-17.0-20190928-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962596515)
+
+New build of LineageOS 17 with latest sources.
+
+**Device changes:**
+- Mobile internet should now be fixed in this build.
+
+<hr>
+
+### Lineage 17.0 [ALPHA BUILD]
+
 **Download:** [lineage-17.0-20190921-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962590640)
 
 This is an ALPHA build that is untested apart from on my own device.
@@ -101,7 +112,6 @@ New build of Dirty Unicorns including the August security updates from AOSP.
 
 <hr>
 
-
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190808.zip](https://www.androidfilehost.com/?fid=6006931924117932153)
@@ -111,15 +121,4 @@ New build of AICP including the August security updates from AOSP.
 **Device changes:**
 - Use updated lag fix commits from AICP source (remove existing patches)
 - msm8916-common: Enable memory optimizations
-
-<hr>
-
-### GZOSP 2.1 Stable - Monthly build
-
-**Download:** [Gzosp-osprey-9.Stable.2.1-UNOFFICIAL-20190807-1348.zip](https://www.androidfilehost.com/?fid=6006931924117931612)
-
-New build of GZOSP including the August security updates from AOSP.
-
-**Device changes:**
-- overlay: Enable Swipe Up gesture navigation
 
