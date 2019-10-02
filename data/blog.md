@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche [ALPHA BUILD]
+
+**Download:** [AOSiP-10-Quiche-osprey-20191002.zip](https://www.androidfilehost.com/?fid=1899786940962599537)
+
+First build of AOSiP 10.0 Quiche for Osprey.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20190928-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962596515)
@@ -109,16 +117,4 @@ New build of Dirty Unicorns including the August security updates from AOSP.
 
 **Device changes:**
 - Update lag fix patches to the new versions taken from LOS 16.
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190808.zip](https://www.androidfilehost.com/?fid=6006931924117932153)
-
-New build of AICP including the August security updates from AOSP.
-
-**Device changes:**
-- Use updated lag fix commits from AICP source (remove existing patches)
-- msm8916-common: Enable memory optimizations
 

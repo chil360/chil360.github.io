@@ -6,48 +6,61 @@ use PHPHtmlParser\Dom;
 
 define('OUT_DIR', './data/');
 
+$versions = ['oreo', 'pie', 'ten'];
+
 // Map roms to a folder id on AFH
-$map = ['du' => '272894', 'aicp' => '287995', 'los' => '270857', 'gzosp' => '291559', 'revenge' => '292955', 'aosip' => '294517', 'aosp' => '299294'];
+$map = [
+         'du' => ['pie' => '272894', 'oreo' => '299956'],
+         'aicp' => ['pie' => '287995'],
+         'los' => ['ten' => '299960', 'pie' => '270857', 'oreo' => '299957'],
+         'gzosp' => ['pie' => '291559'],
+         'revenge' => ['pie' => '292955'],
+         'aosip' => ['ten' => '299962', 'pie' => '294517'],
+         'aosp' => ['ten' => '299294']
+       ];
 
-function generate($target, $afh)
+function generate($target, $afh, $ver)
 {
+	$url = "https://androidfilehost.com/?w=files&flid=$afh";
+	echo "Scraping URL: $url".PHP_EOL;
 	$dom = new Dom;
-	$dom->loadFromUrl('https://androidfilehost.com/?w=files&flid='.$afh);
-
-	// Developer Name
-	$dev = $dom->find('.developer-info');
-	$a = $dev->find('a')[0];
-	$developerName = $a->text;
-
-	// Folder Name
-	$dev = $dom->find('.folder-info');
-	$h = $dev->find('h3')[0];
-	$folderName = $h->text;
-
-	// Files
-	$roms = [];
-	$files = $dom->find('.file');
-	foreach ($files as $file)
+	$dom->loadFromUrl($url);
+	if((int)$dom->rawSize > 0)
 	{
-	    $rom = [];
-	    if($link = $file->find('a')[0])
-            {
-	    	$rom['filename'] = $link->text;
-	    	$rom['url'] = "https://androidfilehost.com" . $link->getAttribute('href');
+		// Developer Name
+		$dev = $dom->find('.developer-info');
+		$a = $dev->find('a')[0];
+		$developerName = $a->text;
 
-	    	$rom['downloads'] = $file->find('.file-attr-value')[0]->text;
-	    	$rom['filesize'] = $file->find('.file-attr-value')[1]->text;
-	    	$rom['date'] = $file->find('.file-attr-value')[2]->text;
+		// Folder Name
+		$dev = $dom->find('.folder-info');
+		$h = $dev->find('h3')[0];
+		$folderName = $h->text;
 
-            	echo $rom['filename']."  ".$rom['date']."  DL:".$rom['downloads'].PHP_EOL;
-	    	$roms[] = $rom;
-            }
+		// Files
+		$roms = [];
+		$files = $dom->find('.file');
+		foreach ($files as $file)
+		{
+		    $rom = [];
+		    if($link = $file->find('a')[0])
+	            {
+		    	$rom['filename'] = $link->text;
+		    	$rom['url'] = "https://androidfilehost.com" . $link->getAttribute('href');
+	
+		    	$rom['downloads'] = $file->find('.file-attr-value')[0]->text;
+		    	$rom['filesize'] = $file->find('.file-attr-value')[1]->text;
+		    	$rom['date'] = $file->find('.file-attr-value')[2]->text;
+	
+	            	echo $rom['filename']."  ".$rom['date']."  DL:".$rom['downloads'].PHP_EOL;
+		    	$roms[] = $rom;
+	            }
+		}
+
+		$data = [];
+		$data = ['rom' => $folderName, 'developer' => $developerName, 'data' => $roms];
+		file_put_contents(OUT_DIR."/$ver/$target.json", json_encode($data));
 	}
-
-	$data = [];
-	$data = ['rom' => $folderName, 'developer' => $developerName, 'data' => $roms];
-	file_put_contents(OUT_DIR."/$target.json", json_encode($data));
-
 }
 
 // If a rom name is specified on the command line
@@ -57,8 +70,11 @@ if(isset($argv[1]))
     // Check that it's in the map
     if(in_array($target, array_keys($map)))
     {
-        // Generate for this target 
-        generate($target, $map[$target]);
+        // Generate for this target
+        foreach($map[$target] as $ver => $afh)
+	{
+	        generate($target, $afh, $ver);
+	}
     }
     else
     {
