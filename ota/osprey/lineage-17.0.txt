@@ -1,0 +1,138 @@
+====================
+     10-05-2019
+====================
+   * android/
+66e10b6  manifest: Switch to our fw/opt/telephony fork  [Bruno Martins]
+   * art/
+4c7bfa72b2  Don't fail dual map if memfd isn't supported  [Kyle Harrison]
+   * build/make/
+de2c4b344  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+c06e6150b  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+28ad5040e  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+5da2e859d  releasetools: squash backuptool support  [Kyle Harrison]
+   * build/soong/
+a1a8f759  soong: Add function to return camera parameters library name  [Kyle Harrison]
+   * device/motorola/msm8916-common/
+e663adeb  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
+   * external/tinycompress/
+b261ce8  tinycompress: Enable extended compress format  [Kyle Harrison]
+   * frameworks/base/
+7c22a2f169d  SystemUI: Add visualizer feature  [Kyle Harrison]
+a63e0fa7ea5  frameworks: Add unlinked ringtone and notification volumes  [Kyle Harrison]
+c71f7c3cca9  fw/b: [Squash] Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
+13def43d88e  Forward port CM Screen Security settings (1/2)  [Sam Mortimer]
+9422492f15d  SystemUI: runtime configurable audio panel location  [Sam Mortimer]
+   * hardware/lineage/interfaces/
+a0f54ed  wifi: error out when asked for factory mac address  [Bruno Martins]
+0173b7b  wifi: Name the service as legacy  [Bruno Martins]
+62b19f4  lineage: import wifi service  [Bruno Martins]
+   * packages/apps/Settings/
+dfb632561e  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
+016d53ae3a  Settings: Use correct icon for ring volume  [Kyle Harrison]
+403bbe4848  Settings: Add switch for linked ring and media notification volumes  [Kyle Harrison]
+44d39c37a8  Settings: Fix the failing strings  [Kyle Harrison]
+71f77cd305  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
+6fd3ab63f2  Settings: Forward port pattern visibility settings (2/2)  [Sam Mortimer]
+9c79209acf  Settings: Forward port lock pattern grid size (2/2)  [Sam Mortimer]
+   * packages/apps/Updater/
+b281438  Set OTA URL to github  [Kyle Harrison]
+4248e7d  Updater : Remove buildtype check  [Kyle Harrison]
+   * vendor/lineage/
+0790b74c  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+4170155e  Turn off secure ADB  [Kyle Harrison]
+2c247d80  kernel: Build dtb.img from compiled dtbs  [Rashed Abdel-Tawab]
+6f3ded86  kernel: Don't re-define dtbo.img names  [Rashed Abdel-Tawab]
+
+====================
+     10-04-2019
+====================
+
+   * hardware/qcom-caf/sdm845/display/
+e6301111c  gralloc: Add option for YCrCb venus camera preview  [Łukasz Patron]
+
+====================
+     10-03-2019
+====================
+   * android/
+f5bc4db  lineage: Move qcom fm and power to vendor/qcom/opensource  [Michael Bestas]
+984643e  lineage: Enable legacy NXP repo  [Bruno Martins]
+847cb77  manifest: Switch to our android_development fork  [Michael Bestas]
+   * frameworks/base/
+546b62bf759  CameraServiceProxy: Loosen UID check conditionally  [Bruno Martins]
+   * hardware/qcom-caf/msm8974/display/
+70f855728  hwcomposer: Work around overzealous fortify checks  [Bruno Martins]
+   * vendor/lineage/
+b08fa758  Revert "soong_config: Add flag for devices use metadata as FDE key"  [Michael Bestas]
+6eaad8d3  build: Remove qcom power HAL pathmap  [Michael Bestas]
+33e7ce83  lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides  [Bruno Martins]
+
+====================
+     10-02-2019
+====================
+   * android/
+3cc6775  manifest: Switch to our fork of audio and display aosp hals  [razorloves]
+298abcd  lineage: RIP prebuilt OpenSSL  [Łukasz Patron]
+   * frameworks/base/
+6077075200c  fw/b: Fix systemui tests with in-display fingerprint  [Sam Mortimer]
+   * lineage/wiki/
+372a457  wiki: Mark devices discontinued that are not shipping  [razorloves]
+   * vendor/lineage/
+9d8578bb  kernel: Switch back to host openssl entirely  [Łukasz Patron]
+
+====================
+     10-01-2019
+====================
+   * android/
+2ebfe44  manifest: Use tools/repohooks master branch  [Rashed Abdel-Tawab]
+   * device/motorola/msm8916-common/
+496546b2  msm8916-common: audio: Switch to low latency primary output  [Kyle Harrison]
+   * hardware/qcom-caf/msm8998/display/
+c9bb68613  Don't build lights module if vendor supplies it  [Sam Mortimer]
+185b731a2  display: Use    * pathmap  [Sam Mortimer]
+   * hardware/qcom-caf/msm8998/media/
+3cff27d67  media: Use    * pathmap  [Sam Mortimer]
+   * system/core/
+f1e13af18  mkbootimg: Make unpack_bootimg py3 compatible  [Rashed Abdel-Tawab]
+   * vendor/lineage/
+3467b7a3  kernel: Make kernel depend on depmod  [Rashed Abdel-Tawab]
+
+====================
+     09-30-2019
+====================
+
+   * device/motorola/msm8916-common/
+41de4e61  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
+   * frameworks/base/
+7b11a554f76  SystemUI: Allow snoozing SD card notification unconditionally  [Bruno Martins]
+   * hardware/qcom-caf/msm8998/audio/
+3ce722b7d  ssr: Fix building with OSS materials  [Sam Mortimer]
+29535c328  audio: Skip libhdmipassthru on OSS builds  [Sam Mortimer]
+f379af470  audio: Use direct    * pathmap  [Sam Mortimer]
+   * vendor/lineage/
+17d7dcba  extract_utils: Fix typo  [PIPIPIG233666]
+   * vendor/motorola/
+4e01366  msm8916-common: Update DRM from Aljeter PPP29.55-25  [Kyle Harrison]
+361325b  msm8916-common: Update BT & FM from Aljeter PPP29.55-25  [Kyle Harrison]
+
+====================
+     09-29-2019
+====================
+
+   * build/make/
+8981bc2fa  make: Make dtb.img depend on the DTB directory itself  [Rashed Abdel-Tawab]
+5699d6ae3  build: ota: Support for install tools in /tmp/install  [Bruno Martins]
+01e49f6e9  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Bruno Martins]
+   * frameworks/base/
+737170f406d  FODCircleView: defer removal to next re-layout  [Łukasz Patron]
+471cf7dc147  Initial support for in-display fingerprint sensors  [Łukasz Patron]
+31e45294005  PowerManagerService: Wake on plug (1/2)  [Sam Mortimer]
+8dc25447161  SystemUI: Add navbar layout inversion tuning  [Sam Mortimer]
+434bbb5a709  Add support for runtime toggle of navbar  [Sam Mortimer]
+   * prebuilts/tools-lineage/
+189438e  prebuilts: Import vdexExtractor v0.5.2 with compact_dex_converter  [Bruno Martins]
+   * system/core/
+f1787f7b5  bsdgrep: for -r, use the working directory if none specified  [Luca Stefani]
+   * vendor/lineage/
+8194b8e5  extract_utils: Source the prebuilts from the new repo  [Rashed Abdel-Tawab]
+3dff7da4  build/tools: Move prebuilts to the new repository  [Rashed Abdel-Tawab]
+

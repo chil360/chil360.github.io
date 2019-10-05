@@ -1,3 +1,19 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191005-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191005-UNOFFICIAL-osprey.zip/download)
+
+New build of LineageOS 17 with latest sources.
+
+**Device changes:**
+- Device tree & blob updates from Aljeter PPP29.55-25 to fix Widevine DRM
+- Update bluetooth/FM blobs from Aljeter PPP29.55-25
+- Uprev audio HAL to v5.0
+- Implement OTA updates
+
+**Note:**
+Starting from this build, I am going to upload all of my Q roms to SourceForge instead of AFH. SourceForge provides direct download links which allows me to implement OTA updates.
+
+<hr>
 ### AOSiP 10.0 Quiche [ALPHA BUILD]
 
 **Download:** [AOSiP-10-Quiche-osprey-20191002.zip](https://www.androidfilehost.com/?fid=1899786940962599537)
@@ -106,15 +122,4 @@ New build of LineageOS including the August security updates from AOSP.
 
 - Use updated lag fix commits now merged in LOS (so, remove existing patches)
 - msm8916-common: Enable memory optimizations
-
-<hr>
-
-### Dirty Unicorns 13.5 - Monthly Build
-
-**Download:** [du_osprey-v13.5-20190809-1138-UNOFFICIAL.zip](https://www.androidfilehost.com/?fid=6006931924117933248)
-
-New build of Dirty Unicorns including the August security updates from AOSP.
-
-**Device changes:**
-- Update lag fix patches to the new versions taken from LOS 16.
 
