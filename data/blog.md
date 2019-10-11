@@ -1,3 +1,11 @@
+### RevengeOS 2.7 Pasta - [11/10/2019]
+
+**Download:** [RevengeOS-2.7-Pasta-UNOFFICIAL-osprey-20191011-1106.zip](https://www.androidfilehost.com/?fid=1899786940962605683)
+
+Updated build of RevengeOS from latest sources.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191005-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191005-UNOFFICIAL-osprey.zip/download)
@@ -109,17 +117,4 @@ Monthly build of RevengeOS from latest sources.
 - Use updated lag fix commits now merged in RevengeOS (so, remove existing patches)
 
 **Note:** This build of RevengeOS does NOT have built-in GApps.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190811-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=6006931924117934600)
-
-New build of LineageOS including the August security updates from AOSP.
-
-**Device changes:**
-
-- Use updated lag fix commits now merged in LOS (so, remove existing patches)
-- msm8916-common: Enable memory optimizations
 
