@@ -1,3 +1,17 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191012-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191012-UNOFFICIAL-osprey.zip/download)
+
+For those running last week's build, this build should be available as an OTA update through the Lineage Updater in settings.
+
+**Device changes:**
+- Kernel: Backport memfd_create
+
+**Note:**
+Official Magisk v20.0 package is now compatible with Android 10 roms for Osprey.
+
+<hr>
+
 ### RevengeOS 2.7 Pasta - [11/10/2019]
 
 **Download:** [RevengeOS-2.7-Pasta-UNOFFICIAL-osprey-20191011-1106.zip](https://www.androidfilehost.com/?fid=1899786940962605683)
@@ -22,6 +36,7 @@ New build of LineageOS 17 with latest sources.
 Starting from this build, I am going to upload all of my Q roms to SourceForge instead of AFH. SourceForge provides direct download links which allows me to implement OTA updates.
 
 <hr>
+
 ### AOSiP 10.0 Quiche [ALPHA BUILD]
 
 **Download:** [AOSiP-10-Quiche-osprey-20191002.zip](https://www.androidfilehost.com/?fid=1899786940962599537)
@@ -94,6 +109,7 @@ New build of AICP including the September ASB.
 - Sepolicy update for LiveDisplay
 
 <hr>
+
 ### AOSiP 9.0 Pizza - Monthly build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20190909.zip](https://www.androidfilehost.com/?fid=1899786940962580578)
@@ -104,17 +120,4 @@ New build of AOSiP including the September ASB.
 
 - Use updated lag fix commits from AOSiP source (remove existing patches)
 - msm8916-common: Enable memory optimizations
-
-<hr>
-
-### RevengeOS 2.5 Pasta - [12/08/2019]
-
-**Download:** [RevengeOS-2.5-Pasta-UNOFFICIAL-osprey-20190812-1049.zip](https://www.androidfilehost.com/?fid=6006931924117935473)
-
-Monthly build of RevengeOS from latest sources.
-
-**Device changes:**
-- Use updated lag fix commits now merged in RevengeOS (so, remove existing patches)
-
-**Note:** This build of RevengeOS does NOT have built-in GApps.
 

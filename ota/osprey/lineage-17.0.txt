@@ -1,138 +1,208 @@
 ====================
-     10-05-2019
+     10-12-2019
 ====================
-   * android/
-66e10b6  manifest: Switch to our fw/opt/telephony fork  [Bruno Martins]
+
    * art/
-4c7bfa72b2  Don't fail dual map if memfd isn't supported  [Kyle Harrison]
+5b7c91254f  Revert "ART: Add version check for memfd_create()"  [Kyle Harrison]
    * build/make/
-de2c4b344  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-c06e6150b  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-28ad5040e  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-5da2e859d  releasetools: squash backuptool support  [Kyle Harrison]
-   * build/soong/
-a1a8f759  soong: Add function to return camera parameters library name  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-e663adeb  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
+377008475  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+326988071  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+6f96ed561  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+592cbe1e1  releasetools: squash backuptool support  [Kyle Harrison]
    * external/tinycompress/
-b261ce8  tinycompress: Enable extended compress format  [Kyle Harrison]
+063d87d  tinycompress: Enable extended compress format  [dianlujitao]
    * frameworks/base/
-7c22a2f169d  SystemUI: Add visualizer feature  [Kyle Harrison]
-a63e0fa7ea5  frameworks: Add unlinked ringtone and notification volumes  [Kyle Harrison]
-c71f7c3cca9  fw/b: [Squash] Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
-13def43d88e  Forward port CM Screen Security settings (1/2)  [Sam Mortimer]
-9422492f15d  SystemUI: runtime configurable audio panel location  [Sam Mortimer]
-   * hardware/lineage/interfaces/
-a0f54ed  wifi: error out when asked for factory mac address  [Bruno Martins]
-0173b7b  wifi: Name the service as legacy  [Bruno Martins]
-62b19f4  lineage: import wifi service  [Bruno Martins]
+8a0afbf0d47  SystemUI: Add visualizer feature  [Kyle Harrison]
+   * kernel/motorola/msm8916/
+7fd2089c84fc  ARM: Fix build after memfd_create syscall  [Kyle Harrison]
+6bb0aaed19e6  ARM: wire up memfd_create syscall  [Kyle Harrison]
+d59f5e74e4b1  mm: shmem: Reschedule by unlocking and relocking RCU because of missing API  [Kyle Harrison]
+396dc7ccf5f8  shm: wait for pins to be released when sealing  [Kyle Harrison]
+33adbf18de53  mm: allow drivers to prevent new writable mappings  [Kyle Harrison]
+cd34e16b44b1  mm: mmap_region: kill correct_wcount/inode, use allow_write_access()  [Kyle Harrison]
+3d05883f20f7  mm: do_mmap_pgoff: cleanup the usage of file_inode()  [Kyle Harrison]
+7d4b30b4aad3  mm: shift VM_GROWS* check from mmap_region() to do_mmap_pgoff()  [Kyle Harrison]
+5e9144f2e120  mm: mempolicy: turn vma_set_policy() into vma_dup_policy()  [Kyle Harrison]
+86f592c636bf  shm: add sealing API  [Kyle Harrison]
+33858bd3cab9  asm-generic: add memfd_create system call to unistd.h  [Kyle Harrison]
+a319966288de  shm: add memfd_create() syscall  [Kyle Harrison]
+318c8cd1172d  BACKPORT: ARM: wire up getrandom syscall  [Kyle Harrison]
+b4d2b4ff711f  BACKPORT: random: Wake up all getrandom(2) callers when pool is ready  [Kyle Harrison]
+   * packages/apps/Messaging/
+4e7b030  Messaging: Implement per conversation channels  [Kyle Harrison]
+80256c0  Don't build with platform certificate  [Kyle Harrison]
+54daa68  Messaging: use white nav bar  [Kyle Harrison]
+b0cd099  Allow intent shared subject or title to be mms subject  [Kyle Harrison]
+82e46b8  Messaging: Add "Mark as read" quick action for message notifications  [Kyle Harrison]
+c9db6e8  Messaging: Fix crash of blocked participant list activity  [Kyle Harrison]
+fec483c  Messaging: Don't crash on unsupported shared content type  [Kyle Harrison]
+b4615c4  MediaPicker: Check for NPE  [Kyle Harrison]
+b74bbdb  Messaging: fix bad recycle on sending two mms in a row  [Kyle Harrison]
+d7474d2  Messaging app crashes after a few MMS  [Kyle Harrison]
+50485e2  Fixed storage permission issue for attachments  [Kyle Harrison]
+04f1d48  Added support for video and audio mms attachments  [Kyle Harrison]
+9fd153c  Play an audible notification on receiving a class zero message.  [Kyle Harrison]
+5419a59  Messaging: Implement saved video attachments in MMS  [Kyle Harrison]
+3789353  Messaging: bring back accent color  [Kyle Harrison]
+9776ad2  Fix menu item highlight color.  [Kyle Harrison]
+488c19a  Messaging: Toggable keyboard emoticons access  [Kyle Harrison]
+d14d64a  MessageQueue: Process pending messages per subscription  [Kyle Harrison]
+50cb473  Messaging: change Avatar fontFamily to sans-serif-medium  [Kyle Harrison]
+acc9161  Messaging: Implement option for swipe right to delete.  [Kyle Harrison]
    * packages/apps/Settings/
-dfb632561e  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-016d53ae3a  Settings: Use correct icon for ring volume  [Kyle Harrison]
-403bbe4848  Settings: Add switch for linked ring and media notification volumes  [Kyle Harrison]
-44d39c37a8  Settings: Fix the failing strings  [Kyle Harrison]
-71f77cd305  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
-6fd3ab63f2  Settings: Forward port pattern visibility settings (2/2)  [Sam Mortimer]
-9c79209acf  Settings: Forward port lock pattern grid size (2/2)  [Sam Mortimer]
+58b323d40f  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
    * packages/apps/Updater/
-b281438  Set OTA URL to github  [Kyle Harrison]
-4248e7d  Updater : Remove buildtype check  [Kyle Harrison]
+3bf66e1  Set OTA URL to github  [Kyle Harrison]
+eef072b  Updater : Remove buildtype check  [Kyle Harrison]
    * vendor/lineage/
-0790b74c  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-4170155e  Turn off secure ADB  [Kyle Harrison]
-2c247d80  kernel: Build dtb.img from compiled dtbs  [Rashed Abdel-Tawab]
-6f3ded86  kernel: Don't re-define dtbo.img names  [Rashed Abdel-Tawab]
+dd7b564c  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+7c06d33c  Turn off secure ADB  [Kyle Harrison]
 
 ====================
-     10-04-2019
-====================
-
-   * hardware/qcom-caf/sdm845/display/
-e6301111c  gralloc: Add option for YCrCb venus camera preview  [Łukasz Patron]
-
-====================
-     10-03-2019
-====================
-   * android/
-f5bc4db  lineage: Move qcom fm and power to vendor/qcom/opensource  [Michael Bestas]
-984643e  lineage: Enable legacy NXP repo  [Bruno Martins]
-847cb77  manifest: Switch to our android_development fork  [Michael Bestas]
-   * frameworks/base/
-546b62bf759  CameraServiceProxy: Loosen UID check conditionally  [Bruno Martins]
-   * hardware/qcom-caf/msm8974/display/
-70f855728  hwcomposer: Work around overzealous fortify checks  [Bruno Martins]
-   * vendor/lineage/
-b08fa758  Revert "soong_config: Add flag for devices use metadata as FDE key"  [Michael Bestas]
-6eaad8d3  build: Remove qcom power HAL pathmap  [Michael Bestas]
-33e7ce83  lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides  [Bruno Martins]
-
-====================
-     10-02-2019
-====================
-   * android/
-3cc6775  manifest: Switch to our fork of audio and display aosp hals  [razorloves]
-298abcd  lineage: RIP prebuilt OpenSSL  [Łukasz Patron]
-   * frameworks/base/
-6077075200c  fw/b: Fix systemui tests with in-display fingerprint  [Sam Mortimer]
-   * lineage/wiki/
-372a457  wiki: Mark devices discontinued that are not shipping  [razorloves]
-   * vendor/lineage/
-9d8578bb  kernel: Switch back to host openssl entirely  [Łukasz Patron]
-
-====================
-     10-01-2019
-====================
-   * android/
-2ebfe44  manifest: Use tools/repohooks master branch  [Rashed Abdel-Tawab]
-   * device/motorola/msm8916-common/
-496546b2  msm8916-common: audio: Switch to low latency primary output  [Kyle Harrison]
-   * hardware/qcom-caf/msm8998/display/
-c9bb68613  Don't build lights module if vendor supplies it  [Sam Mortimer]
-185b731a2  display: Use    * pathmap  [Sam Mortimer]
-   * hardware/qcom-caf/msm8998/media/
-3cff27d67  media: Use    * pathmap  [Sam Mortimer]
-   * system/core/
-f1e13af18  mkbootimg: Make unpack_bootimg py3 compatible  [Rashed Abdel-Tawab]
-   * vendor/lineage/
-3467b7a3  kernel: Make kernel depend on depmod  [Rashed Abdel-Tawab]
-
-====================
-     09-30-2019
-====================
-
-   * device/motorola/msm8916-common/
-41de4e61  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
-   * frameworks/base/
-7b11a554f76  SystemUI: Allow snoozing SD card notification unconditionally  [Bruno Martins]
-   * hardware/qcom-caf/msm8998/audio/
-3ce722b7d  ssr: Fix building with OSS materials  [Sam Mortimer]
-29535c328  audio: Skip libhdmipassthru on OSS builds  [Sam Mortimer]
-f379af470  audio: Use direct    * pathmap  [Sam Mortimer]
-   * vendor/lineage/
-17d7dcba  extract_utils: Fix typo  [PIPIPIG233666]
-   * vendor/motorola/
-4e01366  msm8916-common: Update DRM from Aljeter PPP29.55-25  [Kyle Harrison]
-361325b  msm8916-common: Update BT & FM from Aljeter PPP29.55-25  [Kyle Harrison]
-
-====================
-     09-29-2019
+     10-11-2019
 ====================
 
    * build/make/
-8981bc2fa  make: Make dtb.img depend on the DTB directory itself  [Rashed Abdel-Tawab]
-5699d6ae3  build: ota: Support for install tools in /tmp/install  [Bruno Martins]
-01e49f6e9  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Bruno Martins]
+76794ab4a  Fix odm output directory for devices w/o vendor partition  [Luca Stefani]
+   * device/lineage/atv/
+40da37b  atv: Add additional privapp permissions  [Nolen Johnson]
+
+====================
+     10-10-2019
+====================
+   * android/
+51c8da2  manifest: Enable device/lineage/atv  [Nolen Johnson]
+   * build/make/
+992ee0993  Remove ro.bionic.ld.warning.  [Luca Stefani]
    * frameworks/base/
-737170f406d  FODCircleView: defer removal to next re-layout  [Łukasz Patron]
-471cf7dc147  Initial support for in-display fingerprint sensors  [Łukasz Patron]
-31e45294005  PowerManagerService: Wake on plug (1/2)  [Sam Mortimer]
-8dc25447161  SystemUI: Add navbar layout inversion tuning  [Sam Mortimer]
-434bbb5a709  Add support for runtime toggle of navbar  [Sam Mortimer]
-   * prebuilts/tools-lineage/
-189438e  prebuilts: Import vdexExtractor v0.5.2 with compact_dex_converter  [Bruno Martins]
-   * system/core/
-f1787f7b5  bsdgrep: for -r, use the working directory if none specified  [Luca Stefani]
+7aa0df5bc5b  Remove a user/userdebug difference.  [Luca Stefani]
+d5b183fbd3b  Check GL extension is supported before using it in glwallpaper  [Luca Stefani]
+4a3bb613319  Reduce unnecessary NotificationListener binder transaction.  [Luca Stefani]
+8dfaa86b43b  Don't clear the output array if it failed to open the proc status file  [Luca Stefani]
+f449c5049e7  Fix QuotaController constants.  [Luca Stefani]
+9b4484a5c96  Fix memory leak in aapt2  [Luca Stefani]
+258bd82728e  aapt2: disable leak detection  [Luca Stefani]
+ddb538528b7  Fix FD leak in ConnectivityManager.getConnectionOwnerUid  [Luca Stefani]
+67b1e0b8cc5  Apply JNI optimizations to HwParcel  [Luca Stefani]
+   * hardware/qcom-caf/msm8996/audio/
+7b3e32b61  audio: Use direct    * pathmap  [Bruno Martins]
+   * hardware/qcom-caf/msm8996/media/
+6573821c8  media: Don't link libgpustats  [Bruno Martins]
+eadb4951a  media: Add extrapolated gpustats header for PQ  [Bruno Martins]
+37ca21429  media: libOmxSw encoders require prop headers :(  [Bruno Martins]
+abdaa6ba4  venc: Fix VQZip issue  [Bruno Martins]
+26f4dc5a3  media: Use    * pathmap  [Bruno Martins]
+   * lineage/scripts/
+5e45b86  Update default webview to 77.0.3865.92  [Kevin F. Haggerty]
+   * lineage/wiki/
+fafee52  wiki: Mark discovery as discontinued  [LuK1337]
+   * packages/apps/Settings/
+6a386e37d6  Make sure close button has proper color  [Luca Stefani]
+914567add3  Enable dismissal feature on legacy suggestions.  [Luca Stefani]
+df78fd1ec6  Settings: Add missing animations  [Luca Stefani]
+76a5d3beaa  In sim1 APN settings interface and hot plug out/in sim2, APN information change to sim2's  [Luca Stefani]
+3ae352255c  Settings: Respect preference's visibility in VideoPreferenceController  [Łukasz Patron]
+
+====================
+     10-09-2019
+====================
+
+   * lineage/hudson/
+c5a21b9  hudson: Disable discovery for now  [LuK1337]
+
+====================
+     10-08-2019
+====================
+   * android/
+2ab9de6  lineage: Enable os_pickup.mk symlink for msm8960  [Arne Coucheron]
+e07da06  manifest: Switch to our hardware/qcom/bootctrl fork  [Michael Bestas]
+f9b94fa  lineage: re-enable msm8960 hals  [Dan Pasanen]
+   * build/make/
+263a251a5  Revert "make: Make dtb.img depend on the DTB directory itself"  [Rashed Abdel-Tawab]
+   * frameworks/base/
+a50f689e8c5  base: add Trust usb restrictor  [Han Wang]
+05bdbc5a503  Camera: allow camera to use power key as shutter  [Michael Bestas]
+4b7f68a39b4  AudioService: Remove Analog Dock from fixed-volume devices  [Rashed Abdel-Tawab]
+   * hardware/qcom-caf/msm8960/audio/
+1a6b25c43  Fix build errors  [Dan Pasanen]
+   * hardware/qcom-caf/msm8960/display/
+dadb58de1  libexternal: fix switch fall through  [Dan Pasanen]
+87ef5de8d  display: inform compilers of deliberate switch fallthrough  [Dan Pasanen]
+   * hardware/qcom-caf/msm8960/media/
+6b4fad862  media: drop byte typedef  [Dan Pasanen]
+   * lineage/wiki/
+6528dba  wiki: Add Windows OS note for fastboot recovery on A/B systems  [Nolen Johnson]
+   * packages/apps/Camera2/
+e8bc27f4b  Camera2: Request for ACCESS_FINE_LOCATION permission  [Michael Bestas]
+58b7b843e  Rework permissions request flow  [Michael Bestas]
+b8dada808  Request WRITE_EXTERNAL_STORAGE as well  [Michael Bestas]
+516f2d4fe  BasicCameraFactory: check if continuous picture af is available before requesting it.  [Michael Bestas]
+0ec19a87d  Fix crash if Exif-Tag buffer-length and component-count are both 0  [Michael Bestas]
+71876d738  Camera2: Fix Undo button behaviour  [Michael Bestas]
+a6c500b62  Camera2: Remove google help preference  [Michael Bestas]
+6b9cbe224  Camera2: Add option to set max screen brightness  [Michael Bestas]
+ad766ebab  Camera: Powerkey shutter (2/2)  [Michael Bestas]
+   * packages/apps/SettingsIntelligence/
+ac90e81  Correct colors for icons in "Search settings" for dark theme  [sb6596]
    * vendor/lineage/
-8194b8e5  extract_utils: Source the prebuilts from the new repo  [Rashed Abdel-Tawab]
-3dff7da4  build/tools: Move prebuilts to the new repository  [Rashed Abdel-Tawab]
+e3c319a2  kernel: Move our dtb.img logic here  [Rashed Abdel-Tawab]
+
+====================
+     10-07-2019
+====================
+
+   * hardware/qcom-caf/msm8998/display/
+65ca7e0f2  gralloc: Add option for YCrCb venus camera preview  [LuK1337]
+293c9822c  gralloc: Allow devices to opt-in for YCrCb camera preview  [LuK1337]
+   * kernel/motorola/msm8916/
+dff777d334d8  BACKPORT: random: introduce getrandom(2) system call  [Kyle Harrison]
+de52891d9246  random32: include missing header file  [Kyle Harrison]
+6507d1fc836a  BACKPORT: random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized  [Kyle Harrison]
+15e0ed86a384  BACKPORT: random32: add periodic reseeding  [Kyle Harrison]
+0b829677cd2b  seccomp: fix syscall numbers for x86 and x86_64  [Kyle Harrison]
+a24ad0f24376  Fix 'seccomp: add "seccomp" syscall'  [Kyle Harrison]
+   * lineage/wiki/
+07dcdf7  wiki: Add 16.0 version for land/santoni  [Isaac Chen]
+   * packages/apps/Camera2/
+bd5e729cc  Camera2: Remove settings preferences only once  [Michael Bestas]
+
+====================
+     10-06-2019
+====================
+   * android/
+fa36757  manifest: Switch to our fw/opt/net/wifi fork  [Michael Bestas]
+   * build/make/
+fde31f29b  Switch to aapt2 for getting minSdkVersion  [Rashed Abdel-Tawab]
+   * build/soong/
+e0494329  soong: Add function to return camera parameters library name  [Nicholas Lim]
+   * device/motorola/msm8916-common/
+b55f78ba  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
+   * frameworks/base/
+cf5cfe3dc3b  SystemUI: Update the media notification only when needed  [Bruno Martins]
+d4568ead422  Allow adjusting screen density to smaller sizes.  [Michael Bestas]
+ca7ebb8b5ca  SystemUI: Add support for persistent usb drive notification.  [Bruno Martins]
+97b7f43b9ee  frameworks: Add unlinked ringtone and notification volumes  [Bruno Martins]
+4ed68c8267f  Support enforcing a minimum delay between notification sounds of an app.  [Bruno Martins]
+   * frameworks/opt/net/wifi/
+f77e01581  Fix derp in 119f4e61cd2164a56ebc4caba8ec735e36f70422  [Bruno Martins]
+119f4e61c  resurrect mWifiLinkLayerStatsSupported counter  [Nicholas Lim]
+   * lineage/hudson/
+269dac7  hudson: Ship land/santoni  [Isaac Chen]
+   * lineage/wiki/
+318f2be  wiki: Restore santoni/land  [Isaac Chen]
+   * packages/apps/DeskClock/
+8d1408c24  DeskClock: Use POWER_OFF_ALARM permission  [Bruno Martins]
+81c1d9850  DeskClock: Add support of power off alarm feature  [Bruno Martins]
+   * packages/apps/Settings/
+19c02646ba  Settings: Fix the failing strings  [Michael Bestas]
+4af4923177  Settings: fix apn_editor carrier_enabled summaryOff string  [Michael Bestas]
+32c8d7ba99  Allow sorting Applications by size  [Bruno Martins]
+fea34aec8c  Settings: Add back increasing ring feature (2/2).  [Bruno Martins]
+38d554476a  Settings: Use correct icon for ring volume  [Bruno Martins]
+1b889d83b3  Settings: Add switch for linked ring and media notification volumes  [Bruno Martins]
+   * packages/services/Telecomm/
+d513f106  Add back increasing ring feature (1/2).  [Bruno Martins]
+   * system/bt/
+c5eb82047  Add support to force disable enhanced sco commands  [Bruno Martins]
+32b93a707  Bluetooth: Read BLE vendor capability to proceed on Secure conn  [Bruno Martins]
 
