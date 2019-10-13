@@ -1,3 +1,11 @@
+### AICP 14.0 - Monthly Build
+
+**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20191013.zip](https://www.androidfilehost.com/?fid=1899786940962607465)
+
+Update for AICP Pie with the October security update.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191012-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191012-UNOFFICIAL-osprey.zip/download)
@@ -107,17 +115,4 @@ New build of AICP including the September ASB.
 
 **Device changes:**
 - Sepolicy update for LiveDisplay
-
-<hr>
-
-### AOSiP 9.0 Pizza - Monthly build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20190909.zip](https://www.androidfilehost.com/?fid=1899786940962580578)
-
-New build of AOSiP including the September ASB.
-
-**Device changes:**
-
-- Use updated lag fix commits from AOSiP source (remove existing patches)
-- msm8916-common: Enable memory optimizations
 
