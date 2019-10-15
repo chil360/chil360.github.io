@@ -1,3 +1,11 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20191015-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962609019)
+
+Update for LineageOS 16.0 Pie with the October security update.
+
+<hr>
+
 ### AICP 14.0 - Monthly Build
 
 **Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20191013.zip](https://www.androidfilehost.com/?fid=1899786940962607465)
@@ -104,15 +112,4 @@ New build of LineageOS including the September ASB.
 
 **Device changes:**
 - msm8916-common: Fix privapp-permissions whitelist
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20190910.zip](https://www.androidfilehost.com/?fid=1899786940962581589)
-
-New build of AICP including the September ASB.
-
-**Device changes:**
-- Sepolicy update for LiveDisplay
 
