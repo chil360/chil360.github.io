@@ -1,3 +1,15 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191019-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191019-UNOFFICIAL-osprey.zip/download)
+
+**ROM updates include:**
+- October ASB
+- Command line tools
+- Add FM Radio support (repopicked)
+- Add Trebuchet launcher (repopicked)
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20191015-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962609019)
@@ -101,15 +113,4 @@ Please test and report back your findings on what does and doesn't work.
 - GApps: BiTGApps Q - [BiTGApps-arm-10.0.0-v0.1_BETA1.zip](https://www.mediafire.com/download/4dnqrgqbhrhk8y2)
 
 ** USE AT YOUR OWN RISK! **
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20190910-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962581808)
-
-New build of LineageOS including the September ASB.
-
-**Device changes:**
-- msm8916-common: Fix privapp-permissions whitelist
 
