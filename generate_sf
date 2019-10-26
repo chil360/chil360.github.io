@@ -1,0 +1,92 @@
+#!/usr/bin/php
+<?php
+
+define('OUT_DIR', './data/');
+
+// Map roms to a folder on SF
+$sfMap = [
+	'aosip-ten' => ['json' => 'ten/aosip.json', 'name' => 'AOSiP 10.0 Quiche', 'url' => 'https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/%s/download'],
+	'du-q10x' => ['json' => 'ten/du.json', 'name' => 'Dirty Unicorns 14.x', 'url' => 'https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/%s/download'],
+	'lineage-17.0' => ['json' => 'ten/los.json', 'name' => 'LineageOS 17.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/%s/download'],
+];
+
+function usage()
+{
+	echo "Usage: ./generate_sf -r ROM -z ZIPFILE".PHP_EOL;
+	echo "Example: ./generate_sf -r lineage-17.0 -z /path/to/rom.zip".PHP_EOL;
+}
+
+function check_valid($options, $sfMap)
+{
+	$valid = true;
+
+	// Check valid rom
+	if(!in_array($options['r'], array_keys($sfMap)))
+	{
+		echo "Error: Invalid ROM".PHP_EOL;
+		$valid = false;
+	}
+
+	// Check valid zip
+	if(!file_exists($options['z']))
+	{
+		echo "Error: Invalid ZIP".PHP_EOL;
+		$valid = false;
+	}
+
+	return $valid;
+}
+
+function human_filesize($bytes, $decimals = 2) {
+    $factor = floor((strlen($bytes) - 1) / 3);
+    if ($factor > 0) $sz = 'KMGT';
+    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor - 1] . 'B';
+}
+
+function generate($options, $sfMap)
+{
+	$rom = $options['r'];
+	$zip = $options['z'];
+
+	$jsonFile = OUT_DIR .$sfMap[$rom]['json'];
+	echo "JSON: $jsonFile".PHP_EOL;
+
+	// Create initial JSON file
+	if(!file_exists($jsonFile))
+	{
+		echo "CREATE JSON".PHP_EOL;
+
+		$data['rom'] = $sfMap[$rom]['name'];
+		$data['developer'] = "chil360";
+		$data['data'] = [];
+		file_put_contents($jsonFile, json_encode($data));
+	}
+
+	// Prepare file entry
+	$file = [
+			'filename' => basename($zip),
+			'url' => sprintf($sfMap[$rom]['url'], basename($zip)),
+			'downloads' => '0',
+			'filesize' => human_filesize(filesize($zip)),
+			'date' => date("M d, Y | h:iA", filemtime($zip)),
+		];
+
+	// Write JSON file
+	$data = json_decode(file_get_contents($jsonFile));
+	$data->data[] = $file; 
+	file_put_contents($jsonFile, json_encode($data));
+}
+
+$options = getopt("r:z:");
+if(count($options) != 2)
+{
+	usage();
+	exit();
+}
+else
+{
+	if(check_valid($options, $sfMap))
+	{
+		generate($options, $sfMap);
+	}
+}
