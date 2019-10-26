@@ -1,225 +1,361 @@
 ====================
-     10-19-2019
+     10-26-2019
 ====================
-   * android/
-02d4829  lineage: Ship Trebuchet  [Kyle Harrison]
-8fcf96d  manifest: Reenable cmdline tools  [Michael Bestas]
-b5e44fd  manifest: Switch to our broadcom libbt fork & enable nfc  [Michael Bestas]
-b21c35a  manifest: switch to our fork of system/netd  [Sam Mortimer]
-308c571  manifest: Switch to our qcom bt, gps & media forks  [Michael Bestas]
-   * art/
-9638abd83e  Revert "ART: Add version check for memfd_create()"  [Kyle Harrison]
+
    * build/make/
-9fceee20f  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-f9facf259  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-9599cc634  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-508c38106  releasetools: squash backuptool support  [Kyle Harrison]
+8f98f060e  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+e47001a56  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+022b0fdb7  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+ca8a6ebd3  releasetools: squash backuptool support  [Kyle Harrison]
    * device/motorola/msm8916-common/
-b8dc755f  msm8916-common: Remove TARGET_LEGACY_HW_DISK_ENCRYPTION  [Kyle Harrison]
-16c32ed1  msm8916-common: Switch to cryptfs_hw hidl service  [Kyle Harrison]
-6b7eecaf  msm8916-common: Drop Peripheral Manager services  [Kyle Harrison]
-37701d25  msm8916-common: Remove more deprecated display flags  [Kyle Harrison]
-c999b018  msm8916-common: Add system properties for surfaceflinger  [Kyle Harrison]
-ae6b4145  msm8916-common: Change user/group permission for for charger  [Kyle Harrison]
-0fe7b2a1  msm8916-common: Update charger service path and label  [Kyle Harrison]
-1fe0a8ea  msm8916-common: Drop mediaextractor seccomp policy  [Kyle Harrison]
-2ef98f6c  msm8916-common: Enable GL comp backpressure  [Kyle Harrison]
-fafde27d  msm8916-common: Switch to legacy Wi-Fi service  [Kyle Harrison]
-e5aba91b  msm8916-common: Enable sndmonitor for audio.  [Kyle Harrison]
-3083703a  msm8916-common: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
+1d89628  msm8916-common: fix rank of OMX audio codec components  [Kyle Harrison]
+f3482f9  msm8916-common: Drop custom loader config for media swcodec  [Kyle Harrison]
+3838687  msm8916-common: Disable codec2  [Kyle Harrison]
+d2506b9  Revert "msm8916-common: Disable network scan through requestNetworkScan"  [Kyle Harrison]
+19e6cab  msm8916-common: Add IMS packages in powersave whitelist  [Kyle Harrison]
+ec54a6b  msm8916-common: Add support for telephony hidl wrapper  [Kyle Harrison]
+e349926  msm8916-common: IMS: decouple ims-ext-common from boot jars  [Kyle Harrison]
+acea2e6  msm8916-common: Add Wellbeing Package to common overlay  [Kyle Harrison]
+983debf  msm8916-common: Use smaller font footprint  [Kyle Harrison]
+1e3cc07  msm8916-common: Remove more deprecated display flags  [Kyle Harrison]
+3df1ec4  msm8916-common: Add system properties for surfaceflinger  [Kyle Harrison]
+b5a377c  msm8916-common: Change user/group permission for for charger  [Kyle Harrison]
+598ce38  msm8916-common: Update charger service path and label  [Kyle Harrison]
+014cebb  msm8916-common: Drop mediaextractor seccomp policy  [Kyle Harrison]
+9435249  msm8916-common: Enable GL comp backpressure  [Kyle Harrison]
+87b6fc3  msm8916-common: Switch to legacy Wi-Fi service  [Kyle Harrison]
+1c34321  msm8916-common: Enable sndmonitor for audio.  [Kyle Harrison]
+c813a7c  msm8916-common: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
+042c801  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
+e00f318  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
+5cf5f31  msm8916-common: Create system copy of ims-ext-common and add to classpath  [Kyle Harrison]
    * device/motorola/osprey/
-72ddd17  osprey: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
-   * external/openssh/
-9a2824af  Fix compilation with Q boringssl  [Michael Bestas]
-34845718  Fix build breakage  [Michael Bestas]
-10d5b42f  Remove assumption that _PATH_BSHELL is a compile-time constant.  [Michael Bestas]
-6732e15f  Use -Werror and -Wno-error in external/openssh  [Michael Bestas]
-123923fc  Revert "openssh: don't spam warnings as errors"  [Michael Bestas]
-a4760f05  Revert "openssh: Silence build warnings"  [Michael Bestas]
-aaab86a1  Move away from GLOBAL_CFLAGS for ssh configuration  [Michael Bestas]
+6f89ceb  osprey: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
+5bfd736  msm8916-common: rootdir: Init cleanup  [Kyle Harrison]
+0f8e9d4  osprey: init: Get rid of board platform checking  [Kyle Harrison]
+2acc9eb  osprey: init: Convert makefile to blueprint  [Kyle Harrison]
+117869f  osprey: Drop module eng tags  [Kyle Harrison]
+f00712f  osprey: Switch from add_lunch_combo to COMMON_LUNCH_CHOICES  [Kyle Harrison]
+18c4262  osprey: Set build fingerprint  [Kyle Harrison]
    * frameworks/av/
-4945378a8  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
+f7dadab23  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
    * frameworks/base/
-f6b35096648  SystemUI: Add visualizer feature  [Kyle Harrison]
+b0ff402cb88  SystemUI: Add visualizer feature  [Kyle Harrison]
    * hardware/lineage/interfaces/
-0d6f975  Initial audio amplifier HAL  [Kyle Harrison]
-   * hardware/qcom-caf/msm8916/audio/
-dd6e988ed  audio_extn: Mark unused variable as void  [Nicholas Lim]
-af597c522  Fix build errors  [Nicholas Lim]
-   * hardware/qcom/bt/
-05c4596  Revert "msm8974: remove from top level makefile"  [Michael Bestas]
-   * packages/apps/Messaging/
-55b540d  Messaging: Implement per conversation channels  [Kyle Harrison]
-e1bd4d9  Don't build with platform certificate  [Kyle Harrison]
-e4feaa2  Messaging: use white nav bar  [Kyle Harrison]
-793be5d  Allow intent shared subject or title to be mms subject  [Kyle Harrison]
-96a22dd  Messaging: Add "Mark as read" quick action for message notifications  [Kyle Harrison]
-0941068  Messaging: Fix crash of blocked participant list activity  [Kyle Harrison]
-60ecb48  Messaging: Don't crash on unsupported shared content type  [Kyle Harrison]
-df13e60  MediaPicker: Check for NPE  [Kyle Harrison]
-cd4d09a  Messaging: fix bad recycle on sending two mms in a row  [Kyle Harrison]
-e7d3dd2  Messaging app crashes after a few MMS  [Kyle Harrison]
-1f44700  Fixed storage permission issue for attachments  [Kyle Harrison]
-c689d6e  Added support for video and audio mms attachments  [Kyle Harrison]
-79ff4c0  Play an audible notification on receiving a class zero message.  [Kyle Harrison]
-88496d4  Messaging: Implement saved video attachments in MMS  [Kyle Harrison]
-9485614  Messaging: bring back accent color  [Kyle Harrison]
-31b5246  Fix menu item highlight color.  [Kyle Harrison]
-acaf9d1  Messaging: Toggable keyboard emoticons access  [Kyle Harrison]
-2a427ee  MessageQueue: Process pending messages per subscription  [Kyle Harrison]
-5f220b4  Messaging: change Avatar fontFamily to sans-serif-medium  [Kyle Harrison]
-c48b638  Messaging: Implement option for swipe right to delete.  [Kyle Harrison]
+5dbd049  Initial audio amplifier HAL  [Kyle Harrison]
    * packages/apps/Settings/
-f85d4c6023  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-   * packages/apps/Trebuchet/
-b97fba605  QSB: request round search bar  [Kyle Harrison]
-6130e836c  Disable QSB on first screen by default  [Kyle Harrison]
-66d9e4c92  Change icon drawable padding  [Kyle Harrison]
-8aabf8b2c  Trebuchet: Update default workspace  [Kyle Harrison]
-ebb1ce171  Change app name to Trebuchet  [Kyle Harrison]
-fd6dca154  Trebuchet: Hide Notification Dots on low RAM devices  [Kyle Harrison]
-e0f07aef3  Trebuchet: prefer our wallpaper picker if possible  [Kyle Harrison]
-ce5c9403e  Trebuchet: Bump min SDK to 26 as required for adaptive icons  [Kyle Harrison]
-a1347a17b  Trebuchet: adaptive icon  [Kyle Harrison]
-8c860e199  proguard: Also keep FixedScaleDrawable  [Kyle Harrison]
-f9defcd3c  config: enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS  [Kyle Harrison]
-8ecec9980  Provider: Initialize createEmptyRowOnFirstScreen without QSB  [Kyle Harrison]
-990048573  DeviceProfile: fix divide by zero  [Kyle Harrison]
-a7acb8579  Launcher3: Can't search out local app by Chinese  [Kyle Harrison]
-a460bc5d2  PagedView: fix pointer index out of range  [Kyle Harrison]
-91c37e1b6  Workspace: Allow resizing any widget  [Kyle Harrison]
-4b8ef5baa  Launcher3: Stability NullPointer issue  [Kyle Harrison]
-6823f59af  Launcher3: No Calendarwidget 4x4 widget displayed  [Kyle Harrison]
-da634f7b0  Launcher3: exclude from recents  [Kyle Harrison]
-c3857ed7f  Launcher3: Google Feed integration  [Kyle Harrison]
-1a2ff4e8d  Create LineageLauncher  [Kyle Harrison]
-a99e841d3  Trebuchet: update build configs  [Kyle Harrison]
-f2be91600  Launcher3: Fix launcher preview rendering  [Kyle Harrison]
-099a2abf7  Launcher3: Export GridOptionsProvider  [Kyle Harrison]
-7ea5ac887  Revert "[DO NOT MERGE] Disable swipe down to pull noti shade for Q"  [Kyle Harrison]
+48ebf80190  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
    * packages/apps/Updater/
-500c7c0  Set OTA URL to github  [Kyle Harrison]
-2d65486  Updater : Remove buildtype check  [Kyle Harrison]
-   * system/core/
-29c35aa49  adb: Add wait-for-online command  [Łukasz Patron]
+4f77bad  Set OTA URL to github  [Kyle Harrison]
+96a5ce2  Updater : Remove buildtype check  [Kyle Harrison]
    * vendor/lineage/
-e34bd1e6  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-5da57d59  Turn off secure ADB  [Kyle Harrison]
-defae4ab  common: Add nano to PRODUCT_PACKAGES  [Michael Bestas]
-   * vendor/motorola/
-c24dac7  msm8916-common: Drop Peripheral Manager services  [Kyle Harrison]
+703141f9  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+a900d1db  Turn off secure ADB  [Kyle Harrison]
 
 ====================
-     10-18-2019
+     10-25-2019
 ====================
 
-   * hardware/broadcom/libbt/
-ed10531  libbt: configure audio codec right after firmware  [Arne Coucheron]
-0864586  libbt-vendor: add support for samsung bluetooth  [Arne Coucheron]
-9d8a891  libbt: Add support for using two stop bits  [Arne Coucheron]
-6e60320  libbt: Add btlock support  [Arne Coucheron]
-103cb6e  libbt: Only allow upio_start_stop_timer on 32bit arm  [Arne Coucheron]
-27f47c4  libbt: Add prepatch support  [Arne Coucheron]
-   * hardware/qcom-caf/common/
-ce26f7c  Remove check for bootctrl from hardware/qcom guard  [Michael Bestas]
+   * frameworks/base/
+bc865c165df  SystemUI: Fix toggling lockscreen rotation [1/3]  [Bruno Martins]
+aa262423558  Configurable 0, 90, 180 and 270 degree rotation  [Bruno Martins]
+a86b7b5a7fe  Add NR data RAT support  [Bruno Martins]
+e7559840953  Support for radio technology NR  [Bruno Martins]
+4cf68453ae4  FR57912: Add support for pdp data reject with cause code 29,33,55  [Bruno Martins]
+   * hardware/qcom-caf/msm8996/audio/
+f9a065a28  audio: Use normal tinycompress  [Bruno Martins]
+4d112ab6d  audio: Use libprocessgroup unconditionally  [Bruno Martins]
+   * packages/apps/Settings/
+ea96bb0ad4  Settings: Add rotation settings  [Bruno Martins]
+aff4e61f95  Skip loading contextual cards if legacy cards are used  [Han Wang]
 
 ====================
-     10-17-2019
+     10-24-2019
 ====================
    * android/
-a0861eb  manifest: Move from android-10.0.0_r2 to android-10.0.0_r4  [Luca Stefani]
-   * build/make/
-0d92fe54d  Merge tag 'android-10.0.0_r4' into HEAD  [Luca Stefani]
-   * device/motorola/msm8916-common/
-2da7aff8  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
-a63b48f0  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
-   * frameworks/av/
-a59cf368e  stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file  [Arne Coucheron]
-40a3ef412  Merge tag 'android-10.0.0_r4' into HEAD  [Luca Stefani]
-   * frameworks/base/
-55df8314525  Merge tag 'android-10.0.0_r4' into HEAD  [Luca Stefani]
-   * frameworks/opt/net/wifi/
-e4bec41b7  Merge tag 'android-10.0.0_r4' into HEAD  [Luca Stefani]
-   * packages/apps/Nfc/
-c3a456b2  Merge tag 'android-10.0.0_r4' into HEAD  [Luca Stefani]
-
-====================
-     10-16-2019
-====================
-
-   * system/core/
-7455ee55f  init: Don't run update_sys_usb_config if /data isn't mounted  [LuK1337]
-   * vendor/lineage/
-f2bdbb84  Revert "config: Use tether automatic upstream selection"  [Sam Mortimer]
-3bf932e2  common: Clean up debug packages  [Bruno Martins]
-
-====================
-     10-15-2019
-====================
-
-   * hardware/qcom-caf/msm8974/display/
-0760f53b2  Make hwc_vsync thread realtime  [sb6596]
-   * hardware/qcom/audio/
-4cea47b  Revert "msm8x74: remove from top level makefile"  [Elektroschmock]
-318ab24  audio: Make CVD version retrieval nonfatal with ACDB v1  [Elektroschmock]
-   * hardware/qcom/display/
-f1ba3b92  Make memtrack build with the VNDK.  [Elektroschmock]
-9d90739f  Add missing includes.  [Elektroschmock]
-5d17a536  libmemtrack: Add open method for msm8084.memtrack  [Elektroschmock]
-f2fc873a  hwc: msm8084: Remove _vendor from libbfqio  [Elektroschmock]
-31ff530b  hwcomposer: Work around overzealous fortify checks  [Elektroschmock]
-11e92489  msm8084: Include string.h where it is necessary  [Elektroschmock]
-8fb66912  msm8084: Use generated kernel headers  [Elektroschmock]
-4504f268  msm8084: display: Don't use gnu-oldstyle field designators  [Elektroschmock]
-a7b170f4  msm8084: Add additional build flags to avoid errors  [Elektroschmock]
-b92b8223  msm8084: Use libhwui.so instead of libskia.so  [Elektroschmock]
-b9398716  msm8084: Include what we use.  [Elektroschmock]
-9c84d8ee  hwc: msm8084: Set ioprio for vsync thread  [Elektroschmock]
-   * packages/apps/SettingsIntelligence/
-6b9b6a8  Fix "null" string displaying in the breadcrumbs of search results.  [shagbag913]
-   * system/qcom/
-60417f3  softap: sdk: Add 'vendor.' prefix to wlan.driver.config  [Nolen Johnson]
-c66d052  qsap: Suppress errors  [Nolen Johnson]
-b22300c  softap: sdk: Declare VNDK usage  [Nolen Johnson]
-63e7558  qsap: Fix missing log symbols  [Nolen Johnson]
-   * tools/repohooks/
-ca479fc  signals: drop old signal workaround  [Mike Frysinger]
-7b30f4d  pre-upload: require Python 2.7.5+ and 3.4+  [Mike Frysinger]
-b3b40b5  pre-upload: drop old repo __file__ workaround  [Mike Frysinger]
-cfedbd7  pylintrc: enable more python3 checks  [Mike Frysinger]
-
-====================
-     10-14-2019
-====================
-
-   * external/ant-wireless/ant_native/
-df797ba  ant_native: Fix    * pathmap  [Michael Bestas]
-   * frameworks/base/
-a37516925d8  SoundPool: Do not sleep on stop for USAGE_GAME or on BUFFER_END  [Luca Stefani]
-b5d69762797  Increase dequeueBuffer timeout  [Luca Stefani]
-   * vendor/lineage/
-d7c6fb7c  kernel: Define DTBS_OUT path for dtb.img building  [Rashed Abdel-Tawab]
-
-====================
-     10-13-2019
-====================
-
-   * external/bash/
-89f4fe8  Disable getdtablesize for everyone  [Michael Bestas]
-   * frameworks/base/
-c0365f1c0f7  SystemUI: Apply system_icons_keyguard_padding_end to parent view  [Luca Stefani]
-4259f457b69  SystemUI: Avoid adding useless empty quick settings page  [Luca Stefani]
-   * hardware/qcom-caf/msm8974/display/
-b2fc11e87  Modify gralloc0 implementation  [sb6596]
-   * hardware/qcom/gps/
-58f5e4f  gps: Add libprocessgroup dependency to set_sched_policy users  [Elektroschmock]
-a230106  msm8084: Handle race condition in HAL post SSR  [Elektroschmock]
+6b269bf  lineage: Enable sm8150 CAF HALs  [Michael Bestas]
+cae7394  lineage: Enable msm8952 HALs  [dianlujitao]
+7b8ed91  lineage: Enable QCOM power HAL  [dianlujitao]
    * lineage/hudson/
-bbdab73  Regenerate device dependency mappings  [razorloves]
+9c5bdf4  hudson: Add Yandex Phone (Amber)  [razorloves]
+f2a00d4  Revert "hudson: Disable discovery for now"  [LuK1337]
    * lineage/wiki/
-c322a16  Add missing battery tech definitions  [Bruno Martins]
-   * packages/apps/Recorder/
-5c17bfe  Recorder: Use getRealMetrics  [TheScarastic]
-   * packages/apps/Settings/
-ce33ee4682  Revert "Settings: Add missing animations"  [Joey]
+ef47f3f  devices: Add Yandex Phone (Amber)  [razorloves]
+93a9f6e  Revert "wiki: Mark discovery as discontinued"  [LuK1337]
+
+====================
+     10-23-2019
+====================
+   * android/
+25ad79f  manifest: Switch to our fork of hardware/interfaces  [Michael Bestas]
+   * device/qcom/sepolicy-legacy-um/
+d5b38e09  common: Fix sysfs_socinfo Label for sensors  [Michael Bestas]
+8c40e0ba  common: Correctly Label /sys/class/kgsl  [Michael Bestas]
+ab924c75  common: Label persist.vendor.camera.debug.logfile  [Michael Bestas]
+2f36c228  sepolicy: setting secontext to rtc node  [Michael Bestas]
+2605506d  msm8998: Label LED sysfs  [Michael Bestas]
+0ec73181  msm8998: Label usbpd sysfs  [Michael Bestas]
+94c2344b  sepolicy: allow vold to read persist dirs  [Michael Bestas]
+8120880a  sepolicy: Label persist partition for all SoCs  [Michael Bestas]
+2325b381  msm8996: Consider additional ssr nodes  [Michael Bestas]
+4e783e66  common: Fix labelling of lcd-backlight  [Michael Bestas]
+aaafdebc  sepolicy: Allow mm-qcamerad to access v4L "name" node  [Michael Bestas]
+60c3fdd4  sepolicy: Fix video4linux "name" node labeling  [Michael Bestas]
+be1e842e  sepolicy: Update timeservice key path  [Michael Bestas]
+   * frameworks/av/
+3e288a8af  audiopolicy: support extended feature in audiopolicymanager  [Michael Bestas]
+2c2f2907f  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Michael Bestas]
+90455c2f0  Camera: Miscellaneous fixes in QDataCallback and binder death scenarios.  [Michael Bestas]
+89237fa20  Camera: CameraHardwareInterface changes to support Extended FD  [Michael Bestas]
+7151f29ea  stagefright: add changes related to high-framerates in CameraSource  [Michael Bestas]
+e472bc81f  Camera: Add support for preview frame fd  [Michael Bestas]
+3cbcab4ac  Camera: Add extensions to CameraClient  [Michael Bestas]
+   * frameworks/base/
+ce391b05d3a  WifiDisplayController: handle preexisting p2p connection status  [Michael Bestas]
+079ea155d1d  WiFiDisplayController: Defer the P2P Initialization from its constructor.  [Michael Bestas]
+b81e69531e4  Merge changes for launching wifidisplay from system settings  [Michael Bestas]
+5e737661ee4  Camera: Add feature extensions  [Michael Bestas]
+   * frameworks/opt/net/wifi/
+b12f67b3e  WiFi: Ignore connectivity scans during WFD session  [Michael Bestas]
+   * hardware/interfaces/
+a504c678a  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Michael Bestas]
+fcb759759  Camed HAL extension: Added support in HIDL for Extended FD.  [Michael Bestas]
+   * hardware/qcom-caf/msm8998/audio/
+3ddd20f29  hal: Add missing pthread.h include  [Michael Bestas]
+   * lineage/hudson/
+2b50ec4  hudson: Disable lettuce  [Michael Bestas]
+   * lineage/mirror/
+751b83e  Updated to 23-Oct-2019 03:32 UTC  [Kevin F. Haggerty]
+   * lineage/wiki/
+bc9df3d  Remove myself from msm8916 devices  [Michael Bestas]
+   * system/core/
+8dea193f2  Camera: Add feature extensions  [Michael Bestas]
+   * vendor/lineage/
+57dcffc4  privapp-permissions: Allow Gallery2 to use android.permission.MODIFY_AUDIO_ROUTING  [Michael Bestas]
+243b877e  Kill sysinit  [Michael Bestas]
+   * vendor/qcom/opensource/power/
+11a94e3  power: msm8952: Remove HBTP support  [Michael Bestas]
+b1d08ab  power: Rename power-8952.c to power-8937.c  [Michael Bestas]
+9a3da74  Reduce hwbinder buffer size for power HAL  [Michael Bestas]
+c0c5b02  power: Remove unused camera_hint_ref_count  [Michael Bestas]
+c394265  power: Compile with -Wall -Wextra -Werror  [Michael Bestas]
+9cdea7b  power: msm8916: Code clean up  [Michael Bestas]
+71c7488  power: fix sysfs_read/sysfs_write usage  [Michael Bestas]
+7dbfef3  power: msm8996: Remove dead code  [Michael Bestas]
+a250b90  power: add back check for ro.vendor.extension_library  [Michael Bestas]
+ee9bd61  power: Use ARRAY_SIZE macro where possible  [Michael Bestas]
+f906ae2  power: Drop default POWER_HINT_INTERACTION routine  [Michael Bestas]
+9bb7f33  power: Cache SOC ID checks for future queries  [Michael Bestas]
+c836c73  power: Add back display_boost checks  [Michael Bestas]
+85e00bf  power: Simplify display_hint_sent  [Michael Bestas]
+71131ea  power: Simplify soc_id checks  [Michael Bestas]
+b989cae  power: Remove unused list utils  [Michael Bestas]
+c9ed433  power: Avoid interaction build errors  [Michael Bestas]
+689414d  power: Use is_interactive_governor/is_schedutil_governor  [Michael Bestas]
+bd869d2  power: Introduce is_schedutil_governor  [Michael Bestas]
+4c96994  power: Remove leftover support for ondemand governor  [Michael Bestas]
+64ac5a0  power: Remove leftover support for msm-dcvs governor  [Michael Bestas]
+420f265  power: clang-format  [Michael Bestas]
+434acc2  power: Add -qti suffix to module name  [Michael Bestas]
+4e16643  power: Remove mutex to hints  [Michael Bestas]
+42cc467  power: Remove unused arg from power_hint_override/set_interactive_override  [Michael Bestas]
+a14bb27  power: Enable 4+0 core config for display off cases  [Michael Bestas]
+951c6ba  power: introduce 8992-specific handling  [Michael Bestas]
+5d42274  power: modify return value for display off hint in 8994  [Michael Bestas]
+886567a  power: Fix to handle min freq changes when CPU cores hotplugged.  [Michael Bestas]
+783a188  power: Changed the minfreq to 400Mhz for display off scenario.  [Michael Bestas]
+4f5e237  power: Change the Hi-Speed freq to 800Mhz for camcorder case  [Michael Bestas]
+d856943  power: override encode hint for 8909  [Michael Bestas]
+3857ee7  power: Allow devices to write their own platform specific bits  [Michael Bestas]
+c332b13  power: Allow device specific hooks for set_interactive  [Michael Bestas]
+e9c7fcc  power: Refactor TARGET_TAP_TO_WAKE_NODE  [Michael Bestas]
+e0a0903  power: Add support for tap-to-wake feature control  [Michael Bestas]
+d1cd53f  power: Use log/log.h instead of utils/Log.h  [Michael Bestas]
+23dc599  power: Fix a few compiler warnings  [Michael Bestas]
+45df97b  power: Fix power hal compiler warnings  [Michael Bestas]
+92ae28d  power: Remove powerhintparser  [Michael Bestas]
+
+====================
+     10-22-2019
+====================
+   * android/
+05d29fa  manifest: Switch to our fork of tinyalsa  [Michael Bestas]
+d089ee7  lineage: Ship Trebuchet  [Bruno Martins]
+   * art/
+dc32b857d5  Revert "ART: Add version check for memfd_create()"  [Luca Stefani]
+   * device/motorola/msm8916-common/
+1dfd8f6  msm8916-common: Extend sphal search paths for media swcodec  [Kyle Harrison]
+1587655  msm8916-common: Bind mount loader config for media swcodec  [Kyle Harrison]
+f0e6349  msm8916-common: ueventd: Remove non-existent fm_radio group  [Kyle Harrison]
+e34163f  msm8916-common: rootdir: Init cleanup  [Kyle Harrison]
+d236a82  msm8916-common: rootdir: Remove /tombstones symlink creation  [Kyle Harrison]
+9c3781a  msm8916-common: configs: Remove 2 instance support for "primary input"  [Kyle Harrison]
+7b3cb0a  msm8916-common: configs: Add BT SCO to routes list  [Kyle Harrison]
+d6b9884  msm8916-common: Update rtp daemon user group  [Kyle Harrison]
+7aa40cc  msm8916-common: Update user for ims daemons  [Kyle Harrison]
+4328174  msm8916-common: Update user group for daemons  [Kyle Harrison]
+d968652  msm8916-common: releasetools: Fix firmware extraction for 10  [Kyle Harrison]
+9e360be  [TEMP] Disable pm-service & loc_launcher  [Kyle Harrison]
+ba7802f  msm8916-common: Enable custom audio policy  [Kyle Harrison]
+2ee03f5  msm8916-common: move acdb to vendor  [Kyle Harrison]
+1fb6963  msm8916-common: Add supplicant 1.2 to init.qcom.rc  [Kyle Harrison]
+fd19a28  msm8916-common: Update manifest with Supplicant 1.2  [Kyle Harrison]
+67d7e38  msm8916-common: hostapd(hidl): Uprev to 1.1  [Kyle Harrison]
+cbce3e9  msm8916-common: Device Manifest Uprev Wifi HAL from 1.2 to 1.3  [Kyle Harrison]
+b893804  msm8916-common: Enable FEATURE_TELEPHONY_IMS for this device.  [Kyle Harrison]
+69c74a4  msm8916-common: Switch to local PowerHAL  [Kyle Harrison]
+e0f6cc6  msm8916-common: Import custom power HAL  [Kyle Harrison]
+00aef8a  msm8916-common: nuke thermal hal  [Kyle Harrison]
+c1f2019  [TEMP] msm8916-common: Remove boringssl-compat  [Kyle Harrison]
+f53df3c  msm8916-common: wifi: Disable BSS flush  [Kyle Harrison]
+5bbf3cb  msm8916-common: wifi: Increase max bss count  [Kyle Harrison]
+d08c395  msm8916-common: wifi: Add parameters for Hotspot 2.0  [Kyle Harrison]
+b114f5a  msm8916-common: Turn off SoftAP MAC randomization  [Kyle Harrison]
+3aaaee0  msm8916-common: overlay: Enable haptic text cursor  [Kyle Harrison]
+c068c19  msm8916-common: overlay: Disable window rounded corner animations  [Kyle Harrison]
+fcaabb4  msm8916-common: overlay: Enable link probing  [Kyle Harrison]
+8f53359  msm8916-common: Disable nonblocking_ffs to avoid recent crashes with adbd  [Kyle Harrison]
+8eb298a  msm8916-common: Convert IMediaCasService to use vintf_fragments  [Kyle Harrison]
+8c404b7  msm8916-common: Add temporary sepolicies for 10.0 bringup  [Kyle Harrison]
+8b0d79f  msm8916-common: Create /persist and /firmware mountpoints via build system  [Kyle Harrison]
+3d54698  msm8916-common: rootdir: Revert early boot animation start  [Kyle Harrison]
+fad3948  msm8916-common: LineageActions: Update AmbientDisplayConfiguration class path  [Kyle Harrison]
+5469fc6  msm8916-common: LineageActions: Migrate to androidx  [Kyle Harrison]
+719f9d5  msm8916-common: Fix libshims_camera for 10  [Kyle Harrison]
+19ed946  msm8916-common: libcutils: Fixup for 10  [Kyle Harrison]
+0dee222  msm8916-common: bluetooth: Fix redefined PROPERTY_VALUE_MAX  [Kyle Harrison]
+75ec16b  msm8916-common: Drop module eng tags  [Kyle Harrison]
+8137a1d  msm8916-common: Allow broken PHONY targets  [Kyle Harrison]
+826c44a  msm8916-common: Allow overriding commands during build  [Kyle Harrison]
+f25accd  msm8916-common: Move optimization flags to fix build errors  [Kyle Harrison]
+0fecde3  msm8916-common: Set loop.max_part  [Kyle Harrison]
+44b48e9  msm8916-common: Disable SELinux for 10 bringup  [Kyle Harrison]
+7524c21  msm8916-common: Update for early-mounted system partition  [Kyle Harrison]
+bf5dca9  msm8916-common: De-commonize the product includes  [Kyle Harrison]
+   * device/motorola/osprey/
+80d6135  osprey: De-commonize the product includes  [Kyle Harrison]
+   * lineage/charter/
+e5ab5a2  charter: Add exception for s3ve3g PN547 NFC  [Leonardo Meitz]
+   * lineage/hudson/
+ce80f70  hudson: Add zenfone3  [Rashed Abdel-Tawab]
+   * lineage/wiki/
+79a500a  devices: Add zenfone3  [Nolen Johnson]
+   * packages/apps/Gallery2/
+c52dfa91a  Move Gallery2 and its libs to /product  [LuK1337]
+845946d05  Sync translations with AOSP  [LuK1337]
+6ffe1db52  Rename language+country resources to just language  [LuK1337]
+e273ca9e6  Gallery2: Migrate remaining bits to AndroidX  [LuK1337]
+d86081647  Move Gallery2 to androidx.  [LuK1337]
+76459f162  Fix can't enable speaker with bluetooth headset  [LuK1337]
+1bbe43b15  Gallery2: Get rid of packages monitor  [LuK1337]
+a0fc8cf11  Gallery: Kill media effect dialog on movies  [LuK1337]
+ccbf7a79c  Gallery2: Fix various issues and glitches  [LuK1337]
+075c174d7  Gallery2: Fix potential crash  [LuK1337]
+22b375c63  Gallery2: Fix views overlap  [LuK1337]
+3664c3aa7  Gallery2: Increase the size of the tiles when decoding images  [LuK1337]
+3dfa4fcbf  Gallery2: Support the newly added media file types in MTP mode  [LuK1337]
+9f7d20916  Gallery2: Enable frames in the editor  [LuK1337]
+5c7d76abe  Gallery2: Remove 3D overscroll effect  [LuK1337]
+15b29230a  Gallery2: Fix up audio effects dialog  [LuK1337]
+cca548c82  Gallery2: Everyone or no one  [LuK1337]
+5043cf504  Gallery2: Disable dummy starting window  [LuK1337]
+0a42172d7  Gallery2: Replace hamburger menu with bottom bar  [LuK1337]
+f4f030b02  Gallery2: Move & improve CAF strings  [LuK1337]
+78400a865  Gallery2: Modify AOSP EL translations  [LuK1337]
+5b0ddc1bf  Gallery2: Remove CAF translations  [LuK1337]
+4a3eebc36  Gallery: use platform cert  [LuK1337]
+d86757514  Gallery: adaptive-icon  [LuK1337]
+a09ba66e6  Gallery: define app category  [LuK1337]
+cd479379b  Gallery2: Update menu  [LuK1337]
+428d8f93b  Gallery2: Update theme  [LuK1337]
+15feefb52  Gallery2: Properly declare the own permissions  [LuK1337]
+d57f723e6  Gallery2: Change all share intents to chooser style  [LuK1337]
+a1bb50b95  Gallery2: Make sure no NPE happens  [LuK1337]
+b04396354  Gallery2: Reduce logspam in video player  [LuK1337]
+5274819a6  Gallery2: Store DATE_TAKEN as milliseconds  [LuK1337]
+884d8500e  Gallery2: Add record time to details view  [LuK1337]
+2ad4dea6c  Gallery2: Fix crash of gallery on showing details  [LuK1337]
+ab9effefd  Gallery2: Try to open existing camera  [LuK1337]
+d766ecf7d  Gallery2: Bump minsdk and targetsdk version  [LuK1337]
+664b61707  Gallery: TileImageView: fix NPE  [LuK1337]
+893a776ec  FaceDetect: Catch linker errors during initialization  [LuK1337]
+e2b592d51  Rename app back to Gallery  [LuK1337]
+abf30794c  Add new rule about watermark  [LuK1337]
+2e042904d  Fix the issue of view don't reload when onPause  [LuK1337]
+b47a9a938  Fix FC of parsing uri is null  [LuK1337]
+a674df509  SDGallery:Fix monkey FC when url from pick activity is null  [LuK1337]
+1ddbcb1bd  Don't show Camera Icon when no pictures found in Albums  [LuK1337]
+0fa8e4a08  SnapdragonGallery: Fix crash show dialog when activity finished  [LuK1337]
+fe4b61600  SnapdragonGallery: Fix dialog dismiss when home  [LuK1337]
+8d0e4ce53  SnapdragonGallery: Fix FC when init() before setContentView  [LuK1337]
+b2e91006f  Gallery2: Support GIF animation  [LuK1337]
+518f760ae  Gallery2: Remove slideshow option if there are only videos  [LuK1337]
+e57011d52  Move Gallery2 over to AAPT2 and new v4 modules  [LuK1337]
+fb3125e4e  Use -Werror in packages/apps/Gallery2  [LuK1337]
+8ae4143e9  Fix build with proguard  [LuK1337]
+4dbb89ddd  Fix makefile include for support-v4  [LuK1337]
+76063e3ee  Fix proguard failure when using javac  [LuK1337]
+42ede8e9d  Use explicit support library prebuilts  [LuK1337]
+e53c346a0  Fix build Gallery2  [LuK1337]
+935fb6eae  Rename android.utils.Pools to com.android.photos.util.Pools  [LuK1337]
+a6751b0fd  Gallery2: Fix CollectionIncompatibleType  [LuK1337]
+8986bc648  Gallery2: Fix NaN comparisons  [LuK1337]
+c88128688  Stop using junit classes in production  [LuK1337]
+f93237ae7  Revert "Fix compiling errors in P"  [LuK1337]
+c37fad99c  Add missing includes.  [LuK1337]
+2ae1f3ac3  Fix misc-macro-parentheses warnings in Gallery2.  [LuK1337]
+2fbd17194  Float.NaN != ... always evaluates to true, use Float.isNaN.  [LuK1337]
+60ce8b7f7  Fix ProGuard error.  [LuK1337]
+   * packages/apps/Trebuchet/
+a7bf32efc  QSB: request round search bar  [Bruno Martins]
+7f3d8d10d  Disable QSB on first screen by default  [Bruno Martins]
+4088f9496  Change icon drawable padding  [Bruno Martins]
+e375abe61  Trebuchet: Update default workspace  [Bruno Martins]
+657c31ba7  Trebuchet: Hide Notification Dots on low RAM devices  [Bruno Martins]
+   * packages/services/Telephony/
+11cc83905  MSIM: Fix non-protected broadcasts sent from phone process.  [dianlujitao]
+
+====================
+     10-21-2019
+====================
+
+   * hardware/qcom-caf/sm8150/display/
+292a72d86  Add 'display-commonsys-intf/' from https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tag/?h=LA.UM.8.1.r1-09500-sm8150.0  [LuK1337]
+
+====================
+     10-20-2019
+====================
+
+   * frameworks/base/
+d4967014fa9  Fix: Recent Apps not closing  [Bruno Martins]
+5b47ff946f7  KernelCpuUidTimeReader: Decrease log level on non-eng builds  [Han Wang]
+   * hardware/qcom-caf/msm8916/audio/
+369d0427e  audio_extn: Mark unused variable as void  [Nicholas Lim]
+eb1688849  hal: Add libprocessgroup dependency to set_sched_policy users  [Nicholas Lim]
+   * hardware/qcom-caf/msm8916/media/
+f9cd945b0  media: Fix compilation error for switch case  [Nicholas Lim]
+15b410ef0  mm-video-v4l2: Use "base" enum type  [Nicholas Lim]
+   * packages/apps/Calendar/
+dc2b2a55  Calendar: Drop no longer existing activity from manifest  [LuK1337]
+f6b6e2ff  Calendar: Don't optimize out no-arg Fragment constructors  [LuK1337]
+   * packages/apps/Trebuchet/
+9db155928  Trebuchet: Bump min SDK to 26 as required for adaptive icons  [Bruno Martins]
+d4c4dec44  Trebuchet: adaptive icon  [Bruno Martins]
+c3c09383e  Change app name to Trebuchet  [Bruno Martins]
+c1821f3e7  proguard: Also keep FixedScaleDrawable  [Bruno Martins]
+4286514eb  config: enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS  [Bruno Martins]
+f1341548f  Provider: Initialize createEmptyRowOnFirstScreen without QSB  [Bruno Martins]
+2c8118585  DeviceProfile: fix divide by zero  [Bruno Martins]
+588265ff1  Launcher3: Can't search out local app by Chinese  [Bruno Martins]
+ffdad1b38  PagedView: fix pointer index out of range  [Bruno Martins]
+b63fd2519  Workspace: Allow resizing any widget  [Bruno Martins]
+d43e011e5  Launcher3: Stability NullPointer issue  [Bruno Martins]
+83baf7da3  Launcher3: No Calendarwidget 4x4 widget displayed  [Bruno Martins]
+90e9fa89c  Launcher3: exclude from recents  [Bruno Martins]
+be1ef90bc  Launcher3: Google Feed integration  [Bruno Martins]
+510a31bc4  Create LineageLauncher  [Bruno Martins]
+0a73a0371  Trebuchet: update build configs  [Bruno Martins]
+8318a4cea  Launcher3: Fix launcher preview rendering  [Bruno Martins]
+83fa69f57  Launcher3: Export GridOptionsProvider  [Bruno Martins]
+692ac2cd1  Revert "[DO NOT MERGE] Disable swipe down to pull noti shade for Q"  [Bruno Martins]
 
