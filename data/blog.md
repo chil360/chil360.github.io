@@ -1,3 +1,13 @@
+### Havoc OS 3.0
+
+**Download:** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://www.androidfilehost.com/?fid=4349826312261608861)
+
+**Mirror (SourceForge):** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191028-osprey-Unofficial.zip/download)
+
+First Android 10 build of Havoc 3.0 for Osprey.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191026-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191026-UNOFFICIAL-osprey.zip/download)
@@ -93,19 +103,4 @@ New build of LineageOS 17 with latest sources.
 **Device changes:**
 - Mobile internet should now be fixed in this build.
 
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20190921-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962590640)
-
-This is an ALPHA build that is untested apart from on my own device.
-Please test and report back your findings on what does and doesn't work.
-
-**Notes:**
-- TWRP: Tested with Squid TWRP 3.2.3-r1 but should be fine with newer official/unofficial versions.
-- Magisk: Do NOT attempt to install Magisk - current versions will bootloop the phone. 
-- GApps: BiTGApps Q - [BiTGApps-arm-10.0.0-v0.1_BETA1.zip](https://www.mediafire.com/download/4dnqrgqbhrhk8y2)
-
-** USE AT YOUR OWN RISK! **
 
