@@ -1,3 +1,16 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191102-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191102-UNOFFICIAL-osprey.zip/download)
+
+Built from latest Lineage 17.0 sources plus repoick Snap from gerrit.
+
+**Device changes:**
+- sepolicy: Revert temporary sepolicy
+- sepolicy: Re-enable full sepolicy but keep permissive
+- Initial sepolicy updates for Q
+
+<hr>
+
 ### Havoc OS 3.0
 
 **Download:** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://www.androidfilehost.com/?fid=4349826312261608861)
@@ -91,16 +104,4 @@ Starting from this build, I am going to upload all of my Q roms to SourceForge i
 **Download:** [AOSiP-10-Quiche-osprey-20191002.zip](https://www.androidfilehost.com/?fid=1899786940962599537)
 
 First build of AOSiP 10.0 Quiche for Osprey.
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20190928-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962596515)
-
-New build of LineageOS 17 with latest sources.
-
-**Device changes:**
-- Mobile internet should now be fixed in this build.
-
 
