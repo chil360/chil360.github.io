@@ -1,3 +1,19 @@
+### Havoc OS 3.0
+
+**Download:** [Havoc-OS-v3.0-20191106-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191106-osprey-Unofficial.zip/download)
+
+New build including the November ASB update.
+
+**Device changes:**
+- sepolicy: Revert temporary sepolicy
+- sepolicy: Re-enable full sepolicy but keep permissive
+- Initial sepolicy updates for Q
+- power: Switch to powerhal 1.2
+- telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
+- telephony: Add telephony_injection file & qti-telephony-utils
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191102-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191102-UNOFFICIAL-osprey.zip/download)
@@ -96,12 +112,4 @@ New build of LineageOS 17 with latest sources.
 
 **Note:**
 Starting from this build, I am going to upload all of my Q roms to SourceForge instead of AFH. SourceForge provides direct download links which allows me to implement OTA updates.
-
-<hr>
-
-### AOSiP 10.0 Quiche [ALPHA BUILD]
-
-**Download:** [AOSiP-10-Quiche-osprey-20191002.zip](https://www.androidfilehost.com/?fid=1899786940962599537)
-
-First build of AOSiP 10.0 Quiche for Osprey.
 
