@@ -1,3 +1,22 @@
+<hr>
+
+### AOSiP 10 Quiche [ALPHA BUILD]
+
+**Download:** [AOSiP-10-Quiche-osprey-20191108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20191108.zip/download)
+
+Built from latest AOSiP 10 sources with November ASB.
+
+**Device changes:**
+- Implement backuptool using commits from LOS
+- sepolicy: Revert temporary sepolicy
+- sepolicy: Re-enable full sepolicy but keep permissive
+- Initial sepolicy updates for Q
+- power: Switch to powerhal 1.2
+- telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
+- Implement OTA updates
+
+<hr>
+
 ### Havoc OS 3.0
 
 **Download:** [Havoc-OS-v3.0-20191106-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191106-osprey-Unofficial.zip/download)
@@ -96,20 +115,4 @@ Official Magisk v20.0 package is now compatible with Android 10 roms for Osprey.
 
 Updated build of RevengeOS from latest sources.
 
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191005-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191005-UNOFFICIAL-osprey.zip/download)
-
-New build of LineageOS 17 with latest sources.
-
-**Device changes:**
-- Device tree & blob updates from Aljeter PPP29.55-25 to fix Widevine DRM
-- Update bluetooth/FM blobs from Aljeter PPP29.55-25
-- Uprev audio HAL to v5.0
-- Implement OTA updates
-
-**Note:**
-Starting from this build, I am going to upload all of my Q roms to SourceForge instead of AFH. SourceForge provides direct download links which allows me to implement OTA updates.
 

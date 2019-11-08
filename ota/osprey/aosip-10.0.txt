@@ -1,0 +1,214 @@
+====================
+     11-08-2019
+====================
+
+   * build/make/
+5371c9f91  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+b70d114d0  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+67a4c7036  releasetools: squash backuptool support  [Kyle Harrison]
+6c1a2ff57  [2/2] build: Switch to Pixel sounds  [Kyle Harrison]
+9b65a78ee  build: allow forcing build of otatools  [Kyle Harrison]
+38311b46e  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+586dc4cb9  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Kyle Harrison]
+7326285a7  releasetools: Store the build.prop file in the OTA zip  [Kyle Harrison]
+c901913c8  releasetools: Add script to sign zips  [Kyle Harrison]
+a778c2062  releasetools: support reading release keys out of some sort of command  [Kyle Harrison]
+8ea4ca2d2  Edify: Add abort message for bootloader asserts  [Kyle Harrison]
+272d30827  build: ota: Support for install tools in /tmp/install  [Kyle Harrison]
+   * device/motorola/msm8916-common/
+47c3cc3  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
+3ad3776  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
+8530e1d  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
+0dbe942  msm8916-common: sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
+1a569ed  msm8916-common: sepolicy: Allow access to V4L subdev nodes  [Kyle Harrison]
+c7e17f7  msm8916-common: sepolicy: allow init to read /proc/device-tree  [Kyle Harrison]
+d9f314c  msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment  [Kyle Harrison]
+887b0c3  msm8916-common: sepolicy: Label clearkey 1.2 HAL  [Kyle Harrison]
+17dd07e  msm8916-common: sepolicy: Label widevine 1.1 HAL  [Kyle Harrison]
+8276b4f  msm8916-common: sepolicy: Label /fsg  [Kyle Harrison]
+cc0b889  msm8916-common: sepolicy: Re-enable full sepolicy but keep permissive  [Kyle Harrison]
+bf82bf3  Revert "msm8916-common: Add temporary sepolicies for 10.0 bringup"  [Kyle Harrison]
+   * device/qcom/sepolicy-legacy/
+977daf6  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
+4de152c  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
+52aeff8  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+88b11d2  [SQUASH]: Remove label for sysfs_disk_stat  [Kyle Harrison]
+7ef0fe3  Rename mediacodec to hal_omx_server  [Kyle Harrison]
+07b899f  sepolicy : removed alarm_device related references  [Kyle Harrison]
+46379ab  sepolicy : clean-up of netd_socket usage.  [Kyle Harrison]
+bc4fd7e  Don't allow untrusted apps to access hal_perf  [Kyle Harrison]
+8df98e8  sepolicy : remove reference to cpuctl_device  [Kyle Harrison]
+a435be4  sepolicy : remove sysfs_net related entries which are duplicate  [Kyle Harrison]
+   * frameworks/base/
+78d984e27e6  SystemUI: Implement Smart space  [Kyle Harrison]
+1743fef506d  SystemUI: Port code to improve pixel live wallpapers  [Kyle Harrison]
+bffcfefe0e1  Initial import of SystemUIGoogleFactory  [Kyle Harrison]
+52b9a8c738c  base: SystemUI: [QS] Add adb over network tile  [Kyle Harrison]
+58b6b7adff9  base: SystemUI: Add Caffeine QS Tile  [Kyle Harrison]
+29eec8e54bb  base: SystemUI: add back QS hide label  [Kyle Harrison]
+1a47d7bc096  base: SystemUI: Make QS columns count configurable  [Kyle Harrison]
+0b5c7b535bd  base: SystemUI: add config check for aod available in qs tile  [Kyle Harrison]
+4ec7da80dbd  base: SystemUI: Add AOD QS tile  [Kyle Harrison]
+   * packages/apps/Settings/
+cfcb6a0f8a  Settings: Use AOSIP_FINGERPRINT for search index check  [Kyle Harrison]
+649339f3e4  Settings: Add AOSiP version to "About Phone".  [Kyle Harrison]
+85ec9306a5  Settings: Add Updater  [Kyle Harrison]
+   * packages/apps/Updater/
+4ddd6a9  Set OTA URL to github  [Kyle Harrison]
+   * system/sepolicy/
+00c3ee1d  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+a58a1ea3  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
+   * vendor/aosip/
+91d70fc  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+143bc2c  [1/2] aosip: Switch to Pixel sounds  [Kyle Harrison]
+27bc7c4  vendor: overlay: Update few overlays from Pixel  [Kyle Harrison]
+f32cee7  aosip: overlay: Disable System Update fragment  [Kyle Harrison]
+17c0028  Fix Pixel color overlay  [Kyle Harrison]
+
+====================
+     11-07-2019
+====================
+
+   * build/make/
+a8a5fcf1a  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/build into HEAD  [Josh Fox (XlxFoXxlX)]
+   * build/soong/
+cb2dabf6  soong: Add function to return camera parameters library name  [Josh Fox (XlxFoXxlX)]
+79aa580f  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//build/soong into HEAD  [Josh Fox (XlxFoXxlX)]
+   * development/
+f1f57da0d  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/development into HEAD  [Josh Fox (XlxFoXxlX)]
+   * external/tinyalsa/
+8600f3d  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/external/tinyalsa into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/av/
+da72d49a4  stagefright: add changes related to high-framerates in CameraSource  [Josh Fox (XlxFoXxlX)]
+f43fbb044  MTP: Fix crash when no storages are available  [Josh Fox (XlxFoXxlX)]
+a68d8d4bf  camera: Allow devices to load custom CameraParameter code  [Josh Fox (XlxFoXxlX)]
+2ee545868  Request to reset effect buffer in clearInputBuffer  [Josh Fox (XlxFoXxlX)]
+8581b6cee  CameraService: Support hooks for motorized camera  [Josh Fox (XlxFoXxlX)]
+9ce94c3e0  audiopolicy: make audio policy extensible  [Josh Fox (XlxFoXxlX)]
+926c33f6d  Explicitly initialise base class in copy constructor  [Josh Fox (XlxFoXxlX)]
+db4df2444  Camera: Add support for preview frame fd  [Josh Fox (XlxFoXxlX)]
+367879f3c  camera: Workaround for GCC-compiled HAL3 drivers  [Josh Fox (XlxFoXxlX)]
+820c5a2bf  soundtrigger: fill in default extras from dsp  [Josh Fox (XlxFoXxlX)]
+9e66b4606  Camera: Add extensions to CameraClient  [Josh Fox (XlxFoXxlX)]
+   * frameworks/base/
+29750638dc5  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/base into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/opt/telephony/
+634c31718  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD  [Josh Fox (XlxFoXxlX)]
+   * manifest/
+dc8a313  manifest: update to android-10.0.0_r14  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Bluetooth/
+3db3f6ace  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CertInstaller/
+fdcbe34  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/packages/apps/CertInstaller into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Launcher3/
+92e122423  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Launcher3 into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/PermissionController/
+c8db866d  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Settings/
+b0c7867d75  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/bt/
+da58191aa  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/bt into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/core/
+a58702b66  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/core into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/extras/
+82823cb8  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/extras into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/sepolicy/
+57d5a930  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/update_engine/
+f7d2b34d  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/update_engine into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/vold/
+f1eb8d8  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform/system/vold into HEAD  [Josh Fox (XlxFoXxlX)]
+
+====================
+     11-06-2019
+====================
+   * art/
+6f8d39bf28  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//art into HEAD  [Josh Fox (XlxFoXxlX)]
+   * bionic/
+509f58480  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//bionic into HEAD  [Josh Fox (XlxFoXxlX)]
+   * bootable/recovery/
+1b1398dc  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//bootable/recovery into HEAD  [Josh Fox (XlxFoXxlX)]
+   * external/f2fs-tools/
+4d91f09  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//external/f2fs-tools into HEAD  [Josh Fox (XlxFoXxlX)]
+   * external/perfetto/
+affd1d8f  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//external/perfetto into HEAD  [Josh Fox (XlxFoXxlX)]
+   * external/skia/
+125b0789f9  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//external/skia into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/av/
+72abcdd47  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/av into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/native/
+755748124  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/opt/net/ims/
+832cf24  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/opt/net/ims into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/interfaces/
+8abb38e92  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/interfaces into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/libhardware/
+bc7ac5aa  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/libhardware into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/libhardware_legacy/
+f7de77a  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/libhardware_legacy into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/ril/
+f69a1dc  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/ril into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CarrierConfig/
+be22665  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/CarrierConfig into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CellBroadcastReceiver/
+da47d21f  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/CellBroadcastReceiver into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Contacts/
+a31aa9867  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Contacts into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/DocumentsUI/
+55899a3d2  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Nfc/
+63560ec1  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/PhoneCommon/
+729620a  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/PhoneCommon into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/ThemePicker/
+7e88053  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/ThemePicker into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/inputmethods/LatinIME/
+15d4f7a4c  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/providers/DownloadProvider/
+5b35c881  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/providers/MediaProvider/
+d8f19e0  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/services/Telecomm/
+f659beb3  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/services/Telephony/
+25985605e  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD  [Josh Fox (XlxFoXxlX)]
+   * platform_testing/
+978ab0c9  Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//platform_testing into HEAD  [Josh Fox (XlxFoXxlX)]
+
+====================
+     11-05-2019
+====================
+
+   * hardware/qcom-caf/common/
+27e52b3  fwk-detect: Relocate from vendor/qcom-opensource/core-utils  [Rashed Abdel-Tawab]
+   * tools/repohooks/
+6d340a1  hooks: add more bad Bug: test cases  [Mike Frysinger]
+   * vendor/motorola/
+b26393c  msm8916-common: Update qti telephony from LA.UM.8.6.r1-01900-89xx.0  [Kyle Harrison]
+
+====================
+     11-04-2019
+====================
+
+
+====================
+     11-03-2019
+====================
+
+   * vendor/aosip/
+20a3b23  aosip: use AB_OTA_PARTITIONS flag for including backuptool_ab  [Josh Fox]
+046f04b  extract_utils: Added Suffix uses COMMON_SUFFIX  [Josh Fox]
+87c7b5a  extract_files: Implement blueprint file generation  [Josh Fox]
+038ecc8  extract_files: Add initial blueprint creation  [Josh Fox]
+b0ff37a  extract_files: Match non-treble path prefixes  [Josh Fox]
+35c26e2  extract_files: Support system/ prefixes  [Josh Fox]
+9e8b6ba  build: dt_image: use prebuilt lz4 binary for compressing  [Josh Fox]
+88f2496  privapp-permissions: Allow Gallery2 to use android.permission.MODIFY_AUDIO_ROUTING  [Josh Fox]
+b1a25ae  Kill sysinit  [Josh Fox]
+1f53d94  vendor: build extra command-line packages  [Josh Fox]
+
+====================
+     11-02-2019
+====================
+
+
