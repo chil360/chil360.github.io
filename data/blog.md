@@ -1,3 +1,13 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191109-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191109-UNOFFICIAL-osprey.zip/download)
+
+Built from latest Lineage 17.0 sources plus repoick Snap from gerrit.
+
+**Device changes:**
+- power: Switch to powerhal 1.2
+- telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
+
 <hr>
 
 ### AOSiP 10 Quiche [ALPHA BUILD]
@@ -106,13 +116,4 @@ For those running last week's build, this build should be available as an OTA up
 
 **Note:**
 Official Magisk v20.0 package is now compatible with Android 10 roms for Osprey.
-
-<hr>
-
-### RevengeOS 2.7 Pasta - [11/10/2019]
-
-**Download:** [RevengeOS-2.7-Pasta-UNOFFICIAL-osprey-20191011-1106.zip](https://www.androidfilehost.com/?fid=1899786940962605683)
-
-Updated build of RevengeOS from latest sources.
-
 
