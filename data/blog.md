@@ -1,3 +1,11 @@
+### Lineage 16.0 - Monthly Build
+
+**Download:** [lineage-16.0-20191112-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261627000)
+
+Update for LineageOS 16.0 (Pie) with the November security update.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191109-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191109-UNOFFICIAL-osprey.zip/download)
@@ -103,17 +111,4 @@ Update for LineageOS 16.0 Pie with the October security update.
 
 Update for AICP Pie with the October security update.
 
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191012-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191012-UNOFFICIAL-osprey.zip/download)
-
-For those running last week's build, this build should be available as an OTA update through the Lineage Updater in settings.
-
-**Device changes:**
-- Kernel: Backport memfd_create
-
-**Note:**
-Official Magisk v20.0 package is now compatible with Android 10 roms for Osprey.
 
