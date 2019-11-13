@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Monthly Build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20191113.zip](https://www.androidfilehost.com/?fid=4349826312261628087)
+
+Update for AOSiP 9.0 (Pie) with the November security update.
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20191112-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261627000)
@@ -102,13 +110,4 @@ First Android 10 build of Havoc 3.0 for Osprey.
 **Download:** [lineage-16.0-20191015-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962609019)
 
 Update for LineageOS 16.0 Pie with the October security update.
-
-<hr>
-
-### AICP 14.0 - Monthly Build
-
-**Download:** [aicp_osprey_p-14.0-UNOFFICIAL-20191013.zip](https://www.androidfilehost.com/?fid=1899786940962607465)
-
-Update for AICP Pie with the October security update.
-
 
