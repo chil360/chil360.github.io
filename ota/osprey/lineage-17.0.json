@@ -2,12 +2,12 @@
 {
   "response": [
     {
-      "datetime": 1573303179,
-      "filename": "lineage-17.0-20191109-UNOFFICIAL-osprey.zip",
-      "id": "e1f02939ccd3cf9e4c304485a5017bdc",
+      "datetime": 1573994127,
+      "filename": "lineage-17.0-20191117-UNOFFICIAL-osprey.zip",
+      "id": "862dbcda35d1fe9ca93fe58491dfb623",
       "romtype": "UNOFFICIAL",
-      "size": 421901413,
-      "url": "https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191109-UNOFFICIAL-osprey.zip/download",
+      "size": 421960578,
+      "url": "https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191117-UNOFFICIAL-osprey.zip/download",
       "version": "17.0"
     }
   ]

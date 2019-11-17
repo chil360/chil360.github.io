@@ -1,3 +1,11 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191117-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191117-UNOFFICIAL-osprey.zip/download)
+
+Lineage 17.0 update with the November security update.
+
+<hr>
+
 ### AOSiP 9.0 Pizza - Monthly Build
 
 **Download:** [AOSiP-9.0-Pizza-osprey-20191113.zip](https://www.androidfilehost.com/?fid=4349826312261628087)
@@ -102,12 +110,4 @@ First Android 10 build of Havoc 3.0 for Osprey.
 - Command line tools
 - Add FM Radio support (repopicked)
 - Add Trebuchet launcher (repopicked)
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20191015-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=1899786940962609019)
-
-Update for LineageOS 16.0 Pie with the October security update.
 

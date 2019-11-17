@@ -1,328 +1,150 @@
 ====================
-     11-09-2019
+     11-17-2019
 ====================
 
    * build/make/
-7d5403a4a  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-6552e61fa  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-2b2e9ad24  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-7dfc844d2  releasetools: squash backuptool support  [Kyle Harrison]
+bfdf52f47  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+9ebd83b29  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+f55365023  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+3d442629e  releasetools: squash backuptool support  [Kyle Harrison]
+46489e81b  Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful  [Łukasz Patron]
+2aee07bbb  core: allow specifying building ramdisk(s) with lzma  [Arne Coucheron]
    * build/soong/
-629fb9be  soong: Add function to return camera parameters library name  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-2ecec2c  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
-710a26b  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
-1f552fb  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
+47ec8903  soong: Add function to return camera parameters library name  [Kyle Harrison]
+   * device/qcom/sepolicy-legacy/
+8c745f9  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+   * frameworks/av/
+599ab02c0  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
    * frameworks/base/
-f1c12beac91  SystemUI: Add visualizer feature  [Kyle Harrison]
-626374a2454  Disable doc generation  [Kyle Harrison]
+2adccbdce6b  SystemUI: Add visualizer feature  [Kyle Harrison]
+091f2e21eb3  Keyguard: Allow disabling fingerprint wake-and-unlock  [Michael Bestas]
+b741caaeb38  Telephony: Direct return false for unsupport sms platform.  [Bruno Martins]
+f3c12f7bc47  SystemUI: add left and right virtual buttons while typing  [Bruno Martins]
+f1bbf242b08  SystemUI: Advanced location tile  [Bruno Martins]
+e7f3c30e243  SystemUI: Enable and fix QS detail view, adapt layout to 10  [Bruno Martins]
    * hardware/lineage/interfaces/
-657f160  Initial audio amplifier HAL  [Kyle Harrison]
-   * packages/apps/Settings/
-3c14cb2e26  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-   * packages/apps/Snap/
-21b7e0cee  Snap: Set CameraHolder context on camera button action  [Kyle Harrison]
-bc7e1f505  Snap: Grant android.permission.START_ACTIVITIES_FROM_BACKGROUND  [Kyle Harrison]
-2260a1959  Fix use of deprecated SoundPool API in Snap  [Kyle Harrison]
-cc9d30818  Stop using deprecated Canvas APIs.  [Kyle Harrison]
-a0a9ac766  Snap: Fix Undo button behaviour  [Kyle Harrison]
-b15020738  snap: remove double resources  [Kyle Harrison]
-152a782bd  Snap: allow to disable image stabilization per device  [Kyle Harrison]
-c0261bf60  Snap: Fix picture size preference  [Kyle Harrison]
-4c7477ecb  Snap: Add back original-package in manifest  [Kyle Harrison]
-bddb073cb  Snap: Remove unused resources  [Kyle Harrison]
-f4fb6f8c0  Snap: Fix shutter button size  [Kyle Harrison]
-8f4063782  Snap: make support for bokeh mode configurable per device  [Kyle Harrison]
-ece6867f9  Snap: Yet Another String Improvement  [Kyle Harrison]
-1115005ad  QuickReader: Update libs  [Kyle Harrison]
-1caf83ea7  Snap: Always allow 100% JPEG quality to be set  [Kyle Harrison]
-cfa044875  Snap: Disable debugging of double open issue  [Kyle Harrison]
-b824e1403  Snap: Add missing NULL check in updatePictureAndVideoSize()  [Kyle Harrison]
-e160bf0c7  Snap: Check various feature support before applying  [Kyle Harrison]
-d5462121f  Snap: Fix layout of zoom option  [Kyle Harrison]
-b732e325a  Snap: Create correct redeye reduction config icon  [Kyle Harrison]
-07b8cb050  Fix get aePref is null in PhotoMenu  [Kyle Harrison]
-fa1259f99  Fix to change default mode to Camera1 HAL1  [Kyle Harrison]
-a690ac0b7  SnapdragonCamera: Fix parameters NullPointerException  [Kyle Harrison]
-e8a731c2f  SnapdragonCamera: SetParameters use the mParameters Object  [Kyle Harrison]
-baa856311  DisableCameraReceiver: Initialize CameraHolder before use  [Kyle Harrison]
-adb15f9f3  Fix force close when launch camera on P  [Kyle Harrison]
-4cc98222f  Snap: use platform cert  [Kyle Harrison]
-9f8bd3e01  CameraSettings: Do not crash if zoom ratios are not exposed  [Kyle Harrison]
-51050d8d4  Snap: Allow quickreader to work with secure device  [Kyle Harrison]
-8db7911b7  Snap: turn developer category title into a translatable string  [Kyle Harrison]
-6df111618  SnapdragonCamera: Panorama, replace border drawable  [Kyle Harrison]
-9f62aec6f  Snap: Check for ACCESS_FINE_LOCATION instead of ACCESS_COARSE_LOCATION  [Kyle Harrison]
-e945573d5  Snap: Configure focus ring preview dimensions  [Kyle Harrison]
-d0c1da893  Snap: Add support for focus distance  [Kyle Harrison]
-a2cddb8ec  Drop new focus indicator into Camera2.  [Kyle Harrison]
-8918b859c  Snap: don't try to set up cameras with ids greater than MAX_NUM_CAM  [Kyle Harrison]
-6a822d04a  Snap: Convert "save best" dialog text to a quantity string  [Kyle Harrison]
-6fc885068  Snap: adaptive icon  [Kyle Harrison]
-c5a6d3c30  Snap: Port all string improvements from cm-14.1  [Kyle Harrison]
-4c6104560  Snap: Add missing thumbnails for filter modes  [Kyle Harrison]
-a151bf80e  Snap: add QReader to module switch  [Kyle Harrison]
-d0f71c827  QuickReader: initial commit  [Kyle Harrison]
-6328a4c9e  Snap: check tags before using them  [Kyle Harrison]
-0d16e99a4  Snap: Rip out hdr-need-1x option  [Kyle Harrison]
-12a8cbc3b  Removed littlemock dependency and cleanup  [Kyle Harrison]
-7c1fbdf53  Snap: Fix panorama layout  [Kyle Harrison]
-6996f964e  Snap: Arrange video menu so it's similar to photo menu  [Kyle Harrison]
-32915b5fe  Snap: Remove "help screen on first start" feature  [Kyle Harrison]
-197baa0b5  Snap: Fix filter mode button after disabling HDR mode  [Kyle Harrison]
-31ea44cfa  Snap: Fix swipe right to open menu  [Kyle Harrison]
-270a3e9c7  Snap: Don't close slide out menu after selecting scene mode  [Kyle Harrison]
-9a75a02cc  Snap: Adjust scene and filter mode layout dimensions  [Kyle Harrison]
-37518e015  Snap: Increase default pano capture pixels to 1440x1000  [Kyle Harrison]
-00d3b4671  Snap: Disable warped pano preview  [Kyle Harrison]
-afdfffa6c  Snap: Show remaining photos on initial start  [Kyle Harrison]
-fe9673b19  SnapdragonCamera: Add missing toast on HSR/HFR override  [Kyle Harrison]
-23607e34b  Snap: Don't do touch-to-focus on top of UI elements  [Kyle Harrison]
-ec4278e85  Snap: Render zoom circle in the center of the camera preview  [Kyle Harrison]
-aaee00bd5  SnapdragonCamera: Enforce 120ms delay in between shutter clicks  [Kyle Harrison]
-233a1cd02  SnapdragonCamera: Fix shutter button clicks in rapid succession getting ignored  [Kyle Harrison]
-81e034d8e  VideoModule: don't set negative HFR value  [Kyle Harrison]
-9194a83b8  ListPreference: prevent ArrayIndexOutOfBoundsException  [Kyle Harrison]
-83e0a380c  Protect against multiple shutter callbacks per frame in longshot mode.  [Kyle Harrison]
-538be2935  SnapdragonCamera: Longshot with Burst Functionality.  [Kyle Harrison]
-7196427c8  Snapdragon Camera: Use consistent API for preview fps reset  [Kyle Harrison]
-d96fe6b59  Camera: Set preview fps after recording.  [Kyle Harrison]
-8e840c4d7  Initialize focus overlay manager if it is not initialized.  [Kyle Harrison]
-88d3f62b1  Never ignore finger swipes in gallery mode  [Kyle Harrison]
-d9080dd2f  Snap: Simulate back button press when menu back button is pressed  [Kyle Harrison]
-7fd63c9a9  Always apply frame size reduction to panorama pictures  [Kyle Harrison]
-16a5889a9  Snap: Allow switching beyond just 2 cameras  [Kyle Harrison]
-47c02ade1  Snap: CaptureModule: check if ZSL is supported before using it  [Kyle Harrison]
-d59ea29e4  Snap: Detect and use Camera2 if available  [Kyle Harrison]
-3682ad368  Snap: prevent NPE when checking if controls are visible  [Kyle Harrison]
-9d1d9c4b1  Initialize focus manager in onResume().  [Kyle Harrison]
-ce4849ebc  Stop data loader on activity destroy.  [Kyle Harrison]
-1f0b1451b  CameraNext: Update focus behavior for panoramas  [Kyle Harrison]
-7d72e3d51  Make panorama able to go 270 degrees in landscape  [Kyle Harrison]
-2a1efb927  Grant read URI permission for playback of video capture  [Kyle Harrison]
-b5d6a1ef9  CameraNext: stop updating the pano progress bar on pause  [Kyle Harrison]
-b9b4ba972  CropActivity: notify MediaScanner on save complete  [Kyle Harrison]
-57431dbcb  Fix broken filenames for cropped images  [Kyle Harrison]
-69637f5eb  snap: Panorama fixes  [Kyle Harrison]
-2c437c0d8  Show UI when pano stitch starts and remove cancel condition  [Kyle Harrison]
-dfc813870  CameraNext: don't crash when pref is not boolean  [Kyle Harrison]
-a92fc23a5  CameraNext: Fallback to do copy exif if exif not exist  [Kyle Harrison]
-fa7db96df  Use material versions of share/delete/edit icons.  [Kyle Harrison]
-2f3da5ccd  De-uglify menu.  [Kyle Harrison]
-8ef67b17c  snap: Adjust top bar icon order  [Kyle Harrison]
-41a136b8a  Snap: Add icons to all scene modes  [Kyle Harrison]
-29f60c55b  Snap: Add icons to all remaining preferences  [Kyle Harrison]
-3c9cd4847  Remove unused menu indicators code.  [Kyle Harrison]
-dec6cbabb  Snap: Material toasts  [Kyle Harrison]
-493685a5d  Snap: Materialize  [Kyle Harrison]
-5abd105d0  Snap: grant android.permission.RECEIVE_BOOT_COMPLETED permisions  [Kyle Harrison]
-df2ef82f6  Snap: Fixes for advanced features and scene modes  [Kyle Harrison]
-46b6193e0  camera: Keep touch focus intact during back-to-back ZSL shots  [Kyle Harrison]
-b60f9dcd8  Camera2: Only autofocus before a snap if we are actually in "auto" mode.  [Kyle Harrison]
-e192105f0  Snap: Separate default focus time between camera/video  [Kyle Harrison]
-a269c603f  Snap: Add ability to set the tap-to-focus duration to 0 sec  [Kyle Harrison]
-a2f87858e  Snap: Add focus time support in camcorder  [Kyle Harrison]
-f2fb5195a  Snap: Expose video snapshot size setting  [Kyle Harrison]
-bd4594bd7  SnapdragonCamera: Unlock AE/AWB after taking a photo with ZSL  [Kyle Harrison]
-c410fd96a  SnapdragonCamera: Lock AE and AWB for tap-to-focus in camcorder  [Kyle Harrison]
-744726792  SnapdragonCamera: Always lock AE and AWB when auto-focus is used  [Kyle Harrison]
-9ce663f6d  SnapdragonCamera: Add focus-mode option to camcorder  [Kyle Harrison]
-36b141f2a  camera: Touch focus support for camcorder  [Kyle Harrison]
-4e02c2122  Add orientation correction for landscape devices  [Kyle Harrison]
-0c04705ea  Allow to re-open Snap from recent menu  [Kyle Harrison]
-c30ef5e9e  Snap: add auto-hdr option to photo menu  [Kyle Harrison]
-e890c4142  CameraNext: dynamically generate available photo resolutions  [Kyle Harrison]
-b028ab4a2  Snap: Remove storage menu if no external storage available  [Kyle Harrison]
-1756830be  snap: Add constrained longshot mode  [Kyle Harrison]
-ee67d43ff  Snap: Unbreak auto-HDR  [Kyle Harrison]
-37f62028f  Snap: Make developer menu more accessible  [Kyle Harrison]
-b476efd9e  Snap: Extend user menu, disable dev menu  [Kyle Harrison]
-3df48c99a  Snap: Support override maker and model exif tag  [Kyle Harrison]
-70b7ef039  Fix view index tracking.  [Kyle Harrison]
-8ab25e4e7  Snap: Fall back to REVIEW intent before VIEW intent  [Kyle Harrison]
-c4a0a8c2a  Snap: Do not crash when cur-focus-scale is null  [Kyle Harrison]
-c18065f3f  Snap: Fix incorrect preview layout surface size in landscape mode  [Kyle Harrison]
-a1733aaaa  Snap: Remove face detection option if not supported  [Kyle Harrison]
-e76fb978a  Snap: Remove video snapshot size when not supported  [Kyle Harrison]
-fb30b76de  Snap: Remove auto HDR option when not supported  [Kyle Harrison]
-36f3b9471  Snap: Fix filtering of unsupported HFR/HSR modes  [Kyle Harrison]
-5b487d6b9  SnapdragonCamera: Scale up bitrate for HSR recordings  [Kyle Harrison]
-3102d54fa  Snap: Don't crash if user saved preference is not valid  [Kyle Harrison]
-6c72a4f71  Fix crash if Exif-Tag buffer-length and component-count are both 0  [Kyle Harrison]
-f2a28d968  SnapdragonCamera: Set camera parameters before restarting preview  [Kyle Harrison]
-21143f547  Snap: Don't crash when hardcoded gallery intent fails  [Kyle Harrison]
-5ad5123f6  SnapdragonCamera: Fix UI alignment glitches when nav-bar is enabled  [Kyle Harrison]
-857e93f55  SnapdragonCamera: Remove 'off' option for antibanding  [Kyle Harrison]
-c7cc826c1  SnapdragonCamera: Fix overly-aggressive auto rotation  [Kyle Harrison]
-84dae818f  SnapdragonCamera: Add option to control antibanding in camcorder  [Kyle Harrison]
-4dd9ab066  Snap: Actually select the highest quality video by default  [Kyle Harrison]
-bb153af1e  Snap: Remove touch AF/AEC option  [Kyle Harrison]
-ab4e3277f  Snap: Support for HTC's HDR mode  [Kyle Harrison]
-851711097  Snap: Add special handling of hdr-mode parameter for LGE devices  [Kyle Harrison]
-d2cf0a241  Snap: Fix NPE when parameters.getSupportedVideoSizes() is null  [Kyle Harrison]
-29d78ad5e  Snap: Fix aapt warnings  [Kyle Harrison]
-b7e5c4697  Snap: Remove CAF Chinese translations  [Kyle Harrison]
-d02ef78c5  CameraActivity: Handle NPE when film strip view is null  [Kyle Harrison]
-15b91dfff  SnapdragonCamera: Fix incorrect viewfinder ratio for 13.1MP shots  [Kyle Harrison]
-9d33f7075  Snap: Fall back to default quality for invalid video qualities  [Kyle Harrison]
-00027a7ed  Snap: Add support for mw_continuous-picture focus mode  [Kyle Harrison]
-c52f20846  Snap: Add support for shutter speed  [Kyle Harrison]
-76d611489  Snap: Add touch-to-focus timeout duration settings  [Kyle Harrison]
-96cf5c30b  Snap: Make openLegacy an option  [Kyle Harrison]
-173fa6b81  Snap: Add options to restart preview onPictureTaken  [Kyle Harrison]
-2d3c17bc7  option to set manufacturer specific parameters on startup  [Kyle Harrison]
-37a475929  Snap: Add support for luminance-condition parameter  [Kyle Harrison]
-f3f705870  add support for non-standard iso keys and values  [Kyle Harrison]
-79b012662  Snap: Add support for additional ISO values  [Kyle Harrison]
-afa566cbb  SnapdragonCamera: Reset camera state after taking picture  [Kyle Harrison]
-7301d773c  Camera2: Add option to set max screen brightness  [Kyle Harrison]
-01cc591ed  Camera2: Headset shutter mode  [Kyle Harrison]
-e559640d9  Camera: Handle keys only while in app  [Kyle Harrison]
-bd0f9caea  Camera: Cleanup hardware key handling  [Kyle Harrison]
-1d99f1c69  Camera: Powerkey shutter (2/2)  [Kyle Harrison]
-92e44f95c  Camera: Change volume hard key button to zoom function  [Kyle Harrison]
-affe46e0d  Camera: separate settings for color effects  [Kyle Harrison]
-23a271195  Camera2: implement exposure compensation settings in video mode  [Kyle Harrison]
-014a4cc00  Camera2: Remove CAF video duration code  [Kyle Harrison]
-330ffe386  Camera2: some aapt warnings cleanup  [Kyle Harrison]
-91c7ccd47  Camera2: Don't report incorrect supported picture formats  [Kyle Harrison]
-52b1fe2a0  Camera: fix preview for landscape devices  [Kyle Harrison]
-bd3c4f3c8  camera: Remove ICS hack to stop preview after takePicture  [Kyle Harrison]
-c0cdb7e9f  Camera2: enable antibanding by default  [Kyle Harrison]
-f028c0306  camera: Check if video sizes are available  [Kyle Harrison]
-2cfbb28a3  Camera: Add red-eye flash mode support  [Kyle Harrison]
-d87dd03b0  camera: Add all focus modes, scene modes, and color effects.  [Kyle Harrison]
-647de8a8d  Camera: Cleanup and compatibility fixes  [Kyle Harrison]
-ba3e1d3a4  camera: Remove the luma-adaptation seekbar  [Kyle Harrison]
-27b00bd0f  camera: Add parameter debugging support  [Kyle Harrison]
-d9c1325f2  SnapdragonCamera: Hide UI after error-checking video preferences  [Kyle Harrison]
-caeda66cc  Snap: Re-enable ZSL after exiting HDR mode  [Kyle Harrison]
-5cc2501fc  SnapdragonCamera: Initialize overlay before control-by-intent  [Kyle Harrison]
-80377f25e  Snap: Remove old icons  [Kyle Harrison]
-e65b2073f  Snap: Use AOSP app label  [Kyle Harrison]
-6d0f3d006  tests: fix class name  [Kyle Harrison]
-042d75e82  Rename SnapdragonCamera to Snap  [Kyle Harrison]
-a096c6ba8  Revert "SnapdragonCamera: Add missing permissions"  [Kyle Harrison]
-76cd35d10  Revert "SnapdragonCamera: Reduce number of countdown timer option"  [Kyle Harrison]
-76a79c6f7  Revert "SnapdragonCamera: Forbid volume key can take picture"  [Kyle Harrison]
-c0c304c4e  Revert "Remove CameraDataCallback."  [Kyle Harrison]
-1a28dbff5  Fix NPE when removing RAW setting  [Kyle Harrison]
-   * packages/apps/Updater/
-c387126  Set OTA URL to github  [Kyle Harrison]
-c65871d  Updater : Remove buildtype check  [Kyle Harrison]
-   * system/sepolicy/
-96cc8fb8  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-969996c7  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
-   * vendor/lineage/
-0c73f64a  privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap  [Kyle Harrison]
-5ece4e57  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-924b0c29  Turn off secure ADB  [Kyle Harrison]
-
-====================
-     11-08-2019
-====================
-
-   * bootable/recovery/
-df127856  Make adb use a custom prop for adb root  [Luca Stefani]
-   * frameworks/base/
-f0717d6f1b7  PrivacyItemController: Enable permission hub by default  [Luca Stefani]
-b283bdc7634  Revert "DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar""  [Luca Stefani]
-2ab15045c01  Revert "DO NOT MERGE Remove Privacy Indicators"  [Luca Stefani]
-   * lineage/mirror/
-0fc494e  Updated to 08-Nov-2019 01:00 UTC  [Tim Schumacher]
+c40a9e8  Initial audio amplifier HAL  [Kyle Harrison]
    * lineage/wiki/
-68534e1  wiki: Add Xperia Z3 Compact  [Arian]
+ebf5263  wiki: river: Fix screen dimension validation  [kubersharma001]
+   * packages/apps/Jelly/
+e3fc596  Jelly: Add setting to print page  [Bruno Martins]
+   * packages/apps/LineageParts/
+12cc776  LineageParts: Migrate to Android.bp  [Bruno Martins]
    * packages/apps/Settings/
-82837f461c  Settings: Enable permission hub by default  [Luca Stefani]
-38910ef454  Revert "Remove Permissions Hub."  [Luca Stefani]
-fa572ee2ab  Add toggle to enable ADB root  [Luca Stefani]
-   * system/core/
-efc798df2  Make adb use a custom prop for adb root  [Luca Stefani]
-f8904e1d7  Add adb root hooks  [Luca Stefani]
-f89b27af7  Add adb_root daemon  [Luca Stefani]
+6921c1966a  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
+65655dd0a2  Settings: Use landscape qrcode scanner layout for sw600dp  [Łukasz Patron]
+   * packages/apps/Updater/
+a9e0618  Set OTA URL to github  [Kyle Harrison]
+668cb03  Updater : Remove buildtype check  [Kyle Harrison]
+   * system/sepolicy/
+50b4f227  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+893d3242  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+4721efab  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
    * vendor/lineage/
-06b93c07  Build adb_root  [Luca Stefani]
+a53de491  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+2dea29f1  Turn off secure ADB  [Kyle Harrison]
 
 ====================
-     11-07-2019
-====================
-
-   * lineage/hudson/
-74c66dd  hudson: Add Xperia Z3 Compact  [Arian]
-
-====================
-     11-06-2019
-====================
-
-   * hardware/lineage/interfaces/
-f59f921  wifi: Disable softAP MAC randomization by default  [Rashed Abdel-Tawab]
-   * lineage/hudson/
-add06e2  Regenerate device dependency mappings  [razorloves]
-
-====================
-     11-05-2019
-====================
-
-   * hardware/qcom-caf/common/
-27e52b3  fwk-detect: Relocate from vendor/qcom-opensource/core-utils  [Rashed Abdel-Tawab]
-   * system/core/
-282857e89  healthd: Reinitialize mChargerNames for every battery update  [PIPIPIG233666]
-   * vendor/codeaurora/telephony/
-cf07a22  Revert "IMS-VT: Low battery handling for Video calls"  [Rashed Abdel-Tawab]
-   * vendor/lineage/
-5c9d6c40  Revert "vendor: Add qcom platform type to soongs vars"  [Bruno Martins]
-   * vendor/motorola/
-b26393c  msm8916-common: Update qti telephony from LA.UM.8.6.r1-01900-89xx.0  [Kyle Harrison]
-
-====================
-     11-04-2019
-====================
-
-   * lineage-sdk/
-6cd66659  sdk: Mark PG settings as deprecated and remove related resources  [Bruno Martins]
-   * system/core/
-e9b949ddb  healthd: Add support for HVDCP_3 chargers  [PIPIPIG233666]
-   * tools/repohooks/
-6d340a1  hooks: add more bad Bug: test cases  [Mike Frysinger]
-
-====================
-     11-03-2019
+     11-16-2019
 ====================
    * android/
-89fd70d  lineage: Reenable lineage sepolicy  [Luca Stefani]
-e7fcfe4  manifest: Switch to our aosp sdm845 display hal  [razorloves]
+c3e87a1  manifest: android-10.0.0_r4 -> android-10.0.0_r11  [Kevin Haggerty]
    * build/make/
-70a259447  build: Remove su inclusion  [Luca Stefani]
+99f806e02  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
    * device/lineage/sepolicy/
-4ab5398  Add adb_root rules  [Bruno Martins]
-a3f0aa1  Kill su and sudaemon  [Luca Stefani]
+ccc533f  sepolicy: Label and address Trust's system variant denials  [theimpulson]
+cfac4c9  sepolicy: Label and address denials of livedisplay's system variant  [theimpulson]
+   * frameworks/av/
+18be5f26e  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
    * frameworks/base/
-10f3c002f22  Whitelist settings to use adb root permission  [Luca Stefani]
-7f2303f351a  Expose the ADBRoot interface to priv-apps  [Luca Stefani]
-   * lineage-sdk/
-ba27ffbb  SensitivePhoneNumbers: Load numbers only at first actual call to method  [Luca Stefani]
-1498ef90  SensitivePhoneNumbers: Convert to singleton class  [Luca Stefani]
-bf0d04e4  SensitivePn: Also hide international numbers  [Luca Stefani]
-b5462e36  SensitivePn: Take into account multiple SIMs for sensitive numbers  [Luca Stefani]
-f4e29681  sdk: Import SensitivePhoneNumbers  [Luca Stefani]
-   * lineage/hudson/
-b82436b  hudson: Promote Mido  [Aryan]
-   * lineage/mirror/
-5560112  Updated to 03-Nov-2019 03:52 UTC  [Kevin F. Haggerty]
-e0e9245  Updated to 03-Nov-2019 03:34 UTC  [Kevin F. Haggerty]
+8718f0e0542  qs: tiles: fix adb over network tile after aaba8ef289dee0c143b3dc0fe47e6b9595f22c65  [Kevin F. Haggerty]
+80d8b6467ec  Merge android-10.0.0_r11 into lineage-17.0  [Kevin F. Haggerty]
+9b48a29cca5  fingerprint: handle PerformanceStats NULL pointers  [Michael Bestas]
+   * hardware/interfaces/
+8636e3b90  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
    * lineage/wiki/
-89d69e9  wiki: Promote Mido  [Toni Ananta]
-   * packages/apps/LineageParts/
-45dca1b  Kill privacy guard  [Luca Stefani]
-   * packages/apps/Settings/
-e6232cf641  VolumePanel: fix showing notification volume slider when unlinked  [Bruno Martins]
-   * packages/apps/Trebuchet/
-b6b08cb11  Trebuchet: update feed lib  [Bruno Martins]
-4cc9599aa  Fix search bar incorrectly positioned after swiping up to home  [Bruno Martins]
-8bb98420d  Launcher3: Retrieve the searchbar padding from device profile  [Bruno Martins]
+a9db3d1  wiki: Update jekyll to 3.8.5  [Nolen Johnson]
+52c4945  wiki: Add dimension and network data validation  [Nolen Johnson]
+   * packages/apps/Bluetooth/
+901df0824  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+   * packages/apps/Jelly/
+a0245c8  Jelly: Automatic re-format of the code  [Luca Stefani]
+   * packages/providers/DownloadProvider/
+481de757  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+   * packages/providers/MediaProvider/
+ead9596  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+   * packages/providers/TelephonyProvider/
+35c01e3  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
    * packages/services/Telecomm/
-2034bff7  Telecom: Convert to using singleton class  [Luca Stefani]
-fdb7097c  Telecom: Add sensitive phone numbers hooks  [Luca Stefani]
-   * system/core/
-0e2caff9e  logcat: Map '-C' to 'logcat -v color'  [Bruno Martins]
+7696e2ac  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+   * packages/services/Telephony/
+8024da30f  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+   * system/bt/
+0013928ff  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+
+====================
+     11-15-2019
+====================
+
+   * frameworks/base/
+67ffb9a81e0  PackageManager: allow build-time disabling of components  [Nolen Johnson]
+   * frameworks/opt/telephony/
+4be78fa0d  Telephony: Fix out of boundary for non telephony device.  [Bruno Martins]
+   * lineage-sdk/
+50760500  lineage-sdk: Bump PREF_HAS_MIGRATED_LINEAGE_SETTINGS for 17.0  [Rashed Abdel-Tawab]
+   * vendor/lineage/
+20621834  lineage: GMS updater components disable list bringup  [Rashed Abdel-Tawab]
+55548eb8  vendor: Rename config_disabledComponents  [Rashed Abdel-Tawab]
+
+====================
+     11-14-2019
+====================
+
+   * device/lineage/sepolicy/
+8ca697b  sepolicy: Move hal_lineage_livedisplay_sysfs rule to proper location  [LuK1337]
+521a64f  sepolicy: allow sysfs livedisplay hal read privs to sysfs_graphics dirs  [Rashed Abdel-Tawab]
+   * frameworks/base/
+aaef70a4875  SystemUI: Allow disabling BrightlineFalsingManager with config flag  [Arne Coucheron]
+   * lineage/wiki/
+729b811  wiki: Add moto G7 (river)  [Erfan Abdi]
+   * packages/apps/Settings/
+3c0e553c13  Remove empty space in tether preference  [Rashed Abdel-Tawab]
+   * packages/apps/Snap/
+29bccbb0a  Snap: Don't spam exceptions  [Han Wang]
+   * packages/apps/Trebuchet/
+643a390b6  Globally disable debug logging  [Arne Coucheron]
+
+====================
+     11-13-2019
+====================
+
+   * lineage/hudson/
+a038383  hudson: Add moto G7 (river)  [Erfan Abdi]
+   * lineage/mirror/
+4389755  Updated to 13-Nov-2019 03:41 UTC  [Kevin F. Haggerty]
+   * packages/apps/FMRadio/
+162046a  jni: Add broadcom FM to the guard  [Arian]
+   * system/sepolicy/
+6f3bc549  sepolicy: Optionally build sepolicy_freeze_test  [Wang Han]
+
+====================
+     11-12-2019
+====================
+
+   * lineage/scripts/
+ac419fa  Update default webview to 78.0.3904.96  [Kevin F. Haggerty]
+   * vendor/lineage/
+cca50fea  privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap  [Łukasz Patron]
+
+====================
+     11-11-2019
+====================
+
+   * hardware/qcom-caf/msm8998/display/
+ce08c33d2  sdm: add board flag for panel shift  [celtare21]
+   * packages/apps/Dialer/
+6fbf058e8  Fix crash in call stats.  [Danny Baumann]
+   * packages/apps/Snap/
+8b25286e7  Snap: Don't query camera hardware on camera button action  [LuK1337]
+fd3f92a5b  Snap: Grant android.permission.START_ACTIVITIES_FROM_BACKGROUND  [LuK1337]
 
