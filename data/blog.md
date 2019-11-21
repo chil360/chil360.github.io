@@ -1,3 +1,14 @@
+### Havoc OS 3.0
+
+**Download:** [Havoc-OS-v3.0-20191121-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191121-osprey-Unofficial.zip/download)
+
+New build with latest sources which adds back some more features including animations and battery styles.
+
+**Device changes:**
+- More sepolicy updates
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191117-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191117-UNOFFICIAL-osprey.zip/download)
@@ -98,16 +109,4 @@ First Android 10 build of Havoc 3.0 for Osprey.
 - Wellbeing fix
 - Disable Codec2 (Youtube fix - Credit to @DanGLES3)
 - Additional ims/telephony commits
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191019-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191019-UNOFFICIAL-osprey.zip/download)
-
-**ROM updates include:**
-- October ASB
-- Command line tools
-- Add FM Radio support (repopicked)
-- Add Trebuchet launcher (repopicked)
 
