@@ -1,3 +1,12 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191124-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191124-UNOFFICIAL-osprey.zip/download)
+
+**Device changes:**
+- More sepolicy updates
+
+<hr>
+
 ### Havoc OS 3.0
 
 **Download:** [Havoc-OS-v3.0-20191121-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191121-osprey-Unofficial.zip/download)
@@ -98,15 +107,4 @@ Built from latest Lineage 17.0 sources plus repoick Snap from gerrit.
 **Mirror (SourceForge):** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191028-osprey-Unofficial.zip/download)
 
 First Android 10 build of Havoc 3.0 for Osprey.
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191026-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191026-UNOFFICIAL-osprey.zip/download)
-
-**Device changes:**
-- Wellbeing fix
-- Disable Codec2 (Youtube fix - Credit to @DanGLES3)
-- Additional ims/telephony commits
 

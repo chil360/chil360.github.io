@@ -1,150 +1,173 @@
 ====================
-     11-17-2019
+     11-24-2019
 ====================
 
    * build/make/
-bfdf52f47  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-9ebd83b29  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-f55365023  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-3d442629e  releasetools: squash backuptool support  [Kyle Harrison]
-46489e81b  Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful  [Łukasz Patron]
-2aee07bbb  core: allow specifying building ramdisk(s) with lzma  [Arne Coucheron]
+ba9e9ffbe  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+270cf9dbf  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+972c6f1f4  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+c3c2fa056  releasetools: squash backuptool support  [Kyle Harrison]
    * build/soong/
-47ec8903  soong: Add function to return camera parameters library name  [Kyle Harrison]
+6c8f8747  soong: Add function to return camera parameters library name  [Kyle Harrison]
+   * device/motorola/msm8916-common/
+168b712  msm8916-common: sepolicy: Allow rild to access /proc/bootinfo  [Kyle Harrison]
+8cb7091  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
+6b1bf66  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
+693ef95  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
+055323c  msm8916-common: sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
+29f7c92  msm8916-common: sepolicy: Allow access to V4L subdev nodes  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-8c745f9  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+e3756f5  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
    * frameworks/av/
-599ab02c0  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
+869752214  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
    * frameworks/base/
-2adccbdce6b  SystemUI: Add visualizer feature  [Kyle Harrison]
-091f2e21eb3  Keyguard: Allow disabling fingerprint wake-and-unlock  [Michael Bestas]
-b741caaeb38  Telephony: Direct return false for unsupport sms platform.  [Bruno Martins]
-f3c12f7bc47  SystemUI: add left and right virtual buttons while typing  [Bruno Martins]
-f1bbf242b08  SystemUI: Advanced location tile  [Bruno Martins]
-e7f3c30e243  SystemUI: Enable and fix QS detail view, adapt layout to 10  [Bruno Martins]
+b225f1993db  SystemUI: Add visualizer feature  [Kyle Harrison]
    * hardware/lineage/interfaces/
-c40a9e8  Initial audio amplifier HAL  [Kyle Harrison]
-   * lineage/wiki/
-ebf5263  wiki: river: Fix screen dimension validation  [kubersharma001]
-   * packages/apps/Jelly/
-e3fc596  Jelly: Add setting to print page  [Bruno Martins]
-   * packages/apps/LineageParts/
-12cc776  LineageParts: Migrate to Android.bp  [Bruno Martins]
+76cd04c  Initial audio amplifier HAL  [Kyle Harrison]
    * packages/apps/Settings/
-6921c1966a  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-65655dd0a2  Settings: Use landscape qrcode scanner layout for sw600dp  [Łukasz Patron]
+1c78bc47cb  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
    * packages/apps/Updater/
-a9e0618  Set OTA URL to github  [Kyle Harrison]
-668cb03  Updater : Remove buildtype check  [Kyle Harrison]
+82e134b  Set OTA URL to github  [Kyle Harrison]
+25b3dd9  Updater : Remove buildtype check  [Kyle Harrison]
    * system/sepolicy/
-50b4f227  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
-893d3242  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
-4721efab  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+7648bc43  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
+c90b32be  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
+5bf85263  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+5a2f15a0  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+7ed5050d  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
    * vendor/lineage/
-a53de491  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-2dea29f1  Turn off secure ADB  [Kyle Harrison]
+a1db92d3  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+2a4a666c  Turn off secure ADB  [Kyle Harrison]
 
 ====================
-     11-16-2019
+     11-23-2019
 ====================
    * android/
-c3e87a1  manifest: android-10.0.0_r4 -> android-10.0.0_r11  [Kevin Haggerty]
-   * build/make/
-99f806e02  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+631da33  lineage: ThemePicker is our new best friend  [Luca Stefani]
    * device/lineage/sepolicy/
-ccc533f  sepolicy: Label and address Trust's system variant denials  [theimpulson]
-cfac4c9  sepolicy: Label and address denials of livedisplay's system variant  [theimpulson]
-   * frameworks/av/
-18be5f26e  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
+1f11b66  Remove Style API related rules  [Bruno Martins]
+   * device/motorola/msm8916-common/
+a7634c4  msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment  [Kyle Harrison]
    * frameworks/base/
-8718f0e0542  qs: tiles: fix adb over network tile after aaba8ef289dee0c143b3dc0fe47e6b9595f22c65  [Kevin F. Haggerty]
-80d8b6467ec  Merge android-10.0.0_r11 into lineage-17.0  [Kevin F. Haggerty]
-9b48a29cca5  fingerprint: handle PerformanceStats NULL pointers  [Michael Bestas]
-   * hardware/interfaces/
-8636e3b90  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * lineage/wiki/
-a9db3d1  wiki: Update jekyll to 3.8.5  [Nolen Johnson]
-52c4945  wiki: Add dimension and network data validation  [Nolen Johnson]
-   * packages/apps/Bluetooth/
-901df0824  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * packages/apps/Jelly/
-a0245c8  Jelly: Automatic re-format of the code  [Luca Stefani]
-   * packages/providers/DownloadProvider/
-481de757  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * packages/providers/MediaProvider/
-ead9596  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * packages/providers/TelephonyProvider/
-35c01e3  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * packages/services/Telecomm/
-7696e2ac  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * packages/services/Telephony/
-8024da30f  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-   * system/bt/
-0013928ff  Merge tag 'android-10.0.0_r11' into lineage-17.0  [Kevin F. Haggerty]
-
-====================
-     11-15-2019
-====================
-
-   * frameworks/base/
-67ffb9a81e0  PackageManager: allow build-time disabling of components  [Nolen Johnson]
+3a53c693c45  etc: Add privapp whitelist permissions for ThemePicker  [Bruno Martins]
+353ca94b0c5  Revert "Disable ClockOptionsProvider so clocks don't appear in picker app"  [Bruno Martins]
+e4a6d332770  Revert "Disable custom clock faces in SystemUI"  [Bruno Martins]
    * frameworks/opt/telephony/
-4be78fa0d  Telephony: Fix out of boundary for non telephony device.  [Bruno Martins]
-   * lineage-sdk/
-50760500  lineage-sdk: Bump PREF_HAS_MIGRATED_LINEAGE_SETTINGS for 17.0  [Rashed Abdel-Tawab]
-   * vendor/lineage/
-20621834  lineage: GMS updater components disable list bringup  [Rashed Abdel-Tawab]
-55548eb8  vendor: Rename config_disabledComponents  [Rashed Abdel-Tawab]
-
-====================
-     11-14-2019
-====================
-
-   * device/lineage/sepolicy/
-8ca697b  sepolicy: Move hal_lineage_livedisplay_sysfs rule to proper location  [LuK1337]
-521a64f  sepolicy: allow sysfs livedisplay hal read privs to sysfs_graphics dirs  [Rashed Abdel-Tawab]
-   * frameworks/base/
-aaef70a4875  SystemUI: Allow disabling BrightlineFalsingManager with config flag  [Arne Coucheron]
+5eaa9c500  2G wants proper signal strength too  [Arne Coucheron]
+0661e05d1  Fix Issue Where SignalStrengthGsm is null  [Arne Coucheron]
+2bd62cb6d  Migrate GSM SignalStrength to WCDMA on HAL 1.0  [Arne Coucheron]
    * lineage/wiki/
-729b811  wiki: Add moto G7 (river)  [Erfan Abdi]
-   * packages/apps/Settings/
-3c0e553c13  Remove empty space in tether preference  [Rashed Abdel-Tawab]
-   * packages/apps/Snap/
-29bccbb0a  Snap: Don't spam exceptions  [Han Wang]
+5730c1a  wiki: Fix conditional for devices without a screen  [razorloves]
+7232d00  wiki: Display the screen size in deviceinfo sidebar  [razorloves]
    * packages/apps/Trebuchet/
-643a390b6  Globally disable debug logging  [Arne Coucheron]
-
-====================
-     11-13-2019
-====================
-
-   * lineage/hudson/
-a038383  hudson: Add moto G7 (river)  [Erfan Abdi]
-   * lineage/mirror/
-4389755  Updated to 13-Nov-2019 03:41 UTC  [Kevin F. Haggerty]
-   * packages/apps/FMRadio/
-162046a  jni: Add broadcom FM to the guard  [Arian]
-   * system/sepolicy/
-6f3bc549  sepolicy: Optionally build sepolicy_freeze_test  [Wang Han]
-
-====================
-     11-12-2019
-====================
-
-   * lineage/scripts/
-ac419fa  Update default webview to 78.0.3904.96  [Kevin F. Haggerty]
+c1f21bf30  Don't discard custom grid on config changes  [LuK1337]
+5e7e70989  Specify the component name to start the picker  [Bruno Martins]
+69bef6875  Specify the wallpaper picker package  [Bruno Martins]
+292a57d52  Properly expose GridOptionsProvider  [Bruno Martins]
+f3e95d971  Revert "Add developer options for grid change for Styles"  [Bruno Martins]
+fd7ec8c40  Revert "Launcher3: Export GridOptionsProvider"  [Bruno Martins]
    * vendor/lineage/
-cca50fea  privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap  [Łukasz Patron]
+e5df0f0c  Add Settings overlay for theme picker.  [Bruno Martins]
+a8f45e99  Revert "lineage: add BUILD_RRO_SYSTEM_PACKAGE target"  [Bruno Martins]
+315e2450  Revert "vendor: add style api"  [Bruno Martins]
+9a30c84e  ThemePicker: Do not override default values  [Bruno Martins]
+ff7657bc  Revert "privapp-permissions: Whitelist CHANGE_OVERLAY_PACKAGES permission"  [Bruno Martins]
+493bcc95  ThemePicker: show our apps in icon previews  [Bruno Martins]
+31264cdd  Build Lineage Themes stub package  [Bruno Martins]
+c34e5f5a  Add overlay to specify our custom theme provider  [Bruno Martins]
+406b4dc8  Build ThemePicker  [Bruno Martins]
+d5e35c9d  repopick: fix --check-picked on Python 3  [Simon Shields]
 
 ====================
-     11-11-2019
+     11-22-2019
+====================
+   * android/
+787e7b7  manifest: Kill LineageCustomizer  [Nolen Johnson]
+   * frameworks/base/
+1a2b5083554  SystemUI: Add VPN tile  [Rashed Abdel-Tawab]
+   * frameworks/opt/net/wifi/
+41bb6bf83  wifi: Not reset country code for Dual SIM if any slot is active  [Bruno Martins]
+   * lineage/mirror/
+cf5035e  Updated to 22-Nov-2019 01:00 UTC  [Tim Schumacher]
+   * packages/apps/Settings/
+4c5cdf4d00  Don't change nouns in summaries to lower case for German  [Danny Baumann]
+   * packages/apps/ThemePicker/
+2847a60  ThemePicker: limit number of icon previews shown  [Bruno Martins]
+
+====================
+     11-21-2019
 ====================
 
-   * hardware/qcom-caf/msm8998/display/
-ce08c33d2  sdm: add board flag for panel shift  [celtare21]
+   * frameworks/base/
+da3d7d8d886  SystemUI: Fix default mShowCursorKeys value (again)  [Łukasz Patron]
+   * lineage-sdk/
+4eeac2c9  sdk: Nuke Berry Styles  [Bruno Martins]
+   * lineage/wiki/
+2a13ece  wiki: Re-add recovery install template for Huawei  [razorloves]
    * packages/apps/Dialer/
-6fbf058e8  Fix crash in call stats.  [Danny Baumann]
-   * packages/apps/Snap/
-8b25286e7  Snap: Don't query camera hardware on camera button action  [LuK1337]
-fd3f92a5b  Snap: Grant android.permission.START_ACTIVITIES_FROM_BACKGROUND  [LuK1337]
+2785932ca  Enable call recording for China  [Aleksandar K]
+   * packages/apps/LineageParts/
+7b53f9e  Parts: Ditch Styles in favour of ThemePicker  [Bruno Martins]
+   * packages/apps/WallpaperPicker2/
+9670f0d  Disable launcher icon  [LuK1337]
+   * packages/overlays/Lineage/
+4b907fb  accents: Redo for compatibility with ThemePicker  [Bruno Martins]
+beb6cac  Kill dark and black overlays  [Bruno Martins]
+be5a76e  Add initial stub apk for themes  [Bruno Martins]
+   * vendor/lineage/
+15d91cd2  kernel: Only build dtb.img if prebuilt DTB directory is not set  [Rashed Abdel-Tawab]
+
+====================
+     11-20-2019
+====================
+
+   * external/e2fsprogs/
+5d709bde  Ignore -Wno-pointer-sign warnings  [Michael Bestas]
+   * external/exfat/
+bd0f601  Ignore unused parameter warnings  [Michael Bestas]
+   * external/json-c/
+76ff6c3  Ignore unused parameter warnings  [Michael Bestas]
+   * external/ntfs-3g/
+1baaa4bf  Ignore Waddress-of-packed-member warnings  [Michael Bestas]
+   * hardware/nxp/nfc/
+c2b5df7  Ignore implicit fall-through warnings  [Michael Bestas]
+   * hardware/qcom-caf/msm8998/audio/
+734e94cfc  audio_amplifier: Use log/log.h instead of cutils/log.h  [Michael Bestas]
+17d6d6bc8  ultrasound: Use log/log.h instead of cutils/log.h  [Michael Bestas]
+   * lineage/hudson/
+c153773  Regenerate device dependency mappings  [razorloves]
+   * lineage/mirror/
+3577a7d  Updated to 20-Nov-2019 04:41 UTC  [Kevin F. Haggerty]
+
+====================
+     11-19-2019
+====================
+
+   * bootable/recovery/
+f56b67d3  recovery: Provide caching for sideload files  [Michael Bestas]
+   * frameworks/base/
+14f8a0a8b72  Revert "SystemUI: Update the media notification only when needed"  [Luca Stefani]
+   * packages/apps/Bluetooth/
+19bd7966f  Delete unused common.android.emailcommon package.  [Michael Bestas]
+   * system/core/
+03d0f5502  Revert "init: Run vendor-specific init hooks on post-fs"  [Łukasz Patron]
+62ef77c8d  Create /data/adbroot on post-fs-data  [Bruno Martins]
+f0f312a8c  adb: host: Provide better sideload status  [Michael Bestas]
+
+====================
+     11-18-2019
+====================
+   * android/
+0decb09  manifest: Switch to our fork of e2fsprogs  [Bruno Martins]
+   * external/e2fsprogs/
+245223d2  resize: Make a target for standalone resize2fs_static binary  [Łukasz Patron]
+   * lineage/wiki/
+8f7b282  Ignore more files for _site  [Michael W]
+bf2e20d  wiki: Remove unsued file update.sh  [Michael W]
+   * packages/apps/Dialer/
+248db27d1  Base 'call recording allowed' decision on current country.  [Danny Baumann]
+   * system/core/
+85a9fd3fd  healthd: allow custom charger images  [Daniel Hillenbrand]
+   * vendor/qcom/opensource/data-ipa-cfg-mgr/
+bde4782  ipacm: Address ipacm start failure  [dianlujitao]
 
