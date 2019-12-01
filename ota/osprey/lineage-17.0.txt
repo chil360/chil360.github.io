@@ -1,173 +1,157 @@
 ====================
-     11-24-2019
-====================
-
-   * build/make/
-ba9e9ffbe  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-270cf9dbf  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-972c6f1f4  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-c3c2fa056  releasetools: squash backuptool support  [Kyle Harrison]
-   * build/soong/
-6c8f8747  soong: Add function to return camera parameters library name  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-168b712  msm8916-common: sepolicy: Allow rild to access /proc/bootinfo  [Kyle Harrison]
-8cb7091  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
-6b1bf66  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
-693ef95  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
-055323c  msm8916-common: sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
-29f7c92  msm8916-common: sepolicy: Allow access to V4L subdev nodes  [Kyle Harrison]
-   * device/qcom/sepolicy-legacy/
-e3756f5  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
-   * frameworks/av/
-869752214  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
-   * frameworks/base/
-b225f1993db  SystemUI: Add visualizer feature  [Kyle Harrison]
-   * hardware/lineage/interfaces/
-76cd04c  Initial audio amplifier HAL  [Kyle Harrison]
-   * packages/apps/Settings/
-1c78bc47cb  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-   * packages/apps/Updater/
-82e134b  Set OTA URL to github  [Kyle Harrison]
-25b3dd9  Updater : Remove buildtype check  [Kyle Harrison]
-   * system/sepolicy/
-7648bc43  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
-c90b32be  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
-5bf85263  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
-5a2f15a0  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
-7ed5050d  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-   * vendor/lineage/
-a1db92d3  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-2a4a666c  Turn off secure ADB  [Kyle Harrison]
-
-====================
-     11-23-2019
-====================
-   * android/
-631da33  lineage: ThemePicker is our new best friend  [Luca Stefani]
-   * device/lineage/sepolicy/
-1f11b66  Remove Style API related rules  [Bruno Martins]
-   * device/motorola/msm8916-common/
-a7634c4  msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment  [Kyle Harrison]
-   * frameworks/base/
-3a53c693c45  etc: Add privapp whitelist permissions for ThemePicker  [Bruno Martins]
-353ca94b0c5  Revert "Disable ClockOptionsProvider so clocks don't appear in picker app"  [Bruno Martins]
-e4a6d332770  Revert "Disable custom clock faces in SystemUI"  [Bruno Martins]
-   * frameworks/opt/telephony/
-5eaa9c500  2G wants proper signal strength too  [Arne Coucheron]
-0661e05d1  Fix Issue Where SignalStrengthGsm is null  [Arne Coucheron]
-2bd62cb6d  Migrate GSM SignalStrength to WCDMA on HAL 1.0  [Arne Coucheron]
-   * lineage/wiki/
-5730c1a  wiki: Fix conditional for devices without a screen  [razorloves]
-7232d00  wiki: Display the screen size in deviceinfo sidebar  [razorloves]
-   * packages/apps/Trebuchet/
-c1f21bf30  Don't discard custom grid on config changes  [LuK1337]
-5e7e70989  Specify the component name to start the picker  [Bruno Martins]
-69bef6875  Specify the wallpaper picker package  [Bruno Martins]
-292a57d52  Properly expose GridOptionsProvider  [Bruno Martins]
-f3e95d971  Revert "Add developer options for grid change for Styles"  [Bruno Martins]
-fd7ec8c40  Revert "Launcher3: Export GridOptionsProvider"  [Bruno Martins]
-   * vendor/lineage/
-e5df0f0c  Add Settings overlay for theme picker.  [Bruno Martins]
-a8f45e99  Revert "lineage: add BUILD_RRO_SYSTEM_PACKAGE target"  [Bruno Martins]
-315e2450  Revert "vendor: add style api"  [Bruno Martins]
-9a30c84e  ThemePicker: Do not override default values  [Bruno Martins]
-ff7657bc  Revert "privapp-permissions: Whitelist CHANGE_OVERLAY_PACKAGES permission"  [Bruno Martins]
-493bcc95  ThemePicker: show our apps in icon previews  [Bruno Martins]
-31264cdd  Build Lineage Themes stub package  [Bruno Martins]
-c34e5f5a  Add overlay to specify our custom theme provider  [Bruno Martins]
-406b4dc8  Build ThemePicker  [Bruno Martins]
-d5e35c9d  repopick: fix --check-picked on Python 3  [Simon Shields]
-
-====================
-     11-22-2019
-====================
-   * android/
-787e7b7  manifest: Kill LineageCustomizer  [Nolen Johnson]
-   * frameworks/base/
-1a2b5083554  SystemUI: Add VPN tile  [Rashed Abdel-Tawab]
-   * frameworks/opt/net/wifi/
-41bb6bf83  wifi: Not reset country code for Dual SIM if any slot is active  [Bruno Martins]
-   * lineage/mirror/
-cf5035e  Updated to 22-Nov-2019 01:00 UTC  [Tim Schumacher]
-   * packages/apps/Settings/
-4c5cdf4d00  Don't change nouns in summaries to lower case for German  [Danny Baumann]
-   * packages/apps/ThemePicker/
-2847a60  ThemePicker: limit number of icon previews shown  [Bruno Martins]
-
-====================
-     11-21-2019
-====================
-
-   * frameworks/base/
-da3d7d8d886  SystemUI: Fix default mShowCursorKeys value (again)  [Łukasz Patron]
-   * lineage-sdk/
-4eeac2c9  sdk: Nuke Berry Styles  [Bruno Martins]
-   * lineage/wiki/
-2a13ece  wiki: Re-add recovery install template for Huawei  [razorloves]
-   * packages/apps/Dialer/
-2785932ca  Enable call recording for China  [Aleksandar K]
-   * packages/apps/LineageParts/
-7b53f9e  Parts: Ditch Styles in favour of ThemePicker  [Bruno Martins]
-   * packages/apps/WallpaperPicker2/
-9670f0d  Disable launcher icon  [LuK1337]
-   * packages/overlays/Lineage/
-4b907fb  accents: Redo for compatibility with ThemePicker  [Bruno Martins]
-beb6cac  Kill dark and black overlays  [Bruno Martins]
-be5a76e  Add initial stub apk for themes  [Bruno Martins]
-   * vendor/lineage/
-15d91cd2  kernel: Only build dtb.img if prebuilt DTB directory is not set  [Rashed Abdel-Tawab]
-
-====================
-     11-20-2019
-====================
-
-   * external/e2fsprogs/
-5d709bde  Ignore -Wno-pointer-sign warnings  [Michael Bestas]
-   * external/exfat/
-bd0f601  Ignore unused parameter warnings  [Michael Bestas]
-   * external/json-c/
-76ff6c3  Ignore unused parameter warnings  [Michael Bestas]
-   * external/ntfs-3g/
-1baaa4bf  Ignore Waddress-of-packed-member warnings  [Michael Bestas]
-   * hardware/nxp/nfc/
-c2b5df7  Ignore implicit fall-through warnings  [Michael Bestas]
-   * hardware/qcom-caf/msm8998/audio/
-734e94cfc  audio_amplifier: Use log/log.h instead of cutils/log.h  [Michael Bestas]
-17d6d6bc8  ultrasound: Use log/log.h instead of cutils/log.h  [Michael Bestas]
-   * lineage/hudson/
-c153773  Regenerate device dependency mappings  [razorloves]
-   * lineage/mirror/
-3577a7d  Updated to 20-Nov-2019 04:41 UTC  [Kevin F. Haggerty]
-
-====================
-     11-19-2019
+     12-01-2019
 ====================
 
    * bootable/recovery/
-f56b67d3  recovery: Provide caching for sideload files  [Michael Bestas]
+34e59897  recovery: symlink /sbin for script compatibility  [Michael Bestas]
+c7619ba6  recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy  [Michael Bestas]
+90a3fde3  recovery: Get a proper shell environment in recovery  [Michael Bestas]
+   * build/make/
+e66af6ddf  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+f6f849077  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+0899fc85f  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+707bcf7ba  releasetools: squash backuptool support  [Kyle Harrison]
+   * build/soong/
+a88b3f5a  soong: Add function to return camera parameters library name  [Kyle Harrison]
+   * device/qcom/sepolicy-legacy/
+24eb202  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+   * frameworks/av/
+fbd6fb518  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
    * frameworks/base/
-14f8a0a8b72  Revert "SystemUI: Update the media notification only when needed"  [Luca Stefani]
-   * packages/apps/Bluetooth/
-19bd7966f  Delete unused common.android.emailcommon package.  [Michael Bestas]
-   * system/core/
-03d0f5502  Revert "init: Run vendor-specific init hooks on post-fs"  [Łukasz Patron]
-62ef77c8d  Create /data/adbroot on post-fs-data  [Bruno Martins]
-f0f312a8c  adb: host: Provide better sideload status  [Michael Bestas]
+3e2f1f7c6b1  SystemUI: Add visualizer feature  [Kyle Harrison]
+   * frameworks/native/
+309c54509  libui: Extend adb95ae to Gralloc3  [Michael Bestas]
+4828cad2d  libui: Allow invalid bits from callers conditionally  [Michael Bestas]
+   * hardware/lineage/interfaces/
+2b12f86  Initial audio amplifier HAL  [Kyle Harrison]
+   * packages/apps/Settings/
+2296dc1229  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
+   * packages/apps/Updater/
+af9cfb7  Set OTA URL to github  [Kyle Harrison]
+afe3361  Updater : Remove buildtype check  [Kyle Harrison]
+   * system/sepolicy/
+2cd2efe6  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
+c9c4c525  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
+18c16077  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+69261503  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+eabf01bc  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+   * vendor/lineage/
+1d228935  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+c4601dee  Turn off secure ADB  [Kyle Harrison]
+ee283b08  prebuilt: Remove lineage-governor.rc  [Michael Bestas]
+2838e8ae  config: Mark more gralloc bits as valid  [Michael Bestas]
 
 ====================
-     11-18-2019
+     11-30-2019
+====================
+
+   * art/
+2e6741974c  Protect/Unprotect regions (region space) only in debug build  [Luca Stefani]
+   * frameworks/base/
+79647b9f73c  Update NotificationRecord of snooze even after it is cancelled  [Luca Stefani]
+c6aee9316a9  Limit the retry attemps on restarting Bluetooth  [Luca Stefani]
+ee9739cd7ef  Services exit fg when bg-restricted app leaves top  [Luca Stefani]
+a41c9222264  core/Build: ro.system when comparing fingerprint  [Bruno Martins]
+7c7ad3ae1e5  Prevent NFE in SystemUI when parsing invalid int  [Bruno Martins]
+   * packages/apps/Jelly/
+12ca6af  Jelly: Use try-with-resource  [Luca Stefani]
+   * packages/apps/Settings/
+4d325bf9ab  Prevent null point exception  [Wang Han]
+8ae9167953  Settings: Respect preference's visibility in VideoPreferenceController, take 2  [Wang Han]
+
+====================
+     11-29-2019
+====================
+
+   * bionic/
+b7a7f5ae7  Optimize tolower(3)/toupper(3) from <ctype.h>.  [Luca Stefani]
+   * frameworks/base/
+235ba69da8b  ADBRootService: Remove redundant permission check  [Luca Stefani]
+6fb1a7cd962  ADBRootService: Deal with binder death  [Luca Stefani]
+   * lineage/wiki/
+369f2b1  wiki: add Samsung Galaxy S III Neo Dual Sim  [razorloves]
+   * packages/apps/Settings/
+93e039b789  Settings: Remove ADBROOT permission from manifest  [Luca Stefani]
+71cd5cdb9c  Settings: Mark adb root toggle as non-persistent  [Luca Stefani]
+   * packages/apps/Trebuchet/
+268e37a98  Enable swipe down to open shade for non userdebug population  [Luca Stefani]
+   * system/core/
+b91788b3c  adb_root: Restart adbd when turning off root  [Luca Stefani]
+43ab18e63  adb_root: Add mutex to binder interface  [Luca Stefani]
+2b525c22d  adb_root: Enforce caller UID  [Luca Stefani]
+a2ea48af5  adbd: Make adbroot interface a static lib  [Luca Stefani]
+37c21bf97  adbd: Initialize adbroot status to false  [Luca Stefani]
+
+====================
+     11-28-2019
+====================
+
+   * bionic/
+0cbc6b0e2  ASCII fastpath for towupper and towlower.  [Luca Stefani]
+   * device/qcom/sepolicy-legacy-um/
+0e4e18ef  connectivity: provide dataservice app radio file permissions.  [Michael Bestas]
+b38683ce  sdm660: Label sysfs_uio_file  [Michael Bestas]
+24030408  sdm660: Label sysfs_ssr_toggle  [Michael Bestas]
+   * lineage/hudson/
+1411c40  hudson: add Samsung Galaxy S III Neo Dual SIM variant  [Francescodario Cuzzocrea]
+   * packages/apps/ThemePicker/
+913dcd3  ThemePicker: Fix font sample margin/padding  [LuK1337]
+4f2b73e  ThemePicker: Enable vertical scrollbar for options container  [LuK1337]
+   * packages/apps/WallpaperPicker2/
+47ae96b  Improve wallpaper category title style  [LuK1337]
+
+====================
+     11-27-2019
 ====================
    * android/
-0decb09  manifest: Switch to our fork of e2fsprogs  [Bruno Martins]
-   * external/e2fsprogs/
-245223d2  resize: Make a target for standalone resize2fs_static binary  [Łukasz Patron]
+5b39741  manifest: Switch to our system/bpf fork  [Han Wang]
+   * device/qcom/sepolicy-legacy-um/
+f3511f3d  Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0-legacy-um  [Michael Bestas]
+   * external/bash/
+998f8d3  bash: BASH_CMD is writable in restricted bash shells  [Vasyl Gello]
+a823e4b  bash: Popd controlled free  [Vasyl Gello]
+ddb19f4  Bash-4.3 patch 48  [Vasyl Gello]
+6a51dba  Bash-4.3 patch 47  [Vasyl Gello]
+5102153  Bash-4.3 patch 46  [Vasyl Gello]
+20fcf2b  Bash-4.3 patch 45  [Vasyl Gello]
+2ea9588  Bash-4.3 patch 44  [Vasyl Gello]
+7c65dd4  Bash-4.3 patch 43  [Vasyl Gello]
+
+====================
+     11-26-2019
+====================
+
+   * lineage/hudson/
+ad0bdb9  hudson: Add Zenfone Max Pro M2 (X01BD)  [Kuber Sharma]
    * lineage/wiki/
-8f7b282  Ignore more files for _site  [Michael W]
-bf2e20d  wiki: Remove unsued file update.sh  [Michael W]
-   * packages/apps/Dialer/
-248db27d1  Base 'call recording allowed' decision on current country.  [Danny Baumann]
+bb7e527  wiki: Add Zenfone Max Pro M2 (X01BD)  [Kuber Sharma]
    * system/core/
-85a9fd3fd  healthd: allow custom charger images  [Daniel Hillenbrand]
-   * vendor/qcom/opensource/data-ipa-cfg-mgr/
-bde4782  ipacm: Address ipacm start failure  [dianlujitao]
+b7754849b  debuggerd: add Lineage version to tombstones  [Michael Bestas]
+   * vendor/lineage/
+dd3a0f56  overlay: Use ntp.ntsc.ac.cn NTP server for Chinese users  [Paul Keith]
+
+====================
+     11-25-2019
+====================
+
+   * bootable/recovery/
+67d2c1b2  applypatch: Use static libs for libbrotli and libbz.  [Rashed Abdel-Tawab]
+   * frameworks/native/
+2f7b09cd7  sensorservice: Register orientation sensor if HAL doesn't provide it  [Rashed Abdel-Tawab]
+52e2cbdde  sensorservice: customize sensor fusion mag filter via prop  [Rashed Abdel-Tawab]
+   * lineage/mirror/
+f5ce935  Updated to 25-Nov-2019 01:00 UTC  [Tim Schumacher]
+   * packages/apps/Nfc/
+c9e99894  NfcNci: make T3T/Nfc-F HCE optional  [Rashed Abdel-Tawab]
+   * packages/apps/Settings/
+62d08c1270  Add accessibility timeout video and illustration  [Rashed Abdel-Tawab]
+   * packages/apps/Snap/
+cdf13feab  Snap: Handle SDCard-removed case  [Rashed Abdel-Tawab]
+   * packages/apps/Trebuchet/
+806414db2  Update default workspace  [Arne Coucheron]
+   * system/core/
+0181caa62  utils: Threads: Handle empty thread names  [Rashed Abdel-Tawab]
+   * vendor/lineage/
+561f974b  soong_config: add TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE  [Nolen Johnson]
+0fd97274  overlay: Update webview providers  [Rashed Abdel-Tawab]
 

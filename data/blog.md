@@ -1,5 +1,13 @@
 ### Lineage 17.0 [ALPHA BUILD]
 
+**Download:** [lineage-17.0-20191201-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191201-UNOFFICIAL-osprey.zip/download)
+
+Updated build from latest sources but no device changes this week.
+
+<hr>
+
+### Lineage 17.0 [ALPHA BUILD]
+
 **Download:** [lineage-17.0-20191124-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191124-UNOFFICIAL-osprey.zip/download)
 
 **Device changes:**
@@ -97,14 +105,4 @@ Built from latest Lineage 17.0 sources plus repoick Snap from gerrit.
 - sepolicy: Revert temporary sepolicy
 - sepolicy: Re-enable full sepolicy but keep permissive
 - Initial sepolicy updates for Q
-
-<hr>
-
-### Havoc OS 3.0
-
-**Download:** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://www.androidfilehost.com/?fid=4349826312261608861)
-
-**Mirror (SourceForge):** [Havoc-OS v3.0-20191028-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191028-osprey-Unofficial.zip/download)
-
-First Android 10 build of Havoc 3.0 for Osprey.
 
