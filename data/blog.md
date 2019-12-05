@@ -1,3 +1,17 @@
+### Havoc OS 3.0
+
+**Download:** [Havoc-OS-v3.0-20191205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191205-osprey-Unofficial.zip/download)
+
+New build with latest sources including the December ASB.
+
+**Device changes:**
+- More sepolicy updates
+
+**Note:**
+A clean install is advised - I experienced a number of issues when attempting to update a previous install with this build.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191201-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191201-UNOFFICIAL-osprey.zip/download)
@@ -92,17 +106,4 @@ New build including the November ASB update.
 - power: Switch to powerhal 1.2
 - telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
 - telephony: Add telephony_injection file & qti-telephony-utils
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191102-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191102-UNOFFICIAL-osprey.zip/download)
-
-Built from latest Lineage 17.0 sources plus repoick Snap from gerrit.
-
-**Device changes:**
-- sepolicy: Revert temporary sepolicy
-- sepolicy: Re-enable full sepolicy but keep permissive
-- Initial sepolicy updates for Q
 
