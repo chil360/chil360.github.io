@@ -1,3 +1,14 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191208-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191208-UNOFFICIAL-osprey.zip/download)
+
+**Device changes:**
+- More sepolicy updates
+- Enable extended audio compress format (tinycompress)
+- LineageActions: Broadcast doze pulse as current user
+
+<hr>
+
 ### Havoc OS 3.0
 
 **Download:** [Havoc-OS-v3.0-20191205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191205-osprey-Unofficial.zip/download)
@@ -90,20 +101,4 @@ Built from latest AOSiP 10 sources with November ASB.
 - power: Switch to powerhal 1.2
 - telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
 - Implement OTA updates
-
-<hr>
-
-### Havoc OS 3.0
-
-**Download:** [Havoc-OS-v3.0-20191106-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191106-osprey-Unofficial.zip/download)
-
-New build including the November ASB update.
-
-**Device changes:**
-- sepolicy: Revert temporary sepolicy
-- sepolicy: Re-enable full sepolicy but keep permissive
-- Initial sepolicy updates for Q
-- power: Switch to powerhal 1.2
-- telephony: Update qti-telephony-common LA.UM.8.6.r1-01900-89xx.0
-- telephony: Add telephony_injection file & qti-telephony-utils
 
