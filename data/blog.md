@@ -1,3 +1,11 @@
+### AOSiP 9.0 Pizza - Monthly Build
+
+**Download:** [AOSiP-9.0-Pizza-osprey-20191211.zip](https://www.androidfilehost.com/?fid=4349826312261669502)
+
+Update for AOSiP 9.0 (Pie) with the December security update.
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191208-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191208-UNOFFICIAL-osprey.zip/download)
