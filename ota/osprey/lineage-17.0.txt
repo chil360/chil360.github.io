@@ -1,112 +1,105 @@
 ====================
-     12-08-2019
+     12-15-2019
 ====================
 
    * build/make/
-68d2006a2  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-7fa81aa89  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-5cdeeb5c4  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-f4e60bdb5  releasetools: squash backuptool support  [Kyle Harrison]
-   * build/soong/
-2f6a7f34  soong: Add function to return camera parameters library name  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-bf6267f  msm8916-common: LineageActions: Broadcast doze pulse as current user  [Kyle Harrison]
-6f7515b  msm8916-common: sepolicy: Allow all apps access to theme_prop  [Kyle Harrison]
-7b1fbca  msm8916-common: sepolicy: Allow all camera apps access to camera_prop  [Kyle Harrison]
-f998f49  msm8916-common: sepolicy: Allow access over LiveDisplay sysfs nodes  [Kyle Harrison]
-ec131d8  msm8916-common: sepolicy: Fix some mediaserver denials  [Kyle Harrison]
-3c0d166  msm8916-common: sepolicy: Allow hal_lineage_camera_motor domain from mediaserver  [Kyle Harrison]
-889f4fa  msm8916-common: sepolicy: Update livedisplay sepolicy  [Kyle Harrison]
-e77be27  msm8916-common: Enable extended audio compress format  [Kyle Harrison]
+8ebbe99a4  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
+54bb5d8d1  build: Force system-as-root layout for backuptool  [Kyle Harrison]
+126fd3a56  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+0bc248ba2  releasetools: squash backuptool support  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-6a23844  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
-   * frameworks/av/
-1ce3ba701  camera: Allow devices to load custom CameraParameter code  [Kyle Harrison]
+4f6f733  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
    * frameworks/base/
-d67f681c8a9  LockSettingsService: Support for separate clear key api  [Kyle Harrison]
-b3d9ee63829  SystemUI: Add visualizer feature  [Kyle Harrison]
-   * hardware/interfaces/
-29273bbcf  keymasterV4_0: Tags support for FBE wrapped key.  [Kyle Harrison]
+baa1e4b602b  SystemUI: Add visualizer feature  [Kyle Harrison]
+b787c71a0b8  Fix bluetooth icon has wrong color  [Luca Stefani]
    * hardware/lineage/interfaces/
-2f3365a  cryptfshw: dlsym: Wire up the implementation  [Kyle Harrison]
-23bc863  cryptfshw: ioctl: Wire up the implementation  [Kyle Harrison]
-5307bce  cryptfshw: Split implementations into dlsym and ioctl  [Kyle Harrison]
-b9e7c4b  cryptfshw: Setup boilerplate items before actual implementation  [Kyle Harrison]
-cb1ab79  Initial audio amplifier HAL  [Kyle Harrison]
+c24df19  Initial audio amplifier HAL  [Kyle Harrison]
+   * lineage/wiki/
+b2c06c0  wiki: Add BQ Aquaris X2 (zangya) and Aquaris X2 (zangyapro)  [Eloi Carracedo Muns]
    * packages/apps/Settings/
-8add7abb61  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
+466a709c8a  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
    * packages/apps/Updater/
-fea7c64  Set OTA URL to github  [Kyle Harrison]
-43a3906  Updater : Remove buildtype check  [Kyle Harrison]
-   * system/core/
-82b7f38f9  Add wrapped key support  [Kyle Harrison]
+4c7ffe6  Set OTA URL to github  [Kyle Harrison]
+6fe1563  Updater : Remove buildtype check  [Kyle Harrison]
    * system/sepolicy/
-b3fa00c8  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
-464f5221  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
-1b4c0dab  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
-3bec775a  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
-56957dc1  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+87f26fa8  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
+e236f882  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
+bee834ef  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+21db8447  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+a4ded03c  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
    * vendor/lineage/
-35f9863f  soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT  [Kyle Harrison]
-4cb62745  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-4bea7d80  Turn off secure ADB  [Kyle Harrison]
-   * vendor/qcom/opensource/power/
-0db671a  power: Follow symlinks when writing to dt2w toggle path  [LuK1337]
+42dd8d5c  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
+a2d138d0  Turn off secure ADB  [Kyle Harrison]
 
 ====================
-     12-07-2019
-====================
-
-   * hardware/qcom-caf/msm8916/audio/
-3e3cfe0e8  hal: fix media param not sent during gapless transition  [Bruno Martins]
-   * hardware/qcom-caf/msm8952/audio/
-1c17a8f7d  hal: fix media param not sent during gapless transition  [Bruno Martins]
-   * hardware/qcom-caf/msm8974/audio/
-034e4c660  hal: fix media param not sent during gapless transition  [Bruno Martins]
-   * hardware/qcom-caf/msm8994/audio/
-2869d8e76  hal: fix media param not sent during gapless transition  [Bruno Martins]
-   * kernel/motorola/msm8916/
-8bbbdd8f8dd6  BACKPORT: ipv6: add option to drop unsolicited neighbor advertisements  [Kyle Harrison]
-39b55582c4a7  BACKPORT: ipv6: add option to drop unicast encapsulated in L2 multicast  [Kyle Harrison]
-   * vendor/lineage/
-cc6f30cf  Allow building emulator as an sdk-addon  [Paul Keith]
-
-====================
-     12-06-2019
-====================
-
-   * kernel/motorola/msm8916/
-a8cefea8fdde  BACKPORT: ipv4: add option to drop gratuitous ARP packets  [Kyle Harrison]
-2f4b86128d3f  BACKPORT: ipv4: add option to drop unicast encapsulated in L2 multicast  [Kyle Harrison]
-
-====================
-     12-05-2019
+     12-14-2019
 ====================
 
 
 ====================
-     12-04-2019
+     12-13-2019
+====================
+   * android/
+7c9dabf  manifest: Switch to our system/keymaster fork  [Han Wang]
+
+====================
+     12-12-2019
+====================
+
+   * frameworks/base/
+b54d2f38a5a  FingerprintService: add overlay to prevent cleanup of unused fingerprints  [Louis Popi]
+   * frameworks/opt/telephony/
+9c3f3e8fc  Add support for overriding methods from PhoneSwitcher  [PIPIPIG233666]
+   * hardware/qcom-caf/msm8998/audio/
+c5c1655ce  audio: Make platform_check_backends_match handle input devices as well  [Łukasz Patron]
+   * lineage/hudson/
+9c1f65a  hudson: Add Aquaris X2 (zangya )and Aquaris X2 Pro (zangyapro)  [Eloi Carracedo]
+
+====================
+     12-11-2019
 ====================
 
 
 ====================
-     12-03-2019
+     12-10-2019
 ====================
-
-   * device/lineage/sepolicy/
-070e37e  sepolicy: vendor: Label CryptfsHW HIDL HAL  [Bruno Martins]
+   * android/
+6162ee5  manifest: Switch to our ipacfg-mgr  [Michael Bestas]
+   * frameworks/av/
+06f5eac47  CameraService: Support hooks for motorized camera  [Łukasz Patron]
+   * frameworks/base/
+a93c9fb668e  overlay: Fix IconPackRoundedThemePickerOverlay package name  [Luca Stefani]
    * hardware/qcom-caf/msm8996/audio/
-6de06ed07  hal: fix media param not sent during gapless transition  [Michael Bestas]
-   * hardware/qcom-caf/sdm845/audio/
-9542adee0  hal: fix media param not sent during gapless transition  [Michael Bestas]
-   * lineage/mirror/
-acf3520  Updated to 03-Dec-2019 13:07 UTC  [Kevin F. Haggerty]
+01727bc0d  hal: fix media param not sent during gapless transition  [Michael Bestas]
+   * packages/apps/LineageParts/
+dfe9bc7  LineageParts: Drop root status of Trust  [Luca Stefani]
+   * packages/apps/Settings/
+5d1263445c  Fix cannot see "see more" button in UI  [Luca Stefani]
+   * vendor/lineage/
+8c49ba97  soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT  [Michael Bestas]
 
 ====================
-     12-02-2019
+     12-09-2019
 ====================
 
-   * kernel/motorola/msm8916/
-20febfad97e9  ASoC: wm_adsp: Avoid attempt to free buffers that might still be in  use  [Kyle Harrison]
-7c777913f71a  Revert "ASoC: wm_adsp: Avoid attempt to free buffers that might still be in use"  [Kyle Harrison]
+   * build/soong/
+38d5938e  soong: Add function to return camera parameters library name  [Arne Coucheron]
+   * frameworks/av/
+f52c6fcda  media utils: fix UAF in TimeCheckThread  [Luca Stefani]
+7398f91e0  camera: Allow devices to load custom CameraParameter code  [Arne Coucheron]
+   * frameworks/base/
+de2e36efd3b  SystemUI: Add reboot fastboot to power menu  [Łukasz Patron]
+   * hardware/qcom-caf/msm8996/audio/
+f21f0db5c  ultrasound: Use log/log.h instead of cutils/log.h  [Bruno Martins]
+6e10133c1  hal: Add open source HAL for Elliptic Ultrasound  [Bruno Martins]
+   * lineage-sdk/
+d0702b12  lineage-sdk: Drop root status of Trust  [dwardo]
+7f4f356c  sdk: Add GLOBAL_ACTION_KEY_RESTART_FASTBOOT  [dwardo]
+   * packages/apps/Dialer/
+994981482  Enable call recording for Iran  [mhkjahromi]
+   * packages/apps/Recorder/
+a88190c  Recorder: Move to /product  [LuK1337]
+67c21fd  ScreenService: start recording on a background Thread  [Luca Stefani]
+   * packages/apps/Settings/
+02f4e36efb  Settings: Bump privacy category's initial expanded children count to 10  [LuK1337]
 

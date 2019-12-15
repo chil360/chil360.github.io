@@ -1,3 +1,12 @@
+### Lineage 17.0 [ALPHA BUILD]
+
+**Download:** [lineage-17.0-20191215-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191215-UNOFFICIAL-osprey.zip/download)
+
+Weekly update built from latest sources. This includes a commit that should now fix the pattern/pin lockscreen security methods. 
+No device changes this week.
+
+<hr>
+
 ### Lineage 16.0 - Monthly Build
 
 **Download:** [lineage-16.0-20191211-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261670065)
@@ -80,12 +89,3 @@ Lineage 17.0 update with the November security update.
 **Download:** [AOSiP-9.0-Pizza-osprey-20191113.zip](https://www.androidfilehost.com/?fid=4349826312261628087)
 
 Update for AOSiP 9.0 (Pie) with the November security update.
-
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20191112-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261627000)
-
-Update for LineageOS 16.0 (Pie) with the November security update.
-
