@@ -1,3 +1,16 @@
+### Havoc OS 3.0
+
+**Download:** [Havoc-OS-v3.0-20191218-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191218-osprey-Unofficial.zip/download)
+
+New build with latest sources including a commit to fix the pattern/pin lockscreen security methods.
+
+**Device changes:**
+- Enable extended audio compress format (tinycompress)
+- LineageActions: Broadcast doze pulse as current user
+- Camera: Fix for flashlight not working
+
+<hr>
+
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191215-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191215-UNOFFICIAL-osprey.zip/download)
@@ -81,11 +94,3 @@ New build with latest sources which adds back some more features including anima
 **Download:** [lineage-17.0-20191117-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191117-UNOFFICIAL-osprey.zip/download)
 
 Lineage 17.0 update with the November security update.
-
-<hr>
-
-### AOSiP 9.0 Pizza - Monthly Build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20191113.zip](https://www.androidfilehost.com/?fid=4349826312261628087)
-
-Update for AOSiP 9.0 (Pie) with the November security update.
