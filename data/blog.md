@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20191222.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20191222.zip/download)
+
+Finally, a new build for AOSiP 10.0 Quiche! This includes the December security update and starts to add back some custom features.
+
+<hr>
+
 ### Havoc OS 3.0
 
 **Download:** [Havoc-OS-v3.0-20191218-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191218-osprey-Unofficial.zip/download)
@@ -86,11 +94,3 @@ New build with latest sources which adds back some more features including anima
 
 **Device changes:**
 - More sepolicy updates
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191117-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191117-UNOFFICIAL-osprey.zip/download)
-
-Lineage 17.0 update with the November security update.
