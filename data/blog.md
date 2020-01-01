@@ -1,3 +1,17 @@
+### ParanoidAndroid Quartz [ALPHA BUILD]
+
+**Download:** [pa-quartz-1-osprey-20200101-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200101-dev.zip/download)
+
+**HAPPY NEW YEAR!**
+
+My initial build of PA Quartz is now available for testing.
+
+**Known issues:**
+- Mobile data does not work immediately after install due to an issue with network handover between mobile data and Wifi. To get it working, enable Wifi, connect to a Wifi access point then disable Wifi again - this will trigger mobile data to kick in.
+- Wifi hotspot does not work.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20191222.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20191222.zip/download)
@@ -80,17 +94,6 @@ Updated build from latest sources but no device changes this week.
 ### Lineage 17.0 [ALPHA BUILD]
 
 **Download:** [lineage-17.0-20191124-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191124-UNOFFICIAL-osprey.zip/download)
-
-**Device changes:**
-- More sepolicy updates
-
-<hr>
-
-### Havoc OS 3.0
-
-**Download:** [Havoc-OS-v3.0-20191121-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191121-osprey-Unofficial.zip/download)
-
-New build with latest sources which adds back some more features including animations and battery styles.
 
 **Device changes:**
 - More sepolicy updates
