@@ -1,3 +1,16 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200108.zip/download)
+
+An updated build for AOSiP 10.0 Quiche with the January security update.
+Also, added the patch to keymaster to fix the pattern/pin lockscreen security methods.
+
+**Device changes:**
+- LineageActions: Broadcast doze pulse as current user
+- Camera: Fix for flashlight not working
+
+<hr>
+
 ### ParanoidAndroid Quartz [ALPHA BUILD]
 
 **Download:** [pa-quartz-1-osprey-20200101-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200101-dev.zip/download)
@@ -88,12 +101,3 @@ A clean install is advised - I experienced a number of issues when attempting to
 **Download:** [lineage-17.0-20191201-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191201-UNOFFICIAL-osprey.zip/download)
 
 Updated build from latest sources but no device changes this week.
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191124-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191124-UNOFFICIAL-osprey.zip/download)
-
-**Device changes:**
-- More sepolicy updates

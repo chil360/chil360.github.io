@@ -1,287 +1,260 @@
 ====================
-     12-22-2019
+     01-08-2020
 ====================
 
    * build/make/
-21e57edd4  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-d78670447  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-f73de1e14  releasetools: squash backuptool support  [Kyle Harrison]
-5726a49fb  [2/2] build: Switch to Pixel sounds  [Kyle Harrison]
-63013fb90  build: allow forcing build of otatools  [Kyle Harrison]
-eef603b43  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-490d3afb8  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Kyle Harrison]
-7bb94a0b0  releasetools: Store the build.prop file in the OTA zip  [Kyle Harrison]
-a4dddea59  releasetools: Add script to sign zips  [Kyle Harrison]
-1668d6b97  releasetools: support reading release keys out of some sort of command  [Kyle Harrison]
-7bb102f8a  build: ota: Support for install tools in /tmp/install  [Kyle Harrison]
-ee8b24584  core: binary: Allow modules to be built without clang  [Josh Fox]
+9e70ad848  releasetools: Move system mount handling to backuptool  [Kyle Harrison]
+742674447  releasetools: squash backuptool support  [Kyle Harrison]
+8186d527f  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+691817a5c  build: allow forcing build of otatools  [Kyle Harrison]
+2ff8b7eb0  releasetools: Store the build.prop file in the OTA zip  [Kyle Harrison]
+924a44937  releasetools: Add script to sign zips  [Kyle Harrison]
+651263705  releasetools: support reading release keys out of some sort of command  [Kyle Harrison]
+   * device/motorola/msm8916-common/
+bbf72aa  msm8916-common: Disable Battery LED  [Kyle Harrison]
+5131372  msm8916-common: init.qcom.usb.rc: Fix the incorrect mtp property  [Kyle Harrison]
+d88084c  msm8916-common: init.qcom.usb.rc: Set the sys.mtp.device_type property  [Kyle Harrison]
+5c87e1a  msm8916-common: Disable NearbyMessagingService  [Kyle Harrison]
+93c9073  Revert "Enforce RRO on framework-res"  [Kyle Harrison]
+55923ea  msm8916-common: camera: Flashlight fix  [Kyle Harrison]
+47eed3f  msm8916-common: LineageActions: Broadcast doze pulse as current user  [Kyle Harrison]
+a9b1bd7  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
+d778837  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
+3a419cd  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
+d3a835f  msm8916-common: sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
+ea26841  msm8916-common: sepolicy: Allow access to V4L subdev nodes  [Kyle Harrison]
+64f5c3a  msm8916-common: sepolicy: allow init to read /proc/device-tree  [Kyle Harrison]
+b4b4c9c  msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment  [Kyle Harrison]
+01be050  msm8916-common: sepolicy: Label clearkey 1.2 HAL  [Kyle Harrison]
+3ce17cd  msm8916-common: sepolicy: Label widevine 1.1 HAL  [Kyle Harrison]
+94d794c  msm8916-common: sepolicy: Label /fsg  [Kyle Harrison]
+f49b87e  msm8916-common: sepolicy: Re-enable full sepolicy but keep permissive  [Kyle Harrison]
+ae73050  Revert "msm8916-common: Add temporary sepolicies for 10.0 bringup"  [Kyle Harrison]
+584d9fd  msm8916-common: fix rank of OMX audio codec components  [Kyle Harrison]
+aad8749  msm8916-common: Drop custom loader config for media swcodec  [Kyle Harrison]
+8403fb8  msm8916-common: Disable codec2  [Kyle Harrison]
+72294ba  Revert "msm8916-common: Disable network scan through requestNetworkScan"  [Kyle Harrison]
+4de96e1  msm8916-common: Add IMS packages in powersave whitelist  [Kyle Harrison]
+496a423  msm8916-common: Add support for telephony hidl wrapper  [Kyle Harrison]
+7a9738b  msm8916-common: IMS: decouple ims-ext-common from boot jars  [Kyle Harrison]
+11d99d6  msm8916-common: Add Wellbeing Package to common overlay  [Kyle Harrison]
+ee70428  msm8916-common: Remove more deprecated display flags  [Kyle Harrison]
+c6273ca  msm8916-common: Add system properties for surfaceflinger  [Kyle Harrison]
+36db0f1  msm8916-common: Change user/group permission for for charger  [Kyle Harrison]
+47c147e  msm8916-common: Update charger service path and label  [Kyle Harrison]
+5a58dc5  msm8916-common: Drop mediaextractor seccomp policy  [Kyle Harrison]
+bb8a221  msm8916-common: Enable GL comp backpressure  [Kyle Harrison]
+39fb9cf  msm8916-common: Enable sndmonitor for audio.  [Kyle Harrison]
+5a12de2  msm8916-common: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
+5afcc9a  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
+d6b286e  [TEMP] msm8916-common: Use dtbToolLineage  [Kyle Harrison]
+8a17d0f  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-e69ae4e  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
-05775c3  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
-392cbf5  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
-e03bcba  Remove sysfs_disk_stat labels  [Kyle Harrison]
-   * frameworks/av/
-a849afb56  camera: Allow devices to load custom CameraParameter code  [Josh Fox]
+584dc5a  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
+b33a530  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
+1b711aa  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+a64b64a  Remove sysfs_disk_stat labels  [Kyle Harrison]
    * frameworks/base/
-3932c72ba30  base: Add a config to remove the battery light preference  [Subhajeet Muhuri]
-2db8a9be84a  Add api to force show led lights  [Subhajeet Muhuri]
-e2e7d8fbe9d  Disable battery light overlay by default  [Subhajeet Muhuri]
-0fc3bebfbf7  Battery light customization [1/2]  [Subhajeet Muhuri]
-60c38602f6a  SystemUI: QS: Hide the placeholder if brightness slider is on bottom to save some space  [Subhajeet Muhuri]
-8dd731facdd  Add option to disable auto brightness icon in brightness slider [1/2]  [Subhajeet Muhuri]
-cf7d22157fa  Add auto brightness toggle to Quick Settings  [Subhajeet Muhuri]
-cfb376f0988  base: SystemUI: fix moving of qs brightness slider  [Subhajeet Muhuri]
-f386ea597cb  base: SystemUI: fix brightness slider animation on qs expand  [Subhajeet Muhuri]
-d8367a24b45  base: SystemUI: add prefs for qs brightness slider position (1/2)  [Subhajeet Muhuri]
-1fd134d6c1e  Allow to suppress notifications sound/vibration if screen is ON [1/2]  [Subhajeet Muhuri]
-a01becfdeb6  pocket: Reduce sleep timeout for pocket lock  [Subhajeet Muhuri]
-937725ed40c  PocketLock: Remove animations  [Subhajeet Muhuri]
-fa0f8be5a29  Fix an edge case in KeyguardUpdateMonitor pocket callback  [Subhajeet Muhuri]
-8661c40561d  Pocket lock improvements  [Subhajeet Muhuri]
-a98bb2492da  pocket: Fix pocket lock view for display cutouts  [Subhajeet Muhuri]
-caab4160e1c  pocket: Adjust sleep timeout for pocket lock view to 10 secs  [Subhajeet Muhuri]
-b771d172db5  pocket: Move sysfs path from strings to config  [Subhajeet Muhuri]
-7626c0f69fd  pocket: introduce pocket bridge  [Subhajeet Muhuri]
-59cc5aa49cd  PocketService: Adjust light sensor rate to 400ms  [Subhajeet Muhuri]
-aa1ec2ac74c  pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags  [Subhajeet Muhuri]
-b543f37aa34  policy: introduce pocket lock  [Subhajeet Muhuri]
-eb83a4920a9  pocket: introduce pocket judge  [Subhajeet Muhuri]
-46874e1c2c2  Base: Hide power menu on secure lockscreen [1/2]  [Subhajeet Muhuri]
-1c8e017677a  base: Lockscreen Charging info  (3/3)  [Subhajeet Muhuri]
-f005ba028de  AoD on charge: update settings if we change options while charging  [Josh Fox]
-d895f2fb34d  base: wake from aod on unplug if we show on charging only  [Josh Fox]
-b917646ac3e  [1/2] base: add option to enable AOD on charging only  [Josh Fox]
-   * frameworks/opt/telephony/
-0f93517cc  telephony: do not create a thread in a class that is preloaded by Zygote  [Josh Fox]
-9168f6f08  Update method call to notifyDataConnection  [Josh Fox]
-928732975  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Josh Fox]
-   * hardware/interfaces/
-bfa94b421  Merge "camera: Only link and use vendor.qti.hardware.camera.device if specified" into ten  [Gerrit Code Review]
-8f1ecbbfa  wifi: Merge QC wifi dual interface changes  [Josh Fox]
-e44619966  wifi: Increase kMaxStopCompleteWaitMs to 250 msec.  [Josh Fox]
-7a1ada2d3  wifi: Use stub for add_or_remove_virtual_intf functionality  [Josh Fox]
-   * hardware/libhardware_legacy/
-3f06226  Wifi: Add Qpower interface to libhardware_legacy  [Josh Fox]
+d346f144565  base: Add a config to remove the battery light preference  [Kyle Harrison]
+9d932a54533  Battery light customization [1/2]  [Kyle Harrison]
+947678b174d  Statusbar clock date: behave like on stock when showing QS panel  [Josh Fox]
+f89805276ce  Add VOLTE icon toggle  [Josh Fox]
+a9754dbfd8a  SystemUI: Show 4G instead of LTE switch  [Josh Fox]
+bbc99f47c4f  Fix VOLTE icon color on Light statusbar  [Josh Fox]
+05921b86de1  VoLTE: Add New Minimal Icon  [Josh Fox]
+95e974475b8  base: Fix padding for VoLTE icon  [Josh Fox]
+85bd38ada1c  SystemUI: Enhancement for volte icon  [Josh Fox]
+6de3d598126  SystemUI: Query IMS state after CapabilityCallback is regisered  [Josh Fox]
+3e102a38ae2  SystemUI: Fix HD icon missing  [Josh Fox]
+625d8bd620b  Adapt to IMS registration changes.  [Josh Fox]
+907c9dd5dc4  SystemUI: Refactor the feature of volte icon  [Josh Fox]
+f90738817c0  SystemUI: Fix volte icon doesn't update in real time  [Josh Fox]
+b0fb465e25f  SystemUI: Add new configuration for displaying Volte icon  [Josh Fox]
+   * hardware/qcom-caf/msm8998/audio/
+d6528fb5f  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [LuK1337]
+   * hardware/qcom-caf/msm8998/display/
+02224d987  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [LuK1337]
+   * hardware/qcom-caf/msm8998/media/
+2fc242a79  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [LuK1337]
    * manifest/
-891056e  manifest: track WallpaperPicker2  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/Messaging/
-3b047ab  Messaging: Notification channel string fixes  [Josh Fox (XlxFoXxlX)]
-7b62278  Messaging: Implement per conversation channels  [Josh Fox (XlxFoXxlX)]
-f536725  Don't build with platform certificate  [Josh Fox (XlxFoXxlX)]
-f6e5f4b  Messaging: use white nav bar  [Josh Fox (XlxFoXxlX)]
-fd86580  Allow intent shared subject or title to be mms subject  [Josh Fox (XlxFoXxlX)]
-11da958  Messaging: Add "Mark as read" quick action for message notifications  [Josh Fox (XlxFoXxlX)]
-3031cb2  Messaging: Fix crash of blocked participant list activity  [Josh Fox (XlxFoXxlX)]
-85f24c6  Messaging: Don't crash on unsupported shared content type  [Josh Fox (XlxFoXxlX)]
-cb71adf  MediaPicker: Check for NPE  [Josh Fox (XlxFoXxlX)]
-6df2b13  Messaging: fix bad recycle on sending two mms in a row  [Josh Fox (XlxFoXxlX)]
-2306e9f  Messaging app crashes after a few MMS  [Josh Fox (XlxFoXxlX)]
-fe942af  Fixed storage permission issue for attachments  [Josh Fox (XlxFoXxlX)]
-a0776be  Added support for video and audio mms attachments  [Josh Fox (XlxFoXxlX)]
-a755867  Play an audible notification on receiving a class zero message.  [Josh Fox (XlxFoXxlX)]
-3f7911d  Messaging: Implement saved video attachments in MMS  [Josh Fox (XlxFoXxlX)]
-b96e11f  Messaging: bring back accent color  [Josh Fox (XlxFoXxlX)]
-33b3e6d  Fix menu item highlight color.  [Josh Fox (XlxFoXxlX)]
-ead54a9  Messaging: Toggable keyboard emoticons access  [Josh Fox (XlxFoXxlX)]
-7139ca5  MessageQueue: Process pending messages per subscription  [Josh Fox (XlxFoXxlX)]
-f264384  Messaging: change Avatar fontFamily to sans-serif-medium  [Josh Fox (XlxFoXxlX)]
-3fcb1f8  Messaging: Implement option for swipe right to delete.  [Josh Fox (XlxFoXxlX)]
-8238ba3  Messaging: adaptive icon  [Josh Fox (XlxFoXxlX)]
-539286b  Messaging: define app category  [Josh Fox (XlxFoXxlX)]
-45e116c  Move libgiftranscode.so to /product  [Josh Fox (XlxFoXxlX)]
-1acf7c5  Move Messaging to /product  [Josh Fox (XlxFoXxlX)]
-3ec5f38  Fix FATAL EXCEPTION on SmsStorageLowWarningActivity  [Josh Fox (XlxFoXxlX)]
-2339acc  Ignore unexpected ACTION_DOWN for SIM avatar icons  [Josh Fox (XlxFoXxlX)]
-83371b2  Sort ParticipantsData in order of the slot id  [Josh Fox (XlxFoXxlX)]
-f1c866e  Fix GetOrCreateConversationActionTest failure  [Josh Fox (XlxFoXxlX)]
-7a35375  Replace no error code '0' for SMS with '-1'  [Josh Fox (XlxFoXxlX)]
-ea942aa  Apply new duplication detection logic for M-Notification.ind  [Josh Fox (XlxFoXxlX)]
-2218554  Fix wrong PreferenceCategory for SMS delivery report  [Josh Fox (XlxFoXxlX)]
-fccb819  Fix assertion failures caused by different instance type  [Josh Fox (XlxFoXxlX)]
-39bbfa8  Fix MMS Config issues in Debug menu  [Josh Fox (XlxFoXxlX)]
-b03d94e  Use correct format info for SMS  [Josh Fox (XlxFoXxlX)]
-6f482d1  Fix SMS status handling  [Josh Fox (XlxFoXxlX)]
-b33191a  Fix X-Mms-Transaction-ID of M-Acknowledge.ind  [Josh Fox (XlxFoXxlX)]
-a6a19df  AOSP/Messaging - Fix many improperly formatted resource strings in Messaging.  [Josh Fox (XlxFoXxlX)]
-13c1173  AOSP/Messaging - Moved LOCAL_COMPATIBILITY_SUITE to tests/Android.mk. + Deleted the unnecessary blankId check. Updated the TODO comment for NUM_TEST_CONVERSATIONS+4. + Added AndroidTest.xml + Added "LOCAL_PROGUARD_ENABLED := disabled" for tests to pass on cf.  [Josh Fox (XlxFoXxlX)]
-958e285  AOSP/Messaging - Remove TEST_MAPPING because presubmit tests fail on build_target: aosp_cf_x86_phone-userdebug  [Josh Fox (XlxFoXxlX)]
-96de174  AOSP/Messaging - Update the Messaging version to 24 until notification related logic changes are made. Fixes the error "Developer warning for package com.android. messaging failed to post notification on channel null".  [Josh Fox (XlxFoXxlX)]
-208d938  Messaging: Fix generating id in android namespace  [Josh Fox (XlxFoXxlX)]
+3f7d872  manifest: Update lineage repos to 17.1  [Josh Fox]
    * packages/apps/OwlsNest/
-21348b8  OwlsNest: Implement a check to remove the battery light preference completely on no led config  [Subhajeet Muhuri]
-4dcabed  Battery light customization [2/2]  [Subhajeet Muhuri]
-0cebe8f  OwlsNest: Add option to disable auto brightness icon in brightness slider [2/2]  [Subhajeet Muhuri]
-9e3b8e8  OwlsNest: add prefs for qs brightness slider position (2/2)  [Subhajeet Muhuri]
-cdc15f9  Allow to suppress notifications sound/vibration if screen is ON [2/2]  [Subhajeet Muhuri]
-ca88a60  OwlsNest: Hide power menu on secure lockscreen [2/2]  [Subhajeet Muhuri]
-66a6f12  OwlsNest: Lockscreen Charging info (2/3)  [Subhajeet Muhuri]
-   * packages/apps/SettingsIntelligence/
-1ecd43c  SettingsIntelligence: add access to private platform APIs  [Josh Fox]
-   * packages/apps/ThemePicker/
-0e7897e  ThemePicker: Don't trash whole theme when missing icon preview  [Josh Fox]
+6caae23  OwlsNest: Implement a check to remove the battery light preference completely on no led config  [Kyle Harrison]
+fbc4964  Battery light customization [2/2]  [Kyle Harrison]
    * packages/apps/Updater/
-aba8069  Set OTA URL to github  [Kyle Harrison]
-   * packages/apps/WallpaperPicker2/
-3956c4c  WallpaperPicker2: fix toolbar style and color  [Josh Fox (XlxFoXxlX)]
-aa2e023  WallpaperPicker2: ask for storage perms on start  [Josh Fox (XlxFoXxlX)]
-5ef02bb  Remove launcher icon  [Josh Fox (XlxFoXxlX)]
-   * packages/services/Telephony/
-4b9205405  Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable  [Josh Fox]
-bd104a6da  Telephony: Support muting by RIL command  [Josh Fox]
-5c5f4e1fc  Telephony: Add ERI configuration for U.S. Cellular  [Josh Fox]
+9583155  Set OTA URL to github  [Kyle Harrison]
+   * system/keymaster/
+d54931d  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * system/sepolicy/
-d12f3ca8  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-a94e6fb2  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
+9911c071  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+92b5a6c9  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
    * vendor/aosip/
-258f810  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-bc695ae  [1/2] aosip: Switch to Pixel sounds  [Kyle Harrison]
-1d23283  Color picker: Fix derp in c2fd3224087c1d755523f13d76e40f075e1ae4cb  [Josh Fox]
-851892a  Revert "vendor: suppot: Nuke colorpicker"  [Josh Fox]
+d12cfff  backuptool: Ensure system is always unmounted  [Kyle Harrison]
+004f325  prebuilt: backuptool: Implement dynamic system mount for A-only  [Kyle Harrison]
+7972cdf  aosip: sounds: Fix default sounds  [Josh Fox]
+1fda184  aosip: Switch to Pixel sounds  [Josh Fox]
+4b496f9  soong_config: Add BOOTLOADER_MESSAGE_OFFSET  [Josh Fox]
 
 ====================
-     12-21-2019
-====================
-
-
-====================
-     12-20-2019
+     01-07-2020
 ====================
 
    * build/make/
-198a85156  check_boot_jars: Add CAF IMS to whitelist  [Josh Fox (XlxFoXxlX)]
-   * external/tinycompress/
-a606e1b  tinycompress: Conditionally enable extended compress format  [Josh Fox (XlxFoXxlX)]
-b8cafe1  tinycompress: Use generated kernel headers  [Josh Fox (XlxFoXxlX)]
+190a2eaf4  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//build into HEAD  [Josh Fox (XlxFoXxlX)]
    * frameworks/base/
-0e5605bbd91  base: NotificationPanelView: Double tap to sleep on lockscreen  [Subhajeet Muhuri]
-f6c95dc80c0  base: Double tap to trigger doze [1/2]  [Subhajeet Muhuri]
-c45c23b9362  FOD: let displaymanager handle brightness  [Subhajeet Muhuri]
-cab3df00cba  FOD: change a few things about FOD behaviour  [Subhajeet Muhuri]
-bf5d187ed64  SystemUI: add pulsing callback to KeyguardUpdateMonitor  [Subhajeet Muhuri]
-b828aff1740  Ambient music: pulse on new tracks even if all Ambient options are off  [Josh Fox]
-09b85979f37  Ambient music: add Pixel Now Playing support  [Josh Fox]
-8a5ab67b99b  Ambient music ticker AoD: make it compatibile with double tap sensor  [Josh Fox]
-acbeecf1be4  Ambient music ticker: double tap on track title to skip track  [Josh Fox]
-5c295648429  Aosp Ambient music: allow to pulse on new tracks [1/2]  [Josh Fox]
-acf8a898611  Fix bluetooth icon has wrong color  [Josh Fox]
-0e0cb86f072  Lockscreen art blur: smaller seekbar range and allow no blur [1/2]  [Josh Fox]
-0fae9440682  Losckreen blur level: code fixes  [Josh Fox]
-910ea994c9b  base: configure lock screen media artwork blur level [1/2]  [Josh Fox]
-b0502a7df0a  Ask pin when tapping Cellular tile on secure lockscreen  [Josh Fox (XlxFoXxlX)]
-14ffa985f43  Remove call to expand QS panel while pressing the Airplane QS tile  [Josh Fox (XlxFoXxlX)]
-bd3b9e557f3  Ask pin when tapping Airplane tiles on secure lockscreen  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/OwlsNest/
-8b8b6d9  Lockscreen art blur: smaller seekbar range and allow no blur [2/2]  [Josh Fox (XlxFoXxlX)]
-d4e541f  OwlsNest: Add lockscreen media art blur option  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/Settings/
-3e50ccef57  pocket: make judge toggle always available  [Anirudh Gupta]
-33d5954791  Settings: Add pocket lock toggle  [Anirudh Gupta]
-4acc181c7b  Unlink AoD switch pref from AoD on charge  [Anirudh Gupta]
-9f9ab871f8  Settings: Add AoD on charging option  [Anirudh Gupta]
-5173394514  Settings: Double tap to trigger doze [2/2]  [Anirudh Gupta]
-025b2929b5  Aosp Ambient music: allow to pulse on new tracks [2/2]  [Josh Fox (XlxFoXxlX)]
-   * system/core/
-5f3ada917  core: Lockscreen Charging info (1/3)  [Subhajeet Muhuri]
-   * vendor/aosip/
-0408afc  vendor: suppot: Nuke colorpicker  [Josh Fox]
-c2fd322  Color picker: cleanup code  [Josh Fox]
-fe38dee  Colorpicker: allow to use it with xml calls only and use android:defaultValue  [Josh Fox]
-e80f672  Color Picker: Remove OnClick listener to fix disabling  [Josh Fox]
-c114993  vendor/aosip: Remove pie themes  [Josh Fox (XlxFoXxlX)]
-4fd25f0  soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT  [Josh Fox (XlxFoXxlX)]
-281fefc  aosip: overlay: base: Use system accent as colour for user 1  [Josh Fox]
-
-====================
-     12-19-2019
-====================
-
-   * build/make/
-ac1e6f52f  core: allow specifying building ramdisk(s) with lzma  [Josh Fox]
-   * frameworks/base/
-47530247933  SystemUI: fix black screen after AOD_PAUSED  [Josh Fox (XlxFoXxlX)]
-5494281e39b  base: Revert "Apply front scrim to doze pulsing"  [Josh Fox (XlxFoXxlX)]
-e1e4067b5a7  Fix protected broadcast error for doze intents  [Josh Fox (XlxFoXxlX)]
-54ead85f060  Disable long click for SoundSearch tile  [Josh Fox (XlxFoXxlX)]
-d2f1092a3e9  Grant BIND_WALLPAPER permission to wp picker also on dirty flash  [Josh Fox (XlxFoXxlX)]
-2420215a0bc  Grant BIND_WALLPAPER permission to prebuilt wp picker  [Josh Fox (XlxFoXxlX)]
-60ad0aa33f9  Permissions: allow to grant permissions to more apps on dirty flash  [Josh Fox (XlxFoXxlX)]
-c690058aa93  Grant Wellbeing the SUSPEND_APPS perm if already declared  [Josh Fox (XlxFoXxlX)]
-0009d1d3298  base: rescuce party: check isDisabled on all public API  [Josh Fox (XlxFoXxlX)]
-081e4c1d71d  Restore cache clean up code in PackageManagerService  [Josh Fox (XlxFoXxlX)]
-ad4791b5e90  Select the proper request list size  [Josh Fox (XlxFoXxlX)]
-d30d8bb1bfa  SystemUI: Update string for add tiles with one click  [Josh Fox (XlxFoXxlX)]
-e11774193f4  SettingLib: Add deep sleep info to uptime preference  [Josh Fox (XlxFoXxlX)]
-336bfce915a  Wallpaper is half black after rotating quickly  [Josh Fox (XlxFoXxlX)]
-1485970d8e5  Fix MediaProjection cast crash  [Josh Fox (XlxFoXxlX)]
-73192140676  KernelCpuUidTimeReader: Decrease log level on non-eng builds  [Josh Fox (XlxFoXxlX)]
-1a9d134ad8e  SystemUI: Apply system_icons_keyguard_padding_end to parent view  [Josh Fox (XlxFoXxlX)]
-057c56d8568  storage: Do not notify for volumes on non-removable disks  [Josh Fox (XlxFoXxlX)]
-79623d0e00e  UserManagerService: Use ro.aosip.fingerprint to signal upgrades  [Josh Fox (XlxFoXxlX)]
-b637b233850  PackageManager: allow build-time disabling of components  [Josh Fox (XlxFoXxlX)]
-b970d3733d6  [1/2] base: Gesture Navigation: Configure the height of back gesture  [Josh Fox (XlxFoXxlX)]
-6213ecdaae5  Camera: Force HAL1 for predefined package list.  [Josh Fox (XlxFoXxlX)]
-69682058590  Camera: Simplify code for Aux/Mono white and black lists  [Josh Fox (XlxFoXxlX)]
-13a2c92b803  Camera: Skip stream size check for whitelisted apps..  [Josh Fox (XlxFoXxlX)]
-daff3c95926  camera: Skip HFR checks for privileged apps.  [Josh Fox (XlxFoXxlX)]
-8cba32bfe01  camera: Check if aux camera whitelist is set before restricting cameras  [Josh Fox (XlxFoXxlX)]
-0bafe5a0249  Camera: Expose Aux camera to apps present in the whitelist  [Josh Fox (XlxFoXxlX)]
-11496f9ddf6  Add OwlsNest CategoryKey  [Josh Fox (XlxFoXxlX)]
-a0da4495938  Fix: "Clear All" recent app screen loop bug  [Josh Fox]
-   * hardware/interfaces/
-b1197a6b4  Merge "Camed HAL extension: Added support in HIDL for Extended FD." into ten  [Gerrit Code Review]
+5c6eeacdfe1  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//frameworks/base into HEAD  [Josh Fox (XlxFoXxlX)]
+   * frameworks/native/
+0202b6999  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Josh Fox (XlxFoXxlX)]
    * manifest/
-7fe2f26  manifest: aosip: Track OwlsNest  [Josh Fox]
+0d9a4d6  manifest: update to android-10.0.0_r23  [Josh Fox]
+   * packages/apps/Launcher3/
+26c0597e4  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//packages/apps/Launcher3 into HEAD  [Josh Fox (XlxFoXxlX)]
    * packages/apps/Settings/
-ab42ee1c17  Settings: Show full /proc/version information  [Josh Fox (XlxFoXxlX)]
-e25cfb9ca5  settings: Protect sensitive info on About device  [Josh Fox (XlxFoXxlX)]
-788e81eaaa  Prevent null point exception  [Josh Fox (XlxFoXxlX)]
-e0d909b07b  Settings: Respect preference's visibility in VideoPreferenceController, take 2  [Josh Fox (XlxFoXxlX)]
-9f613f2957  Settings: Respect preference's visibility in VideoPreferenceController  [Josh Fox (XlxFoXxlX)]
-07ecc98849  Add accessibility timeout video and illustration  [Josh Fox (XlxFoXxlX)]
-7edc114fd2  Settings: Use landscape qrcode scanner layout for sw600dp  [Josh Fox (XlxFoXxlX)]
-9a1f0d65e0  Settings: Fix QrCamera crash on devices without flash  [Josh Fox (XlxFoXxlX)]
-74fb1ffc6f  Skip loading contextual cards if legacy cards are used  [Josh Fox (XlxFoXxlX)]
-22d5d32ced  Make sure close button has proper color  [Josh Fox (XlxFoXxlX)]
-2788bf65af  Enable dismissal feature on legacy suggestions.  [Josh Fox (XlxFoXxlX)]
-d990a70fbc  Fix crash when going back from battery  [Josh Fox (XlxFoXxlX)]
-27f73da48f  InstalledAppDetails: fix refreshing storage summary after force stop  [Josh Fox (XlxFoXxlX)]
-8843526efa  InstalledApp: show link to Google Play  [Josh Fox (XlxFoXxlX)]
-1897fab286  fuelgauge: add back battery level animation  [Josh Fox (XlxFoXxlX)]
-908ead0702  Settings: Add missing animations  [Josh Fox]
-116e404ce0  Build custom vendor support [1/2]  [Josh Fox (XlxFoXxlX)]
-13da9dcd2e  [2/2] Settings: Gesture Navigation: Configure the height of back gesture  [Josh Fox (XlxFoXxlX)]
-58e8bf71e2  Add OwlsNest dashboard entry  [Josh Fox (XlxFoXxlX)]
-f6834eacf3  Revert "Disable contextual cards"  [Josh Fox]
-dbf9b091d2  Allow to dismiss notifications with back FP left/right swipe [2/2]  [Josh Fox]
+0aefa715cf  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/bt/
+89d4b0fd1  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//system/bt into HEAD  [Josh Fox (XlxFoXxlX)]
+   * system/core/
+550c8b75e  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform/system/core into HEAD  [Josh Fox (XlxFoXxlX)]
+
+====================
+     01-06-2020
+====================
+
+   * build/make/
+78c587418  core: binary: Allow modules to be built without clang  [Josh Fox (XlxFoXxlX)]
+b0ebcd33b  check_boot_jars: Add CAF IMS to whitelist  [Josh Fox (XlxFoXxlX)]
+d21533ab9  Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful  [Josh Fox (XlxFoXxlX)]
+488092435  core: allow specifying building ramdisk(s) with lzma  [Josh Fox (XlxFoXxlX)]
+
+====================
+     01-05-2020
+====================
+
+   * bootable/recovery/
+3a6cdbf4  recovery: symlink /sbin for script compatibility  [Josh Fox (XlxFoXxlX)]
+05a30121  recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy  [Josh Fox (XlxFoXxlX)]
+d355f160  recovery: Get a proper shell environment in recovery  [Josh Fox (XlxFoXxlX)]
+1c8d6614  applypatch: Use static libs for libbrotli and libbz.  [Josh Fox (XlxFoXxlX)]
+6d631c6b  recovery: Provide caching for sideload files  [Josh Fox (XlxFoXxlX)]
+8975a88f  Make adb use a custom prop for adb root  [Josh Fox (XlxFoXxlX)]
+3a2e2bfd  recovery: Blank screen on init  [Josh Fox (XlxFoXxlX)]
+aa85dbb3  recovery: Add runtime checks for A/B vs traditional updates  [Josh Fox (XlxFoXxlX)]
+ddf4c680  recovery: Allow bypassing signature verification on non-release builds  [Josh Fox (XlxFoXxlX)]
+9a86b7ab  recovery: Also hide rescue mode from non eng builds  [Josh Fox (XlxFoXxlX)]
+8e8aa038  recovery: Only show tests in eng builds  [Josh Fox (XlxFoXxlX)]
+61969ffe  recovery: Expose reboot to recovery option  [Josh Fox (XlxFoXxlX)]
+9f1eae31  recovery: init: mount pstore fs  [Josh Fox (XlxFoXxlX)]
+de4440f4  recovery: Enable the menu for User builds  [Josh Fox (XlxFoXxlX)]
+ffe29b0f  recovery: Remove "Supported API" message  [Josh Fox (XlxFoXxlX)]
+34476383  recovery: Add wipe system partition option  [Josh Fox (XlxFoXxlX)]
+a8ec063e  otautil: add support for unmounting entire volumes  [Josh Fox (XlxFoXxlX)]
+9f51455b  recovery: Provide sideload cancellation  [Josh Fox (XlxFoXxlX)]
+d979b38d  recovery: Blank screen during shutdown and reboot  [Josh Fox (XlxFoXxlX)]
+fd59b0e3  recovery: Allow device-specific recovery modules  [Josh Fox (XlxFoXxlX)]
+4feb78f9  recovery: Include vendor init trigger  [Josh Fox (XlxFoXxlX)]
+abf8a717  recovery: ui: Support hardware virtual keys  [Josh Fox (XlxFoXxlX)]
+fd8936ce  recovery: ui: Minor cleanup for touch code  [Josh Fox (XlxFoXxlX)]
+849c2f6d  recovery: ui: Default to touch enabled  [Josh Fox (XlxFoXxlX)]
+77309836  recovery: Remove HOST_OS guard for f2fs tools  [Josh Fox (XlxFoXxlX)]
+d24e1553  recovery: wipe bootloader message from index 0 when using custom offsets  [Josh Fox (XlxFoXxlX)]
+1e6b39ca  recovery: Allow custom bootloader msg offset in block misc  [Josh Fox (XlxFoXxlX)]
+9fd5d791  Bring back file-based OTA edify functions  [Josh Fox (XlxFoXxlX)]
+   * build/make/
+294e3bae6  Edify: Add abort message for bootloader asserts  [Josh Fox (XlxFoXxlX)]
+1fb0d0e0b  Allow setting the recovery density separately from the aapt config  [Josh Fox (XlxFoXxlX)]
+41be3a306  Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES  [Josh Fox (XlxFoXxlX)]
+e7b30119d  build: Separate commands in recovery foreach loops  [Josh Fox (XlxFoXxlX)]
+476972d63  build: recovery: Support adding device-specific items  [Josh Fox (XlxFoXxlX)]
+395c85352  Fix odm output directory for devices w/o vendor partition  [Josh Fox (XlxFoXxlX)]
+8f7631024  Remove ro.bionic.ld.warning.  [Josh Fox (XlxFoXxlX)]
+fabdc7700  Switch to aapt2 for getting minSdkVersion  [Josh Fox (XlxFoXxlX)]
+e27b24f10  build: ota: Support for install tools in /tmp/install  [Josh Fox (XlxFoXxlX)]
+a2edf7175  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Josh Fox (XlxFoXxlX)]
+4c49b0f28  NFC: Disable build for AOSP NFC  [Josh Fox (XlxFoXxlX)]
+5e43974f0  build: Fix endif being included in line continuations  [Josh Fox (XlxFoXxlX)]
+84ceaab71  Allow a device to generically define its own headers  [Josh Fox (XlxFoXxlX)]
+f3a773580  Enable dynamic linker warnings only on eng build  [Josh Fox (XlxFoXxlX)]
+f4c6ef598  Don't enable ADB by default on userdebug builds  [Josh Fox (XlxFoXxlX)]
+3dbf68e0c  Add missing languages  [Josh Fox (XlxFoXxlX)]
+0eded5e08  Disable dataroaming by default  [Josh Fox (XlxFoXxlX)]
+2bc65b990  Fix inheritance of PRODUCT_PROPERTY_OVERRIDES for AOSiP audio files  [Josh Fox (XlxFoXxlX)]
+d521d5d77  Remove LatinIME as it is included per target in vendor/aosip  [Josh Fox (XlxFoXxlX)]
+b00b7da28  build: Conditionally include AudioPackage14.mk instead of AllAudio.mk  [Josh Fox (XlxFoXxlX)]
+6b4dfe4df  build: Add support for device tree in boot.img  [Josh Fox (XlxFoXxlX)]
+a57c1cae3  Add BOARD_CUSTOM_BOOTIMG_MK support  [Josh Fox (XlxFoXxlX)]
+8318ffd8e  build: Include AOSiP specific properties in build.prop  [Josh Fox (XlxFoXxlX)]
+1b50c00b5  ota: Disable downgrade check  [Josh Fox (XlxFoXxlX)]
+674fd397e  Allow override of device asserts, including multi-device support.  [Josh Fox (XlxFoXxlX)]
+09e32611b  product: Exclude AOSP apn list on AOSiP build  [Josh Fox (XlxFoXxlX)]
+98c90a75d  Add extra variables to _readonly_late_variables  [Josh Fox (XlxFoXxlX)]
+1932f487f  build: Allow build-image-kernel-modules to be called from shell  [Josh Fox (XlxFoXxlX)]
+ee40102b0  soong: include AOSiP soong_config  [Josh Fox (XlxFoXxlX)]
+353432675  Add roomservice  [Josh Fox (XlxFoXxlX)]
+01ffd6031  core: Only include AOSiP SE policy if repo exists  [Josh Fox (XlxFoXxlX)]
+9093284b7  build: Add AOSiP build support  [Josh Fox (XlxFoXxlX)]
+a2ff51ba4  build: Include vendor/extra/BoardConfigExtra.mk if available  [Josh Fox (XlxFoXxlX)]
+e1863b646  Source AOSiP specific envsetup  [Josh Fox (XlxFoXxlX)]
+1b677a3a4  envsetup: export ANDROID_BUILD_TOP earlier  [Josh Fox (XlxFoXxlX)]
+4734b5fb1  build: Automatically replace old-style kernel header includes with new header lib  [Josh Fox (XlxFoXxlX)]
+e7ebd41cd  build: Ensure /system unmounted at install start  [Josh Fox (XlxFoXxlX)]
+4c39a5459  All operating systems are beautiful  [Josh Fox (XlxFoXxlX)]
+a45a78587  releasetools: Fix the use of StringIO.  [Josh Fox (XlxFoXxlX)]
+e0b0e67e1  releasetools: Replace iteritems with items.  [Josh Fox (XlxFoXxlX)]
+7e04425d1  releasetools: Make merge_target_files and its test Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+5f08a1973  releasetools: Clean up check_target_files_signatures.py.  [Josh Fox (XlxFoXxlX)]
+00f7d445f  releasetools: Make additional modules Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+ac50e5264  releasetools: Clean up additional modules for Python 3 compatibility.  [Josh Fox (XlxFoXxlX)]
+2366555dd  releasetools: Make apex_utils Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+dddcd4d8d  releasetools: Make verity_utils Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+37542bdce  releasetools: Make common Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+2273eb728  releasetools: Make blockimgdiff Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+f3c131215  releasetools: Make rangelib Python 3 compatibile.  [Josh Fox (XlxFoXxlX)]
+393cce655  releasetools: Make common.ZipWriteStr Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
+081f7607a  Remove package-stats.txt  [Josh Fox (XlxFoXxlX)]
+55226b74d  Stop building unnecessary tarballs.  [Josh Fox (XlxFoXxlX)]
+8ac21dc68  Stop using build/target -> build/make/target symlink  [Josh Fox (XlxFoXxlX)]
+b71bd0787  Add missing aapt2 dep in appcompat-files  [Josh Fox (XlxFoXxlX)]
+b809cf382  More base_rules.mk optimizations  [Josh Fox (XlxFoXxlX)]
+814edc878  Improve performance (don't filter ALL_MODULES)  [Josh Fox (XlxFoXxlX)]
+d8340497c  Skip much of aux_config.mk  [Josh Fox (XlxFoXxlX)]
+ea406347c  Remove support for ONE_SHOT_MAKEFILE  [Josh Fox (XlxFoXxlX)]
+b17ce9042  Revert "Revert "Deprecate bash m* commands and use the soong's modules-in* build commands instead.""  [Josh Fox (XlxFoXxlX)]
+49fb6f108  Revert "Deprecate bash m* commands and use the soong's modules-in* build commands instead."  [Josh Fox (XlxFoXxlX)]
+486178e79  Deprecate bash m* commands and use the soong's modules-in* build commands instead.  [Josh Fox (XlxFoXxlX)]
+
+====================
+     01-04-2020
+====================
+
+
+====================
+     01-03-2020
+====================
+
+
+====================
+     01-02-2020
+====================
+
+   * frameworks/base/
+5f33ae050fe  DEBUG: Turn off some debugging we don't need.  [Josh Fox]
+44a5e307e4d  StorageManagerService: Fix for system_server crash while booting  [Josh Fox]
+080b628de82  overlay: Fix derp in package name  [Josh Fox]
+09acb90cacb  SystemUI: Tiny expanding improvement  [Josh Fox]
+e1e68cd98c9  Always allow back gesture when there are transient bars showing  [Josh Fox]
+132fedf5120  Resolve NumberPicker display abnormal issue.  [Josh Fox]
+a4841579cbd  BatteryStats: Update WifiState even if EnergyInfo is invalid  [Josh Fox]
+d86ca8bf552  SystemUI: restart timeout causes black screen  [Josh Fox]
+a2622215254  Audio: Do not disconnect profiles till Bluetooth Off  [Josh Fox]
+9836398bbdb  BackupAgent: add backup shared mode  [Josh Fox]
+a9d0125ceab  hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm  [Josh Fox]
+a19af69a188  Move BT state to OFF when BLE app count is zero  [Josh Fox]
+5f6eadaff16  SystemUI: add more notification snooze times  [Josh Fox]
+2e84b91b45e  base: Expose system icon area weight  [Josh Fox]
+dab0c565d69  Ambient music: send the proper pulse reason on slpi tap  [Josh Fox]
    * vendor/aosip/
-d6e4b12  Customseekbar: fix setting seekbar min value and clean up code  [Josh Fox]
-decd13d  Customseekbar: drop default text  [Josh Fox]
-e9964ce  Customseekbar: use android:min attr  [Josh Fox]
-946d7eb  Customseekbar: fix setting defaultValue attr on the seekbar  [Josh Fox]
-774c018  Support: add CustomSeekbarPrefs  [Josh Fox]
-04c476c  Build custom vendor support [2/2]  [Josh Fox]
-   * vendor/qcom/opensource/fm-commonsys/
-6025831  FM: Add backward compatiblity support for oreo FM configs  [Sevenrock]
-
-====================
-     12-18-2019
-====================
-
-
-====================
-     12-17-2019
-====================
-
-   * build/soong/
-5d451ea4  soong: whitelist bison, flex and mkdtimg  [Josh Fox]
-   * vendor/aosip/
-e89e75d  Revert "kernel: Fix specifying custom clang compiler version"  [Josh Fox (XlxFoXxlX)]
-
-====================
-     12-16-2019
-====================
-
-   * vendor/aosip/
-b95d3be  Revert "vendor: Add qcom platform type to soongs vars"  [Josh Fox (XlxFoXxlX)]
-6bfc363  kernel: Define DTBS_OUT path for dtb.img building  [Josh Fox (XlxFoXxlX)]
+7e527ef  vendor: privapp elgoog: fix opengapps stuff AGAIN  [Josh Fox (XlxFoXxlX)]
+6b6434a  vendor: elgoog: fix new permissions for Q  [Josh Fox (XlxFoXxlX)]
+b6a9022  Partial Revert "vendor: drop unneeded pe weather and google priv-app bits"  [Josh Fox (XlxFoXxlX)]
+13fdb21  aosip: packages: Build Messaging app  [Anirudh Gupta]
 
