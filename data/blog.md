@@ -1,3 +1,11 @@
+### Havoc OS 3.1
+
+**Download:** [Havoc-OS-v3.1-20200109-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.1-20200109-osprey-Unofficial.zip/download)
+
+A new build which updates to Havoc OS 3.1 which has the January security update and a few new features.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200108.zip/download)
@@ -93,11 +101,3 @@ New build with latest sources including the December ASB.
 
 **Note:**
 A clean install is advised - I experienced a number of issues when attempting to update a previous install with this build.
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191201-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191201-UNOFFICIAL-osprey.zip/download)
-
-Updated build from latest sources but no device changes this week.
