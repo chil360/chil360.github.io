@@ -1,3 +1,11 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-1-osprey-20200110-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200110-dev.zip/download)
+
+Updated to the latest sources which are based on a newer CAF tag and also includes the January security patches.
+
+<hr>
+
 ### Havoc OS 3.1
 
 **Download:** [Havoc-OS-v3.1-20200109-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.1-20200109-osprey-Unofficial.zip/download)
