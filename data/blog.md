@@ -1,3 +1,15 @@
+### Lineage 17.1
+
+**Download:** [lineage-17.1-20200111-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200111-UNOFFICIAL-osprey.zip/download)
+
+New build using the latest LineageOS 17.1 sources including the January security update.
+
+**Device changes:**
+- LineageActions: Broadcast doze pulse as current user
+- Camera: Fix for flashlight not working
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-1-osprey-20200110-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200110-dev.zip/download)
@@ -95,17 +107,3 @@ Update for AOSiP 9.0 (Pie) with the December security update.
 - More sepolicy updates
 - Enable extended audio compress format (tinycompress)
 - LineageActions: Broadcast doze pulse as current user
-
-<hr>
-
-### Havoc OS 3.0
-
-**Download:** [Havoc-OS-v3.0-20191205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191205-osprey-Unofficial.zip/download)
-
-New build with latest sources including the December ASB.
-
-**Device changes:**
-- More sepolicy updates
-
-**Note:**
-A clean install is advised - I experienced a number of issues when attempting to update a previous install with this build.
