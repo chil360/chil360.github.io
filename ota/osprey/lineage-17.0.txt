@@ -1,105 +1,128 @@
 ====================
-     12-15-2019
+     01-11-2020
 ====================
 
    * build/make/
-8ebbe99a4  releasetools: Implement system-mount script to support any recovery system mount  [Kyle Harrison]
-54bb5d8d1  build: Force system-as-root layout for backuptool  [Kyle Harrison]
-126fd3a56  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-0bc248ba2  releasetools: squash backuptool support  [Kyle Harrison]
+2a6d6dad4  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
+d0452978d  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+f72bb9fd2  Support PRESIGNED in soong_app_prebuilt.mk  [razorloves]
+f5d30ece4  releasetools: Move system mount handling to backuptool  [Bruno Martins]
+   * device/motorola/msm8916-common/
+94708cd  msm8916-common: init.qcom.usb.rc: Fix the incorrect mtp property  [Kyle Harrison]
+222ab22  msm8916-common: init.qcom.usb.rc: Set the sys.mtp.device_type property  [Kyle Harrison]
+9b2d4df  msm8916-common: Disable NearbyMessagingService  [Kyle Harrison]
+4c950e5  Revert "Enforce RRO on framework-res"  [Kyle Harrison]
+76c14a1  msm8916-common: camera: Flashlight fix  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-4f6f733  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+72b413c  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+   * device/qcom/sepolicy-legacy-um/
+6e5465dc  Revert "common: Correctly Label /sys/class/kgsl"  [Michael Bestas]
+e517b81f  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.1-legacy-um  [Michael Bestas]
+1bc8f022  Expose TimeService app cert to soong  [Łukasz Patron]
    * frameworks/base/
-baa1e4b602b  SystemUI: Add visualizer feature  [Kyle Harrison]
-b787c71a0b8  Fix bluetooth icon has wrong color  [Luca Stefani]
+3d616a88151  SystemUI: Add visualizer feature  [Kyle Harrison]
+e487283f40a  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
    * hardware/lineage/interfaces/
-c24df19  Initial audio amplifier HAL  [Kyle Harrison]
-   * lineage/wiki/
-b2c06c0  wiki: Add BQ Aquaris X2 (zangya) and Aquaris X2 (zangyapro)  [Eloi Carracedo Muns]
-   * packages/apps/Settings/
-466a709c8a  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
-   * packages/apps/Updater/
-4c7ffe6  Set OTA URL to github  [Kyle Harrison]
-6fe1563  Updater : Remove buildtype check  [Kyle Harrison]
-   * system/sepolicy/
-87f26fa8  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
-e236f882  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
-bee834ef  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
-21db8447  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
-a4ded03c  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-   * vendor/lineage/
-42dd8d5c  prebuilt: Add a script to simplify A-only recovery system mount  [Kyle Harrison]
-a2d138d0  Turn off secure ADB  [Kyle Harrison]
-
-====================
-     12-14-2019
-====================
-
-
-====================
-     12-13-2019
-====================
-   * android/
-7c9dabf  manifest: Switch to our system/keymaster fork  [Han Wang]
-
-====================
-     12-12-2019
-====================
-
-   * frameworks/base/
-b54d2f38a5a  FingerprintService: add overlay to prevent cleanup of unused fingerprints  [Louis Popi]
-   * frameworks/opt/telephony/
-9c3f3e8fc  Add support for overriding methods from PhoneSwitcher  [PIPIPIG233666]
-   * hardware/qcom-caf/msm8998/audio/
-c5c1655ce  audio: Make platform_check_backends_match handle input devices as well  [Łukasz Patron]
-   * lineage/hudson/
-9c1f65a  hudson: Add Aquaris X2 (zangya )and Aquaris X2 Pro (zangyapro)  [Eloi Carracedo]
-
-====================
-     12-11-2019
-====================
-
-
-====================
-     12-10-2019
-====================
-   * android/
-6162ee5  manifest: Switch to our ipacfg-mgr  [Michael Bestas]
-   * frameworks/av/
-06f5eac47  CameraService: Support hooks for motorized camera  [Łukasz Patron]
-   * frameworks/base/
-a93c9fb668e  overlay: Fix IconPackRoundedThemePickerOverlay package name  [Luca Stefani]
-   * hardware/qcom-caf/msm8996/audio/
-01727bc0d  hal: fix media param not sent during gapless transition  [Michael Bestas]
+27a0b51  Initial audio amplifier HAL  [Kyle Harrison]
+   * lineage/contributors-cloud-generator/
+7ac22d5  Bump DEFAULT_SIZE to 1944  [Kevin F. Haggerty]
    * packages/apps/LineageParts/
-dfe9bc7  LineageParts: Drop root status of Trust  [Luca Stefani]
+900ce62  Regenerate contributors cloud  [Luca Stefani]
    * packages/apps/Settings/
-5d1263445c  Fix cannot see "see more" button in UI  [Luca Stefani]
+27e6a00b1e  Settings: Add lockscreen visualizer toggle  [Kyle Harrison]
+   * packages/apps/Trebuchet/
+c54565fce  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+   * packages/apps/Updater/
+bdcbc23  Set OTA URL to github  [Kyle Harrison]
+6fc78e4  Updater : Remove buildtype check  [Kyle Harrison]
+   * system/sepolicy/
+d09196b8  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
+f37feb83  sepolicy: New type sdcard_posix for labeled filesystems  [Kyle Harrison]
+d5c4e2ef  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+7d642aab  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+e6071eae  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+6cb623da  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
    * vendor/lineage/
-8c49ba97  soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT  [Michael Bestas]
+b883d80a  Turn off secure ADB  [Kyle Harrison]
+e40c3188  prebuilt: backuptool: Implement dynamic system mount for A-only  [Bruno Martins]
+ed9b10f1  Remove apicheck.mk  [Luca Stefani]
+33ee5966  extract_utils: Drop string after semicolon when parsing destination  [Łukasz Patron]
 
 ====================
-     12-09-2019
+     01-10-2020
 ====================
 
-   * build/soong/
-38d5938e  soong: Add function to return camera parameters library name  [Arne Coucheron]
-   * frameworks/av/
-f52c6fcda  media utils: fix UAF in TimeCheckThread  [Luca Stefani]
-7398f91e0  camera: Allow devices to load custom CameraParameter code  [Arne Coucheron]
+   * build/make/
+a1a273440  releasetools: squash backuptool support  [Bruno Martins]
    * frameworks/base/
-de2e36efd3b  SystemUI: Add reboot fastboot to power menu  [Łukasz Patron]
-   * hardware/qcom-caf/msm8996/audio/
-f21f0db5c  ultrasound: Use log/log.h instead of cutils/log.h  [Bruno Martins]
-6e10133c1  hal: Add open source HAL for Elliptic Ultrasound  [Bruno Martins]
-   * lineage-sdk/
-d0702b12  lineage-sdk: Drop root status of Trust  [dwardo]
-7f4f356c  sdk: Add GLOBAL_ACTION_KEY_RESTART_FASTBOOT  [dwardo]
-   * packages/apps/Dialer/
-994981482  Enable call recording for Iran  [mhkjahromi]
-   * packages/apps/Recorder/
-a88190c  Recorder: Move to /product  [LuK1337]
-67c21fd  ScreenService: start recording on a background Thread  [Luca Stefani]
+439b220b147  SystemUI: Bring back good ol' circle battery style  [Luca Stefani]
+c0444c200e6  DozeUi: do not prepare for gentle wakeup  [Luca Stefani]
+   * packages/apps/Trebuchet/
+af0d2bfd8  Trebuchet: implement hidden & protected apps  [Bruno Martins]
+   * vendor/lineage/
+98094698  overlay: Define default Wellbeing Package  [Luca Stefani]
+
+====================
+     01-09-2020
+====================
+
+   * lineage/website/
+2c90648  add discord link  [Tom Powell]
+   * packages/apps/Trebuchet/
+3b44d749f  Trebuchet: Fix missing icon labels in folders  [razorloves]
+
+====================
+     01-08-2020
+====================
+   * android/
+d7f59b1  manifest: Move from android-10.0.0_r18 to android-10.0.0_r23  [Michael Bestas]
+   * bootable/recovery/
+bf3a4b2e  Revert "recovery: Blank screen during shutdown and reboot"  [LuK1337]
+   * frameworks/base/
+aebfbfd3341  KeyguardView: report transiting bouncer as shown  [Luca Stefani]
+9213b9f5aa7  FODCircleView: rewrite and simplify implementation  [Luca Stefani]
+   * frameworks/native/
+2bb6083c7  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+   * hardware/libhardware/
+54f06b80  libhardware: Add new display types.  [Łukasz Patron]
+   * hardware/lineage/livedisplay/
+588974a  livedisplay: clang-format all files  [Bruno Martins]
+302ee59  livedisplay: Replace clang-format with symlink.  [Bruno Martins]
+159f19e  livedisplay: Take into account new SDM lib naming  [Bruno Martins]
+   * hardware/qcom-caf/msm8998/audio/
+d6528fb5f  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [LuK1337]
+   * hardware/qcom-caf/msm8998/display/
+02224d987  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [LuK1337]
+   * hardware/qcom-caf/msm8998/media/
+2fc242a79  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [LuK1337]
+   * hardware/qcom/audio/
+17c0c34  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+   * lineage/scripts/
+2e9f073  aosp-merger: Correct README  [Michael Bestas]
+313906b  Add emoji-updater script  [Michael Bestas]
    * packages/apps/Settings/
-02f4e36efb  Settings: Bump privacy category's initial expanded children count to 10  [LuK1337]
+dd6e27046f  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+   * system/bt/
+128340fe6  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+   * system/core/
+d686176a9  Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23  [Michael Bestas]
+
+====================
+     01-07-2020
+====================
+
+
+====================
+     01-06-2020
+====================
+
+
+====================
+     01-05-2020
+====================
+
+   * packages/apps/Nfc/
+5f7a9a61  NFCService: Add sysprop to prevent FW download during boot  with NFC off.  [Jan Altensen]
+   * system/core/
+6b664ff05  ueventd: make parallel restorecon functionality optional  [Luca Stefani]
 

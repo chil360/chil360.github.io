@@ -8,6 +8,10 @@ New build using the latest LineageOS 17.1 sources including the January security
 - LineageActions: Broadcast doze pulse as current user
 - Camera: Fix for flashlight not working
 
+**Note:**
+
+If you update from a previous build using OTA, the Updater app will say that the new build is LineageOS 17.0 instead of 17.1. Don't worry - it will install LineageOS 17.1! I just had to trick the Updater or it wouldn't allow the upgrade using OTA.
+
 <hr>
 
 ### ParanoidAndroid Quartz
