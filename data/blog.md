@@ -1,3 +1,14 @@
+### Dirty Unicorns 14.0 (RC)
+
+Download: [du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip/download)
+
+My first build of Dirty Unicorns 14 is now available for Osprey.
+
+Similar to the Pie version, DU have removed all of the standard AOSP based applications (e.g. Phone, Contacts, Messages, Camera etc.) so you will need to install your own after installing GApps.
+However, I have added Snap to my builds to provide a working camera app with HDR support - just as I did for DU 13.x. 
+
+<hr>
+
 ### Lineage 17.1
 
 **Download:** [lineage-17.1-20200111-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200111-UNOFFICIAL-osprey.zip/download)
@@ -100,14 +111,3 @@ Update for LineageOS 16.0 (Pie) with the December security update.
 **Download:** [AOSiP-9.0-Pizza-osprey-20191211.zip](https://www.androidfilehost.com/?fid=4349826312261669502)
 
 Update for AOSiP 9.0 (Pie) with the December security update.
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191208-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191208-UNOFFICIAL-osprey.zip/download)
-
-**Device changes:**
-- More sepolicy updates
-- Enable extended audio compress format (tinycompress)
-- LineageActions: Broadcast doze pulse as current user
