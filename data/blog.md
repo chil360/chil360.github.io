@@ -1,3 +1,13 @@
+### January Updates [PIE]
+
+Updated builds with January security patches.
+
+**Download:**
+- **LineageOS 16.0:** [lineage-16.0-20200123-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261708904)
+- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200123.zip](https://www.androidfilehost.com/?fid=4349826312261708958)
+
+<hr>
+
 ### Dirty Unicorns 14.0 (RC)
 
 Download: [du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip/download)
@@ -104,10 +114,3 @@ No device changes this week.
 
 Update for LineageOS 16.0 (Pie) with the December security update.
 
-<hr>
-
-### AOSiP 9.0 Pizza - Monthly Build
-
-**Download:** [AOSiP-9.0-Pizza-osprey-20191211.zip](https://www.androidfilehost.com/?fid=4349826312261669502)
-
-Update for AOSiP 9.0 (Pie) with the December security update.
