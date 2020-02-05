@@ -1,3 +1,15 @@
+### Havoc OS 3.2
+
+**Download:** [Havoc-OS-v3.2-20200205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.2-20200205-osprey-Unofficial.zip/download)
+
+Monthly build of HavocOS updated with the February security update.
+
+**Device changes:**
+- SELinux: Enforcing
+- Screenrecord: Patch frameworks/base to set the encoder back to H264
+
+<hr>
+
 ### January Updates [PIE]
 
 Updated builds with January security patches.
@@ -106,11 +118,4 @@ New build with latest sources including a commit to fix the pattern/pin lockscre
 Weekly update built from latest sources. This includes a commit that should now fix the pattern/pin lockscreen security methods. 
 No device changes this week.
 
-<hr>
-
-### Lineage 16.0 - Monthly Build
-
-**Download:** [lineage-16.0-20191211-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261670065)
-
-Update for LineageOS 16.0 (Pie) with the December security update.
 
