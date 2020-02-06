@@ -1,260 +1,97 @@
 ====================
-     01-08-2020
+     02-06-2020
 ====================
 
-   * build/make/
-9e70ad848  releasetools: Move system mount handling to backuptool  [Kyle Harrison]
-742674447  releasetools: squash backuptool support  [Kyle Harrison]
-8186d527f  releasetools: Use the first entry of a mount point when reading fstab  [Kyle Harrison]
-691817a5c  build: allow forcing build of otatools  [Kyle Harrison]
-2ff8b7eb0  releasetools: Store the build.prop file in the OTA zip  [Kyle Harrison]
-924a44937  releasetools: Add script to sign zips  [Kyle Harrison]
-651263705  releasetools: support reading release keys out of some sort of command  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-bbf72aa  msm8916-common: Disable Battery LED  [Kyle Harrison]
-5131372  msm8916-common: init.qcom.usb.rc: Fix the incorrect mtp property  [Kyle Harrison]
-d88084c  msm8916-common: init.qcom.usb.rc: Set the sys.mtp.device_type property  [Kyle Harrison]
-5c87e1a  msm8916-common: Disable NearbyMessagingService  [Kyle Harrison]
-93c9073  Revert "Enforce RRO on framework-res"  [Kyle Harrison]
-55923ea  msm8916-common: camera: Flashlight fix  [Kyle Harrison]
-47eed3f  msm8916-common: LineageActions: Broadcast doze pulse as current user  [Kyle Harrison]
-a9b1bd7  msm8916-common: Switch to powerhal 1.2  [Kyle Harrison]
-d778837  Revert "msm8916-common: Import custom power HAL"  [Kyle Harrison]
-3a419cd  Revert "msm8916-common: Switch to local PowerHAL"  [Kyle Harrison]
-d3a835f  msm8916-common: sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
-ea26841  msm8916-common: sepolicy: Allow access to V4L subdev nodes  [Kyle Harrison]
-64f5c3a  msm8916-common: sepolicy: allow init to read /proc/device-tree  [Kyle Harrison]
-b4b4c9c  msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment  [Kyle Harrison]
-01be050  msm8916-common: sepolicy: Label clearkey 1.2 HAL  [Kyle Harrison]
-3ce17cd  msm8916-common: sepolicy: Label widevine 1.1 HAL  [Kyle Harrison]
-94d794c  msm8916-common: sepolicy: Label /fsg  [Kyle Harrison]
-f49b87e  msm8916-common: sepolicy: Re-enable full sepolicy but keep permissive  [Kyle Harrison]
-ae73050  Revert "msm8916-common: Add temporary sepolicies for 10.0 bringup"  [Kyle Harrison]
-584d9fd  msm8916-common: fix rank of OMX audio codec components  [Kyle Harrison]
-aad8749  msm8916-common: Drop custom loader config for media swcodec  [Kyle Harrison]
-8403fb8  msm8916-common: Disable codec2  [Kyle Harrison]
-72294ba  Revert "msm8916-common: Disable network scan through requestNetworkScan"  [Kyle Harrison]
-4de96e1  msm8916-common: Add IMS packages in powersave whitelist  [Kyle Harrison]
-496a423  msm8916-common: Add support for telephony hidl wrapper  [Kyle Harrison]
-7a9738b  msm8916-common: IMS: decouple ims-ext-common from boot jars  [Kyle Harrison]
-11d99d6  msm8916-common: Add Wellbeing Package to common overlay  [Kyle Harrison]
-ee70428  msm8916-common: Remove more deprecated display flags  [Kyle Harrison]
-c6273ca  msm8916-common: Add system properties for surfaceflinger  [Kyle Harrison]
-36db0f1  msm8916-common: Change user/group permission for for charger  [Kyle Harrison]
-47c147e  msm8916-common: Update charger service path and label  [Kyle Harrison]
-5a58dc5  msm8916-common: Drop mediaextractor seccomp policy  [Kyle Harrison]
-bb8a221  msm8916-common: Enable GL comp backpressure  [Kyle Harrison]
-39fb9cf  msm8916-common: Enable sndmonitor for audio.  [Kyle Harrison]
-5a12de2  msm8916-common: system-properties: Migrate from system.prop to system_prop.mk  [Kyle Harrison]
-5afcc9a  msm8916-common: Adding Audio HAL V5: Direction API  [Kyle Harrison]
-d6b286e  [TEMP] msm8916-common: Use dtbToolLineage  [Kyle Harrison]
-8a17d0f  mam8916-common: Build clearkey HIDL 1.2 service.  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-584dc5a  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
-b33a530  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
-1b711aa  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
-a64b64a  Remove sysfs_disk_stat labels  [Kyle Harrison]
+5860d98  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
+3a55213  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
+e60e46e  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
+9e735ef  Remove sysfs_disk_stat labels  [Kyle Harrison]
    * frameworks/base/
-d346f144565  base: Add a config to remove the battery light preference  [Kyle Harrison]
-9d932a54533  Battery light customization [1/2]  [Kyle Harrison]
-947678b174d  Statusbar clock date: behave like on stock when showing QS panel  [Josh Fox]
-f89805276ce  Add VOLTE icon toggle  [Josh Fox]
-a9754dbfd8a  SystemUI: Show 4G instead of LTE switch  [Josh Fox]
-bbc99f47c4f  Fix VOLTE icon color on Light statusbar  [Josh Fox]
-05921b86de1  VoLTE: Add New Minimal Icon  [Josh Fox]
-95e974475b8  base: Fix padding for VoLTE icon  [Josh Fox]
-85bd38ada1c  SystemUI: Enhancement for volte icon  [Josh Fox]
-6de3d598126  SystemUI: Query IMS state after CapabilityCallback is regisered  [Josh Fox]
-3e102a38ae2  SystemUI: Fix HD icon missing  [Josh Fox]
-625d8bd620b  Adapt to IMS registration changes.  [Josh Fox]
-907c9dd5dc4  SystemUI: Refactor the feature of volte icon  [Josh Fox]
-f90738817c0  SystemUI: Fix volte icon doesn't update in real time  [Josh Fox]
-b0fb465e25f  SystemUI: Add new configuration for displaying Volte icon  [Josh Fox]
-   * hardware/qcom-caf/msm8998/audio/
-d6528fb5f  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [LuK1337]
-   * hardware/qcom-caf/msm8998/display/
-02224d987  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [LuK1337]
-   * hardware/qcom-caf/msm8998/media/
-2fc242a79  Merge tag 'LA.UM.8.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [LuK1337]
-   * manifest/
-3f7d872  manifest: Update lineage repos to 17.1  [Josh Fox]
-   * packages/apps/OwlsNest/
-6caae23  OwlsNest: Implement a check to remove the battery light preference completely on no led config  [Kyle Harrison]
-fbc4964  Battery light customization [2/2]  [Kyle Harrison]
+3a74ae27b44  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-9583155  Set OTA URL to github  [Kyle Harrison]
+8ca4ba0  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-d54931d  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+ea3e9b3  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * system/sepolicy/
-9911c071  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-92b5a6c9  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
+3a3950b5  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
+27a15e24  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
+2dccaa2e  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
+24868f86  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
+00c7f366  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
    * vendor/aosip/
-d12cfff  backuptool: Ensure system is always unmounted  [Kyle Harrison]
-004f325  prebuilt: backuptool: Implement dynamic system mount for A-only  [Kyle Harrison]
-7972cdf  aosip: sounds: Fix default sounds  [Josh Fox]
-1fda184  aosip: Switch to Pixel sounds  [Josh Fox]
-4b496f9  soong_config: Add BOOTLOADER_MESSAGE_OFFSET  [Josh Fox]
+b464bd5  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+5933974  aosip: update gerrit URL  [Akhil Narang]
+   * vendor/prebuilts/
+a5bd7ee  prebuilts: Use 32-bit Gboard  [Kyle Harrison]
 
 ====================
-     01-07-2020
+     02-05-2020
+====================
+
+   * hardware/qcom-caf/msm8996/audio/
+3e32f8e78  Merge tag 'LA.UM.8.6.r1-02900-89xx.0' of https://source.codeaurora.cn/quic/la/platform/hardware/qcom/audio into HEAD  [dianlujitao]
+   * hardware/qcom-caf/sm8150/audio/
+4c1d8e089  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
+
+====================
+     02-04-2020
 ====================
 
    * build/make/
-190a2eaf4  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//build into HEAD  [Josh Fox (XlxFoXxlX)]
+cc5820038  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+   * frameworks/av/
+8f2324de68  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * frameworks/base/
-5c6eeacdfe1  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//frameworks/base into HEAD  [Josh Fox (XlxFoXxlX)]
+588a4bf29aa  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * frameworks/native/
-0202b6999  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Josh Fox (XlxFoXxlX)]
+6fd548be2  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+   * frameworks/opt/net/wifi/
+def8ecf32  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+   * hardware/libhardware/
+1dde6678  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * manifest/
-0d9a4d6  manifest: update to android-10.0.0_r23  [Josh Fox]
-   * packages/apps/Launcher3/
-26c0597e4  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//packages/apps/Launcher3 into HEAD  [Josh Fox (XlxFoXxlX)]
+f7850cb  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+a7193f2  Manifest for Android 10.0.0 Release 27 (QQ1B.200205.002)  [The Android Open Source Project]
+7696dbc  Manifest for Android 10.0.0 Release 26 (QQ1A.200205.002)  [The Android Open Source Project]
+   * packages/apps/Bluetooth/
+6d0f708d  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+   * packages/apps/CertInstaller/
+5529564  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * packages/apps/Settings/
-0aefa715cf  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [Josh Fox (XlxFoXxlX)]
+b8029ce087  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+   * packages/services/Telecomm/
+79cb2944  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * system/bt/
-89d4b0fd1  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform//system/bt into HEAD  [Josh Fox (XlxFoXxlX)]
-   * system/core/
-550c8b75e  Merge tag 'android-10.0.0_r23' of https://android.googlesource.com/platform/system/core into HEAD  [Josh Fox (XlxFoXxlX)]
+994f06e73  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
 
 ====================
-     01-06-2020
+     02-03-2020
 ====================
 
-   * build/make/
-78c587418  core: binary: Allow modules to be built without clang  [Josh Fox (XlxFoXxlX)]
-b0ebcd33b  check_boot_jars: Add CAF IMS to whitelist  [Josh Fox (XlxFoXxlX)]
-d21533ab9  Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful  [Josh Fox (XlxFoXxlX)]
-488092435  core: allow specifying building ramdisk(s) with lzma  [Josh Fox (XlxFoXxlX)]
+   * manifest/
+78aff0a  Update README for new domain  [Anunay Maheshwari]
 
 ====================
-     01-05-2020
-====================
-
-   * bootable/recovery/
-3a6cdbf4  recovery: symlink /sbin for script compatibility  [Josh Fox (XlxFoXxlX)]
-05a30121  recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy  [Josh Fox (XlxFoXxlX)]
-d355f160  recovery: Get a proper shell environment in recovery  [Josh Fox (XlxFoXxlX)]
-1c8d6614  applypatch: Use static libs for libbrotli and libbz.  [Josh Fox (XlxFoXxlX)]
-6d631c6b  recovery: Provide caching for sideload files  [Josh Fox (XlxFoXxlX)]
-8975a88f  Make adb use a custom prop for adb root  [Josh Fox (XlxFoXxlX)]
-3a2e2bfd  recovery: Blank screen on init  [Josh Fox (XlxFoXxlX)]
-aa85dbb3  recovery: Add runtime checks for A/B vs traditional updates  [Josh Fox (XlxFoXxlX)]
-ddf4c680  recovery: Allow bypassing signature verification on non-release builds  [Josh Fox (XlxFoXxlX)]
-9a86b7ab  recovery: Also hide rescue mode from non eng builds  [Josh Fox (XlxFoXxlX)]
-8e8aa038  recovery: Only show tests in eng builds  [Josh Fox (XlxFoXxlX)]
-61969ffe  recovery: Expose reboot to recovery option  [Josh Fox (XlxFoXxlX)]
-9f1eae31  recovery: init: mount pstore fs  [Josh Fox (XlxFoXxlX)]
-de4440f4  recovery: Enable the menu for User builds  [Josh Fox (XlxFoXxlX)]
-ffe29b0f  recovery: Remove "Supported API" message  [Josh Fox (XlxFoXxlX)]
-34476383  recovery: Add wipe system partition option  [Josh Fox (XlxFoXxlX)]
-a8ec063e  otautil: add support for unmounting entire volumes  [Josh Fox (XlxFoXxlX)]
-9f51455b  recovery: Provide sideload cancellation  [Josh Fox (XlxFoXxlX)]
-d979b38d  recovery: Blank screen during shutdown and reboot  [Josh Fox (XlxFoXxlX)]
-fd59b0e3  recovery: Allow device-specific recovery modules  [Josh Fox (XlxFoXxlX)]
-4feb78f9  recovery: Include vendor init trigger  [Josh Fox (XlxFoXxlX)]
-abf8a717  recovery: ui: Support hardware virtual keys  [Josh Fox (XlxFoXxlX)]
-fd8936ce  recovery: ui: Minor cleanup for touch code  [Josh Fox (XlxFoXxlX)]
-849c2f6d  recovery: ui: Default to touch enabled  [Josh Fox (XlxFoXxlX)]
-77309836  recovery: Remove HOST_OS guard for f2fs tools  [Josh Fox (XlxFoXxlX)]
-d24e1553  recovery: wipe bootloader message from index 0 when using custom offsets  [Josh Fox (XlxFoXxlX)]
-1e6b39ca  recovery: Allow custom bootloader msg offset in block misc  [Josh Fox (XlxFoXxlX)]
-9fd5d791  Bring back file-based OTA edify functions  [Josh Fox (XlxFoXxlX)]
-   * build/make/
-294e3bae6  Edify: Add abort message for bootloader asserts  [Josh Fox (XlxFoXxlX)]
-1fb0d0e0b  Allow setting the recovery density separately from the aapt config  [Josh Fox (XlxFoXxlX)]
-41be3a306  Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES  [Josh Fox (XlxFoXxlX)]
-e7b30119d  build: Separate commands in recovery foreach loops  [Josh Fox (XlxFoXxlX)]
-476972d63  build: recovery: Support adding device-specific items  [Josh Fox (XlxFoXxlX)]
-395c85352  Fix odm output directory for devices w/o vendor partition  [Josh Fox (XlxFoXxlX)]
-8f7631024  Remove ro.bionic.ld.warning.  [Josh Fox (XlxFoXxlX)]
-fabdc7700  Switch to aapt2 for getting minSdkVersion  [Josh Fox (XlxFoXxlX)]
-e27b24f10  build: ota: Support for install tools in /tmp/install  [Josh Fox (XlxFoXxlX)]
-a2edf7175  releasetools: ota_from_target_files: add FullOTA_PostValidate  [Josh Fox (XlxFoXxlX)]
-4c49b0f28  NFC: Disable build for AOSP NFC  [Josh Fox (XlxFoXxlX)]
-5e43974f0  build: Fix endif being included in line continuations  [Josh Fox (XlxFoXxlX)]
-84ceaab71  Allow a device to generically define its own headers  [Josh Fox (XlxFoXxlX)]
-f3a773580  Enable dynamic linker warnings only on eng build  [Josh Fox (XlxFoXxlX)]
-f4c6ef598  Don't enable ADB by default on userdebug builds  [Josh Fox (XlxFoXxlX)]
-3dbf68e0c  Add missing languages  [Josh Fox (XlxFoXxlX)]
-0eded5e08  Disable dataroaming by default  [Josh Fox (XlxFoXxlX)]
-2bc65b990  Fix inheritance of PRODUCT_PROPERTY_OVERRIDES for AOSiP audio files  [Josh Fox (XlxFoXxlX)]
-d521d5d77  Remove LatinIME as it is included per target in vendor/aosip  [Josh Fox (XlxFoXxlX)]
-b00b7da28  build: Conditionally include AudioPackage14.mk instead of AllAudio.mk  [Josh Fox (XlxFoXxlX)]
-6b4dfe4df  build: Add support for device tree in boot.img  [Josh Fox (XlxFoXxlX)]
-a57c1cae3  Add BOARD_CUSTOM_BOOTIMG_MK support  [Josh Fox (XlxFoXxlX)]
-8318ffd8e  build: Include AOSiP specific properties in build.prop  [Josh Fox (XlxFoXxlX)]
-1b50c00b5  ota: Disable downgrade check  [Josh Fox (XlxFoXxlX)]
-674fd397e  Allow override of device asserts, including multi-device support.  [Josh Fox (XlxFoXxlX)]
-09e32611b  product: Exclude AOSP apn list on AOSiP build  [Josh Fox (XlxFoXxlX)]
-98c90a75d  Add extra variables to _readonly_late_variables  [Josh Fox (XlxFoXxlX)]
-1932f487f  build: Allow build-image-kernel-modules to be called from shell  [Josh Fox (XlxFoXxlX)]
-ee40102b0  soong: include AOSiP soong_config  [Josh Fox (XlxFoXxlX)]
-353432675  Add roomservice  [Josh Fox (XlxFoXxlX)]
-01ffd6031  core: Only include AOSiP SE policy if repo exists  [Josh Fox (XlxFoXxlX)]
-9093284b7  build: Add AOSiP build support  [Josh Fox (XlxFoXxlX)]
-a2ff51ba4  build: Include vendor/extra/BoardConfigExtra.mk if available  [Josh Fox (XlxFoXxlX)]
-e1863b646  Source AOSiP specific envsetup  [Josh Fox (XlxFoXxlX)]
-1b677a3a4  envsetup: export ANDROID_BUILD_TOP earlier  [Josh Fox (XlxFoXxlX)]
-4734b5fb1  build: Automatically replace old-style kernel header includes with new header lib  [Josh Fox (XlxFoXxlX)]
-e7ebd41cd  build: Ensure /system unmounted at install start  [Josh Fox (XlxFoXxlX)]
-4c39a5459  All operating systems are beautiful  [Josh Fox (XlxFoXxlX)]
-a45a78587  releasetools: Fix the use of StringIO.  [Josh Fox (XlxFoXxlX)]
-e0b0e67e1  releasetools: Replace iteritems with items.  [Josh Fox (XlxFoXxlX)]
-7e04425d1  releasetools: Make merge_target_files and its test Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-5f08a1973  releasetools: Clean up check_target_files_signatures.py.  [Josh Fox (XlxFoXxlX)]
-00f7d445f  releasetools: Make additional modules Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-ac50e5264  releasetools: Clean up additional modules for Python 3 compatibility.  [Josh Fox (XlxFoXxlX)]
-2366555dd  releasetools: Make apex_utils Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-dddcd4d8d  releasetools: Make verity_utils Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-37542bdce  releasetools: Make common Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-2273eb728  releasetools: Make blockimgdiff Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-f3c131215  releasetools: Make rangelib Python 3 compatibile.  [Josh Fox (XlxFoXxlX)]
-393cce655  releasetools: Make common.ZipWriteStr Python 3 compatible.  [Josh Fox (XlxFoXxlX)]
-081f7607a  Remove package-stats.txt  [Josh Fox (XlxFoXxlX)]
-55226b74d  Stop building unnecessary tarballs.  [Josh Fox (XlxFoXxlX)]
-8ac21dc68  Stop using build/target -> build/make/target symlink  [Josh Fox (XlxFoXxlX)]
-b71bd0787  Add missing aapt2 dep in appcompat-files  [Josh Fox (XlxFoXxlX)]
-b809cf382  More base_rules.mk optimizations  [Josh Fox (XlxFoXxlX)]
-814edc878  Improve performance (don't filter ALL_MODULES)  [Josh Fox (XlxFoXxlX)]
-d8340497c  Skip much of aux_config.mk  [Josh Fox (XlxFoXxlX)]
-ea406347c  Remove support for ONE_SHOT_MAKEFILE  [Josh Fox (XlxFoXxlX)]
-b17ce9042  Revert "Revert "Deprecate bash m* commands and use the soong's modules-in* build commands instead.""  [Josh Fox (XlxFoXxlX)]
-49fb6f108  Revert "Deprecate bash m* commands and use the soong's modules-in* build commands instead."  [Josh Fox (XlxFoXxlX)]
-486178e79  Deprecate bash m* commands and use the soong's modules-in* build commands instead.  [Josh Fox (XlxFoXxlX)]
-
-====================
-     01-04-2020
-====================
-
-
-====================
-     01-03-2020
-====================
-
-
-====================
-     01-02-2020
+     02-02-2020
 ====================
 
    * frameworks/base/
-5f33ae050fe  DEBUG: Turn off some debugging we don't need.  [Josh Fox]
-44a5e307e4d  StorageManagerService: Fix for system_server crash while booting  [Josh Fox]
-080b628de82  overlay: Fix derp in package name  [Josh Fox]
-09acb90cacb  SystemUI: Tiny expanding improvement  [Josh Fox]
-e1e68cd98c9  Always allow back gesture when there are transient bars showing  [Josh Fox]
-132fedf5120  Resolve NumberPicker display abnormal issue.  [Josh Fox]
-a4841579cbd  BatteryStats: Update WifiState even if EnergyInfo is invalid  [Josh Fox]
-d86ca8bf552  SystemUI: restart timeout causes black screen  [Josh Fox]
-a2622215254  Audio: Do not disconnect profiles till Bluetooth Off  [Josh Fox]
-9836398bbdb  BackupAgent: add backup shared mode  [Josh Fox]
-a9d0125ceab  hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm  [Josh Fox]
-a19af69a188  Move BT state to OFF when BLE app count is zero  [Josh Fox]
-5f6eadaff16  SystemUI: add more notification snooze times  [Josh Fox]
-2e84b91b45e  base: Expose system icon area weight  [Josh Fox]
-dab0c565d69  Ambient music: send the proper pulse reason on slpi tap  [Josh Fox]
-   * vendor/aosip/
-7e527ef  vendor: privapp elgoog: fix opengapps stuff AGAIN  [Josh Fox (XlxFoXxlX)]
-6b6434a  vendor: elgoog: fix new permissions for Q  [Josh Fox (XlxFoXxlX)]
-b6a9022  Partial Revert "vendor: drop unneeded pe weather and google priv-app bits"  [Josh Fox (XlxFoXxlX)]
-13fdb21  aosip: packages: Build Messaging app  [Anirudh Gupta]
+637cfea3c39  Volume panel: Long press settings button to launch Sound Settings  [Josh Fox]
+e5743b3981d  QSFooterImpl: Animate multiuser avatar  [Josh Fox]
+199189450e3  [DO NOT MERGE] Check CellInfoCallback Detail for Null  [Josh Fox]
+8a4ef3c09e2  ScreenshotHelper: ignore timeout when taking partial screenshots  [Josh Fox]
+deaf2494c32  SystemUI: implement better partial screenshot  [Josh Fox]
+   * hardware/qcom-caf/sdm845/audio/
+0880192d8  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
+
+====================
+     02-01-2020
+====================
+
+
+====================
+     01-31-2020
+====================
+
 

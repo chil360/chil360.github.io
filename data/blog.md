@@ -1,3 +1,15 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200206.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200206.zip/download)
+
+onthly build of AOSiP updated with the February security update.
+
+**Device changes:**
+- SELinux: Enforcing
+- Screenrecord: Patch frameworks/base to set the encoder back to H264
+
+<hr>
+
 ### Havoc OS 3.2
 
 **Download:** [Havoc-OS-v3.2-20200205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.2-20200205-osprey-Unofficial.zip/download)
@@ -108,14 +120,5 @@ New build with latest sources including a commit to fix the pattern/pin lockscre
 - Enable extended audio compress format (tinycompress)
 - LineageActions: Broadcast doze pulse as current user
 - Camera: Fix for flashlight not working
-
-<hr>
-
-### Lineage 17.0 [ALPHA BUILD]
-
-**Download:** [lineage-17.0-20191215-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/lineage-17.0-20191215-UNOFFICIAL-osprey.zip/download)
-
-Weekly update built from latest sources. This includes a commit that should now fix the pattern/pin lockscreen security methods. 
-No device changes this week.
 
 
