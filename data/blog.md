@@ -1,8 +1,18 @@
+### Dirty Unicorns 14.0 (RC)
+
+Download: [du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns updated with the February security update.
+
+There are no device changes - it was enforcing from the first build!
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200206.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200206.zip/download)
 
-onthly build of AOSiP updated with the February security update.
+Monthly build of AOSiP updated with the February security update.
 
 **Device changes:**
 - SELinux: Enforcing
@@ -107,18 +117,5 @@ My initial build of PA Quartz is now available for testing.
 **Download:** [AOSiP-10-Quiche-osprey-20191222.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20191222.zip/download)
 
 Finally, a new build for AOSiP 10.0 Quiche! This includes the December security update and starts to add back some custom features.
-
-<hr>
-
-### Havoc OS 3.0
-
-**Download:** [Havoc-OS-v3.0-20191218-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.0-20191218-osprey-Unofficial.zip/download)
-
-New build with latest sources including a commit to fix the pattern/pin lockscreen security methods.
-
-**Device changes:**
-- Enable extended audio compress format (tinycompress)
-- LineageActions: Broadcast doze pulse as current user
-- Camera: Fix for flashlight not working
 
 
