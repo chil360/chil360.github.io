@@ -1,3 +1,14 @@
+### Lineage 17.1
+
+**Download:** [lineage-17.1-20200209-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200209-UNOFFICIAL-osprey.zip/download)
+
+Monthly build of LineageOS updated with the February security update.
+
+**Device changes:**
+- SELinux: Enforcing
+
+<hr>
+
 ### Dirty Unicorns 14.0 (RC)
 
 Download: [du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip/download)
@@ -109,13 +120,5 @@ My initial build of PA Quartz is now available for testing.
 **Known issues:**
 - Mobile data does not work immediately after install due to an issue with network handover between mobile data and Wifi. To get it working, enable Wifi, connect to a Wifi access point then disable Wifi again - this will trigger mobile data to kick in.
 - Wifi hotspot does not work.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20191222.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20191222.zip/download)
-
-Finally, a new build for AOSiP 10.0 Quiche! This includes the December security update and starts to add back some custom features.
 
 
