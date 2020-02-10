@@ -1,3 +1,17 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-1-osprey-20200210-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200210-dev.zip/download)
+
+Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes the February security patches.
+
+**Device changes:**
+- SELinux: Enforcing
+- LineageActions: Broadcast doze pulse as current user
+- Camera: Fix for flashlight not working
+- Hotspot: Updates to use the CAF softap implementation
+
+<hr>
+
 ### Lineage 17.1
 
 **Download:** [lineage-17.1-20200209-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200209-UNOFFICIAL-osprey.zip/download)
@@ -106,19 +120,5 @@ Also, added the patch to keymaster to fix the pattern/pin lockscreen security me
 **Device changes:**
 - LineageActions: Broadcast doze pulse as current user
 - Camera: Fix for flashlight not working
-
-<hr>
-
-### ParanoidAndroid Quartz [ALPHA BUILD]
-
-**Download:** [pa-quartz-1-osprey-20200101-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200101-dev.zip/download)
-
-**HAPPY NEW YEAR!**
-
-My initial build of PA Quartz is now available for testing.
-
-**Known issues:**
-- Mobile data does not work immediately after install due to an issue with network handover between mobile data and Wifi. To get it working, enable Wifi, connect to a Wifi access point then disable Wifi again - this will trigger mobile data to kick in.
-- Wifi hotspot does not work.
 
 
