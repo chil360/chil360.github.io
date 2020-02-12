@@ -1,3 +1,13 @@
+### February Updates [PIE]
+
+Updated builds with February security patches.
+
+**Download:**
+- **LineageOS 16.0:** [lineage-16.0-20200212-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261721752)
+- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200212.zip](https://www.androidfilehost.com/?fid=4349826312261721790)
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-1-osprey-20200210-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200210-dev.zip/download)
@@ -107,18 +117,5 @@ Updated to the latest sources which are based on a newer CAF tag and also includ
 **Download:** [Havoc-OS-v3.1-20200109-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.1-20200109-osprey-Unofficial.zip/download)
 
 A new build which updates to Havoc OS 3.1 which has the January security update and a few new features.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200108.zip/download)
-
-An updated build for AOSiP 10.0 Quiche with the January security update.
-Also, added the patch to keymaster to fix the pattern/pin lockscreen security methods.
-
-**Device changes:**
-- LineageActions: Broadcast doze pulse as current user
-- Camera: Fix for flashlight not working
 
 
