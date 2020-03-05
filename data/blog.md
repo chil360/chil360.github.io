@@ -1,3 +1,18 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-1-osprey-20200305-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200305-dev.zip/download)
+
+Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes the March security patches.
+
+**Device changes:**
+- Fix offline charger
+- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
+- Kernel:
+    * Replace exfat with sdfat 2.3.0 
+    * Disable debugging in a number of places 
+
+<hr>
+
 ### February Updates [PIE]
 
 Updated builds with February security patches.
@@ -109,13 +124,4 @@ If you update from a previous build using OTA, the Updater app will say that the
 **Download:** [pa-quartz-1-osprey-20200110-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200110-dev.zip/download)
 
 Updated to the latest sources which are based on a newer CAF tag and also includes the January security patches.
-
-<hr>
-
-### Havoc OS 3.1
-
-**Download:** [Havoc-OS-v3.1-20200109-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.1-20200109-osprey-Unofficial.zip/download)
-
-A new build which updates to Havoc OS 3.1 which has the January security update and a few new features.
-
 
