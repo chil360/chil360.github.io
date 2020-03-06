@@ -1,3 +1,18 @@
+### Havoc OS 3.3
+
+**Download:** [Havoc-OS-v3.3-20200306-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.3-20200306-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc OS including the March security patches.
+
+**Device changes:**
+- Fix offline charger
+- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
+- Kernel:
+    * Replace exfat with sdfat 2.3.0 
+    * Disable debugging in a number of places 
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-1-osprey-20200305-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200305-dev.zip/download)
@@ -116,12 +131,4 @@ New build using the latest LineageOS 17.1 sources including the January security
 **Note:**
 
 If you update from a previous build using OTA, the Updater app will say that the new build is LineageOS 17.0 instead of 17.1. Don't worry - it will install LineageOS 17.1! I just had to trick the Updater or it wouldn't allow the upgrade using OTA.
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-1-osprey-20200110-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200110-dev.zip/download)
-
-Updated to the latest sources which are based on a newer CAF tag and also includes the January security patches.
 
