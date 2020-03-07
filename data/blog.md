@@ -1,3 +1,17 @@
+### Dirty Unicorns 14
+
+Download: [du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the March security patches.
+
+**Device changes:**
+- Fix offline charger
+- Kernel:
+    * Replace exfat with sdfat 2.3.0 
+    * Disable debugging in a number of places 
+
+<hr>
+
 ### Havoc OS 3.3
 
 **Download:** [Havoc-OS-v3.3-20200306-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.3-20200306-osprey-Unofficial.zip/download)
@@ -115,20 +129,4 @@ My first build of Dirty Unicorns 14 is now available for Osprey.
 
 Similar to the Pie version, DU have removed all of the standard AOSP based applications (e.g. Phone, Contacts, Messages, Camera etc.) so you will need to install your own after installing GApps.
 However, I have added Snap to my builds to provide a working camera app with HDR support - just as I did for DU 13.x. 
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200111-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200111-UNOFFICIAL-osprey.zip/download)
-
-New build using the latest LineageOS 17.1 sources including the January security update.
-
-**Device changes:**
-- LineageActions: Broadcast doze pulse as current user
-- Camera: Fix for flashlight not working
-
-**Note:**
-
-If you update from a previous build using OTA, the Updater app will say that the new build is LineageOS 17.0 instead of 17.1. Don't worry - it will install LineageOS 17.1! I just had to trick the Updater or it wouldn't allow the upgrade using OTA.
 
