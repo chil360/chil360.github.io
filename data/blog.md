@@ -1,3 +1,18 @@
+### Lineage 17.1
+
+**Download:** [lineage-17.1-20200308-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200308-UNOFFICIAL-osprey.zip/download)
+
+Monthly build of Lineage OS including the March security patches.
+
+**Device changes:**
+- Fix offline charger
+- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
+- Kernel:
+    * Replace exfat with sdfat 2.3.0 
+    * Disable debugging in a number of places 
+
+<hr>
+
 ### Dirty Unicorns 14
 
 Download: [du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip/download)
@@ -118,15 +133,4 @@ Updated builds with January security patches.
 **Download:**
 - **LineageOS 16.0:** [lineage-16.0-20200123-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261708904)
 - **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200123.zip](https://www.androidfilehost.com/?fid=4349826312261708958)
-
-<hr>
-
-### Dirty Unicorns 14.0 (RC)
-
-Download: [du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200118-1326-UNOFFICIAL.zip/download)
-
-My first build of Dirty Unicorns 14 is now available for Osprey.
-
-Similar to the Pie version, DU have removed all of the standard AOSP based applications (e.g. Phone, Contacts, Messages, Camera etc.) so you will need to install your own after installing GApps.
-However, I have added Snap to my builds to provide a working camera app with HDR support - just as I did for DU 13.x. 
 
