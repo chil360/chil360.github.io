@@ -1,3 +1,18 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200309.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200309.zip/download)
+
+Monthly build of AOSiP updated with the March security update.
+
+**Device changes:**
+- Fix offline charger
+- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
+- Kernel:
+    * Replace exfat with sdfat 2.3.0 
+    * Disable debugging in a number of places 
+
+<hr>
+
 ### Lineage 17.1
 
 **Download:** [lineage-17.1-20200308-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200308-UNOFFICIAL-osprey.zip/download)
@@ -123,14 +138,4 @@ Monthly build of HavocOS updated with the February security update.
 **Device changes:**
 - SELinux: Enforcing
 - Screenrecord: Patch frameworks/base to set the encoder back to H264
-
-<hr>
-
-### January Updates [PIE]
-
-Updated builds with January security patches.
-
-**Download:**
-- **LineageOS 16.0:** [lineage-16.0-20200123-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261708904)
-- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200123.zip](https://www.androidfilehost.com/?fid=4349826312261708958)
 

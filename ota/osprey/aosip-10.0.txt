@@ -1,97 +1,199 @@
 ====================
-     02-06-2020
+     03-09-2020
 ====================
 
+   * device/aosip/sepolicy/
+4491250  legacy-common: Simplify legacy camera HAL1 rules  [Kyle Harrison]
+458e1a0  sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
+   * device/motorola/msm8916-common/
+bbd4fde  msm8916-common: sepolicy: Fix offline charger sepolicy  [Kyle Harrison]
+e51e97b  msm8916-common: Add CAP_SYS_BOOT for charger  [Kyle Harrison]
+7f588f5  msm8916-common: sepolicy: Revert camera HAL1 sepolicy  [Kyle Harrison]
+e34c9ee  Revert "msm8916-common: sepolicy: Allow all camera apps access to camera_prop"  [Kyle Harrison]
+2472e7e  msm8916-common: prop: Set DEVICE_PROVISIONED  [Kyle Harrison]
+c7a6232  Revert "msm8916-common: sepolicy: Allow init to write to /proc/cpu/alignment"  [Kyle Harrison]
+91d6a6f  msm8916-common: Add QTI Telephony Utils  [Kyle Harrison]
+87f8a3b  msm8916-common: Telephony: Add telephony_injection file  [Kyle Harrison]
    * device/qcom/sepolicy-legacy/
-5860d98  sepolicy: Allow init to mounton system_file  [Kyle Harrison]
-3a55213  sepolicy: Resolve firmware_file denials  [Kyle Harrison]
-e60e46e  sepolicy: Label /firmware(/.*)? instead of /firmware/image(/.*)?  [Kyle Harrison]
-9e735ef  Remove sysfs_disk_stat labels  [Kyle Harrison]
+1f8ba63  sepolicy: Add access policy for charger  [Kyle Harrison]
    * frameworks/base/
-3a74ae27b44  screenrecord: Switch back to H264  [Kyle Harrison]
+4d29c66000a  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-8ca4ba0  Set OTA URL to github  [Kyle Harrison]
+d9fac25  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-ea3e9b3  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
-   * system/sepolicy/
-3a3950b5  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kyle Harrison]
-27a15e24  file_contexts: Include legacy /system/vendor paths  [Kyle Harrison]
-2dccaa2e  Mark mediacodec_2{6,7,8} as hal_omx_server  [Kyle Harrison]
-24868f86  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Kyle Harrison]
-00c7f366  sepolicy: Optionally build sepolicy_freeze_test  [Kyle Harrison]
+e7decfd  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-b464bd5  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
-5933974  aosip: update gerrit URL  [Akhil Narang]
+fad27c6  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
    * vendor/prebuilts/
-a5bd7ee  prebuilts: Use 32-bit Gboard  [Kyle Harrison]
+f9236e3  prebuilts: Use 32-bit Gboard  [Kyle Harrison]
 
 ====================
-     02-05-2020
+     03-08-2020
 ====================
 
-   * hardware/qcom-caf/msm8996/audio/
-3e32f8e78  Merge tag 'LA.UM.8.6.r1-02900-89xx.0' of https://source.codeaurora.cn/quic/la/platform/hardware/qcom/audio into HEAD  [dianlujitao]
-   * hardware/qcom-caf/sm8150/audio/
-4c1d8e089  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
-
-====================
-     02-04-2020
-====================
-
-   * build/make/
-cc5820038  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * frameworks/av/
-8f2324de68  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
    * frameworks/base/
-588a4bf29aa  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * frameworks/native/
-6fd548be2  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * frameworks/opt/net/wifi/
-def8ecf32  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * hardware/libhardware/
-1dde6678  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * manifest/
-f7850cb  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-a7193f2  Manifest for Android 10.0.0 Release 27 (QQ1B.200205.002)  [The Android Open Source Project]
-7696dbc  Manifest for Android 10.0.0 Release 26 (QQ1A.200205.002)  [The Android Open Source Project]
-   * packages/apps/Bluetooth/
-6d0f708d  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * packages/apps/CertInstaller/
-5529564  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+7b19efd7b01  Fix VOLUME_LINK_NOTIFICATION javadoc  [Josh Fox]
+b2b05b4706c  frameworks: Add unlinked ringtone and notification volumes  [Josh Fox]
+   * packages/apps/OwlsNest/
+248a6ce  Add kill app action to supported features  [Josh Fox]
    * packages/apps/Settings/
-b8029ce087  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * packages/services/Telecomm/
-79cb2944  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
-   * system/bt/
-994f06e73  Merge tag 'android-10.0.0_r27' into ten  [Akhil Narang]
+ce07d99de3  Gestures: Improvements  [Josh Fox]
+dc5ca5b4e5  Allow long back swipe on bottom screen when launcher is showing [2/2]  [Josh Fox]
+23f4c0f499  Allow a wider back swipe to trigger actions (instead of timeout) [2/2]  [Josh Fox]
+207e1591bb  Allow long back swipe to trigger custom actions/app/activities [2/2]  [Josh Fox]
+b29efdf422  VolumePanel: fix showing notification volume slider when unlinked  [Josh Fox]
+aee4b54f91  Settings: Use correct icon for ring volume  [Josh Fox]
+3bff34b451  Settings: Add switch for linked ring and media notification volumes  [Josh Fox]
+   * vendor/overlay/
+8971b99  overlay: remove background_floating_device_default_dark exposure  [Josh Fox (XlxFoXxlX)]
+44f978d  themes: don't hardcode Screenrecord dialog color  [Josh Fox (XlxFoXxlX)]
+8892dad  overlays: Remove more duplicate exposures  [Josh Fox (XlxFoXxlX)]
+b02da0a  overlays: Remove duplicate exposure for notifications  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     02-03-2020
+     03-07-2020
 ====================
 
+   * device/generic/goldfish/
+9cf803e  Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31  [Luca Stefani]
+   * external/google/
+31e2a19  Add kill app action to squeeze actions [3/3]  [Josh Fox (XlxFoXxlX)]
+2cda0a5  Move actions to aosipUtils [2/2]  [Josh Fox (XlxFoXxlX)]
+   * frameworks/base/
+de6b8e122df  StatusBarIconController: Avoid cast exceptions  [Josh Fox]
+b63f66ef497  Mono/Stereo QS tile: Add long click intent  [Josh Fox]
+68c899ac115  Add Mono audio tile (aka headphone in one ear only)  [Josh Fox]
+c0efa9da5d3  Immersive tile: automatically disable immersive mode when in Settings  [Josh Fox]
+929b829c30a  Add dynamic Immersive mode tile  [Josh Fox]
+1f6206c8618  Fix enter deep doze when moving  [Josh Fox (XlxFoXxlX)]
+81590f60a14  Crash occured due to null pointer exception.  [Josh Fox (XlxFoXxlX)]
+f09dc4818a5  ActivityManager: Fix NPE in ProcessRecord  [Josh Fox (XlxFoXxlX)]
+b2dff8ec992  Avoid NPE in system_server in bringDownServiceLocked()  [Josh Fox (XlxFoXxlX)]
+fdd7c253386  ViewRootImpl: Fixed memory leak caussed by viewrootImpl objects  [Josh Fox (XlxFoXxlX)]
+cf837bd665d  Fix MtpDatabase multithreading NullPointerException  [Josh Fox (XlxFoXxlX)]
+4478f1b4fd3  AMS: Fix the null pointer exception in IntentResolver  [Josh Fox (XlxFoXxlX)]
+1c868920961  Fix NullPointerException of AMS  [Josh Fox (XlxFoXxlX)]
+925aabc0f07  AccountManagerService: Fix ConnectionRecord Leak  [Josh Fox (XlxFoXxlX)]
+c5a7290a640  ProgressBar: Media volume bar indicates a wrong value  [Josh Fox (XlxFoXxlX)]
+81dd87a5f6a  Keyguard: Fix failed unlock attempt dialog button  [Josh Fox (XlxFoXxlX)]
+55447836836  Battery percentage: Fix cut off issue in the keyguard  [Josh Fox (XlxFoXxlX)]
+6f386401d42  Gestures: Add haptic feedback to left/right long swipe actions  [Josh Fox (XlxFoXxlX)]
+e8ddc37ca1c  Add kill-app api (with new fresh implementation)  [Josh Fox (XlxFoXxlX)]
+d3058ce2201  Allow long back swipe on bottom screen when launcher is showing [1/2]  [Josh Fox (XlxFoXxlX)]
+3a6a7ca131d  Allow a wider back swipe to trigger actions (instead of timeout) [1/2]  [Josh Fox (XlxFoXxlX)]
+57c8ab3b4bd  Add actions to aosipUtils [1/2]  [Josh Fox (XlxFoXxlX)]
+f7ebe552ae8  Allow long back swipe to trigger custom actions/app/activities [1/2]  [Josh Fox (XlxFoXxlX)]
+   * frameworks/opt/telephony/
+05ae3a77e  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/qcom/audio/
+722c28c  Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31  [Luca Stefani]
+   * hardware/qcom/display/
+d18dd5fe7  Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31  [Luca Stefani]
+   * hardware/qcom/media/
+e484f0ed  Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31  [Luca Stefani]
    * manifest/
-78aff0a  Update README for new domain  [Anunay Maheshwari]
+75dc1ee  manifest: track some repos from AOSP instead  [Akhil Narang]
 
 ====================
-     02-02-2020
+     03-06-2020
 ====================
 
    * frameworks/base/
-637cfea3c39  Volume panel: Long press settings button to launch Sound Settings  [Josh Fox]
-e5743b3981d  QSFooterImpl: Animate multiuser avatar  [Josh Fox]
-199189450e3  [DO NOT MERGE] Check CellInfoCallback Detail for Null  [Josh Fox]
-8a4ef3c09e2  ScreenshotHelper: ignore timeout when taking partial screenshots  [Josh Fox]
-deaf2494c32  SystemUI: implement better partial screenshot  [Josh Fox]
-   * hardware/qcom-caf/sdm845/audio/
-0880192d8  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
+2c3c2161d9e  Revert "Remove keyguard_indication_area_overlay"  [Josh Fox (XlxFoXxlX)]
+b282990042b  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/base into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/services/Telephony/
+fde19346a  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     02-01-2020
+     03-05-2020
 ====================
 
+   * packages/apps/PhoneCommon/
+8194a81  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into HEAD  [Josh Fox (XlxFoXxlX)]
+   * packages/services/Telecomm/
+0a24053d  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     01-31-2020
+     03-04-2020
 ====================
 
+   * external/google/
+8db8336  Dreamliner: Fix abstract method error  [Josh Fox (XlxFoXxlX)]
+   * manifest/
+98846f4  Merge tag 'android-10.0.0_r31' into ten  [Akhil Narang]
+349b5dc  Manifest for Android 10.0.0 Release 31  [The Android Open Source Project]
+720bca6  Add platform/tools/apifinder  [The Android Open Source Project]
+   * packages/apps/Settings/
+e24d2ef5bb  Revert "Remove permission bar chart in Privacy setting"  [Josh Fox (XlxFoXxlX)]
+b81dba4296  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Settings into ten  [Josh Fox (XlxFoXxlX)]
+   * system/core/
+867037e84  fastbootd: always return unlocked in GetDeviceLockStatus  [Josh Fox (XlxFoXxlX)]
+   * system/sepolicy/
+b17702ea  Revert "Revert "Allow dumpstate to dumpsys gpu""  [Josh Fox (XlxFoXxlX)]
+3763f0e7  Revert "Allow dumpstate to dumpsys gpu"  [Josh Fox (XlxFoXxlX)]
+d52e68ef  Revert "Property contexts for ro.sanitize.*"  [Josh Fox (XlxFoXxlX)]
+2d29dada  Property contexts for ro.sanitize.*  [Josh Fox (XlxFoXxlX)]
+
+====================
+     03-03-2020
+====================
+   * art/
+48ba9a5d20  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * bootable/recovery/
+550d8a2f  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * build/make/
+e78227bf2  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * build/soong/
+ccf36b8a  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/build/soong into HEAD  [Josh Fox (XlxFoXxlX)]
+   * development/
+6b658c1a3  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * external/perfetto/
+1046b543  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * frameworks/av/
+f473e0db1  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * frameworks/native/
+1dceda3ad  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * hardware/interfaces/
+e27b00111  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * hardware/libhardware/
+015fcdae  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * manifest/
+38f3fdb  Manifest for Android 10.0.0 Release 30  [The Android Open Source Project]
+   * packages/apps/Bluetooth/
+ea3bc19c  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CarrierConfig/
+b6ac6e8  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CellBroadcastReceiver/
+6046d46e  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/CertInstaller/
+0e43226  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Contacts/
+c865bafe2  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Dialer/
+e2a760fcf  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/DocumentsUI/
+252aea87d  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Nfc/
+cf2c128b  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/ThemePicker/
+019d6e9  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/WallpaperPicker2/
+7071b9c  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/inputmethods/LatinIME/
+47a39ccb1  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/providers/ContactsProvider/
+cc92fd2c  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/providers/DownloadProvider/
+ee345d57  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * packages/providers/MediaProvider/
+9270d2b  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * platform_testing/
+f5be58d8  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * system/bt/
+2959d5c94  Fix build error  [Josh Fox (XlxFoXxlX)]
+e601ccc61  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * system/core/
+e76b51724  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
+   * system/sepolicy/
+fad1acf7  Merge tag 'android-10.0.0_r31' into ten  [Josh Fox (XlxFoXxlX)]
 
