@@ -1,3 +1,13 @@
+### March Updates [PIE]
+
+Updated builds with March security patches.
+
+**Download:**
+- **LineageOS 16.0:** [lineage-16.0-20200311-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261742231)
+- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200311.zip](https://www.androidfilehost.com/?fid=4349826312261742008)
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200309.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200309.zip/download)
@@ -122,18 +132,6 @@ There are no device changes - it was enforcing from the first build!
 **Download:** [AOSiP-10-Quiche-osprey-20200206.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200206.zip/download)
 
 Monthly build of AOSiP updated with the February security update.
-
-**Device changes:**
-- SELinux: Enforcing
-- Screenrecord: Patch frameworks/base to set the encoder back to H264
-
-<hr>
-
-### Havoc OS 3.2
-
-**Download:** [Havoc-OS-v3.2-20200205-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.2-20200205-osprey-Unofficial.zip/download)
-
-Monthly build of HavocOS updated with the February security update.
 
 **Device changes:**
 - SELinux: Enforcing
