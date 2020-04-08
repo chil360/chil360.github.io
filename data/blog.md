@@ -1,3 +1,17 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200408.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200408.zip/download)
+
+Monthly build of AOSiP updated with the April security update.
+
+**Device changes:**
+- Sepolicy fixes to allow Netflix to run
+- Sepolicy label more Camera V4L nodes
+- Restore AOSP casting support
+- Enable Low RAM flag
+
+<hr>
+
 ### March Updates [PIE]
 
 Updated builds with March security patches.
@@ -124,16 +138,4 @@ Download: [du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip](https://sourceforge.net
 Monthly build of Dirty Unicorns updated with the February security update.
 
 There are no device changes - it was enforcing from the first build!
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200206.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200206.zip/download)
-
-Monthly build of AOSiP updated with the February security update.
-
-**Device changes:**
-- SELinux: Enforcing
-- Screenrecord: Patch frameworks/base to set the encoder back to H264
 
