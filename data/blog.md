@@ -1,3 +1,17 @@
+### Havoc OS 3.4
+
+**Download:** [Havoc-OS-v3.4-20200409-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200409-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc OS including the April security patches.
+
+**Device changes:**
+- Sepolicy fixes to allow Netflix to run
+- Sepolicy label more Camera V4L nodes
+- Restore AOSP casting support
+- Enable Low RAM flag
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200408.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200408.zip/download)
@@ -128,14 +142,4 @@ Monthly build of LineageOS updated with the February security update.
 
 **Device changes:**
 - SELinux: Enforcing
-
-<hr>
-
-### Dirty Unicorns 14.0 (RC)
-
-Download: [du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200207-1533-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns updated with the February security update.
-
-There are no device changes - it was enforcing from the first build!
 
