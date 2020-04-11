@@ -1,3 +1,18 @@
+### Dirty Unicorns 14.2
+
+Download: [du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the April security patches.
+
+**Device changes:**
+- Add FM Radio app
+- Sepolicy fixes to allow Netflix to run
+- Sepolicy label more Camera V4L nodes
+- Restore AOSP casting support
+- Enable Low RAM flag
+
+<hr>
+
 ### Havoc OS 3.4
 
 **Download:** [Havoc-OS-v3.4-20200409-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200409-osprey-Unofficial.zip/download)
@@ -131,15 +146,4 @@ Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes
 - LineageActions: Broadcast doze pulse as current user
 - Camera: Fix for flashlight not working
 - Hotspot: Updates to use the CAF softap implementation
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200209-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200209-UNOFFICIAL-osprey.zip/download)
-
-Monthly build of LineageOS updated with the February security update.
-
-**Device changes:**
-- SELinux: Enforcing
 
