@@ -1,3 +1,17 @@
+### Lineage 17.1
+
+**Download:** [lineage-17.1-20200412-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200412-UNOFFICIAL-osprey.zip/download)
+
+Monthly build of Lineage OS including the April security patches.
+
+**Device changes:**
+- Sepolicy fixes to allow Netflix to run
+- Sepolicy label more Camera V4L nodes
+- Restore AOSP casting support
+- Enable Low RAM flag
+
+<hr>
+
 ### Dirty Unicorns 14.2
 
 Download: [du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip/download)
@@ -132,18 +146,4 @@ Updated builds with February security patches.
 **Download:**
 - **LineageOS 16.0:** [lineage-16.0-20200212-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261721752)
 - **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200212.zip](https://www.androidfilehost.com/?fid=4349826312261721790)
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-1-osprey-20200210-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200210-dev.zip/download)
-
-Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes the February security patches.
-
-**Device changes:**
-- SELinux: Enforcing
-- LineageActions: Broadcast doze pulse as current user
-- Camera: Fix for flashlight not working
-- Hotspot: Updates to use the CAF softap implementation
 

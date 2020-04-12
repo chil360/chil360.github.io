@@ -1,0 +1,172 @@
+====================
+     04-12-2020
+====================
+
+   * bootable/recovery/
+4202fecb  bootable: Read all asserts in case there are more than one  [Alessandro Astone]
+   * device/motorola/msm8916-common/
+f6e0aae  msm8916-common: sepolicy: Label more V4L nodes  [Kyle Harrison]
+4e1ceca  msm8916-common: Enable WFD to fix screencast  [Kyle Harrison]
+c9288d2  msm8916-common: Enable low RAM flag  [Kyle Harrison]
+8749785  msm8916-common: sepolicy: Widevine HAL should have access to /data/vendor/mediadrm.  [Kyle Harrison]
+f1bed39  msm8916-common: sepolicy: Widevine HAL should have access to /data/mediadrm.  [Kyle Harrison]
+   * frameworks/av/
+48af79660  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+15b68422a  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+46b43b3fa  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+2badfb82a  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+d6eb12bf4  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+ab88a334b  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+9f655128d  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+06d8de103  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+a713a9c2c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+534d66e24  Revert "Removed unused class and its test"  [Kyle Harrison]
+   * frameworks/base/
+5ca333100e7  Need to check current user when triggering notification lights  [Wang Han]
+   * lineage/hudson/
+ffbeb6c  Regenerate device dependency mappings  [razorloves]
+   * lineage/scripts/
+8abd00d  payload-extractor: Add gitignore for .pyc  [razorloves]
+   * packages/apps/Updater/
+9193c04  Set OTA URL to github  [Kyle Harrison]
+3e289fa  Updater : Remove buildtype check  [Kyle Harrison]
+
+====================
+     04-11-2020
+====================
+   * android/
+93fcc05  manifest: Track our own external/gptfdisk  [Rashed Abdel-Tawab]
+   * bootable/recovery/
+83b95514  recovery: Don't print mount errors when checking for encryption  [Alessandro]
+9b07b201  recovery: Dejank the menus  [Alessandro]
+e4c344ac  recovery: Move sideload (non)cancellation to its own key  [Alessandro]
+b00c91f7  recovery: Hide unmountable volumes from selection  [Alessandro]
+bead2613  recovery: Implement a volume manager  [Alessandro]
+   * frameworks/base/
+cc7221cd8f4  Merge commit 'refs/changes/87/272587/1' of git://github.com/LineageOS/android_frameworks_base into HEAD Change-Id: I23ddfcc2ee4703ca9070eefbec121351b0237a84  [Luca Stefani]
+91e38ca43d5  AudioService: fix audio mode not reset to MODE_NORMAL  [Luca Stefani]
+54c58a5649b  fw/b: Squash of app fw restriction commits  [Sam Mortimer]
+ffefb88ce94  fixup! SystemUI: Bring back good ol' circle battery style  [Luca Stefani]
+   * lineage/hudson/
+b4d678d  hudson: Drop Mido  [Aryan]
+339982b  hudson: Promote x2 to 17.1  [razorloves]
+a5d4437  hudson: Promote bardock/bardockpro to 17.1  [razorloves]
+   * lineage/wiki/
+ecffece  wiki: Drop Mido  [Aryan]
+0be5085  wiki: Promote x2 to 17.1  [razorloves]
+7563c38  devices: Promote bardock/bardockpro to 17.1  [razorloves]
+   * packages/apps/Settings/
+a4819446dc  Merge commit 'refs/changes/97/272597/1' of git://github.com/LineageOS/android_packages_apps_Settings into HEAD Change-Id: Icac667d74a6114725e802b3a2d4d2f954deeea3d  [Luca Stefani]
+
+====================
+     04-10-2020
+====================
+   * android/
+e641fb9  manifest: Move from android-10.0.0_r31 to android-10.0.0_r33  [Luca Stefani]
+   * build/make/
+73279dc8a  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+   * frameworks/av/
+3b04f2bcc  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+   * frameworks/base/
+5c9d2e88f59  ScreenshotSelector: handle rotation issues  [Demon Singur]
+aa8afca1a82  Show QS data saver info dialog until enabled  [Luca Stefani]
+619b6be348d  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+a36beab2c13  Fix: "Clear All" recent app screen loop bug  [Luca Stefani]
+   * hardware/qcom/media/
+53826e06  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+   * lineage/website/
+143dc47  www: Put the correct information for contacting us  [Nolen Johnson]
+   * lineage/wiki/
+0f9ec18  wiki: devices: motorola-sdm660: Assert an Android Pie (9.0) firmware  [Nolen Johnson]
+   * packages/apps/Recorder/
+f23bcc6  Revert "Recorder: Add support for playback audio"  [Bruno Martins]
+   * packages/apps/Settings/
+c8e228f43b  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+   * system/bt/
+413f66aab  Merge tag 'android-10.0.0_r33' into lineage-17.1-android-10.0.0_r33  [Luca Stefani]
+   * system/netd/
+3eeb383d  system/netd: Add BPF support for lineage network restrictions  [Bruno Martins]
+   * tools/repohooks/
+2bbd47c  utils: run: rename internal stdout/stderr vars  [Mike Frysinger]
+
+====================
+     04-09-2020
+====================
+
+   * device/qcom/sepolicy-legacy-um/
+7af39f9  Sepolicy: add define for lksecapp vbmeta and dtbo  [Erfan Abdi]
+   * frameworks/base/
+27bc8293363  SystemUI: Fix showing duplicated charging status  [Luca Stefani]
+   * lineage/hudson/
+5fae0c3  hudson: Promote marlin/sailfish to 17.1  [razorloves]
+   * lineage/wiki/
+4089781  wiki: Promote marlin/sailfish to 17.1  [razorloves]
+07db14b  wiki: Improve legacy A/B hint  [Paul Keith]
+   * packages/apps/Settings/
+e0d9aa239d  Settings: per-app cellular data, vpn and wifi restrictions  [Sam Mortimer]
+   * system/netd/
+144b93b0  system/netd: Squash of app fw restriction commits  [Sam Mortimer]
+   * tools/repohooks/
+7bd2a9a  utils: run: remove redundant redirect settings  [Mike Frysinger]
+
+====================
+     04-08-2020
+====================
+
+   * frameworks/base/
+f75b3a3aa7c  fixup! SystemUI: Allow to disable Lockscreen Media Art [1/3]  [Łukasz Patron]
+   * lineage/hudson/
+4e26917  hudson: Pull tissot  [Łukasz Patron]
+4bc33de  Revert "hudson: pull exynos7580 devices"  [Kevin Haggerty]
+b7fb447  hudson: The Orca lives again!  [Rashed Abdel-Tawab]
+   * lineage/mirror/
+8392f76  Updated to 07-Apr-2020 19:23 UTC  [Kevin F. Haggerty]
+8d0c1b7  Updated to 07-Apr-2020 18:58 UTC  [Kevin F. Haggerty]
+   * lineage/wiki/
+dd16618  wiki: pull tissot  [Artem Borisov]
+f451e2f  wiki: Fix conditionals for lineage install and upgrade  [razorloves]
+8e9ff0b  Revert "wiki: pull exynos7580 devices"  [Nolen Johnson]
+ae03171  wiki: devices: Promote shamu to 17.1  [Nolen Johnson]
+
+====================
+     04-07-2020
+====================
+
+   * device/lineage/sepolicy/
+158f077  sepolicy: New type sdcard_posix for labeled filesystems  [LuK1337]
+   * external/gptfdisk/
+eeb9015  gptfdisk: include gptcl.h after sgdisk.h  [Alessandro]
+e0c471a  gptfdisk: Provide sgdisk_read for direct reads of the partition table  [Alessandro]
+6d837c5  gptfdisk: Build lib for recovery  [Alessandro]
+   * lineage/wiki/
+a0c0144  wiki: Correct `download_boot` key combo for fajita/guacamole  [Łukasz Patron]
+d27f8ad  wiki: Fix upgrade steps for lineage recovery  [Nolen Johnson]
+   * system/core/
+b4c666471  core: mark libsysutils and libdiskconfig recovery_available  [Alessandro]
+   * system/sepolicy/
+a4f1b325  sepolicy: Add sdcard_posix_contextmount_type attribute  [LuK1337]
+   * system/vold/
+a941a18  vold: Accept Linux GPT partitions on external SD cards  [LuK1337]
+9120db1  vold: skip first disk change when converting MBR to GPT  [LuK1337]
+bf60c5f  Fix the group permissions of the sdcard root.  [LuK1337]
+09aef34  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [LuK1337]
+c8d267d  vold: Mount ext4/f2fs portable storage with sdcard_posix  [LuK1337]
+8b76898  vold: Honor mount options for ext4/f2fs partitions  [LuK1337]
+ab73759  vold: Support internal storage partitions  [LuK1337]
+86918bf  vold: Fix fsck on public volumes  [LuK1337]
+cb16b16  vold: add support for more filesystems for public storage  [LuK1337]
+   * tools/repohooks/
+dc1782f  Merge "Added keyword ${PREUPLOAD_FILES_PREFIXED}."  [Gerrit Code Review]
+
+====================
+     04-06-2020
+====================
+
+   * lineage/hudson/
+91872aa  hudson: Ship realme 2 Pro  [Rashed Abdel-Tawab]
+   * lineage/wiki/
+b6bd3f4  wiki: devices: zl1: Add myself as a maintainer  [mosimchah]
+   * vendor/lineage/
+0b501d53  extract_utils: Generate deodexed apk/jar with consistent checksum  [dianlujitao]
+db1caf45  extract_utils: Fix doubled path separator  [dianlujitao]
+
