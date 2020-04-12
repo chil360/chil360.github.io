@@ -1,3 +1,11 @@
+### Havoc OS 3.4
+
+**Download:** [Havoc-OS-v3.4-20200412-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200412-osprey-Unofficial.zip/download)
+
+This is a rebuild of my April Havoc OS 3.4 ROM. It removes the new FaceUnlock feature of Havoc (which is only supported for 64bit devices) as it causes crashes during the Google Setup Wizard when setting up the screen lock.
+
+<hr>
+
 ### Lineage 17.1
 
 **Download:** [lineage-17.1-20200412-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200412-UNOFFICIAL-osprey.zip/download)
@@ -137,13 +145,4 @@ Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes
     * Replace exfat with sdfat 2.3.0 
     * Disable debugging in a number of places 
 
-<hr>
-
-### February Updates [PIE]
-
-Updated builds with February security patches.
-
-**Download:**
-- **LineageOS 16.0:** [lineage-16.0-20200212-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261721752)
-- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200212.zip](https://www.androidfilehost.com/?fid=4349826312261721790)
 
