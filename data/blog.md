@@ -1,3 +1,17 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-1-osprey-20200413-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200413-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the April security patches.
+
+**Device changes:**
+- Sepolicy fixes to allow Netflix to run
+- Sepolicy label more Camera V4L nodes
+- Restore AOSP casting support
+- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
+
+<hr>
+
 ### Havoc OS 3.4
 
 **Download:** [Havoc-OS-v3.4-20200412-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200412-osprey-Unofficial.zip/download)
@@ -122,21 +136,6 @@ Monthly build of Dirty Unicorns including the March security patches.
 **Download:** [Havoc-OS-v3.3-20200306-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.3-20200306-osprey-Unofficial.zip/download)
 
 Monthly build of Havoc OS including the March security patches.
-
-**Device changes:**
-- Fix offline charger
-- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
-- Kernel:
-    * Replace exfat with sdfat 2.3.0 
-    * Disable debugging in a number of places 
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-1-osprey-20200305-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200305-dev.zip/download)
-
-Monthly build of ParanoidAndroid updated to the latest CAF tag and also includes the March security patches.
 
 **Device changes:**
 - Fix offline charger
