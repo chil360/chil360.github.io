@@ -1,3 +1,15 @@
+### ParanoidAndroid 10 Quartz Release 1
+
+**Download:** [pa-quartz-1-osprey-20200416-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200416-dev.zip/download)
+
+This is an updated build of ParanoidAndroid 10 Quartz from the source of the new official release including the new bootanimation and wallpaper.
+
+**Device changes:**
+- Add FM Radio app
+
+<hr>
+
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-1-osprey-20200413-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200413-dev.zip/download)
@@ -128,20 +140,4 @@ Monthly build of Dirty Unicorns including the March security patches.
 - Kernel:
     * Replace exfat with sdfat 2.3.0 
     * Disable debugging in a number of places 
-
-<hr>
-
-### Havoc OS 3.3
-
-**Download:** [Havoc-OS-v3.3-20200306-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.3-20200306-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc OS including the March security patches.
-
-**Device changes:**
-- Fix offline charger
-- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
-- Kernel:
-    * Replace exfat with sdfat 2.3.0 
-    * Disable debugging in a number of places 
-
 
