@@ -1,3 +1,14 @@
+### Havoc OS 3.4
+
+**Download:** [Havoc-OS-v3.4-20200417-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200417-osprey-Unofficial.zip/download)
+
+This is another rebuild of my April Havoc OS 3.4 ROM which will, hopefully, fix the bootloop on 1gb devices by replacing the new bootanimation with the one from previous releases.
+ 
+**Device changes:**
+- Provide prebuilt bootanimation from Havoc 3.3
+- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
+
+<hr>
 ### ParanoidAndroid 10 Quartz Release 1
 
 **Download:** [pa-quartz-1-osprey-20200416-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200416-dev.zip/download)
