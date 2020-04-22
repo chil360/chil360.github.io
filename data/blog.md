@@ -1,3 +1,14 @@
+### April Updates [PIE]
+
+Updated builds with April security patches.
+
+**Download:**
+- **LineageOS 16.0:** [lineage-16.0-20200422-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261779081)
+- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200422.zip](https://www.androidfilehost.com/?fid=4349826312261779202)
+
+<hr>
+
+
 ### Havoc OS 3.4
 
 **Download:** [Havoc-OS-v3.4-20200417-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200417-osprey-Unofficial.zip/download)
@@ -134,20 +145,6 @@ Monthly build of Lineage OS including the March security patches.
 **Device changes:**
 - Fix offline charger
 - Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
-- Kernel:
-    * Replace exfat with sdfat 2.3.0 
-    * Disable debugging in a number of places 
-
-<hr>
-
-### Dirty Unicorns 14
-
-Download: [du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.0-20200307-1426-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the March security patches.
-
-**Device changes:**
-- Fix offline charger
 - Kernel:
     * Replace exfat with sdfat 2.3.0 
     * Disable debugging in a number of places 
