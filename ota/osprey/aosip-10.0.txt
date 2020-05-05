@@ -1,128 +1,112 @@
 ====================
-     04-08-2020
-====================
-
-   * device/aosip/sepolicy/
-dd617a1  legacy-common: Simplify legacy camera HAL1 rules  [Kyle Harrison]
-787950e  sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
-   * device/motorola/msm8916-common/
-476e2ed  msm8916-common: sepolicy: Label more V4L nodes  [Kyle Harrison]
-   * device/qcom/sepolicy-legacy/
-19830d9  sepolicy: Add access policy for charger  [Kyle Harrison]
-   * frameworks/av/
-09a2c2b47c  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-f35f2b7c39  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-deb8aad957  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-1a8af64598  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-1cde0d6045  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-f124cef31b  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-ac820f941e  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-625a122c40  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-b57f1babfc  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-ad1206d2a7  Revert "Removed unused class and its test"  [Kyle Harrison]
-5820f4dbab  Camera: Skip stream size check for whitelisted apps.  [Akhil Narang]
-116ef3e904  camera: Workaround for GCC-compiled HAL3 drivers  [Akhil Narang]
-60428d4e4b  Camera: Add support for manual 3A.  [Akhil Narang]
-3251cbe593  camera: allow device to append camera parameters  [Akhil Narang]
-12ba93fc85  libcameraservice: Don't pass NULL args on setCallbacks call  [Akhil Narang]
-   * frameworks/base/
-1dcc2d0427e9  screenrecord: Switch back to H264  [Kyle Harrison]
-6229a04202b4  Camera: Ignore torch status update for aux or compsite camera  [Akhil Narang]
-59819c699f45  Camera: Clearing exception for Extended Face  [Akhil Narang]
-969c6dfb0a86  Camera: Extend face detection  [Akhil Narang]
-11c7a03611d2  Camera: Don't throw exceptions when value pairs have spaces in them  [Akhil Narang]
-642705391261  Guard in short-circuit evaluations for stringSplit methods.  [Akhil Narang]
-95194f0e25be  SystemUI: StatusBarWindowView: Double tap for ambient display improvements  [Anirudh Gupta]
-baa95fac9445  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [Anirudh Gupta]
-   * packages/apps/Settings/
-0c08f991660  panels: Add Bluetooth panel  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/Updater/
-1855b64  Set OTA URL to github  [Kyle Harrison]
-   * system/keymaster/
-4262cd3  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
-   * vendor/aosip/
-9cd377e  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
-   * vendor/overlay/
-db1b464  Revert "themes: Cleanup hardcoded colors and use/overlay AOSP values"  [Anirudh Gupta]
-
-====================
-     04-07-2020
+     05-05-2020
 ====================
 
    * build/make/
-89156ed61  Merge tag 'android-10.0.0_r33' into ten  [Akhil Narang]
-   * frameworks/av/
-4301bdfa05  media utils: dump audio HAL service before restarting audioserver  [Josh Fox]
-f73bc7de93  audiopolicy: Fixup 7f84dfd and re-sync with CAF  [Josh Fox]
-b41d6580bf  TimeCheck: fix use of uninitialized variable  [Josh Fox]
-96561493e4  cameraserver: Fix logic to skip callbacks for non HAL3 devices for vendor listeners.  [Josh Fox]
-e92df253db  Merge tag 'android-10.0.0_r33' into ten  [Akhil Narang]
-   * frameworks/base/
-c2e88def6b89  Allow to show music heads up on new tracks [1/2]  [Josh Fox (XlxFoXxlX)]
-e0a05e4059b8  Screen record: Collapse QS panel when launching dialog  [Josh Fox (XlxFoXxlX)]
-d4b46117e307  QS header: Update and style edit strings  [Josh Fox (XlxFoXxlX)]
-cdf643ff4975  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into HEAD  [Josh Fox (XlxFoXxlX)]
-   * manifest/
-77b2589  manifest: add minimal manifest to just sync crowdin related repositories  [Josh Fox]
-6519b27  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/manifest into default  [Josh Fox (XlxFoXxlX)]
-daad1b4  Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)  [The Android Open Source Project]
-   * packages/apps/OwlsNest/
-497c431  Allow to show music heads up on new tracks [2/2]  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/Settings/
-7ce9adb216c  Legacy suggestions: Remove alpha for close vector  [Josh Fox (XlxFoXxlX)]
-9688845b9c5  Fix margin start of Hide Pill preference  [Josh Fox (XlxFoXxlX)]
-6d62314ea26  Merge tag 'android-10.0.0_r33' into ten  [Akhil Narang]
-   * packages/services/Telephony/
-434bee089  Grant START_ACTIVITIES_FROM_BACKGROUND  [Josh Fox]
-   * system/bt/
-4938f3bb8  Merge tag 'android-10.0.0_r33' into ten  [Akhil Narang]
-
-====================
-     04-06-2020
-====================
-
+efa9b8ff2  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * device/aosip/sepolicy/
+4b41bae  legacy-common: Simplify legacy camera HAL1 rules  [Kyle Harrison]
+29c9fab  sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
    * device/motorola/msm8916-common/
-26a3d1a  msm8916-common: Enable WFD to fix screencast  [Kyle Harrison]
-1e6764a  msm8916-common: Enable low RAM flag  [Kyle Harrison]
-6cc38a2  msm8916-common: sepolicy: Widevine HAL should have access to /data/vendor/mediadrm.  [Kyle Harrison]
-2af1fa8  msm8916-common: sepolicy: Widevine HAL should have access to /data/mediadrm.  [Kyle Harrison]
-   * packages/apps/ThemePicker/
-9cfff4d  ThemePicker: Enable vertical scrollbar for options container  [Josh Fox (XlxFoXxlX)]
-
-====================
-     04-05-2020
-====================
-
-   * frameworks/native/
-e8578e2a5  Change the position of addAndGetFrameTimestamps when queueBuffer  [Anirudh Gupta]
-962ed8cd6  Fix testVerifyStatsExternalConsistent case  [Anirudh Gupta]
-bd885c5a4  Vulkan: Improve error translation in CreateSwapChainKHR  [Anirudh Gupta]
-45919a1c4  Vulkan: correctly expose Vulkan entry points  [Anirudh Gupta]
-   * system/update_engine/
-aff97704  Allow skipping timestamp check in certain debug conditions  [Anirudh Gupta]
-b54619ad  Run backuptool only in debuggable builds  [Anirudh Gupta]
-
-====================
-     04-04-2020
-====================
-
+e3117fb  msm8916-common: rootdir: Restart cameraserver after boot completed  [Kyle Harrison]
+e13a89f  Properly fix metadata file context  [Kyle Harrison]
+82b6590  msm8916: Enable config_avoidGfxAccel  [Kyle Harrison]
+f665bb8  Revert "msm8916-common: Enable low RAM flag"  [Kyle Harrison]
+   * device/qcom/sepolicy-legacy/
+fbe43cd  sepolicy: Add access policy for charger  [Kyle Harrison]
+   * frameworks/av/
+d7a0e8842  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+36e3a6d32  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+9b6b74a4a  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+f02e45b55  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+66af86d29  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+ba6bdae3c  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+3711b7b0a  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+7e09b40c6  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+0bf5a5b65  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+af44883d1  Revert "Removed unused class and its test"  [Kyle Harrison]
+c6bdb546b  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * frameworks/base/
+3efde7856734  screenrecord: Switch back to H264  [Kyle Harrison]
+fdbd1789ed6d  [1/2] SystemUI: Introduce Adaptive Playback  [Josh Fox]
+9241c0b7c972  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * hardware/knowles/athletico/sound_trigger_hal/
+31358ee  Use generated kernel headers  [Josh Fox (XlxFoXxlX)]
    * manifest/
-e7b7853  manifest: track gapps  [Josh Fox (XlxFoXxlX)]
-efa36f9  manifest: drop vendor/prebuilts  [Josh Fox (XlxFoXxlX)]
+a0137e6  manifest: track jelly from lineage  [Josh Fox]
+a6af996  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+d8bc74e  Manifest for Android 10.0.0 Release 35  [The Android Open Source Project]
+3900458  Manifest for Android 10.0.0 Release 34  [The Android Open Source Project]
    * packages/apps/Settings/
-d13a90a44d4  Settings: adjust system dashboard summary  [Josh Fox]
-   * vendor/overlay/
-be2bdde  overlay: Set up for gapps builds  [Josh Fox]
+a6620f0ef67  [2/2] Settings: Introduce Adaptive Playback  [Josh Fox]
+34931e419e9  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * packages/apps/Updater/
+3e0ec3f  Set OTA URL to github  [Kyle Harrison]
+4be5d43  Updater: update changelog url  [Akhil Narang]
+   * packages/services/Telephony/
+47b0c886f  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * system/bt/
+75aa7bc1e  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+   * system/keymaster/
+6baae01  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+   * vendor/aosip/
+d3fb346  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+b8bd6fa  vendor: Build Jelly  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     04-03-2020
+     05-04-2020
 ====================
 
 
 ====================
-     04-02-2020
+     05-03-2020
+====================
+
+
+====================
+     05-02-2020
+====================
+
+   * prebuilts/clang/host/linux-x86/
+29a15b027  Update prebuilt Clang to r383902.  [Akhil Narang]
+
+====================
+     05-01-2020
+====================
+
+   * build/make/
+3e6bc1994  build: set build fingerprint for all devices  [Josh Fox]
+   * hardware/qcom/display/
+7d10f4b5  msm8084: libhwcomposer fix some warnings  [Elektroschmock]
+d20c3f89  Make hwc_vsync thread realtime  [Elektroschmock]
+b9bd8808  msm8084: Deprecate usage of cutils/log.h  [Elektroschmock]
+   * manifest/
+0ee9984  manifest: track hardware/knowles/athletico/sound_trigger_hal  [Josh Fox]
+   * packages/apps/ThemePicker/
+0356e24  Revert "ThemePicker: allow full heigth for bottom layout in style option picker"  [Josh Fox]
+   * vendor/aosip/
+0ff8854  Revert "aosip: migrate to AOSIP_PRODUCT_PROPERTIES"  [Josh Fox (XlxFoXxlX)]
+0bb22a5  Never allow neverallows  [Josh Fox]
+385a1af  kernel: Allow specifying a custom linker binary  [Josh Fox]
+3ca933a  Revert "kernel: Add option for using LLD as linker"  [Josh Fox]
+
+====================
+     04-30-2020
+====================
+
+   * external/bash/
+aeab988  inputrc: Import from Ubuntu  [Bruno Martins]
+
+====================
+     04-29-2020
 ====================
 
    * frameworks/base/
-ae0f67e90f42  SystemUI: fix notification light pulse for repeating notifications  [Josh Fox]
+a626a2809aff  base: Introduce full circle battery style  [Josh Fox (XlxFoXxlX)]
+a166aa84c906  ThemedBatteryDrawable: Hide plus when showing battery percentage inside icon  [Josh Fox (XlxFoXxlX)]
+1d0431faca04  SystemUI: Readd dotted Circle to Kotlin impl  [Josh Fox (XlxFoXxlX)]
+421af8000c83  Text battery style: show a bolt ⚡ when charging  [Josh Fox (XlxFoXxlX)]
+6b8ffe1a7a27  SystemUI: Bring back good ol' circle battery style  [Josh Fox (XlxFoXxlX)]
+d9e61e0c4153  SystemUI: BatteryPercentage: Detect when overlay changes  [Josh Fox (XlxFoXxlX)]
+3c1d0cdbe561  base: Remove old battery implement  [Josh Fox (XlxFoXxlX)]
 

@@ -1,3 +1,17 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200505.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200505.zip/download)
+
+Monthly build of AOSiP updated with the May security update.
+
+**Device changes:**
+- Fix backuptool
+- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
+- sepolicy: Properly fix metadata file context
+- rootdir: Restart cameraserver after boot completed
+
+<hr>
+
 ### April Updates [PIE]
 
 Updated builds with April security patches.
@@ -133,19 +147,3 @@ Monthly build of AOSiP updated with the March security update.
 - Kernel:
     * Replace exfat with sdfat 2.3.0 
     * Disable debugging in a number of places 
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200308-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200308-UNOFFICIAL-osprey.zip/download)
-
-Monthly build of Lineage OS including the March security patches.
-
-**Device changes:**
-- Fix offline charger
-- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
-- Kernel:
-    * Replace exfat with sdfat 2.3.0 
-    * Disable debugging in a number of places 
-
