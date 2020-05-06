@@ -1,3 +1,17 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-3-osprey-20200506-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-3-osprey-20200506-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the May security patches.
+
+**Device changes:**
+- Sepolicy: Switch to AOSPA legacy-pre-um sepolicy
+- Sepolicy: Properly fix metadata file context
+- rootdir: Restart cameraserver after boot completed
+- Add Snap to replace Camera2
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200505.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200505.zip/download)
@@ -7,7 +21,7 @@ Monthly build of AOSiP updated with the May security update.
 **Device changes:**
 - Fix backuptool
 - Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
-- sepolicy: Properly fix metadata file context
+- Sepolicy: Properly fix metadata file context
 - rootdir: Restart cameraserver after boot completed
 
 <hr>
@@ -132,18 +146,3 @@ Updated builds with March security patches.
 **Download:**
 - **LineageOS 16.0:** [lineage-16.0-20200311-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261742231)
 - **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200311.zip](https://www.androidfilehost.com/?fid=4349826312261742008)
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200309.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200309.zip/download)
-
-Monthly build of AOSiP updated with the March security update.
-
-**Device changes:**
-- Fix offline charger
-- Sepolicy updates: Remove camera HAL1 rules (now included in rom sepolicy)
-- Kernel:
-    * Replace exfat with sdfat 2.3.0 
-    * Disable debugging in a number of places 
