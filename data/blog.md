@@ -1,3 +1,18 @@
+### Dirty Unicorns 14.3
+
+Download: [du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the May security patches.
+
+**Device changes:**
+- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
+- Sepolicy: Properly fix metadata file context
+- rootdir: Restart cameraserver after boot completed
+- rootdir: Revert back to old FM init prop
+- overlays: Disable DiscoveryService
+
+<hr>
+
 ### Lineage 17.1
 
 **Download:** [lineage-17.1-20200511-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200511-UNOFFICIAL-osprey.zip/download)
@@ -131,20 +146,6 @@ Monthly build of Dirty Unicorns including the April security patches.
 
 **Device changes:**
 - Add FM Radio app
-- Sepolicy fixes to allow Netflix to run
-- Sepolicy label more Camera V4L nodes
-- Restore AOSP casting support
-- Enable Low RAM flag
-
-<hr>
-
-### Havoc OS 3.4
-
-**Download:** [Havoc-OS-v3.4-20200409-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200409-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc OS including the April security patches.
-
-**Device changes:**
 - Sepolicy fixes to allow Netflix to run
 - Sepolicy label more Camera V4L nodes
 - Restore AOSP casting support
