@@ -1,3 +1,13 @@
+### May Updates [PIE]
+
+Updated builds with May security patches.
+
+**Download:**
+- **LineageOS 16.0:** [lineage-16.0-20200517-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261811989)
+- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200517.zip](https://www.androidfilehost.com/?fid=4349826312261812053)
+
+<hr>
+
 ### Dirty Unicorns 14.3
 
 Download: [du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip/download)
@@ -131,21 +141,6 @@ This is a rebuild of my April Havoc OS 3.4 ROM. It removes the new FaceUnlock fe
 Monthly build of Lineage OS including the April security patches.
 
 **Device changes:**
-- Sepolicy fixes to allow Netflix to run
-- Sepolicy label more Camera V4L nodes
-- Restore AOSP casting support
-- Enable Low RAM flag
-
-<hr>
-
-### Dirty Unicorns 14.2
-
-Download: [du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.2-20200411-1240-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the April security patches.
-
-**Device changes:**
-- Add FM Radio app
 - Sepolicy fixes to allow Netflix to run
 - Sepolicy label more Camera V4L nodes
 - Restore AOSP casting support
