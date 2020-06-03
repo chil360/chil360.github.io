@@ -1,3 +1,31 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-3-osprey-20200603-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-3-osprey-20200603-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the June security patches.
+
+**Device changes:**
+
+Kernel:
+  - Backport scripts/dtc to allow compilation with GCC 10
+
+Vendor:
+  - Use RenderScript blobs from Channel QPY30.52-2
+  - Update Time Services from Channel QPY30.52-2
+  - Update Peripheral Manager from Channel QPY30.52-2
+  - Update DRM Widevine from Channel QPY30.52-2
+
+Device Tree
+  - rootdir: Revert back to old FM init prop
+  - overlays: Disable DiscoveryService
+  - extract_firmware: Implement dynamic system mount
+  - time-services: Create correct data dirs for time_daemon
+  - Re-enable Peripheral Manager
+  - sepolicy: Bump Widevine HAL to 1.2
+  - Updates for encryption
+
+<hr>
+
 ### May Updates [PIE]
 
 Updated builds with May security patches.
@@ -131,17 +159,3 @@ Monthly build of ParanoidAndroid Quartz including the April security patches.
 **Download:** [Havoc-OS-v3.4-20200412-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200412-osprey-Unofficial.zip/download)
 
 This is a rebuild of my April Havoc OS 3.4 ROM. It removes the new FaceUnlock feature of Havoc (which is only supported for 64bit devices) as it causes crashes during the Google Setup Wizard when setting up the screen lock.
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200412-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200412-UNOFFICIAL-osprey.zip/download)
-
-Monthly build of Lineage OS including the April security patches.
-
-**Device changes:**
-- Sepolicy fixes to allow Netflix to run
-- Sepolicy label more Camera V4L nodes
-- Restore AOSP casting support
-- Enable Low RAM flag
