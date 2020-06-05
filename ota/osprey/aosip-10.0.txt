@@ -1,112 +1,238 @@
 ====================
-     05-05-2020
+     06-05-2020
 ====================
 
-   * build/make/
-efa9b8ff2  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
-   * device/aosip/sepolicy/
-4b41bae  legacy-common: Simplify legacy camera HAL1 rules  [Kyle Harrison]
-29c9fab  sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1  [Kyle Harrison]
    * device/motorola/msm8916-common/
-e3117fb  msm8916-common: rootdir: Restart cameraserver after boot completed  [Kyle Harrison]
-e13a89f  Properly fix metadata file context  [Kyle Harrison]
-82b6590  msm8916: Enable config_avoidGfxAccel  [Kyle Harrison]
-f665bb8  Revert "msm8916-common: Enable low RAM flag"  [Kyle Harrison]
-   * device/qcom/sepolicy-legacy/
-fbe43cd  sepolicy: Add access policy for charger  [Kyle Harrison]
+c27f85d  msm8916-common: rootdir: Restart qcamerasvr after boot completed  [Kyle Harrison]
+ced04b2  msm8916-common: fstab: latemount userdata  [Kyle Harrison]
+d12a298  msm8916-common: Start qseecom daemon early  [Kyle Harrison]
+5b6bd07  msm8916-common: Update qseecom daemon service name  [Kyle Harrison]
+76359b1  msm8916-common: remove TARGET_KEYMASTER_WAIT_FOR_QSEE  [Kyle Harrison]
+fef0fc0  msm8916-common: Revert "Enable legacy HW encryption"  [Kyle Harrison]
+07ce716  msm8916-common: Correct the crypt_fs HIDL name  [Kyle Harrison]
+7030f35  msm8916-common: Switch to cryptfs_hw hidl service  [Kyle Harrison]
+84873b9  msm8916-common: sepolicy: Bump Widevine HAL to 1.2  [Kyle Harrison]
+82f24c1  msm8916-common: Re-enable Peripheral Manager  [Kyle Harrison]
+d5eb9d6  msm8916-common: Create persist dir for time-services  [Kyle Harrison]
+6b2ebc4  msm8916-common: Change uid/gid of time_daemon  [Kyle Harrison]
+f1ead03  msm8916-common: Change /data/time to /data/vendor/time  [Kyle Harrison]
+3e006e3  msm8916-common: extract_firmware: Implement dynamic system mount  [Kyle Harrison]
+38eeeec  msm8916-common: Disable DiscoveryService  [Kyle Harrison]
+ab74351  msm8916-common: Revert back to old FM init prop  [Kyle Harrison]
+ad2d2f4  Revert "[TEMP] msm8916-common: Disable QCOM FM for now"  [Kyle Harrison]
+   * device/motorola/osprey/
+8705656  osprey: Set shipping API level via inherited makefile  [Kyle Harrison]
    * frameworks/av/
-d7a0e8842  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-36e3a6d32  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-9b6b74a4a  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-f02e45b55  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-66af86d29  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-ba6bdae3c  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-3711b7b0a  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-7e09b40c6  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-0bf5a5b65  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-af44883d1  Revert "Removed unused class and its test"  [Kyle Harrison]
-c6bdb546b  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+0ad02e6bc  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+b328941f4  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+84ce27060  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+6f3b00b86  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+088629605  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+9058c0f84  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+1e30943b5  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+a45af02eb  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+28e1ed769  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+1aea8f04a  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-3efde7856734  screenrecord: Switch back to H264  [Kyle Harrison]
-fdbd1789ed6d  [1/2] SystemUI: Introduce Adaptive Playback  [Josh Fox]
-9241c0b7c972  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
-   * hardware/knowles/athletico/sound_trigger_hal/
-31358ee  Use generated kernel headers  [Josh Fox (XlxFoXxlX)]
-   * manifest/
-a0137e6  manifest: track jelly from lineage  [Josh Fox]
-a6af996  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
-d8bc74e  Manifest for Android 10.0.0 Release 35  [The Android Open Source Project]
-3900458  Manifest for Android 10.0.0 Release 34  [The Android Open Source Project]
-   * packages/apps/Settings/
-a6620f0ef67  [2/2] Settings: Introduce Adaptive Playback  [Josh Fox]
-34931e419e9  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+51f50b66677  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-3e0ec3f  Set OTA URL to github  [Kyle Harrison]
-4be5d43  Updater: update changelog url  [Akhil Narang]
-   * packages/services/Telephony/
-47b0c886f  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
-   * system/bt/
-75aa7bc1e  Merge tag 'android-10.0.0_r35' into ten  [Akhil Narang]
+d449a50  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-6baae01  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+58765f4  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-d3fb346  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
-b8bd6fa  vendor: Build Jelly  [Josh Fox (XlxFoXxlX)]
+98b753b  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     05-04-2020
-====================
-
-
-====================
-     05-03-2020
-====================
-
-
-====================
-     05-02-2020
-====================
-
-   * prebuilts/clang/host/linux-x86/
-29a15b027  Update prebuilt Clang to r383902.  [Akhil Narang]
-
-====================
-     05-01-2020
-====================
-
-   * build/make/
-3e6bc1994  build: set build fingerprint for all devices  [Josh Fox]
-   * hardware/qcom/display/
-7d10f4b5  msm8084: libhwcomposer fix some warnings  [Elektroschmock]
-d20c3f89  Make hwc_vsync thread realtime  [Elektroschmock]
-b9bd8808  msm8084: Deprecate usage of cutils/log.h  [Elektroschmock]
-   * manifest/
-0ee9984  manifest: track hardware/knowles/athletico/sound_trigger_hal  [Josh Fox]
-   * packages/apps/ThemePicker/
-0356e24  Revert "ThemePicker: allow full heigth for bottom layout in style option picker"  [Josh Fox]
-   * vendor/aosip/
-0ff8854  Revert "aosip: migrate to AOSIP_PRODUCT_PROPERTIES"  [Josh Fox (XlxFoXxlX)]
-0bb22a5  Never allow neverallows  [Josh Fox]
-385a1af  kernel: Allow specifying a custom linker binary  [Josh Fox]
-3ca933a  Revert "kernel: Add option for using LLD as linker"  [Josh Fox]
-
-====================
-     04-30-2020
-====================
-
-   * external/bash/
-aeab988  inputrc: Import from Ubuntu  [Bruno Martins]
-
-====================
-     04-29-2020
+     06-04-2020
 ====================
 
    * frameworks/base/
-a626a2809aff  base: Introduce full circle battery style  [Josh Fox (XlxFoXxlX)]
-a166aa84c906  ThemedBatteryDrawable: Hide plus when showing battery percentage inside icon  [Josh Fox (XlxFoXxlX)]
-1d0431faca04  SystemUI: Readd dotted Circle to Kotlin impl  [Josh Fox (XlxFoXxlX)]
-421af8000c83  Text battery style: show a bolt ⚡ when charging  [Josh Fox (XlxFoXxlX)]
-6b8ffe1a7a27  SystemUI: Bring back good ol' circle battery style  [Josh Fox (XlxFoXxlX)]
-d9e61e0c4153  SystemUI: BatteryPercentage: Detect when overlay changes  [Josh Fox (XlxFoXxlX)]
-3c1d0cdbe561  base: Remove old battery implement  [Josh Fox (XlxFoXxlX)]
+3bc8f4ffd0f  Automatic translation import  [Akhil Narang]
+   * packages/apps/Contacts/
+b5a085341  AOSP/Contacts - Updated to sdkVersion 29.  [Josh Fox]
+bdd121805  Contacts: manually configure dark theme for list  [Josh Fox]
+c103b8c50  Contacts: allow framework to do dark theming automatically  [Josh Fox]
+22871659f  Contacts: use white nav bar  [Josh Fox]
+2ae1a4850  Contacts: Remove current dark theme  [Josh Fox]
+   * packages/apps/Messaging/
+b3d54db  Automatic translation import  [Akhil Narang]
+e29445f  Remove current dark mode  [Josh Fox]
+9dc9a0f  Messaging: disable auto dark theming on message bubble  [Josh Fox]
+20c18da  Messaging: allow framework to do dark theming automatically  [Josh Fox]
+
+====================
+     06-03-2020
+====================
+   * art/
+72f527aa2a  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * bootable/recovery/
+4128b568  Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [Josh Fox (XlxFoXxlX)]
+   * build/make/
+6387703aa  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * build/soong/
+0a5dc5f8  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * development/
+e1d6bbaed  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * frameworks/av/
+50fee86b3  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * frameworks/base/
+2d1f2bbebeb  SystemUI: Don't forcefully convert wallpaper to SRGB  [Josh Fox (XlxFoXxlX)]
+58a5b97d072  Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into ten  [Josh Fox (XlxFoXxlX)]
+09983f7f2a4  Revert "DozeSensors: do not use binned brightness sensor for proximity if not supported"  [Josh Fox (XlxFoXxlX)]
+   * frameworks/native/
+7c504541c  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * frameworks/opt/telephony/
+00e41cf23  Merge tag 'android-10.0.0_r37' into ten  [Josh Fox (XlxFoXxlX)]
+   * hardware/interfaces/
+11fc012e1  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * hardware/knowles/athletico/sound_trigger_hal/
+c8a1bfc  Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/hardware/knowles/athletico/sound_trigger_hal into HEAD  [Josh Fox (XlxFoXxlX)]
+   * hardware/nxp/nfc/
+8319cb5  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * manifest/
+ff18fa2  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/Bluetooth/
+f176b77a  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/CarrierConfig/
+0b1b2ef  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/CellBroadcastReceiver/
+b6de6b14  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/CertInstaller/
+c4ce5dd  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/Contacts/
+9150c53c4  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/DocumentsUI/
+46cbbb18e  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/Nfc/
+00118969  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/OwlsNest/
+dfe4ed2  Automatic translation import  [Akhil Narang]
+   * packages/apps/PhoneCommon/
+fdcd0d3  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/apps/Settings/
+15c648fac8  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/providers/DownloadProvider/
+2730e62b  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/providers/MediaProvider/
+94feac1  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/services/Telecomm/
+ae9ae3e8  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * packages/services/Telephony/
+39146ca1b  Merge tag 'android-10.0.0_r37' into ten  [Josh Fox (XlxFoXxlX)]
+   * platform_testing/
+fa717d1c  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * system/bt/
+5218762db  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * system/core/
+202b56e21  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * system/extras/
+60577b1d  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * system/sepolicy/
+8efe63ee  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+   * system/vold/
+4c40518  Merge tag 'android-10.0.0_r37' into ten  [Akhil Narang]
+
+====================
+     06-02-2020
+====================
+
+   * frameworks/base/
+4a90fd747e8  Battery icon: fix requestLayout() calls spam when in lockscreen  [Josh Fox]
+96c7f6e734e  Battery icon: fix signal icon padding when using Hidden style  [Josh Fox]
+62ed1bd1b4f  Battery Styles: Remove unneeded function parameter in BatteryMeterView  [Josh Fox]
+7bdeccaf5ef  Battery options cleanup [1/2]  [Josh Fox]
+5d9c80f6075  QuickStatusBarHeader: Allow to show battery percentage [1/2]  [Josh Fox]
+   * manifest/
+d465443  manifest: drop repos we dont need  [Josh Fox]
+fea4547  Manifest for Android 10.0.0 Release 37 (QQ3A.200605.001)  [The Android Open Source Project]
+a3b2879  Manifest for android10-qpr3-release.  [The Android Open Source Project]
+   * packages/apps/OwlsNest/
+8222fb0  OwlsNest: system: Fix incall vibration cateory title  [Josh Fox]
+46f536e  Battery Styles: Allow to show battery percentage [2/2]  [Josh Fox]
+bca26a0  Battery options: cleanup [2/2]  [Josh Fox]
+   * system/core/
+9ed72f013  fs_mgr: skip setting rootfs block as ro during mount_all in recovery  [Josh Fox (XlxFoXxlX)]
+a7d5899b4  adb: go back to standard adb root prop  [Josh Fox (XlxFoXxlX)]
+ef62a5fbb  adb: Look for shell executable in alternate places  [Josh Fox (XlxFoXxlX)]
+acbf6fa77  adb: Also check for ALLOW_ADBD_ROOT  [Josh Fox (XlxFoXxlX)]
+ce5e1fcf7  adb: support wait-for- with multiple states.  [Josh Fox (XlxFoXxlX)]
+41cc4e26f  libbase: add ConsumePrefix/ConsumeSuffix.  [Josh Fox (XlxFoXxlX)]
+3031fed9b  adb: fix double close in wait-for-*.  [Josh Fox (XlxFoXxlX)]
+795ecb9d0  Revert "adb: Add wait-for-online command"  [Josh Fox (XlxFoXxlX)]
+ab7eb0c93  init: only provide control message results for devices launching > Q  [Josh Fox (XlxFoXxlX)]
+3b813b7ea  Ignore class_{reset|start}_post_data on non-updatable APEX.  [Josh Fox (XlxFoXxlX)]
+c2e4ae553  Reland^2: "init: run property service in a thread"  [Josh Fox (XlxFoXxlX)]
+90f031245  init: add error handling in control message  [Josh Fox (XlxFoXxlX)]
+6cb824649  init: simplify async restorecon  [Josh Fox (XlxFoXxlX)]
+26e93d9f8  init: handle getpeercon() errors  [Josh Fox (XlxFoXxlX)]
+9ad6e155e  init: set up SelinuxAuditCallback() earlier  [Josh Fox (XlxFoXxlX)]
+05aef8edd  adb: Add ro.adb.secure.recovery handling  [Josh Fox (XlxFoXxlX)]
+4a6535d3d  core: mark libsysutils and libdiskconfig recovery_available  [Josh Fox (XlxFoXxlX)]
+1f5218eb0  fs_mgr: autodetect filesystem type  [Josh Fox (XlxFoXxlX)]
+
+====================
+     06-01-2020
+====================
+
+
+====================
+     05-31-2020
+====================
+
+   * packages/apps/Gallery2/
+64c7e89b6  Bump API to match dependencies.  [Arne Coucheron]
+
+====================
+     05-30-2020
+====================
+
+   * bootable/recovery/
+52dd247e  recovery: adapt for aosip  [Josh Fox (XlxFoXxlX)]
+   * device/aosip/sepolicy/
+211420b  Merge "[3/3] sepolicy: add support for adb over network" into ten  [Gerrit Code Review]
+9b31a53  [3/3] sepolicy: add support for adb over network  [Anirudh Gupta]
+   * external/e2fsprogs/
+6bc30a7b  Mark libext2{-headers,_blkid,_uuid} as vendor available  [Josh Fox (XlxFoXxlX)]
+b3b9d81e  Ignore -Wno-pointer-sign warnings  [Josh Fox (XlxFoXxlX)]
+4381cd58  resize: Make a target for standalone resize2fs_static binary  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Messaging/
+1974ee7  Import translations. DO NOT MERGE  [Josh Fox (XlxFoXxlX)]
+b99b6a1  Rescheduling pending messages after outside window failure  [Josh Fox (XlxFoXxlX)]
+3b32b23  Fix NPE on MultiConversationNotificationState  [Josh Fox (XlxFoXxlX)]
+73e0897  Hide APN prefs if platform APIs are used  [Josh Fox (XlxFoXxlX)]
+518f57c  Use ic_add_white for consistency instead  [Josh Fox (XlxFoXxlX)]
+efada60  Fix to show APN prefs correctly  [Josh Fox (XlxFoXxlX)]
+800e0ee  Fix NPE  [Josh Fox (XlxFoXxlX)]
+8e58132  Handle delivered messages as completed messages  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/Settings/
+393cabef24  Fix NPE if default supervisor is not defined  [Josh Fox (XlxFoXxlX)]
+   * system/bt/
+01be6d926  Revert "Bluetooth HFP: Use WBS by default (1/5)"  [Josh Fox (XlxFoXxlX)]
+   * system/core/
+59f1cdddc  Make adb use a custom prop for adb root  [Josh Fox (XlxFoXxlX)]
+0c393dcf3  Add adb_root daemon and hooks  [Josh Fox (XlxFoXxlX)]
+   * system/netd/
+1c7150f7  netd: Don't fail on FTP or PPTP conntrack failure  [Josh Fox (XlxFoXxlX)]
+3c6efe3f  netd: Allow devices to force-add directly-connected routes  [Josh Fox (XlxFoXxlX)]
+   * system/vold/
+99ff0c8  vold: Accept Linux GPT partitions on external SD cards  [Josh Fox (XlxFoXxlX)]
+923e1e3  vold: skip first disk change when converting MBR to GPT  [Josh Fox (XlxFoXxlX)]
+36fdc42  Fix the group permissions of the sdcard root.  [Josh Fox (XlxFoXxlX)]
+de4e35b  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Josh Fox (XlxFoXxlX)]
+62394f1  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Josh Fox (XlxFoXxlX)]
+79d0b30  vold: Honor mount options for ext4/f2fs partitions  [Josh Fox (XlxFoXxlX)]
+834f408  vold: Support internal storage partitions  [Josh Fox (XlxFoXxlX)]
+7f336d9  vold: Fix fsck on public volumes  [Josh Fox (XlxFoXxlX)]
+ec58ee3  vold: add support for more filesystems for public storage  [Josh Fox (XlxFoXxlX)]
+24d8653  Fix the overflow issue in Checkpoint  [Josh Fox (XlxFoXxlX)]
+c308c20  Consistently use CLOCK_MONOTONIC for timing encryption  [Josh Fox (XlxFoXxlX)]
+   * vendor/aosip/
+c5cb6cd  BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES  [Josh Fox]
+95a437e  Export qcom UM hal root to soong  [Josh Fox]
+fa163d9  aosip: Add flag for skipping EV_REL input in recovery  [Josh Fox]
+035a251  vendor: cleanup and alphabatize soong namespaces  [Josh Fox]
+0e7299d  Allow A/B OTA downgrades on debuggable builds  [Josh Fox]
+540a7ed  soong_config: Add TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE  [Josh Fox]
+4f7a3c8  soong_config: add TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE  [Josh Fox]
+084efe0  Export techpack/audio uapi headers of msm 4.14 kernel  [Josh Fox]
 

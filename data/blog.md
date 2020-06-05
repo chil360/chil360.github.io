@@ -1,3 +1,31 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200605.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200605.zip/download)
+
+Monthly build of AOSiP Quiche including the June security patches.
+
+**Device changes:**
+
+Kernel:
+  - Backport scripts/dtc to allow compilation with GCC 10
+
+Vendor:
+  - Use RenderScript blobs from Channel QPY30.52-2
+  - Update Time Services from Channel QPY30.52-2
+  - Update Peripheral Manager from Channel QPY30.52-2
+  - Update DRM Widevine from Channel QPY30.52-2
+
+Device Tree
+  - rootdir: Revert back to old FM init prop
+  - overlays: Disable DiscoveryService
+  - extract_firmware: Implement dynamic system mount
+  - time-services: Create correct data dirs for time_daemon
+  - Re-enable Peripheral Manager
+  - sepolicy: Bump Widevine HAL to 1.2
+  - Updates for encryption
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-3-osprey-20200603-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-3-osprey-20200603-dev.zip/download)
@@ -151,11 +179,3 @@ Monthly build of ParanoidAndroid Quartz including the April security patches.
 - Sepolicy label more Camera V4L nodes
 - Restore AOSP casting support
 - Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
-
-<hr>
-
-### Havoc OS 3.4
-
-**Download:** [Havoc-OS-v3.4-20200412-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200412-osprey-Unofficial.zip/download)
-
-This is a rebuild of my April Havoc OS 3.4 ROM. It removes the new FaceUnlock feature of Havoc (which is only supported for 64bit devices) as it causes crashes during the Google Setup Wizard when setting up the screen lock.
