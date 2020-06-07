@@ -1,147 +1,255 @@
 ====================
-     05-11-2020
-====================
-   * android/
-945a9fc  manifest: Use our forks of e/{cldr,icu} and s/timezone  [Luca Stefani]
-   * device/motorola/msm8916-common/
-305a09b  msm8916-common: Disable DiscoveryService  [Kyle Harrison]
-e5c46a6  msm8916-common: Revert back to old FM init prop  [Kyle Harrison]
-   * frameworks/av/
-5cfb0bbbb  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-b91367da1  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-1819b1d0f  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-d39e7f425  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-c294ceaca  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-dc1c90560  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-f14207f4f  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-ceed856d7  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-1611054e8  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-847f58832  Revert "Removed unused class and its test"  [Kyle Harrison]
-   * frameworks/base/
-721f892272f7  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
-   * packages/apps/LineageParts/
-6658832  LineageParts: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/Messaging/
-7b362f7  Messaging: Add sysconfig whitelist xml  [Michael Bestas]
-   * packages/apps/Updater/
-bb90650  Set OTA URL to github  [Kyle Harrison]
-04e0a86  Updater : Remove buildtype check  [Kyle Harrison]
-   * vendor/lineage/
-b838db5d  config: Move permission xml to apps  [Michael Bestas]
-2d5bb63f  config: Remove unused Recorder privapp permissions  [Michael Bestas]
-561146fd  Revert "Add rules for non platform apps that use hidden APIs"  [Michael Bestas]
-35b7e538  config: Don't copy weather permission xml  [Michael Bestas]
-
-====================
-     05-10-2020
+     06-07-2020
 ====================
 
-   * vendor/lineage/
-fd27bb49  lineage: Add flag for skipping EV_REL input in recovery  [Nolen Johnson]
-
-====================
-     05-09-2020
-====================
-
-   * development/
-a9dcc4229  privapp_permissions: Check product privapp_permissions  [LuK1337]
-   * external/bash/
-b330f71  bashrc: Add `ll` alias  [LuK1337]
-   * packages/apps/Eleven/
-89a9397  Eleven: Move to /product  [Michael Bestas]
-049d349  Eleven: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/Exchange/
-f327d18b  Exchange: Add default permissions xml  [Michael Bestas]
-   * packages/apps/Snap/
-813ca62f1  Move Snap and its libs to /product  [Michael Bestas]
-bda901371  Snap: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/Trebuchet/
-819a3453c  Trebuchet: Add extra privapp permissions xml  [Michael Bestas]
-
-====================
-     05-08-2020
-====================
-
+   * art/
+c35d20b4a5  art: extend the supported cpu_variant list for arm64  [Bruno Martins]
    * bootable/recovery/
-2070c421  minui: Allow skipping EV_REL input devices.  [Alessandro Astone]
-   * frameworks/opt/net/wifi/
-a28db699f  wifi_hal: add slsi wifi hal support  [Jan Altensen]
-   * packages/apps/LineageParts/
-ad4b31c  LineageParts: Profiles: Even more improvements  [Michael W]
-
-====================
-     05-07-2020
-====================
-
-   * frameworks/native/
-fd4ef2477  SF:Report active config to java framework  [Michael Bestas]
-   * lineage-sdk/
-abce3bd2  LineageSettingsProvider: Add privapp permissions xml  [Michael Bestas]
-a5e21327  sdk: Remove weather from default services  [Michael Bestas]
-   * lineage/wiki/
-7f483da  wiki: devices: lake: Add support for REVVRY+  [Nolen Johnson]
-   * packages/apps/AudioFX/
-1b01d61  AudioFX: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/Camera2/
-ec1b087db  Camera2: Add privapp permissions xml  [Michael Bestas]
+53fd2548  Move bootctrl.default to /vendor  [Bruno Martins]
+   * build/make/
+a0c60f68c  releasetools: Skip on empty care_map.  [Bruno Martins]
+9b4482be6  releasetools: GetCareMap supports non-sparse image.  [Bruno Martins]
+   * device/lineage/atv/
+04271e2  atv: Import vendor/google/atv  [Nolen Johnson]
+79a6b1d  Add Lineage ATV init file  [Nolen Johnson]
+   * device/motorola/msm8916-common/
+65967c6  msm8916-common: extract_firmware: Run permissive for LOS Recovery  [Kyle Harrison]
+ef4be53  msm8916-common: Support bootdevice symlink in recovery mode.  [Kyle Harrison]
+2e8456a  msm8916-common: Support ADB in LOS Recovery  [Kyle Harrison]
+7ea2574  msm8916-common: rootdir: Restart media service after qcamerasvr is running  [Kyle Harrison]
+b41e717  msm8916-common: fstab: latemount userdata  [Kyle Harrison]
+61a4978  msm8916-common: Start qseecom daemon early  [Kyle Harrison]
+7a68362  msm8916-common: Update qseecom daemon service name  [Kyle Harrison]
+569a194  msm8916-common: remove TARGET_KEYMASTER_WAIT_FOR_QSEE  [Kyle Harrison]
+653224b  msm8916-common: Revert "Enable legacy HW encryption"  [Kyle Harrison]
+733f490  msm8916-common: Correct the crypt_fs HIDL name  [Kyle Harrison]
+7cc5e91  msm8916-common: sepolicy: Bump Widevine HAL to 1.2  [Kyle Harrison]
+e63e1b0  msm8916-common: Re-enable Peripheral Manager  [Kyle Harrison]
+fd551c1  msm8916-common: Create persist dir for time-services  [Kyle Harrison]
+de4a5db  msm8916-common: Change uid/gid of time_daemon  [Kyle Harrison]
+6e5bfdb  msm8916-common: Change /data/time to /data/vendor/time  [Kyle Harrison]
+157fe8b  msm8916-common: extract_firmware: Implement dynamic system mount  [Kyle Harrison]
+361b460  msm8916-common: Disable DiscoveryService  [Kyle Harrison]
+09a46d6  msm8916-common: Revert back to old FM init prop  [Kyle Harrison]
+9c7c37a  msm8916-common: Properly fix metadata file context  [Kyle Harrison]
+   * external/chromium-webview/
+8a8cec3  Downgrade Chromium Webview to 81.0.4044.138  [LuK1337]
+   * frameworks/av/
+bc5af44e0  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+b2b4f2fe2  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+b25314811  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+59645d7ab  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+4d9bf5958  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+859ab6c43  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+cae798f96  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+0c918f2de  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+5bcc1229c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+4c34e0225  Revert "Removed unused class and its test"  [Kyle Harrison]
+50f84dda7  Camera: Make originalDataSpace be const upon stream creation  [Bruno Martins]
+b0bd1c67b  avc/hevc: Align 128 everywhere  [Bruno Martins]
+590ab1656  Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *  [Bruno Martins]
+90b9b46cb  mediaswcodec: Set "default" as preferred service  [Bruno Martins]
+eb8b20132  Codec2Client: Add function to set preferred store  [Bruno Martins]
+   * frameworks/base/
+f67897bc055  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/interfaces/
+1c3f0f917  Add interface info in boot@1.0-service.rc  [Bruno Martins]
    * packages/apps/DeskClock/
-f0471fdc1  DeskClock: Add sysconfig whitelist xml  [Michael Bestas]
-   * packages/apps/Dialer/
-3d36201f4  Dialer: Add extra privapp permissions xml  [Michael Bestas]
-   * packages/apps/FMRadio/
-720ac70  FMRadio: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/FlipFlap/
-d629143  FlipFlap: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/Gallery2/
-25ad77288  Gallery2: Add privapp permissions xml  [Michael Bestas]
-   * packages/apps/SetupWizard/
-7e295e9  SetupWizard: Add privapp permissions xml  [Michael Bestas]
+c3450b4fb  DeskClock: Modernize timer_setup_time look  [Bruno Martins]
+5d6523aea  DeskClock: Update drawables  [Bruno Martins]
+   * packages/apps/Etar/
+20622115  Move input field for location under the guest field  [LuK1337]
+   * packages/apps/Trebuchet/
+0c062179a  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * packages/apps/Updater/
-618ecad  Updater: Add privapp permissions xml  [Michael Bestas]
+3dbb3ee  Set OTA URL to github  [Kyle Harrison]
+bf61b9c  Updater : Remove buildtype check  [Kyle Harrison]
+   * system/core/
+9f8e60656  init.rc: disable kernel module autoloading  [Bruno Martins]
+   * system/sepolicy/
+99492ff2  Ignore the denial when system_other is erased  [Bruno Martins]
+bf981a39  Don't require seinfo for priv-apps  [Bruno Martins]
+e4d091b1  Allow reading dt fstab in boot control HAL.  [Bruno Martins]
+a0cd0720  Add sepolicy for IBootControl 1.0 and the default HAL.  [Bruno Martins]
+d5e4f486  global_macros: trim back various watch* permissions  [Bruno Martins]
+662275a1  update sepolicy for fs notification hooks  [Bruno Martins]
+   * system/vold/
+209a111  Expand virtio_block check to other virtual devices  [Bruno Martins]
 
 ====================
-     05-06-2020
+     06-06-2020
+====================
+
+   * lineage/wiki/
+a66bfc0  wiki: Avoid showing `adb reboot` on last step of install/upgrade page on A/B  [Nolen Johnson]
+   * packages/apps/LineageParts/
+5d6a8c6  KeyHandler: Use VibrationEffect  [Bruno Martins]
+
+====================
+     06-05-2020
+====================
+
+   * frameworks/base/
+63fc6d8c0ac  SystemUI: Make clock truly invisible  [Michael W]
+   * lineage/crowdin/
+e328af8  config: 17.1: Add hardware/sony/SonyOpenTelephony/ModemConfig  [LuK1337]
+   * lineage/hudson/
+446a12f  [TMP] hudson: Move all versions to weeklies  [Nolen Johnson]
+   * lineage/scripts/
+0b193a8  Update default webview to 83.0.4103.96  [Kevin F. Haggerty]
+   * packages/apps/DeskClock/
+4fdeff36b  Revert "Remove max aspect ratio."  [Wang Han]
+   * packages/apps/Dialer/
+8392b6a03  Iterate old recordings properly when migrating call recording data.  [Danny Baumann]
+05afe35d9  Refactor call recording to use MediaProvider.  [Paul Keith]
+
+====================
+     06-04-2020
+====================
+
+   * lineage/mirror/
+5d9d40c  Updated to 04-Jun-2020 13:37 UTC  [Kevin F. Haggerty]
+   * lineage/wiki/
+e92efaf  wiki: Fix bootloader unlocking info for jasmine_sprout  [Davide Garberi]
+
+====================
+     06-03-2020
+====================
+
+   * frameworks/base/
+2dc4ad095d8  SystemUI: QQS brightness: get container padding directly  [Jesse Chan]
+   * lineage/wiki/
+dab8fc1  wiki: Remove custom TWRP for crackling  [razorloves]
+   * packages/apps/Trebuchet/
+b0838b261  Trebuchet: only allow hidden apps when no secure keyguard is set  [Luca Stefani]
+
+====================
+     06-02-2020
 ====================
    * android/
-4adc1d6  manifest: Move from android-10.0.0_r33 to android-10.0.0_r35  [Luca Stefani]
-b6cea84  manifest: Sync vendor/qcom/opensource/vibrator  [Łukasz Patron]
-   * lineage/mirror/
-3a5149e  Updated to 05-May-2020 14:21 UTC  [Kevin F. Haggerty]
-   * lineage/wiki/
-b225dc8  wiki: correct guacamole storage specification  [Bruno Martins]
-7e99125  wiki: reboot to recovery with shell command when installing via dd  [Nolen Johnson]
-9349897  wiki: Promote jason to 17.1  [Michael Bestas]
-ef88d85  wiki: Add twolip  [Michael Bestas]
-6cbc9b4  wiki: Add Redmi Note 7 (lavender)  [Michael Bestas]
-45c5b14  wiki: Add wayne/jasmine_sprout  [Michael Bestas]
-
-====================
-     05-05-2020
-====================
-
+9ff371a  manifest: Track additional    *s introduced in android-10.0.0_r37  [Bruno Martins]
+4426c2f  manifest: android-10.0.0_r35 -> android-10.0.0_r37  [Kevin F. Haggerty]
+   * art/
+412fe316b7  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * bootable/recovery/
+165d84ba  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * build/make/
-e52d613e1  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
-   * device/motorola/msm8916-common/
-d8b51b4  msm8916-common: rootdir: Restart cameraserver after boot completed  [Kyle Harrison]
-08c010f  Properly fix metadata file context  [Kyle Harrison]
+29615bd76  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * build/soong/
+418b5a60  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * development/
+381803470  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * external/libhevc/
+9bd2ff8  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * external/ppp/
+932c8ea  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * frameworks/av/
-27237460f  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
+472ff18aa  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * frameworks/base/
-4b997a53a512  PowerManager: Move custom API definition to end of AIDL  [Han Wang]
+9edf5fe24f5  SystemUI: Don't forcefully convert wallpaper to SRGB  [Luca Stefani]
+db6a24b3d61  Implement quick QS brightness slider [1/3]  [Michael W]
    * frameworks/native/
-2a3943177  Correct PowerManager transaction IDs. These transaction IDs must be kept in sync with the method order from IPowerManager.aidl.  [Pig]
+9b6e5d54b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * frameworks/opt/net/wifi/
+ef8b1a63b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * frameworks/opt/telephony/
+837ce294c  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/interfaces/
+50186f106  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/knowles/athletico/sound_trigger_hal/
+7f994b2  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/nxp/nfc/
+40b2156  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/qcom/gps/
+f094c78  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * hardware/qcom/sdm845/display/
+bf445fa9  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * lineage-sdk/
-eec59ae1  Trust: Actually cancel notification if the setting is disabled  [Bruno Martins]
-   * lineage/wiki/
-8eca768  wiki: devices: victara: Add me as a maintianer  [Nolen Johnson]
-f2c3c99  wiki: victara: Remove myself as maintainer  [Scott Warner]
+343d1e5f  Implement quick QS brightness slider [3/3]  [Michael W]
+   * packages/apps/Bluetooth/
+cf38327e  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/CarrierConfig/
+36d8dc1  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/CellBroadcastReceiver/
+2f15b11b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/CertInstaller/
+8e202a2  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/DocumentsUI/
+700d64ca4  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/EmergencyInfo/
+f2bca0b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/HTMLViewer/
+ae62819  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/KeyChain/
+0f9918d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * packages/apps/LineageParts/
-706da80  Trust: Request removal of the notification when disabling the preference  [Bruno Martins]
+1522f15  Implement quick QS brightness slider [2/3]  [Michael W]
+   * packages/apps/Nfc/
+4e01754d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/PermissionController/
+40c5018b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/PhoneCommon/
+0d98949  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/SecureElement/
+35a969d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * packages/apps/Settings/
-50dade6a5a  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
-2a59774645  Settings: Hide carrier settings version if empty  [Luca Stefani]
+829b1f73a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/SetupWizard/
+297b16f  tests: Add privapp permissions whitelist  [Michael Bestas]
+   * packages/apps/StorageManager/
+15c9644  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/Tag/
+e63bb35  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/Traceur/
+2928915  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/apps/TvSettings/
+938b5302  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/modules/CaptivePortalLogin/
+ec980eb  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/providers/DownloadProvider/
+1035d2c8  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/providers/MediaProvider/
+24b6e97  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/screensavers/PhotoTable/
+014e5d2  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/services/BuiltInPrintService/
+4a40004  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/services/Telecomm/
+a1f9ba43  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * packages/services/Telephony/
-65e3a996a  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
+f721be92c  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * packages/wallpapers/LivePicker/
+0338564  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * platform_testing/
+137136fc  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
    * system/bt/
-5e736f330  Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35  [Luca Stefani]
+f3cc53f68  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * system/core/
+8715e68d1  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * system/extras/
+7c822595  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * system/sepolicy/
+b4300eed  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+   * system/vold/
+5f01274  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+====================
+     06-01-2020
+====================
+   * android/
+2cb0f81  manifest: Switch to our external/libtextclassifier fork  [Han Wang]
+   * frameworks/base/
+dcfcf1f5078  FODCircleView: Add support for pressed fod layer  [Łukasz Patron]
+0dcd7fee60e  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Łukasz Patron]
+   * lineage/hudson/
+6370606  Revert "hudson: (Temp) Drop kuntao"  [Michael Bestas]
+   * packages/apps/Snap/
+e5c1bf6d0  Snap: remove duplicate pause button  [Joey]
+a50c2496b  CaptureUI: handle secure capture when reviewing pictures  [Joey]
+   * packages/apps/Trebuchet/
+4447a63df  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [Bruno Martins]
+2da8bf12f  Trebuchet: fix protected apps behaviour  [Luca Stefani]
+   * vendor/lineage/
+af32ee6d  partner_gms: Support TV GMS  [Nolen Johnson]
+612c5a84  soong: Add flag for fod extension  [Łukasz Patron]
 

@@ -1,3 +1,29 @@
+### Lineage 17.1
+
+**Download:** [lineage-17.1-20200607-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200607-UNOFFICIAL-osprey.zip/download)
+
+Monthly build of Lineage OS including the June security patches.
+
+**Device changes:**
+
+Kernel:
+  - Backport scripts/dtc to allow compilation with GCC 10
+
+Vendor:
+  - Use RenderScript blobs from Channel QPY30.52-2
+  - Update Time Services from Channel QPY30.52-2
+  - Update Peripheral Manager from Channel QPY30.52-2
+  - Update DRM Widevine from Channel QPY30.52-2
+
+Device Tree
+  - extract_firmware: Implement dynamic system mount
+  - time-services: Create correct data dirs for time_daemon
+  - Re-enable Peripheral Manager
+  - sepolicy: Bump Widevine HAL to 1.2
+  - Updates for encryption
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200605.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200605.zip/download)
@@ -164,18 +190,3 @@ This is an updated build of ParanoidAndroid 10 Quartz from the source of the new
 
 **Device changes:**
 - Add FM Radio app
-
-<hr>
-
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-1-osprey-20200413-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-1-osprey-20200413-dev.zip/download)
-
-Monthly build of ParanoidAndroid Quartz including the April security patches.
-
-**Device changes:**
-- Sepolicy fixes to allow Netflix to run
-- Sepolicy label more Camera V4L nodes
-- Restore AOSP casting support
-- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
