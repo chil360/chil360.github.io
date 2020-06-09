@@ -1,3 +1,30 @@
+### Dirty Unicorns 14.4
+
+Download: [du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the June security patches.
+
+**Device changes:**
+
+Kernel:
+  - Backport scripts/dtc to allow compilation with GCC 10
+
+Vendor:
+  - Use RenderScript blobs from Channel QPY30.52-2
+  - Update Time Services from Channel QPY30.52-2
+  - Update Peripheral Manager from Channel QPY30.52-2
+  - Update DRM Widevine from Channel QPY30.52-2
+
+Device Tree
+  - rootdir: Revert back to old FM init prop
+  - overlays: Disable DiscoveryService
+  - extract_firmware: Implement dynamic system mount
+  - time-services: Create correct data dirs for time_daemon
+  - Re-enable Peripheral Manager
+  - sepolicy: Bump Widevine HAL to 1.2
+
+<hr>
+
 ### Havoc OS 3.6
 
 **Download:** [Havoc-OS-v3.6-20200608-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.6-20200608-osprey-Unofficial.zip/download)
@@ -195,15 +222,3 @@ Updated builds with April security patches.
 **Download:**
 - **LineageOS 16.0:** [lineage-16.0-20200422-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261779081)
 - **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200422.zip](https://www.androidfilehost.com/?fid=4349826312261779202)
-
-<hr>
-
-### Havoc OS 3.4
-
-**Download:** [Havoc-OS-v3.4-20200417-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.4-20200417-osprey-Unofficial.zip/download)
-
-This is another rebuild of my April Havoc OS 3.4 ROM which will, hopefully, fix the bootloop on 1gb devices by replacing the new bootanimation with the one from previous releases.
- 
-**Device changes:**
-- Provide prebuilt bootanimation from Havoc 3.3
-- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
