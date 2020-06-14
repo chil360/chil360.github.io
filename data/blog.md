@@ -1,3 +1,11 @@
+### PixelExperience Plus 10.0
+
+Download: [PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip/download)
+
+First build of PixelExperience Plus 10.0 for Osprey. This rom has built-in GApps which I have modified to better support 32bit devices and to slim it down a little.
+
+<hr>
+
 ### Announcement: Lineage OS 17.1 builds DISCONTINUED
 
 As official builds of Lineage OS 17.1 for Osprey are now available, I will be discontinuing my unofficial builds. Monthly builds of my other Q roms will continue as normal.
@@ -209,17 +217,3 @@ Monthly build of ParanoidAndroid Quartz including the May security patches.
 - Sepolicy: Properly fix metadata file context
 - rootdir: Restart cameraserver after boot completed
 - Add Snap to replace Camera2
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200505.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200505.zip/download)
-
-Monthly build of AOSiP updated with the May security update.
-
-**Device changes:**
-- Fix backuptool
-- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
-- Sepolicy: Properly fix metadata file context
-- rootdir: Restart cameraserver after boot completed
