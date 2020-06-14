@@ -1,3 +1,14 @@
+### Announcement: Lineage OS 17.1 builds DISCONTINUED
+
+As official builds of Lineage OS 17.1 for Osprey are now available, I will be discontinuing my unofficial builds. Monthly builds of my other Q roms will continue as normal.
+I advise that anyone using my Lineage OS builds should switch to the official builds for ongoing updates.
+
+**Official Lineage Downloads:** [https://download.lineageos.org/osprey](https://download.lineageos.org/osprey)
+
+Note: Switching to the official Lineage OS builds will require a clean flash so remember to back up your data first.
+
+<hr>
+
 ### Dirty Unicorns 14.4
 
 Download: [du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip/download)
@@ -212,13 +223,3 @@ Monthly build of AOSiP updated with the May security update.
 - Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
 - Sepolicy: Properly fix metadata file context
 - rootdir: Restart cameraserver after boot completed
-
-<hr>
-
-### April Updates [PIE]
-
-Updated builds with April security patches.
-
-**Download:**
-- **LineageOS 16.0:** [lineage-16.0-20200422-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261779081)
-- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200422.zip](https://www.androidfilehost.com/?fid=4349826312261779202)
