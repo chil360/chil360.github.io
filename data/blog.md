@@ -1,3 +1,11 @@
+### POSP Croquette v3.2.0+15
+
+Download: [potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip/download)
+
+First build of POSP Croquette for Osprey.
+
+<hr>
+
 ### PixelExperience Plus 10.0
 
 Download: [PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip/download)
@@ -203,17 +211,3 @@ Monthly build of Havoc updated with the May security update.
 **Device changes:**
 - Sepolicy: Properly fix metadata file context
 - rootdir: Restart cameraserver after boot completed
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-3-osprey-20200506-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-3-osprey-20200506-dev.zip/download)
-
-Monthly build of ParanoidAndroid Quartz including the May security patches.
-
-**Device changes:**
-- Sepolicy: Switch to AOSPA legacy-pre-um sepolicy
-- Sepolicy: Properly fix metadata file context
-- rootdir: Restart cameraserver after boot completed
-- Add Snap to replace Camera2
