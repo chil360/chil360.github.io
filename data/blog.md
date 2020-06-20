@@ -1,3 +1,15 @@
+### POSP Croquette v3.2.0-hotfix+16
+
+Download: [potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip/download)
+
+New build updating POSP sources to v3.2.0-hotfix+16 which fixes a few problems in last release. Also, fix a couple of device issues.
+
+**Device changes:**
+  - bootanimation: Use low res version of the POSP bootanimation for 1gb devices
+  - screenrecord: Switch back to H264 encoding
+
+<hr>
+
 ### POSP Croquette v3.2.0+15
 
 Download: [potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip/download)
@@ -199,15 +211,3 @@ Monthly build of Lineage OS including the May security patches.
 - rootdir: Restart cameraserver after boot completed
 - rootdir: Revert back to old FM init prop
 - overlays: Disable DiscoveryService
-
-<hr>
-
-### Havoc OS 3.5
-
-**Download:** [Havoc-OS-v3.5-20200508-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.5-20200508-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc updated with the May security update.
- 
-**Device changes:**
-- Sepolicy: Properly fix metadata file context
-- rootdir: Restart cameraserver after boot completed
