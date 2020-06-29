@@ -1,3 +1,11 @@
+### Evolution X 10.0
+
+Download: [EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip/download)
+
+First build of Evolution X 10.0 for Osprey. This rom has built-in GApps (with the same packages as my PE build).
+
+<hr>
+
 ### POSP Croquette v3.2.0-hotfix+16
 
 Download: [potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip/download)
@@ -189,21 +197,6 @@ Updated builds with May security patches.
 Download: [du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip/download)
 
 Monthly build of Dirty Unicorns including the May security patches.
-
-**Device changes:**
-- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
-- Sepolicy: Properly fix metadata file context
-- rootdir: Restart cameraserver after boot completed
-- rootdir: Revert back to old FM init prop
-- overlays: Disable DiscoveryService
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200511-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200511-UNOFFICIAL-osprey.zip/download)
-
-Monthly build of Lineage OS including the May security patches.
 
 **Device changes:**
 - Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
