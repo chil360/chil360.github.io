@@ -1,3 +1,21 @@
+### Havoc OS 3.7
+
+**Download:** [Havoc-OS-v3.7-20200708-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.7-20200708-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc updated with the July security update.
+ 
+**Device changes:**
+
+Kernel:
+  - defconfig: Enable Process Reclaim
+
+Device Tree
+  - Enable Zygote Pre-forking
+  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
+  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
+
+<hr>
+
 ### Evolution X 10.0
 
 Download: [EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip/download)
@@ -189,18 +207,3 @@ Updated builds with May security patches.
 **Download:**
 - **LineageOS 16.0:** [lineage-16.0-20200517-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261811989)
 - **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200517.zip](https://www.androidfilehost.com/?fid=4349826312261812053)
-
-<hr>
-
-### Dirty Unicorns 14.3
-
-Download: [du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.3-20200512-1045-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the May security patches.
-
-**Device changes:**
-- Use 'avoid_gfx_accel' flag (instead of 'low_ram') to increase smoothness in the UI and reduce the RAM footprint
-- Sepolicy: Properly fix metadata file context
-- rootdir: Restart cameraserver after boot completed
-- rootdir: Revert back to old FM init prop
-- overlays: Disable DiscoveryService
