@@ -1,3 +1,22 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-4-osprey-20200709-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200709-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the July security patches.
+
+**Device changes:**
+
+Kernel:
+  - defconfig: Enable Process Reclaim
+
+Device Tree
+  - Enable Zygote Pre-forking
+  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
+  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
+  - sepolicy: Label QTI Hostapd & Supplicant services
+
+<hr>
+
 ### Havoc OS 3.7
 
 **Download:** [Havoc-OS-v3.7-20200708-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.7-20200708-osprey-Unofficial.zip/download)
@@ -197,13 +216,3 @@ Device Tree
   - Re-enable Peripheral Manager
   - sepolicy: Bump Widevine HAL to 1.2
   - Updates for encryption
-
-<hr>
-
-### May Updates [PIE]
-
-Updated builds with May security patches.
-
-**Download:**
-- **LineageOS 16.0:** [lineage-16.0-20200517-UNOFFICIAL-osprey.zip](https://www.androidfilehost.com/?fid=4349826312261811989)
-- **AOSiP 9.0 Pizza:** [AOSiP-9.0-Pizza-osprey-20200517.zip](https://www.androidfilehost.com/?fid=4349826312261812053)
