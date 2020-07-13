@@ -1,3 +1,11 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-4-osprey-20200712-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200712-dev.zip/download)
+
+Updated July build with added Face Unlock support.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200710.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200710.zip/download)
@@ -173,34 +181,6 @@ Vendor:
   - Update DRM Widevine from Channel QPY30.52-2
 
 Device Tree
-  - extract_firmware: Implement dynamic system mount
-  - time-services: Create correct data dirs for time_daemon
-  - Re-enable Peripheral Manager
-  - sepolicy: Bump Widevine HAL to 1.2
-  - Updates for encryption
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200605.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200605.zip/download)
-
-Monthly build of AOSiP Quiche including the June security patches.
-
-**Device changes:**
-
-Kernel:
-  - Backport scripts/dtc to allow compilation with GCC 10
-
-Vendor:
-  - Use RenderScript blobs from Channel QPY30.52-2
-  - Update Time Services from Channel QPY30.52-2
-  - Update Peripheral Manager from Channel QPY30.52-2
-  - Update DRM Widevine from Channel QPY30.52-2
-
-Device Tree
-  - rootdir: Revert back to old FM init prop
-  - overlays: Disable DiscoveryService
   - extract_firmware: Implement dynamic system mount
   - time-services: Create correct data dirs for time_daemon
   - Re-enable Peripheral Manager
