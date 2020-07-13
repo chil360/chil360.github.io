@@ -1,3 +1,21 @@
+### Dirty Unicorns 14.5
+
+Download: [du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the July security patches.
+
+**Device changes:**
+
+Kernel:
+  - defconfig: Enable Process Reclaim
+
+Device Tree
+  - Enable Zygote Pre-forking
+  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
+  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-4-osprey-20200712-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200712-dev.zip/download)
@@ -155,32 +173,6 @@ Vendor:
 Device Tree
   - rootdir: Revert back to old FM init prop
   - overlays: Disable DiscoveryService
-  - extract_firmware: Implement dynamic system mount
-  - time-services: Create correct data dirs for time_daemon
-  - Re-enable Peripheral Manager
-  - sepolicy: Bump Widevine HAL to 1.2
-  - Updates for encryption
-
-<hr>
-
-### Lineage 17.1
-
-**Download:** [lineage-17.1-20200607-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/lineage-17.1-20200607-UNOFFICIAL-osprey.zip/download)
-
-Monthly build of Lineage OS including the June security patches.
-
-**Device changes:**
-
-Kernel:
-  - Backport scripts/dtc to allow compilation with GCC 10
-
-Vendor:
-  - Use RenderScript blobs from Channel QPY30.52-2
-  - Update Time Services from Channel QPY30.52-2
-  - Update Peripheral Manager from Channel QPY30.52-2
-  - Update DRM Widevine from Channel QPY30.52-2
-
-Device Tree
   - extract_firmware: Implement dynamic system mount
   - time-services: Create correct data dirs for time_daemon
   - Re-enable Peripheral Manager
