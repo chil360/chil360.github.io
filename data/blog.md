@@ -1,3 +1,11 @@
+### PixelExperience Plus 10.0
+
+Download: [PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip/download)
+
+Updated build of PixelExperience Plus 10.0 including the July security patches.
+
+<hr>
+
 ### Dirty Unicorns 14.5
 
 Download: [du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip/download)
@@ -150,31 +158,3 @@ Device Tree
   - time-services: Create correct data dirs for time_daemon
   - Re-enable Peripheral Manager
   - sepolicy: Bump Widevine HAL to 1.2
-
-<hr>
-
-### Havoc OS 3.6
-
-**Download:** [Havoc-OS-v3.6-20200608-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.6-20200608-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc updated with the June security update.
- 
-**Device changes:**
-
-Kernel:
-  - Backport scripts/dtc to allow compilation with GCC 10
-
-Vendor:
-  - Use RenderScript blobs from Channel QPY30.52-2
-  - Update Time Services from Channel QPY30.52-2
-  - Update Peripheral Manager from Channel QPY30.52-2
-  - Update DRM Widevine from Channel QPY30.52-2
-
-Device Tree
-  - rootdir: Revert back to old FM init prop
-  - overlays: Disable DiscoveryService
-  - extract_firmware: Implement dynamic system mount
-  - time-services: Create correct data dirs for time_daemon
-  - Re-enable Peripheral Manager
-  - sepolicy: Bump Widevine HAL to 1.2
-  - Updates for encryption
