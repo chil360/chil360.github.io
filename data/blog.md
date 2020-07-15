@@ -1,3 +1,15 @@
+### POSP Croquette v3.2.1+17
+
+Download: [potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip/download)
+
+Updated build of POSP Croquette including the July security patches.
+
+**Device changes:**
+
+  - Added FM Radio
+
+<hr>
+
 ### PixelExperience Plus 10.0
 
 Download: [PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip/download)
@@ -131,30 +143,3 @@ I advise that anyone using my Lineage OS builds should switch to the official bu
 **Official Lineage Downloads:** [https://download.lineageos.org/osprey](https://download.lineageos.org/osprey)
 
 Note: Switching to the official Lineage OS builds will require a clean flash so remember to back up your data first.
-
-<hr>
-
-### Dirty Unicorns 14.4
-
-Download: [du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.4-20200609-1026-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the June security patches.
-
-**Device changes:**
-
-Kernel:
-  - Backport scripts/dtc to allow compilation with GCC 10
-
-Vendor:
-  - Use RenderScript blobs from Channel QPY30.52-2
-  - Update Time Services from Channel QPY30.52-2
-  - Update Peripheral Manager from Channel QPY30.52-2
-  - Update DRM Widevine from Channel QPY30.52-2
-
-Device Tree
-  - rootdir: Revert back to old FM init prop
-  - overlays: Disable DiscoveryService
-  - extract_firmware: Implement dynamic system mount
-  - time-services: Create correct data dirs for time_daemon
-  - Re-enable Peripheral Manager
-  - sepolicy: Bump Widevine HAL to 1.2
