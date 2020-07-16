@@ -1,3 +1,11 @@
+### Evolution X 10.0
+
+Download: [EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip/download)
+
+Updated build of Evolution X 10.0 for Osprey including the July security patches.
+
+<hr>
+
 ### POSP Croquette v3.2.1+17
 
 Download: [potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip/download)
