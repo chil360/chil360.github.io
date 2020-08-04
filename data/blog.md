@@ -1,3 +1,15 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-4-osprey-20200804-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200804-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the August security patches.
+
+**Device changes:**
+
+  - Update privapp permissions
+
+<hr>
+
 ### Evolution X 10.0
 
 Download: [EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip/download)
