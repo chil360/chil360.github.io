@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200805.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200805.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the August security patches.
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-4-osprey-20200804-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200804-dev.zip/download)
@@ -136,30 +144,3 @@ New build updating POSP sources to v3.2.0-hotfix+16 which fixes a few problems i
 **Device changes:**
   - bootanimation: Use low res version of the POSP bootanimation for 1gb devices
   - screenrecord: Switch back to H264 encoding
-
-<hr>
-
-### POSP Croquette v3.2.0+15
-
-Download: [potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200619-croquette.v3.2.0+15.Community.zip/download)
-
-First build of POSP Croquette for Osprey.
-
-<hr>
-
-### PixelExperience Plus 10.0
-
-Download: [PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200614-1346-UNOFFICIAL.zip/download)
-
-First build of PixelExperience Plus 10.0 for Osprey. This rom has built-in GApps which I have modified to better support 32bit devices and to slim it down a little.
-
-<hr>
-
-### Announcement: Lineage OS 17.1 builds DISCONTINUED
-
-As official builds of Lineage OS 17.1 for Osprey are now available, I will be discontinuing my unofficial builds. Monthly builds of my other Q roms will continue as normal.
-I advise that anyone using my Lineage OS builds should switch to the official builds for ongoing updates.
-
-**Official Lineage Downloads:** [https://download.lineageos.org/osprey](https://download.lineageos.org/osprey)
-
-Note: Switching to the official Lineage OS builds will require a clean flash so remember to back up your data first.

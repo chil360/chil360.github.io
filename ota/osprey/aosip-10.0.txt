@@ -1,188 +1,76 @@
 ====================
-     07-10-2020
+     08-05-2020
 ====================
 
-   * device/motorola/msm8916-common/
-9980ea72  msm8916-common: add 0x02002000U to additional gralloc usage bits  [Kyle Harrison]
-f5cd5e2a  msm8916-common: Add 0x2000U to additional gralloc usage bits  [Kyle Harrison]
-af113bec  msm8916-common: rootdir: Modify Process Reclaim & LMK configuration for Moto 8916  [Kyle Harrison]
-95bd444b  msm8916-common: rootdir: Import Process Reclaim & LMK configuration from LOS  [Kyle Harrison]
-1c134c04  msm8916-common: Enable Zygote Pre-forking  [Kyle Harrison]
-768c5a27  msm8916-common: rootdir: Restart media service after qcamerasvr is running  [Kyle Harrison]
-56a9bb14  msm8916-common: fstab: latemount userdata  [Kyle Harrison]
-332ff7f6  msm8916-common: Start qseecom daemon early  [Kyle Harrison]
-060d70ee  msm8916-common: Update qseecom daemon service name  [Kyle Harrison]
-8db4e167  msm8916-common: remove TARGET_KEYMASTER_WAIT_FOR_QSEE  [Kyle Harrison]
-64e56e84  msm8916-common: Revert "Enable legacy HW encryption"  [Kyle Harrison]
-e9418ec9  msm8916-common: Correct the crypt_fs HIDL name  [Kyle Harrison]
-b3d8c76e  msm8916-common: Switch to cryptfs_hw hidl service  [Kyle Harrison]
-56fb1f92  msm8916-common: sepolicy: Bump Widevine HAL to 1.2  [Kyle Harrison]
-678e2301  msm8916-common: Re-enable Peripheral Manager  [Kyle Harrison]
-e6b41535  msm8916-common: Create persist dir for time-services  [Kyle Harrison]
-0cf6c871  msm8916-common: Change uid/gid of time_daemon  [Kyle Harrison]
-1f28e743  msm8916-common: Change /data/time to /data/vendor/time  [Kyle Harrison]
-00b776d3  msm8916-common: extract_firmware: Implement dynamic system mount  [Kyle Harrison]
-dc96f45a  msm8916-common: Disable DiscoveryService  [Kyle Harrison]
-87dd4aa1  msm8916-common: Revert back to old FM init prop  [Kyle Harrison]
-e47c9f22  Revert "[TEMP] msm8916-common: Disable QCOM FM for now"  [Kyle Harrison]
-   * device/motorola/osprey/
-1013cd2  osprey: rootdir: Configure LMK in common  [Kyle Harrison]
    * frameworks/av/
-06ed73b1ee  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-8e83437f6a  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-dcf0f2a617  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-d3c0498197  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-2c3ff46269  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-7e4b9b6c1f  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-6ed0587744  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-dc4723960c  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-3e563a2c4a  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-3145c51abe  Revert "Removed unused class and its test"  [Kyle Harrison]
+ca3866c0b7  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+a15ce91047  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+d7d5374adb  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+534335dab8  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+fe2cf64296  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+12eb227d4e  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+24e38220e3  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+41aa91b3e4  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+b4ffa04e7c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+f2a6487b12  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-f6bcf969791  screenrecord: Switch back to H264  [Kyle Harrison]
-73ab13edf60  Automatic translation import  [Akhil Narang]
-   * manifest/
-9ffae4d  Revert "manifest: track CustomDoze"  [Josh Fox]
-   * packages/apps/Dialer/
-ddd6a529f  Automatic translation import  [Akhil Narang]
-   * packages/apps/Messaging/
-42b2e5e  Automatic translation import  [Akhil Narang]
-   * packages/apps/OwlsNest/
-0e681c8  Automatic translation import  [Akhil Narang]
-   * packages/apps/Settings/
-3441ce70e7  Automatic translation import  [Akhil Narang]
+10bfdfd3373  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-354f504  Set OTA URL to github  [Kyle Harrison]
+433113e  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-3fb7c75  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+dc59e83  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-646cffe  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+0dc509f  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     07-09-2020
-====================
-
-   * frameworks/base/
-73ab13edf60  Automatic translation import  [Akhil Narang]
-80bebb00594  base: Add HeadsUp timeout function [1/2]  [Josh Fox]
-66d0ed6e853  base: let user control Qs Battery Location [1/2]  [Josh Fox]
-a9c1f46ed34  qs header battery fixes  [Josh Fox]
-c5ecd1fe24c  Move battery icon to QS header  [Josh Fox (XlxFoXxlX)]
-   * hardware/qcom-caf/sdm845/display/
-42deb8b7  gralloc: Add option for unaligned YCrCb pixel format  [LuK1337]
-   * manifest/
-f398a4b  manifest: track CustomDoze  [Josh Fox]
-77e2d39  manifest: Track a bit of los repos from us  [Josh Fox]
-   * packages/apps/Dialer/
-ddd6a529f  Automatic translation import  [Akhil Narang]
-f4b2a5430  Dialer: Use a DayNight launch theme  [Abdulwahab Isam]
-   * packages/apps/Messaging/
-42b2e5e  Automatic translation import  [Akhil Narang]
-f6685e8  Messaging: Use a DayNight launch theme  [Abdulwahab Isam]
-   * packages/apps/OwlsNest/
-0e681c8  Automatic translation import  [Akhil Narang]
-72425ba  OwlsNest: Allow toggling heads up by using a master switch  [Josh Fox]
-b7fdf28  OwlsNest: Add HeadsUp timeout function [2/2]  [Josh Fox]
-23a1084  OwlsNest: Move all HeadsUp options into their own page  [Josh Fox]
-85db4bc  OwlsNest: let user control Qs Battery Location [2/2]  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/Settings/
-3441ce70e7  Automatic translation import  [Akhil Narang]
-   * vendor/aosip/
-84e4ee8  support: Extend MasterSwitchPreference  [Josh Fox (XlxFoXxlX)]
-f217bb0  support: MasterSwitchPreference: Fix settings not applying  [Josh Fox (XlxFoXxlX)]
-5367b7b  support: MasterSwitchPreference: isChecked doesn't rely on existence of switch  [Josh Fox (XlxFoXxlX)]
-662fc98  support: Add SystemSettingsMasterSwitchPreference  [Josh Fox (XlxFoXxlX)]
-583fb28  Support: Add remaining list settings preferences  [Josh Fox (XlxFoXxlX)]
-   * vendor/overlay/
-b975460  Overlay: Add Ethereal primary  [Josh Fox]
-1b32896  overlay: Rename config_disabledComponents  [Josh Fox]
-
-====================
-     07-08-2020
-====================
-
-   * bootable/recovery/
-3a98ff84  recovery: compute displayable item count while drawing  [Josh Fox (XlxFoXxlX)]
-350eb76f  recovery: menu wrapping fixes  [Josh Fox (XlxFoXxlX)]
-   * frameworks/base/
-a2f86b74863  Adds Zygote policy flags to control how applications are launched  [Josh Fox]
-57b6803065a  Teaches the ProcessCpuTracker about USAPs.  [Josh Fox]
-227926eb444  Start process of next activity with top priority in advance  [Josh Fox]
-e1fbc12d5d4  Fixed an issue Zygote initialization.  [Josh Fox]
-95bb2371340  Improved timekeeping logic for USAP Pool refill mechanism.  [Josh Fox]
-e7f587dc588  Resets the refill action/timing info after a pool fill event.  [Josh Fox]
-87e54552909  Make the USAP Pool refill delay configurable.  [Josh Fox]
-2d48e14c9c3  Re-adds a trace  point that was accidentally removed.  [Josh Fox]
-2058d18c5be  Moved some thread priority changes.  [Josh Fox]
-3dba9389da0  Adjust Java Language thread priority in new processes.  [Josh Fox]
-02f556cb38c  Adjusts the USAP pool refill mechanism.  [Josh Fox]
-ad878a58b5e  Change USAP name to application name as soon as possible.  [Josh Fox]
-   * frameworks/native/
-d4ec5fe44  input: Adjust priority  [Josh Fox]
-   * packages/apps/Settings/
-8af354ef7d  Settings: Update ambient/lockscreen wake availability  [Josh Fox (XlxFoXxlX)]
-   * packages/apps/SettingsIntelligence/
-5df3cbe  Correct colors for icons in "Search settings" for dark theme  [Josh Fox (XlxFoXxlX)]
-
-====================
-     07-07-2020
+     08-04-2020
 ====================
 
    * build/make/
-e0ee9fb98  Merge tag 'android-10.0.0_r40' into ten  [Akhil Narang]
+221c742fb  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+   * external/gptfdisk/
+aad8539  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+   * frameworks/av/
+9948279b2c  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
    * frameworks/base/
-8a84fa29f51  BLE: Fix NPE during start advertising  [Josh Fox (XlxFoXxlX)]
-   * frameworks/native/
-d1bcbb33b  Merge tag 'android-10.0.0_r40' into ten  [Akhil Narang]
+8b68ad1bfc3  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
    * manifest/
-6533502  Merge tag 'android-10.0.0_r40' into ten  [Akhil Narang]
-5383244  Manifest for Android 10.0.0 Release 40  [The Android Open Source Project]
+e7ca9d3  manifest: track PotatoPlugins  [Josh Fox]
+da7ce71  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+458a841  Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)  [The Android Open Source Project]
+   * packages/apps/Settings/
+9256b45759  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
    * packages/services/Telephony/
-bcacaa9e0  Merge tag 'android-10.0.0_r40' into ten  [Akhil Narang]
-   * vendor/overlay/
-50d7d29  overlay:fonts: drop semi-bold from Gsans and FiraSans  [Josh Fox]
+a291a1766  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
 
 ====================
-     07-06-2020
+     08-03-2020
 ====================
 
-   * frameworks/base/
-e90be9a9b84  base: update remaining clocks for BigContainer  [Josh Fox]
-a3a77d28b23  ClockController: fix alternative TypeClockController  [Josh Fox]
-14a425f9c97  TypeClock: adapt to changes in keyguard  [Josh Fox]
-5eb53c72470  Revert "TypeClock: Properly calculate the height"  [Josh Fox]
-dd1d9de76ce  SystemUI: custom clock kickoff continued  [Josh Fox]
-a4333a0078b  SystemUI: custom keyguard clock kick off  [Josh Fox]
-a30cac4c901  clock: Add colors for custom Analog Clocks  [Josh Fox]
-47b2b669213  TypeClock: Update Ambient Clock layout  [Josh Fox]
-996b8447bb3  Add Custom Spectrum Analog Clock  [Josh Fox]
-080af5db6cd  SystemUI: Add center style Typographic clock  [Josh Fox]
-   * packages/apps/DeskClock/
-22ec01749  DeskClock: Remove notification sound from firing and snoozing channels  [Josh Fox]
-f71fd84d6  DeskClock: Replace ViewPager with manual fragment handling  [Josh Fox]
 
 ====================
-     07-05-2020
-====================
-
-   * system/core/
-8a05b1ece  Allow to drop existing fd cache of cgroup path  [Abdulwahab Isam]
-
-====================
-     07-04-2020
+     08-02-2020
 ====================
 
    * frameworks/base/
-b563592b511  base: extend brightness slider -/+ switch to the brightness mirror  [Josh Fox]
-8464a1a7eca  SystemUI: Add USB Tether tile  [Josh Fox]
-   * packages/apps/Launcher3/
-141b2d934  Trebuchet: Replace LockClock widget with DeskClock  [Josh Fox]
-401a82b87  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [Josh Fox]
-c6800ad0c  Update default workspace  [Josh Fox]
-eaff55378  Revert "Add developer options for grid change for Styles"  [Josh Fox]
-   * packages/apps/OwlsNest/
-d9917ec  OwlsNest: Add Default USB Configuration switch  [Josh Fox]
-   * packages/apps/ThemePicker/
-f3bfcf3  Fix preview tile in grid option picker  [Josh Fox]
-7cc1af5  Revert "ThemePicker: fix grid control activity name"  [Josh Fox]
+0caca551576  Fix freeform window moving/resizing doesn't work  [Josh Fox]
+
+====================
+     08-01-2020
+====================
+
+   * frameworks/base/
+94bb1e581c7  Revert "Fix action bar font family on material themes"  [Josh Fox]
+58f63b14843  Restore some fonts back to previous styles  [Josh Fox]
+fbc87d3037f  base: Fix navbar when IME space is hidden  [Josh Fox]
+
+====================
+     07-31-2020
+====================
+
+
+====================
+     07-30-2020
+====================
+
 
