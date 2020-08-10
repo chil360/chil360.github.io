@@ -1,3 +1,11 @@
+### Dirty Unicorns 14.6
+
+Download: [du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the August security patches.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200805.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200805.zip/download)
@@ -132,15 +140,3 @@ Device Tree
 Download: [EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip/download)
 
 First build of Evolution X 10.0 for Osprey. This rom has built-in GApps (with the same packages as my PE build).
-
-<hr>
-
-### POSP Croquette v3.2.0-hotfix+16
-
-Download: [potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200620-croquette.v3.2.0-hotfix+16.Community.zip/download)
-
-New build updating POSP sources to v3.2.0-hotfix+16 which fixes a few problems in last release. Also, fix a couple of device issues.
-
-**Device changes:**
-  - bootanimation: Use low res version of the POSP bootanimation for 1gb devices
-  - screenrecord: Switch back to H264 encoding
