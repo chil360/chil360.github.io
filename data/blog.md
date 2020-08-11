@@ -1,3 +1,11 @@
+### Evolution X 4.6
+
+Download: [EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip/download)
+
+Updated build of Evolution X 10.0 for Osprey including the August security patches.
+
+<hr>
+
 ### Dirty Unicorns 14.6
 
 Download: [du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip/download)
@@ -132,11 +140,3 @@ Device Tree
   - Enable Zygote Pre-forking
   - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
   - Add 0x2000U & 0x02002000U to additional gralloc usage bits
-
-<hr>
-
-### Evolution X 10.0
-
-Download: [EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.4_osprey-10.0-20200629-1058-UNOFFICIAL.zip/download)
-
-First build of Evolution X 10.0 for Osprey. This rom has built-in GApps (with the same packages as my PE build).
