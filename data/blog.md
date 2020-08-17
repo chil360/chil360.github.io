@@ -1,3 +1,11 @@
+### Havoc OS 3.8
+
+**Download:** [Havoc-OS-v3.8-20200817-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.8-20200817-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc updated with the August security update.
+
+<hr>
+
 ### Evolution X 4.6
 
 Download: [EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip/download)
@@ -122,21 +130,3 @@ Device Tree
   - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
   - Add 0x2000U & 0x02002000U to additional gralloc usage bits
   - sepolicy: Label QTI Hostapd & Supplicant services
-
-<hr>
-
-### Havoc OS 3.7
-
-**Download:** [Havoc-OS-v3.7-20200708-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.7-20200708-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc updated with the July security update.
- 
-**Device changes:**
-
-Kernel:
-  - defconfig: Enable Process Reclaim
-
-Device Tree
-  - Enable Zygote Pre-forking
-  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
-  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
