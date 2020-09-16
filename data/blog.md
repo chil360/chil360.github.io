@@ -1,3 +1,17 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-5-osprey-20200916-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20200916-dev.zip/download)
+
+Monthly build of ParanoidAndroid Quartz including the September security patches.
+
+**Device changes:**
+
+Device Tree
+  - Increase zram size
+  - MotoActions: UI updates
+
+<hr>
+
 ### Havoc OS 3.9
 
 **Download:** [Havoc-OS-v3.9-20200915-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.9-20200915-osprey-Unofficial.zip/download)
@@ -107,21 +121,3 @@ Device Tree
 **Download:** [pa-quartz-4-osprey-20200712-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200712-dev.zip/download)
 
 Updated July build with added Face Unlock support.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200710.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200710.zip/download)
-
-Monthly build of AOSiP Quiche including the July security patches.
-
-**Device changes:**
-
-Kernel:
-  - defconfig: Enable Process Reclaim
-
-Device Tree
-  - Enable Zygote Pre-forking
-  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
-  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
