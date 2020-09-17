@@ -1,76 +1,114 @@
 ====================
-     08-05-2020
+     09-17-2020
 ====================
 
+   * device/motorola/msm8916-common/
+0bd81ac3  LineageActions: Add new icons for Device Gestures from Stock  [Kyle Harrison]
+28778e63  LineageActions: add material icons for Ambient Display  [Kyle Harrison]
+0ea7fc42  LineageActions: Gestures >> Moto Actions  [Kyle Harrison]
+e8424db4  msm8916-common: LineageActions: Disable Below Divider line  [Kyle Harrison]
+24a73fc6  msm8916-common: LineageActions: use simple style for gestures menu  [Kyle Harrison]
+039732f9  msm8916-common: LineageActions: update setting icon  [Kyle Harrison]
+c62dfb72  msm8916-common: Enable CABL by default  [Kyle Harrison]
+25a99a3e  msm8916-common: rootdir: increase ZRAM disk size to 768MB for 1GB RAM  [Kyle Harrison]
    * frameworks/av/
-ca3866c0b7  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-a15ce91047  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-d7d5374adb  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-534335dab8  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-fe2cf64296  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-12eb227d4e  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-24e38220e3  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-41aa91b3e4  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-b4ffa04e7c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-f2a6487b12  Revert "Removed unused class and its test"  [Kyle Harrison]
+587ccf22ed  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+def34f6156  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+9bd6b81854  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+84083270e0  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+3a1e7ed2ed  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+f4ecf0f374  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+13831dcde6  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+a8d54ac1ec  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+5be0259942  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+381050bb82  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-10bfdfd3373  screenrecord: Switch back to H264  [Kyle Harrison]
+d3a0804fa77  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-433113e  Set OTA URL to github  [Kyle Harrison]
+9a87a99  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-dc59e83  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+057004f  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-0dc509f  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+5d93862  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     08-04-2020
+     09-16-2020
+====================
+
+
+====================
+     09-15-2020
+====================
+
+
+====================
+     09-14-2020
+====================
+
+
+====================
+     09-13-2020
+====================
+
+   * manifest/
+8884ec9  manifest: track ManagedProvisioning  [Josh Fox]
+   * packages/apps/Launcher3/
+1cbb1e890  Launcher3: improve protected app names style  [Josh Fox]
+
+====================
+     09-12-2020
 ====================
 
    * build/make/
-221c742fb  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
-   * external/gptfdisk/
-aad8539  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
-   * frameworks/av/
-9948279b2c  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+f0eacf5dc  build_image: Allow disabling custom inode count calculation  [Josh Fox (XlxFoXxlX)]
+4373b9ae9  sign_target_apks: Replace update-payload-key.pub.pem in RECOVERY as well  [Josh Fox (XlxFoXxlX)]
+e1805b4b4  Add build support for XZ ramdisks  [Josh Fox (XlxFoXxlX)]
+b2efbb194  Add LZ4 support to the release tools  [Josh Fox (XlxFoXxlX)]
+c8b3c8d12  Add build support for LZ4 ramdisks  [Josh Fox (XlxFoXxlX)]
+c78e07766  Revert "core: allow specifying building ramdisk(s) with lzma"  [Josh Fox (XlxFoXxlX)]
+   * device/aosip/sepolicy/
+9c4a149  aosip: sepolicy: Label legacy GNSS service  [Josh Fox]
+   * external/sonivox/
+5f5954e  Check data consistency in mdls parsing  [Josh Fox (XlxFoXxlX)]
    * frameworks/base/
-8b68ad1bfc3  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+202876dbc17  DO NOT MERGE: Remove unused intent in NiNotification  [Akhil Narang]
+613af2b251e  Mark implicit PendingIntents as immutable  [Akhil Narang]
+f9023e78dea  Add missing isShellUser check  [Akhil Narang]
+076baa660b5  Do not set referrerUri on SessionInfo for non-owners  [Akhil Narang]
+4e42295c0ec  Tests no screenshot is copied when user consent timed out  [Akhil Narang]
+3400a41de70  Revert "Ignores protected broadcasts if not priv-app"  [Akhil Narang]
+90663c73eff  Make view intent immutable  [Akhil Narang]
+5e8efa7b8d6  Remove unused intent in NFW notification  [Akhil Narang]
+0fb529c400a  Only autoVerify at install for new hosts  [Akhil Narang]
+eaf3dbf2ff7  DO NOT MERGE: Verify INSTALL_PACKAGES permissions when adding installer package  [Akhil Narang]
+f3e1919bbf9  Revert "Revoke 'always' web handler status when not autoverifying"  [Akhil Narang]
+c57837d2c3e  Add back increasing ring feature (2/3)  [Josh Fox]
+a7c2457646f  base: QS panel opacity (1/2)  [Josh Fox]
+   * frameworks/opt/telephony/
+115fcda1b  Use FLAG_IMMUTABLE for MultiSimSettingController  [Josh Fox (XlxFoXxlX)]
+   * hardware/aosip/interfaces/
+cfa21cc  gnss-legacy: Bring back Beidou  [Josh Fox (XlxFoXxlX)]
+ad5a594  gnss-legacy: Bring back GLONASS  [Josh Fox (XlxFoXxlX)]
+d3ef5d5  gnss: Rename to legacy  [Josh Fox (XlxFoXxlX)]
+0de0c0b  interfaces: Import GNSS 1.0 HAL from hardware/interfaces  [Josh Fox (XlxFoXxlX)]
+1838303  lineage/interfaces: add powershare HAL  [Josh Fox (XlxFoXxlX)]
+65060b6  [AWARE] Protect string copy against buffer overflow  [Josh Fox (XlxFoXxlX)]
    * manifest/
-e7ca9d3  manifest: track PotatoPlugins  [Josh Fox]
-da7ce71  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
-458a841  Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)  [The Android Open Source Project]
+5bd4e3a  manifest: track external/sonivox  [Josh Fox (XlxFoXxlX)]
+   * packages/apps/OwlsNest/
+fda2947  OwlsNest: QS panel opacity (2/2)  [Josh Fox]
    * packages/apps/Settings/
-9256b45759  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
-   * packages/services/Telephony/
-a291a1766  Merge tag 'android-10.0.0_r41' into ten  [Akhil Narang]
+3937490f38  Remove useless png and add vector drawable  [Josh Fox (XlxFoXxlX)]
+0ab61df00c  Remove "storage type" preference from Settings  [Josh Fox (XlxFoXxlX)]
+a57942cf8d  Enable the filterTouchesWhenObscured in Special app access  [Josh Fox (XlxFoXxlX)]
+78f03fe5d4  Prevent overlay drawing on top of Bluetooth discovery request dialog  [Josh Fox (XlxFoXxlX)]
+5c1b0023e4  Prevent overlay drawing on top of Bluetooth pairing dialog  [Josh Fox (XlxFoXxlX)]
+38537b183f  Settings: Add back increasing ring feature (3/3).  [Josh Fox]
+   * packages/resources/devicesettings/
+ce90d23  Automatic translation import  [LineageOS Builder]
 
 ====================
-     08-03-2020
-====================
-
-
-====================
-     08-02-2020
-====================
-
-   * frameworks/base/
-0caca551576  Fix freeform window moving/resizing doesn't work  [Josh Fox]
-
-====================
-     08-01-2020
-====================
-
-   * frameworks/base/
-94bb1e581c7  Revert "Fix action bar font family on material themes"  [Josh Fox]
-58f63b14843  Restore some fonts back to previous styles  [Josh Fox]
-fbc87d3037f  base: Fix navbar when IME space is hidden  [Josh Fox]
-
-====================
-     07-31-2020
-====================
-
-
-====================
-     07-30-2020
+     09-11-2020
 ====================
 
 

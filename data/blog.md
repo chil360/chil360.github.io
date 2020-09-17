@@ -1,3 +1,17 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20200917.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200917.zip/download)
+
+Monthly build of AOSiP Quiche including the September security patches.
+
+**Device changes:**
+
+Device Tree
+  - Increase zram size
+  - MotoActions: UI updates
+
+<hr>
+
 ### ParanoidAndroid Quartz
 
 **Download:** [pa-quartz-5-osprey-20200916-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20200916-dev.zip/download)
@@ -54,7 +68,7 @@ Monthly build of Dirty Unicorns including the August security patches.
 
 **Download:** [AOSiP-10-Quiche-osprey-20200805.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200805.zip/download)
 
-Monthly build of ParanoidAndroid Quartz including the August security patches.
+Monthly build of AOSiP Quiche including the August security patches.
 
 <hr>
 
@@ -113,11 +127,3 @@ Device Tree
   - Enable Zygote Pre-forking
   - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
   - Add 0x2000U & 0x02002000U to additional gralloc usage bits
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-4-osprey-20200712-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200712-dev.zip/download)
-
-Updated July build with added Face Unlock support.
