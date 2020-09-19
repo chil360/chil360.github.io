@@ -1,3 +1,17 @@
+### Dirty Unicorns 14.7
+
+Download: [du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip/download)
+
+Monthly build of Dirty Unicorns including the September security patches.
+
+**Device changes:**
+
+Device Tree
+  - Increase zram size
+  - MotoActions: UI updates
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20200917.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200917.zip/download)
@@ -109,21 +123,3 @@ Updated build of POSP Croquette including the July security patches.
 Download: [PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip/download)
 
 Updated build of PixelExperience Plus 10.0 including the July security patches.
-
-<hr>
-
-### Dirty Unicorns 14.5
-
-Download: [du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.5-20200713-1045-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the July security patches.
-
-**Device changes:**
-
-Kernel:
-  - defconfig: Enable Process Reclaim
-
-Device Tree
-  - Enable Zygote Pre-forking
-  - Import Process Reclaim & LMK configuration from LOS and modify for Moto 8916
-  - Add 0x2000U & 0x02002000U to additional gralloc usage bits
