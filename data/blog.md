@@ -1,3 +1,17 @@
+### Evolution X 4.7
+
+Download: [EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip/download)
+
+Updated build of Evolution X 10.0 for Osprey including the September security patches.
+
+**Device changes:**
+
+Device Tree
+  - Increase zram size
+  - MotoActions: UI updates
+
+<hr>
+
 ### Dirty Unicorns 14.7
 
 Download: [du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip/download)
@@ -115,11 +129,3 @@ Updated build of POSP Croquette including the July security patches.
 **Device changes:**
 
   - Added FM Radio
-
-<hr>
-
-### PixelExperience Plus 10.0
-
-Download: [PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/PixelExperience_Plus_osprey-10.0-20200714-1252-UNOFFICIAL.zip/download)
-
-Updated build of PixelExperience Plus 10.0 including the July security patches.
