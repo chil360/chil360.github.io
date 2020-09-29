@@ -12,6 +12,7 @@ $sfMap = [
 	'havoc-ten' => ['json' => 'ten/havoc.json', 'name' => 'Havoc OS 3.x', 'url' => 'https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/%s/download'],
 	'lineage-17.0' => ['json' => 'ten/los.json', 'name' => 'LineageOS 17.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/lineage-17.0/osprey/%s/download'],
 	'lineage-17.1' => ['json' => 'ten/los.json', 'name' => 'LineageOS 17.1', 'url' => 'https://sourceforge.net/projects/chil360-android/files/lineage-17.1/osprey/%s/download'],
+	'lineage-18.x' => ['json' => 'eleven/los.json', 'name' => 'LineageOS 18.x', 'url' => 'https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/%s/download'],
 	'pixel-ten' => ['json' => 'ten/pixel.json', 'name' => 'PixelExperience (Plus) 10.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/%s/download'],
 	'potato-ten' => ['json' => 'ten/potato.json', 'name' => 'POSP 10.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/%s/download'],
 ];

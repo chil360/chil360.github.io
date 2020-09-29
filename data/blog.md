@@ -1,3 +1,25 @@
+### LineageOS 18.0 - Android 11
+
+Download: [lineage-18.0-20200928-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20200928-UNOFFICIAL-osprey.zip/download)
+
+First build of LineageOS 18.0 based on Android 11.
+
+This is an early development build so don't expect everything to work!
+Please report back any issues you find (with logs)!
+
+**Known Issues:**
+  - VOLTE? (Untested)
+  - Camcorder
+  - Screen Recorder
+  - Selinux permissive
+  - Safetynet
+
+**Useful Downloads for Android 11:**
+  - **Magisk:** [Magisk Canary](https://github.com/topjohnwu/magisk_files/raw/canary/magisk-debug.zip)
+  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
+
+<hr>
+
 ### Evolution X 4.7
 
 Download: [EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip/download)
@@ -117,15 +139,3 @@ Monthly build of ParanoidAndroid Quartz including the August security patches.
 Download: [EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip/download)
 
 Updated build of Evolution X 10.0 for Osprey including the July security patches.
-
-<hr>
-
-### POSP Croquette v3.2.1+17
-
-Download: [potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/potato_osprey-10-20200715-croquette.v3.2.1+17.Community.zip/download)
-
-Updated build of POSP Croquette including the July security patches.
-
-**Device changes:**
-
-  - Added FM Radio
