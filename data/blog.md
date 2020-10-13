@@ -1,5 +1,24 @@
 ### LineageOS 18.0 - Android 11
 
+Download: [lineage-18.0-20201013-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20201013-UNOFFICIAL-osprey.zip/download)
+
+New devopment build of LineageOS 18.0 based on Android 11.
+
+There have been a lot of device changes added since the last build including fixes for screen recording, camcorder and wifi hotspot.
+
+**Known Issues:**
+  - QR Code reading
+  - Selinux permissive
+  - Safetynet
+
+**Useful Downloads for Android 11:**
+  - **Magisk:** [Magisk 21.0 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.0/Magisk-v21.0.zip)
+  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
+
+<hr>
+
+### LineageOS 18.0 - Android 11
+
 Download: [lineage-18.0-20200928-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20200928-UNOFFICIAL-osprey.zip/download)
 
 First build of LineageOS 18.0 based on Android 11.
@@ -131,11 +150,3 @@ Monthly build of ParanoidAndroid Quartz including the August security patches.
 **Device changes:**
 
   - Update privapp permissions
-
-<hr>
-
-### Evolution X 10.0
-
-Download: [EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.5_osprey-10.0-20200716-1209-UNOFFICIAL.zip/download)
-
-Updated build of Evolution X 10.0 for Osprey including the July security patches.
