@@ -1,3 +1,14 @@
+### ParanoidAndroid Quartz
+
+**Download:** [pa-quartz-5-osprey-20201023-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20201023-dev.zip/download)
+
+Updated build of ParanoidAndroid Quartz.
+
+**Note:**
+This is likely to be the final build of ParanoidAndroid Quartz as development has now switched to Android 11 based 'Ruby'.
+
+<hr>
+
 ### LineageOS 18.0 - Android 11
 
 Download: [lineage-18.0-20201013-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20201013-UNOFFICIAL-osprey.zip/download)
