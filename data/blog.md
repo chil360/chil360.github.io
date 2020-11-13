@@ -1,3 +1,11 @@
+### Havoc OS 3.11
+
+**Download:** [Havoc-OS-v3.11-20201113-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.11-20201113-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc 3.x with the November security patch.
+
+<hr>
+
 ### Havoc OS 3.9
 
 **Download:** [Havoc-OS-v3.9-20201023-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.9-20201023-osprey-Unofficial.zip/download)
@@ -5,7 +13,7 @@
 Updated build of Havoc 3.x.
 
 **Note:**
-Havoc are now focusing development on Android 11 so there will be no further updates to the 3.x series built on Android 10.
+Havoc are now focusing development on Android 11 so it is likely that there will be no further updates to the 3.x series built on Android 10.
 
 <hr>
 
