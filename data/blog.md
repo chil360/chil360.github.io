@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20201113.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201113.zip/download)
+
+Monthly build of AOSiP Quiche including the November security patches.
+
+<hr>
+
 ### Havoc OS 3.11
 
 **Download:** [Havoc-OS-v3.11-20201113-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.11-20201113-osprey-Unofficial.zip/download)
@@ -160,23 +168,3 @@ Updated build of Evolution X 10.0 for Osprey including the August security patch
 Download: [du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip/download)
 
 Monthly build of Dirty Unicorns including the August security patches.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200805.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200805.zip/download)
-
-Monthly build of AOSiP Quiche including the August security patches.
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-4-osprey-20200804-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-4-osprey-20200804-dev.zip/download)
-
-Monthly build of ParanoidAndroid Quartz including the August security patches.
-
-**Device changes:**
-
-  - Update privapp permissions
