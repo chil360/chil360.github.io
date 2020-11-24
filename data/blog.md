@@ -1,3 +1,15 @@
+### AOSiP 11.0 Ravioli
+
+**Download:** [AOSiP-11-Ravioli-osprey-20201124-1050.zip](https://sourceforge.net/projects/chil360-android/files/aosip-11.0/osprey/AOSiP-11-Ravioli-osprey-20201124-1050.zip/download)
+
+First development build of AOSiP Ravioli based on Android 11.
+
+**Useful Downloads for Android 11:**
+  - **Magisk:** [Magisk 21.1 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.1/Magisk-v21.1.zip)
+  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20201113.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201113.zip/download)
@@ -152,19 +164,3 @@ Device Tree
 **Download:** [Havoc-OS-v3.8-20200817-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.8-20200817-osprey-Unofficial.zip/download)
 
 Monthly build of Havoc updated with the August security update.
-
-<hr>
-
-### Evolution X 4.6
-
-Download: [EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.6_osprey-10.0-20200811-1046-UNOFFICIAL.zip/download)
-
-Updated build of Evolution X 10.0 for Osprey including the August security patches.
-
-<hr>
-
-### Dirty Unicorns 14.6
-
-Download: [du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.6-20200810-1037-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the August security patches.

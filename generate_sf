@@ -6,6 +6,7 @@ define('OUT_DIR', './data/');
 // Map roms to a folder on SF
 $sfMap = [
 	'aosip-ten' => ['json' => 'ten/aosip.json', 'name' => 'AOSiP 10.0 Quiche', 'url' => 'https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/%s/download'],
+	'aosip-eleven' => ['json' => 'eleven/aosip.json', 'name' => 'AOSiP 11.0 Ravioli', 'url' => 'https://sourceforge.net/projects/chil360-android/files/aosip-11.0/osprey/%s/download'],
 	'pa-quartz' => ['json' => 'ten/pa.json', 'name' => 'ParanoidAndroid Quartz', 'url' => 'https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/%s/download'],
 	'du-q10x' => ['json' => 'ten/du.json', 'name' => 'Dirty Unicorns 14.x', 'url' => 'https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/%s/download'],
 	'evo-ten' => ['json' => 'ten/evo.json', 'name' => 'Evolution X 10.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/%s/download'],
