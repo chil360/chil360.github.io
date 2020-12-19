@@ -1,3 +1,13 @@
+### Havoc OS 3.12
+
+**Download:** [Havoc-OS-v3.12-20201219-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.12-20201219-osprey-Unofficial.zip/download)
+
+Monthly build of Havoc 3.x with the December security patch.
+
+Note: Havoc OS have announced that 3.12 will be the final Android 10 build.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20201219.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201219.zip/download)
