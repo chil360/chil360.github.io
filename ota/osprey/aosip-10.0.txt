@@ -1,56 +1,61 @@
 ====================
-     11-13-2020
+     12-19-2020
 ====================
 
    * frameworks/av/
-e3cf4e2b1c  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-445f0a9834  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-009f654af4  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-71d0457a3a  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-1079a16946  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-dc842fe591  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-b4b25bd104  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-82b39fc5ad  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-7efb4e3b65  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-b2f171c6cf  Revert "Removed unused class and its test"  [Kyle Harrison]
+05b472fc57  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+7a88f3c8d8  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+6bb4c3690b  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+283a33526d  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+45fe822de3  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+1278f3823b  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+71b56d9461  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+7a0109f779  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+ab5e11e470  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+c01adb787f  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-c2375f26ed8  screenrecord: Switch back to H264  [Kyle Harrison]
+78064d0f099  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-5ddb2aa  Set OTA URL to github  [Kyle Harrison]
+04f0643  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-66200f2  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+f6b79c7  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-211062e  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+5414759  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     11-12-2020
-====================
-
-   * build/make/
-45c752960  Bump Security String to 2020-11-05  [Josh Fox (XlxFoXxlX)]
-
-====================
-     11-11-2020
+     12-18-2020
 ====================
 
 
 ====================
-     11-10-2020
+     12-17-2020
 ====================
 
 
 ====================
-     11-09-2020
+     12-16-2020
 ====================
 
 
 ====================
-     11-08-2020
+     12-15-2020
+====================
+
+   * packages/resources/devicesettings/
+abe38e3  Automatic translation import  [LineageOS Builder]
+   * vendor/qcom/opensource/fm-commonsys/
+b258ea1  Automatic translation import  [LineageOS Builder]
+
+====================
+     12-14-2020
 ====================
 
 
 ====================
-     11-07-2020
+     12-13-2020
 ====================
 
+   * vendor/qcom/opensource/commonsys/system/bt/
+987440179  Fix a security issue in sdp_server.cc  [Akhil Narang]
+2f3743d9f  Check Classic key before cross-key derivation  [Akhil Narang]
 

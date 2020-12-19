@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20201219.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201219.zip/download)
+
+Monthly build of AOSiP Quiche including the December security patches.
+
+<hr>
+
 ### AOSiP 11.0 Ravioli
 
 **Download:** [AOSiP-11-Ravioli-osprey-20201124-1050.zip](https://sourceforge.net/projects/chil360-android/files/aosip-11.0/osprey/AOSiP-11-Ravioli-osprey-20201124-1050.zip/download)
@@ -156,11 +164,3 @@ Monthly build of Havoc updated with the September security update.
 Device Tree
   - Increase zram size
   - MotoActions: UI updates
-
-<hr>
-
-### Havoc OS 3.8
-
-**Download:** [Havoc-OS-v3.8-20200817-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.8-20200817-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc updated with the August security update.
