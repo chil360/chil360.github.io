@@ -1,3 +1,11 @@
+### crDroid 7.1
+
+**Download:** [crDroidAndroid-11.0-20201223-osprey-v7.1.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20201223-osprey-v7.1.zip/download)
+
+First build of crDroid 7 based on Android 11 including the December security patches.
+
+<hr>
+
 ### Havoc OS 3.12
 
 **Download:** [Havoc-OS-v3.12-20201219-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.12-20201219-osprey-Unofficial.zip/download)
