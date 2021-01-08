@@ -1,3 +1,13 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20210108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210108.zip/download)
+
+Monthly build of AOSiP Quiche including the January security patches.
+
+Happy New Year!
+
+<hr>
+
 ### crDroid 7.1
 
 **Download:** [crDroidAndroid-11.0-20201223-osprey-v7.1.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20201223-osprey-v7.1.zip/download)
@@ -162,20 +172,6 @@ Device Tree
 **Download:** [pa-quartz-5-osprey-20200916-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20200916-dev.zip/download)
 
 Monthly build of ParanoidAndroid Quartz including the September security patches.
-
-**Device changes:**
-
-Device Tree
-  - Increase zram size
-  - MotoActions: UI updates
-
-<hr>
-
-### Havoc OS 3.9
-
-**Download:** [Havoc-OS-v3.9-20200915-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.9-20200915-osprey-Unofficial.zip/download)
-
-Monthly build of Havoc updated with the September security update.
 
 **Device changes:**
 
