@@ -1,3 +1,16 @@
+### crDroid 7.2
+
+**Download:** [crDroidAndroid-11.0-20210108-osprey-v7.2.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210108-osprey-v7.2.zip/download)
+
+New build of crDroid 7 based on Android 11 including the January security patches.
+
+**Device changes:**
+
+  - Kernel: Update sdfat to 2.4.5
+  - Fix build warnings in camera wrapper, lights HAL & shims
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20210108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210108.zip/download)
@@ -158,20 +171,6 @@ Device Tree
 **Download:** [AOSiP-10-Quiche-osprey-20200917.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200917.zip/download)
 
 Monthly build of AOSiP Quiche including the September security patches.
-
-**Device changes:**
-
-Device Tree
-  - Increase zram size
-  - MotoActions: UI updates
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-5-osprey-20200916-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20200916-dev.zip/download)
-
-Monthly build of ParanoidAndroid Quartz including the September security patches.
 
 **Device changes:**
 
