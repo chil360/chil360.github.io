@@ -1,3 +1,11 @@
+### crDroid 7.3
+
+**Download:** [crDroidAndroid-11.0-20210208-osprey-v7.3.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210208-osprey-v7.3.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the February security patches.
+
+<hr>
+
 ### crDroid 7.2
 
 **Download:** [crDroidAndroid-11.0-20210108-osprey-v7.2.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210108-osprey-v7.2.zip/download)
@@ -157,20 +165,6 @@ Device Tree
 Download: [du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip/download)
 
 Monthly build of Dirty Unicorns including the September security patches.
-
-**Device changes:**
-
-Device Tree
-  - Increase zram size
-  - MotoActions: UI updates
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20200917.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20200917.zip/download)
-
-Monthly build of AOSiP Quiche including the September security patches.
 
 **Device changes:**
 
