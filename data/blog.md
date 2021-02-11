@@ -1,3 +1,13 @@
+
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20210211.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210211.zip/download)
+
+February build of AOSiP Quiche including the latest security patches.
+
+
+<hr>
+
 ### crDroid 7.3
 
 **Download:** [crDroidAndroid-11.0-20210208-osprey-v7.3.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210208-osprey-v7.3.zip/download)
@@ -151,20 +161,6 @@ Please report back any issues you find (with logs)!
 Download: [EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip/download)
 
 Updated build of Evolution X 10.0 for Osprey including the September security patches.
-
-**Device changes:**
-
-Device Tree
-  - Increase zram size
-  - MotoActions: UI updates
-
-<hr>
-
-### Dirty Unicorns 14.7
-
-Download: [du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/du-14.x/osprey/du_osprey-v14.7-20200919-1506-UNOFFICIAL.zip/download)
-
-Monthly build of Dirty Unicorns including the September security patches.
 
 **Device changes:**
 

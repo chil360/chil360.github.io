@@ -1,90 +1,64 @@
 ====================
-     01-08-2021
+     02-11-2021
 ====================
 
    * frameworks/av/
-c7aad98b9  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-cbb09ca9d  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-6389e0e8b  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-737b7992e  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-5fde74c0d  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-258ce6494  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-eef2280ee  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-a7960c400  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-e8cf12c00  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-521fbec9a  Revert "Removed unused class and its test"  [Kyle Harrison]
+75609ff9f  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+b4fddb84c  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+d568c88a3  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+f360cec92  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+08e8ad0db  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+879be9cba  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+a6d0a349e  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+1c300028e  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+99aa14225  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+402ca2346  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-acf4c8f63c0  screenrecord: Switch back to H264  [Kyle Harrison]
+69832120e72  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-b27cfe2  Set OTA URL to github  [Kyle Harrison]
+c8500be  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-06ac32c  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+5ae6e1d  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-7e0b0a8  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+3445085  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     01-07-2021
-====================
-
-
-====================
-     01-06-2021
+     02-10-2021
 ====================
 
 
 ====================
-     01-05-2021
+     02-09-2021
+====================
+
+
+====================
+     02-08-2021
+====================
+
+
+====================
+     02-07-2021
 ====================
 
    * build/make/
-c45e9d915  Bump security patch level to 2021-01-05  [Akhil Narang]
-   * external/freetype/
-429e3533  Cherry-pick one upstream patch  [Akhil Narang]
-   * external/gptfdisk/
-e58489a  RESTRICT AUTOMERGE ANDROID: Fix negative stack write in sgdisk  [Akhil Narang]
-   * external/libexif/
-c6048ed  fixes some (not all) buffer overreads during decoding pentax makernote entries.  [Akhil Narang]
-   * frameworks/av/
-3b30a877f  Fix potential overflow in WAV extractor  [Akhil Narang]
-77a688ce3  Fix memory overflow in ESQueue  [Akhil Narang]
-   * frameworks/base/
-80bd0748ce8  Ignore GrantCredentials call with unexpected calling uid.  [Akhil Narang]
-053cb0086f7  Protect GrantCredentialsPermissionActivity against overlay.  [Akhil Narang]
-2dbd917cd6f  [DO NOT MERGE] Make GlobalScreenshot PendingIntents immutable  [Akhil Narang]
-70ec97d1bcc  Revoke permission on non-runtime -> runtime upgrade  [Akhil Narang]
-f9d8f04bb54  Ensure permissions are revoked on state changes  [Akhil Narang]
-f6d981bcd77  Hide overlays over uninstall confirm dialog  [Akhil Narang]
-2f1a7252e00  RESTRICT AUTOMERGE Fix CDM package check  [Akhil Narang]
-c0ba75c7c1e  remove sensitive pii from safetynet logging  [Akhil Narang]
-ef909e07145  DO NOT MERGE Revoke install permissions when the permission defining app is uninstalled.  [Akhil Narang]
-30a4c2cb680  DO NOT MERGE Check fingerprint client against top activity in auth callback  [Akhil Narang]
-51871d169d4  Fix the issue provider can be wrong when requesting slice permission  [Akhil Narang]
-   * frameworks/minikin/
-f10c119  Break layout context before and after bidi control character  [Akhil Narang]
-   * frameworks/native/
-bfceb7f47  Prevent mEventCache UAF in SensorEventConnection  [Akhil Narang]
-   * manifest/
-4c1c499  aosip: track some repositories for January 2021 ASB  [Akhil Narang]
-   * packages/apps/PermissionController/
-ac124378  RESTRICT AUTOMERGE Don't allow tapjacking permissioncontroller  [Akhil Narang]
-   * system/bt/
-7fb6272a6  ACL: Drop broadcasts  [Akhil Narang]
-8cf37bb96  Fix potential OOB write in libbluetooth  [Akhil Narang]
-   * system/security/
-1cc620b  Make mIsDeviceLockedForUser synchronized.  [Akhil Narang]
+b4a21af87  Bump security patch level to 2021-02-05  [Akhil Narang]
 
 ====================
-     01-04-2021
+     02-06-2021
 ====================
 
+   * external/chromium-webview/
+d8c9c41  Update Chromium Webview to 88.0.4324.152  [Kevin F. Haggerty]
+   * external/cldr/
+eb4aac2  DO NOT MERGE Cherry-pick CLDR-14434: Update Android CLDR tzdata from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
+   * external/icu/
+5721611b7  DO NOT MERGE Update Android ICU tzdata from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
+   * system/timezone/
+1fb6694  DO NOT MERGE Update Android TZDB from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
 
 ====================
-     01-03-2021
-====================
-
-
-====================
-     01-02-2021
+     02-05-2021
 ====================
 
 
