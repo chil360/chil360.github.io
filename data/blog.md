@@ -1,4 +1,12 @@
 
+### Potato Open Sauce Project - Dumaloo (Android 11)
+
+**Download:** [potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip/download)
+
+Initial build of POSP Dumaloo for Osprey based on Android 11 and including the latest security patches.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20210211.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210211.zip/download)

@@ -17,6 +17,7 @@ $sfMap = [
 	'crdroid-7.x' => ['json' => 'eleven/crdroid.json', 'name' => 'crDroid 7.x', 'url' => 'https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/%s/download'],
 	'pixel-ten' => ['json' => 'ten/pixel.json', 'name' => 'PixelExperience (Plus) 10.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/pixel-ten/osprey/%s/download'],
 	'potato-ten' => ['json' => 'ten/potato.json', 'name' => 'POSP 10.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/potato-ten/osprey/%s/download'],
+	'potato-eleven' => ['json' => 'eleven/potato.json', 'name' => 'POSP 11.0', 'url' => 'https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/%s/download'],
 ];
 
 function usage()
