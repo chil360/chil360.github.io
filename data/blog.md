@@ -1,3 +1,12 @@
+### Havoc OS 4.2 (Android 11)
+
+**Download:** [Havoc-OS-v4.2-20210224-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.2-20210224-osprey-Unofficial.zip/download)
+
+Initial build of Havoc OS for Osprey based on Android 11 and including the latest security patches.
+
+**Note:** In Havoc 4.x, GApps is required in order to set the theme (accent, icons, font, etc.). Without GApps installed, the "Styles & Wallpapers" app will crash when switching to the "Style" tab.
+
+<hr>
 
 ### Potato Open Sauce Project - Dumaloo (Android 11)
 
