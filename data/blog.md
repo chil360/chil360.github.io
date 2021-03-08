@@ -1,3 +1,18 @@
+### crDroid 7.4
+
+**Download:** [crDroidAndroid-11.0-20210308-osprey-v7.4.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210308-osprey-v7.4.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the March security patches.
+
+**Device changes:**
+
+  - msm8916-common: Set TARGET_LEGACY_HW_DISK_ENCRYPTION
+  - msm8916-common: Enable AOSP bluetooth audio HAL v2
+  - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
+  - msm8916-common: sepolicy: address hal_bluetooth_qti denial
+
+<hr>
+
 ### Havoc OS 4.2 (Android 11)
 
 **Download:** [Havoc-OS-v4.2-20210224-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.2-20210224-osprey-Unofficial.zip/download)
@@ -170,17 +185,3 @@ Please report back any issues you find (with logs)!
 **Useful Downloads for Android 11:**
   - **Magisk:** [Magisk Canary](https://github.com/topjohnwu/magisk_files/raw/canary/magisk-debug.zip)
   - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
-
-<hr>
-
-### Evolution X 4.7
-
-Download: [EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip](https://sourceforge.net/projects/chil360-android/files/evo-ten/osprey/EvolutionX_4.7_osprey-10.0-20200921-1720-UNOFFICIAL.zip/download)
-
-Updated build of Evolution X 10.0 for Osprey including the September security patches.
-
-**Device changes:**
-
-Device Tree
-  - Increase zram size
-  - MotoActions: UI updates
