@@ -1,3 +1,18 @@
+### Potato Open Sauce Project - Dumaloo (Android 11)
+
+**Download:** [potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip/download)
+
+New build of POSP Dumaloo for Osprey with the March security patches.
+
+**Device changes:**
+
+  - msm8916-common: Set TARGET_LEGACY_HW_DISK_ENCRYPTION
+  - msm8916-common: Enable AOSP bluetooth audio HAL v2
+  - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
+  - msm8916-common: sepolicy: address hal_bluetooth_qti denial
+
+<hr>
+
 ### crDroid 7.4
 
 **Download:** [crDroidAndroid-11.0-20210308-osprey-v7.4.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210308-osprey-v7.4.zip/download)
@@ -162,26 +177,4 @@ There have been a lot of device changes added since the last build including fix
 
 **Useful Downloads for Android 11:**
   - **Magisk:** [Magisk 21.0 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.0/Magisk-v21.0.zip)
-  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
-
-<hr>
-
-### LineageOS 18.0 - Android 11
-
-Download: [lineage-18.0-20200928-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20200928-UNOFFICIAL-osprey.zip/download)
-
-First build of LineageOS 18.0 based on Android 11.
-
-This is an early development build so don't expect everything to work!
-Please report back any issues you find (with logs)!
-
-**Known Issues:**
-  - VOLTE? (Untested)
-  - Camcorder
-  - Screen Recorder
-  - Selinux permissive
-  - Safetynet
-
-**Useful Downloads for Android 11:**
-  - **Magisk:** [Magisk Canary](https://github.com/topjohnwu/magisk_files/raw/canary/magisk-debug.zip)
   - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
