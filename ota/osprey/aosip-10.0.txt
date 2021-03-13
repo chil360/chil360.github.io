@@ -1,64 +1,72 @@
 ====================
-     02-11-2021
+     03-13-2021
 ====================
 
    * frameworks/av/
-75609ff9f  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-b4fddb84c  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-d568c88a3  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-f360cec92  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-08e8ad0db  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-879be9cba  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-a6d0a349e  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-1c300028e  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-99aa14225  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-402ca2346  Revert "Removed unused class and its test"  [Kyle Harrison]
+8988d4e8d  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+84f1d24c9  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+20b66313c  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+cb1fa868b  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+ef0accfb2  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+52311909c  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+c79933e51  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+45e44841c  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+b92ce500c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+9ad3cbf40  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-69832120e72  screenrecord: Switch back to H264  [Kyle Harrison]
+4835e0b68ec  WifiManager: Add StaState API [1/2]  [Kyle Harrison]
+ee330ea9183  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-c8500be  Set OTA URL to github  [Kyle Harrison]
+368d663  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-5ae6e1d  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+98a72a0  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-3445085  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+64cf626  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     02-10-2021
+     03-12-2021
 ====================
-
-
-====================
-     02-09-2021
-====================
-
-
-====================
-     02-08-2021
-====================
-
-
-====================
-     02-07-2021
-====================
-
+   * art/
+da15852a50  Add SafetyNet logging to JNI::NewStringUTF.  [Akhil Narang]
+c2bc04360a  Validate input of JNI::NewStringUTF().  [Akhil Narang]
    * build/make/
-b4a21af87  Bump security patch level to 2021-02-05  [Akhil Narang]
+7936a1a75  Bump Security String to 2021-03-05  [Akhil Narang]
+   * frameworks/base/
+5871e3cdd6e  Protect account chooser activities against overlay.  [Akhil Narang]
+   * frameworks/native/
+014e1371b  libbinder: readString*Inplace SafetyNet (II)  [Akhil Narang]
+9dd0f585f  libbinder: check null bytes in readString*Inplace  [Akhil Narang]
+   * frameworks/opt/net/wifi/
+5e13a5532  Merge remote-tracking branch 'LineageOS/lineage-17.1' into HEAD  [Akhil Narang]
+   * manifest/
+cedbad5  aosip: track some LineageOS forks for March 2021 ASB  [Akhil Narang]
+   * system/bt/
+d732f9f71  SDP: Only start discovery once  [Akhil Narang]
+   * vendor/qcom/opensource/commonsys/system/bt/
+527418bbc  SDP: Only start discovery once  [Akhil Narang]
 
 ====================
-     02-06-2021
+     03-11-2021
 ====================
 
-   * external/chromium-webview/
-d8c9c41  Update Chromium Webview to 88.0.4324.152  [Kevin F. Haggerty]
-   * external/cldr/
-eb4aac2  DO NOT MERGE Cherry-pick CLDR-14434: Update Android CLDR tzdata from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
-   * external/icu/
-5721611b7  DO NOT MERGE Update Android ICU tzdata from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
-   * system/timezone/
-1fb6694  DO NOT MERGE Update Android TZDB from 2020f to 2021a. [Q]  [Kevin F. Haggerty]
 
 ====================
-     02-05-2021
+     03-10-2021
+====================
+
+
+====================
+     03-09-2021
+====================
+
+
+====================
+     03-08-2021
+====================
+
+
+====================
+     03-07-2021
 ====================
 
 

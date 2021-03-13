@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20210313.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210313.zip/download)
+
+March build of AOSiP Quiche including the latest security patches.
+
+<hr>
+
 ### Potato Open Sauce Project - Dumaloo (Android 11)
 
 **Download:** [potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip/download)
@@ -51,7 +59,6 @@ Initial build of POSP Dumaloo for Osprey based on Android 11 and including the l
 **Download:** [AOSiP-10-Quiche-osprey-20210211.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210211.zip/download)
 
 February build of AOSiP Quiche including the latest security patches.
-
 
 <hr>
 
@@ -159,22 +166,3 @@ Updated build of ParanoidAndroid Quartz.
 
 **Note:**
 This is likely to be the final build of ParanoidAndroid Quartz as development has now switched to Android 11 based 'Ruby'.
-
-<hr>
-
-### LineageOS 18.0 - Android 11
-
-Download: [lineage-18.0-20201013-UNOFFICIAL-osprey.zip](https://sourceforge.net/projects/chil360-android/files/lineage-18.x/osprey/lineage-18.0-20201013-UNOFFICIAL-osprey.zip/download)
-
-New devopment build of LineageOS 18.0 based on Android 11.
-
-There have been a lot of device changes added since the last build including fixes for screen recording, camcorder and wifi hotspot.
-
-**Known Issues:**
-  - QR Code reading
-  - Selinux permissive
-  - Safetynet
-
-**Useful Downloads for Android 11:**
-  - **Magisk:** [Magisk 21.0 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.0/Magisk-v21.0.zip)
-  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
