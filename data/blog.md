@@ -1,3 +1,18 @@
+### Havoc OS 4.3 (Android 11)
+
+**Download:** [Havoc-OS-v4.3-20210326-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.3-20210326-osprey-Unofficial.zip/download)
+
+New build of Havoc OS for Osprey with the March security patches.
+
+**Device changes:**
+
+  - msm8916-common: Set TARGET_LEGACY_HW_DISK_ENCRYPTION
+  - msm8916-common: Enable AOSP bluetooth audio HAL v2
+  - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
+  - msm8916-common: sepolicy: address hal_bluetooth_qti denial
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20210313.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210313.zip/download)
@@ -155,14 +170,3 @@ Updated build of Havoc 3.x.
 
 **Note:**
 Havoc are now focusing development on Android 11 so it is likely that there will be no further updates to the 3.x series built on Android 10.
-
-<hr>
-
-### ParanoidAndroid Quartz
-
-**Download:** [pa-quartz-5-osprey-20201023-dev.zip](https://sourceforge.net/projects/chil360-android/files/pa-quartz/osprey/pa-quartz-5-osprey-20201023-dev.zip/download)
-
-Updated build of ParanoidAndroid Quartz.
-
-**Note:**
-This is likely to be the final build of ParanoidAndroid Quartz as development has now switched to Android 11 based 'Ruby'.
