@@ -1,3 +1,11 @@
+### Potato Open Sauce Project - Dumaloo (Android 11)
+
+**Download:** [potato_osprey-11-20210407-dumaloo.v4.1.3+12.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210407-dumaloo.v4.1.3+12.Community.zip/download)
+
+Monthly update of POSP Dumaloo for Osprey with the April security patches.
+
+<hr>
+
 ### Havoc OS 4.3 (Android 11)
 
 **Download:** [Havoc-OS-v4.3-20210326-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.3-20210326-osprey-Unofficial.zip/download)
@@ -159,14 +167,3 @@ Monthly build of AOSiP Quiche including the November security patches.
 **Download:** [Havoc-OS-v3.11-20201113-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.11-20201113-osprey-Unofficial.zip/download)
 
 Monthly build of Havoc 3.x with the November security patch.
-
-<hr>
-
-### Havoc OS 3.9
-
-**Download:** [Havoc-OS-v3.9-20201023-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-3.x/osprey/Havoc-OS-v3.9-20201023-osprey-Unofficial.zip/download)
-
-Updated build of Havoc 3.x.
-
-**Note:**
-Havoc are now focusing development on Android 11 so it is likely that there will be no further updates to the 3.x series built on Android 10.
