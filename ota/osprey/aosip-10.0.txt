@@ -1,72 +1,64 @@
 ====================
-     03-13-2021
+     04-22-2021
 ====================
 
    * frameworks/av/
-8988d4e8d  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
-84f1d24c9  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
-20b66313c  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
-cb1fa868b  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
-ef0accfb2  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
-52311909c  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
-c79933e51  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
-45e44841c  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
-b92ce500c  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
-9ad3cbf40  Revert "Removed unused class and its test"  [Kyle Harrison]
+ed36327a2  libstagefright: Remove libmediaextractor dependency from tests  [Kyle Harrison]
+f4a36fc9c  audioflinger: Fix audio for WifiDisplay  [Kyle Harrison]
+be4b8c760  Remove libmediaextractor dependency from libstagefright_wfd  [Kyle Harrison]
+3f2d20f28  Revert "Move unused classes out of stagefright foundataion"  [Kyle Harrison]
+dba6e6e86  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Kyle Harrison]
+bd855439b  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Kyle Harrison]
+ab566356e  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [Kyle Harrison]
+c2a5382a0  libstagefright_wfd: libmediaplayer2: compilation fixes  [Kyle Harrison]
+5c548be19  Revert "stagefright: remove Miracast sender code"  [Kyle Harrison]
+fdd86e826  Revert "Removed unused class and its test"  [Kyle Harrison]
    * frameworks/base/
-4835e0b68ec  WifiManager: Add StaState API [1/2]  [Kyle Harrison]
-ee330ea9183  screenrecord: Switch back to H264  [Kyle Harrison]
+ad34c1cc098  screenrecord: Switch back to H264  [Kyle Harrison]
    * packages/apps/Updater/
-368d663  Set OTA URL to github  [Kyle Harrison]
+23c67b7  Set OTA URL to github  [Kyle Harrison]
    * system/keymaster/
-98a72a0  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
+d4600c3  Don't check token for NO_AUTH_REQUIRED  [Kyle Harrison]
    * vendor/aosip/
-64cf626  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
+766820f  Add 32bit libjni_latinimegoogle.so  [Kyle Harrison]
 
 ====================
-     03-12-2021
+     04-21-2021
 ====================
-   * art/
-da15852a50  Add SafetyNet logging to JNI::NewStringUTF.  [Akhil Narang]
-c2bc04360a  Validate input of JNI::NewStringUTF().  [Akhil Narang]
-   * build/make/
-7936a1a75  Bump Security String to 2021-03-05  [Akhil Narang]
+
+   * external/chromium-webview/
+729ee65  Update Chromium Webview to 90.0.4430.82  [Kevin F. Haggerty]
+
+====================
+     04-20-2021
+====================
+
+
+====================
+     04-19-2021
+====================
+
+   * packages/resources/devicesettings/
+3158c32  Automatic translation import  [C3PO]
+8e978df  Automatic translation import  [LineageOS Builder]
+   * vendor/qcom/opensource/fm-commonsys/
+cf4a6b3  Automatic translation import  [C3PO]
+c10489d  Automatic translation import  [LineageOS Builder]
+
+====================
+     04-18-2021
+====================
+
    * frameworks/base/
-5871e3cdd6e  Protect account chooser activities against overlay.  [Akhil Narang]
-   * frameworks/native/
-014e1371b  libbinder: readString*Inplace SafetyNet (II)  [Akhil Narang]
-9dd0f585f  libbinder: check null bytes in readString*Inplace  [Akhil Narang]
-   * frameworks/opt/net/wifi/
-5e13a5532  Merge remote-tracking branch 'LineageOS/lineage-17.1' into HEAD  [Akhil Narang]
-   * manifest/
-cedbad5  aosip: track some LineageOS forks for March 2021 ASB  [Akhil Narang]
-   * system/bt/
-d732f9f71  SDP: Only start discovery once  [Akhil Narang]
-   * vendor/qcom/opensource/commonsys/system/bt/
-527418bbc  SDP: Only start discovery once  [Akhil Narang]
+bd9846e5b19  fixup! Update the getIccId docs to reflect access requirements  [Akhil Narang]
 
 ====================
-     03-11-2021
+     04-17-2021
 ====================
 
 
 ====================
-     03-10-2021
-====================
-
-
-====================
-     03-09-2021
-====================
-
-
-====================
-     03-08-2021
-====================
-
-
-====================
-     03-07-2021
+     04-16-2021
 ====================
 
 

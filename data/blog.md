@@ -1,3 +1,11 @@
+### AOSiP 10.0 Quiche
+
+**Download:** [AOSiP-10-Quiche-osprey-20210422.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210422.zip/download)
+
+April build of AOSiP Quiche including the latest security patches.
+
+<hr>
+
 ### crDroid 7.5
 
 **Download:** [crDroidAndroid-11.0-20210414-osprey-v7.5.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210414-osprey-v7.5.zip/download)
@@ -159,11 +167,3 @@ First development build of AOSiP Ravioli based on Android 11.
 **Useful Downloads for Android 11:**
   - **Magisk:** [Magisk 21.1 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.1/Magisk-v21.1.zip)
   - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20201113.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201113.zip/download)
-
-Monthly build of AOSiP Quiche including the November security patches.
