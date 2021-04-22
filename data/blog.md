@@ -1,3 +1,11 @@
+### Havoc OS 4.4 (Android 11)
+
+**Download:** [Havoc-OS-v4.4-20210422-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.4-20210422-osprey-Unofficial.zip/download)
+
+New build of Havoc OS for Osprey with the April security patches.
+
+<hr>
+
 ### AOSiP 10.0 Quiche
 
 **Download:** [AOSiP-10-Quiche-osprey-20210422.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210422.zip/download)
@@ -155,15 +163,3 @@ Note: Havoc OS have announced that 3.12 will be the final Android 10 build.
 **Download:** [AOSiP-10-Quiche-osprey-20201219.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201219.zip/download)
 
 Monthly build of AOSiP Quiche including the December security patches.
-
-<hr>
-
-### AOSiP 11.0 Ravioli
-
-**Download:** [AOSiP-11-Ravioli-osprey-20201124-1050.zip](https://sourceforge.net/projects/chil360-android/files/aosip-11.0/osprey/AOSiP-11-Ravioli-osprey-20201124-1050.zip/download)
-
-First development build of AOSiP Ravioli based on Android 11.
-
-**Useful Downloads for Android 11:**
-  - **Magisk:** [Magisk 21.1 Beta](https://github.com/topjohnwu/Magisk/releases/download/v21.1/Magisk-v21.1.zip)
-  - **GApps:** [BiTGApps](https://bitgapps.cf/arm/R/)
