@@ -1,3 +1,11 @@
+### crDroid 7.6
+
+**Download:** [crDroidAndroid-11.0-20210514-osprey-v7.6.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210514-osprey-v7.6.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the May security patches.
+
+<hr>
+
 ### Havoc OS 4.4 (Android 11)
 
 **Download:** [Havoc-OS-v4.4-20210422-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.4-20210422-osprey-Unofficial.zip/download)
@@ -155,11 +163,3 @@ First build of crDroid 7 based on Android 11 including the December security pat
 Monthly build of Havoc 3.x with the December security patch.
 
 Note: Havoc OS have announced that 3.12 will be the final Android 10 build.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20201219.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20201219.zip/download)
-
-Monthly build of AOSiP Quiche including the December security patches.
