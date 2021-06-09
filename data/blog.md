@@ -1,3 +1,11 @@
+### Potato Open Sauce Project - Dumaloo (Android 11)
+
+**Download:** [potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip/download)
+
+Monthly update of POSP Dumaloo for Osprey with the June security patches.
+
+<hr>
+
 ### Havoc OS 4.5 (Android 11)
 
 **Download:** [Havoc-OS-v4.5-20210520-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.5-20210520-osprey-Unofficial.zip/download)
@@ -153,11 +161,3 @@ New build of crDroid 7 based on Android 11 including the January security patche
 Monthly build of AOSiP Quiche including the January security patches.
 
 Happy New Year!
-
-<hr>
-
-### crDroid 7.1
-
-**Download:** [crDroidAndroid-11.0-20201223-osprey-v7.1.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20201223-osprey-v7.1.zip/download)
-
-First build of crDroid 7 based on Android 11 including the December security patches.
