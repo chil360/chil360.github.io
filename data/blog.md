@@ -1,3 +1,11 @@
+### crDroid 7.7
+
+**Download:** [crDroidAndroid-11.0-20210618-osprey-v7.7.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210618-osprey-v7.7.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the June security patches.
+
+<hr>
+
 ### Potato Open Sauce Project - Dumaloo (Android 11)
 
 **Download:** [potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip/download)
@@ -151,13 +159,3 @@ New build of crDroid 7 based on Android 11 including the January security patche
 
   - Kernel: Update sdfat to 2.4.5
   - Fix build warnings in camera wrapper, lights HAL & shims
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20210108.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210108.zip/download)
-
-Monthly build of AOSiP Quiche including the January security patches.
-
-Happy New Year!
