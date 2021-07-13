@@ -1,3 +1,11 @@
+### crDroid 7.8
+
+**Download:** [crDroidAndroid-11.0-20210713-osprey-v7.8.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210713-osprey-v7.8.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the July security patches.
+
+<hr>
+
 ### Havoc OS 4.6 (Android 11)
 
 **Download:** [Havoc-OS-v4.6-20210619-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.6-20210619-osprey-Unofficial.zip/download)
@@ -146,11 +154,3 @@ Initial build of POSP Dumaloo for Osprey based on Android 11 and including the l
 **Download:** [AOSiP-10-Quiche-osprey-20210211.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210211.zip/download)
 
 February build of AOSiP Quiche including the latest security patches.
-
-<hr>
-
-### crDroid 7.3
-
-**Download:** [crDroidAndroid-11.0-20210208-osprey-v7.3.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210208-osprey-v7.3.zip/download)
-
-Latest build of crDroid 7 based on Android 11 including the February security patches.
