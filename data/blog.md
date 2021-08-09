@@ -1,3 +1,11 @@
+### Potato Open Sauce Project - Dumaloo (Android 11)
+
+**Download:** [potato_osprey-11-20210809-dumaloo.v4.2.2+18.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210809-dumaloo.v4.2.2+18.Community.zip/download)
+
+Monthly update of POSP Dumaloo for Osprey with the August security patches.
+
+<hr>
+
 ### crDroid 7.8
 
 **Download:** [crDroidAndroid-11.0-20210713-osprey-v7.8.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210713-osprey-v7.8.zip/download)
@@ -146,11 +154,3 @@ Initial build of Havoc OS for Osprey based on Android 11 and including the lates
 **Download:** [potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip/download)
 
 Initial build of POSP Dumaloo for Osprey based on Android 11 and including the latest security patches.
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20210211.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210211.zip/download)
-
-February build of AOSiP Quiche including the latest security patches.
