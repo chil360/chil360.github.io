@@ -1,3 +1,11 @@
+### Havoc OS 4.8 (Android 11)
+
+**Download:** [Havoc-OS-v4.8-20210810-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.8-20210810-osprey-Unofficial.zip/download)
+
+New build of Havoc OS for Osprey with the August security patches.
+
+<hr>
+
 ### Potato Open Sauce Project - Dumaloo (Android 11)
 
 **Download:** [potato_osprey-11-20210809-dumaloo.v4.2.2+18.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210809-dumaloo.v4.2.2+18.Community.zip/download)
@@ -146,11 +154,3 @@ Latest build of crDroid 7 based on Android 11 including the March security patch
 Initial build of Havoc OS for Osprey based on Android 11 and including the latest security patches.
 
 **Note:** In Havoc 4.x, GApps is required in order to set the theme (accent, icons, font, etc.). Without GApps installed, the "Styles & Wallpapers" app will crash when switching to the "Style" tab.
-
-<hr>
-
-### Potato Open Sauce Project - Dumaloo (Android 11)
-
-**Download:** [potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210212-dumaloo.v4.0.2+3.Community.zip/download)
-
-Initial build of POSP Dumaloo for Osprey based on Android 11 and including the latest security patches.
