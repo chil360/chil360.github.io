@@ -1,3 +1,11 @@
+### crDroid 7.9
+
+**Download:** [crDroidAndroid-11.0-20210811-osprey-v7.9.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210811-osprey-v7.9.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the August security patches.
+
+<hr>
+
 ### Havoc OS 4.8 (Android 11)
 
 **Download:** [Havoc-OS-v4.8-20210810-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.8-20210810-osprey-Unofficial.zip/download)
@@ -144,13 +152,3 @@ Latest build of crDroid 7 based on Android 11 including the March security patch
   - msm8916-common: Enable AOSP bluetooth audio HAL v2
   - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
   - msm8916-common: sepolicy: address hal_bluetooth_qti denial
-
-<hr>
-
-### Havoc OS 4.2 (Android 11)
-
-**Download:** [Havoc-OS-v4.2-20210224-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.2-20210224-osprey-Unofficial.zip/download)
-
-Initial build of Havoc OS for Osprey based on Android 11 and including the latest security patches.
-
-**Note:** In Havoc 4.x, GApps is required in order to set the theme (accent, icons, font, etc.). Without GApps installed, the "Styles & Wallpapers" app will crash when switching to the "Style" tab.
