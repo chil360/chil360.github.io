@@ -1,3 +1,11 @@
+### crDroid 7.10
+
+**Download:** [crDroidAndroid-11.0-20210914-osprey-v7.10.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210914-osprey-v7.10.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the September security patches.
+
+<hr>
+
 ### Potato Open Sauce Project - Dumaloo (Android 11)
 
 **Download:** [potato_osprey-11-20210913-dumaloo.v4.2.3+20.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210913-dumaloo.v4.2.3+20.Community.zip/download)
@@ -130,18 +138,3 @@ New build of Havoc OS for Osprey with the March security patches.
 **Download:** [AOSiP-10-Quiche-osprey-20210313.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210313.zip/download)
 
 March build of AOSiP Quiche including the latest security patches.
-
-<hr>
-
-### Potato Open Sauce Project - Dumaloo (Android 11)
-
-**Download:** [potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210311-dumaloo.v4.0.5+6.Community.zip/download)
-
-New build of POSP Dumaloo for Osprey with the March security patches.
-
-**Device changes:**
-
-  - msm8916-common: Set TARGET_LEGACY_HW_DISK_ENCRYPTION
-  - msm8916-common: Enable AOSP bluetooth audio HAL v2
-  - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
-  - msm8916-common: sepolicy: address hal_bluetooth_qti denial
