@@ -1,3 +1,15 @@
+### Havoc OS 4.9 (Android 11)
+
+**Download:** [Havoc-OS-v4.9-20210928-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.9-20210928-osprey-Unofficial.zip/download)
+
+New build of Havoc OS for Osprey with the August security patches.
+
+**Device changes:**
+
+  - sepolicy: Fix FM Radio denials
+
+<hr>
+
 ### crDroid 7.10
 
 **Download:** [crDroidAndroid-11.0-20210914-osprey-v7.10.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210914-osprey-v7.10.zip/download)
@@ -130,11 +142,3 @@ New build of Havoc OS for Osprey with the March security patches.
   - msm8916-common: Enable AOSP bluetooth audio HAL v2
   - msm8916-common: sepolicy: Allow zygote to read bluetooth_prop
   - msm8916-common: sepolicy: address hal_bluetooth_qti denial
-
-<hr>
-
-### AOSiP 10.0 Quiche
-
-**Download:** [AOSiP-10-Quiche-osprey-20210313.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210313.zip/download)
-
-March build of AOSiP Quiche including the latest security patches.
