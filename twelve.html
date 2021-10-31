@@ -16,7 +16,6 @@
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <title>Chil360 - Android Custom Roms</title>
 </head>
 <body>
@@ -36,7 +35,7 @@
           Downloads
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="twelve.html">Android 12.X</a>
+          <a class="dropdown-item active" href="twelve.html">Android 12.X</a>
           <a class="dropdown-item" href="eleven.html">Android 11.X</a>
           <a class="dropdown-item" href="ten.html">Android 10.X</a>
           <a class="dropdown-item" href="pie.html">Android 9.X (Pie)</a>
@@ -53,85 +52,32 @@
   </div>
 </nav>
 
+
 <main role="main" class="container mt-3">
+    <h1 class="mb-4">Android 12.X</h1>
+    <div class="row mb-2">
+        <div class="col-sm-12">
+            <h4>Moto G 2015 (Osprey)</h4>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-sm-12">
-            <h4 class="rom-title"></h4>
+        <div class="card col-md-4 p-3">
+          <a href="download.html?rom=potato&ver=twelve">
+              <img class="card-img-top" src="img/potato.png" alt="POSP">
+              <div class="card-footer text-center">
+                  <h4>POSP</h4>
+              </div>
+          </a>
         </div>
     </div>
-
-    <div class="row mt-3">
-        <div class="col-sm-12">
-            <table class="table table-striped" id="romlist" style="width: 100%;">
-                <thead>
-                <tr>
-                    <th>Filename</th>
-                    <th>Size</th>
-                    <th>Upload Date</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
+    
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-<script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/datetime-moment.js"></script>
-<script type="text/javascript">
-
-    $.urlParam = function (name) {
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if (results == null) {
-            return null;
-        }
-        return decodeURI(results[1]) || 0;
-    }
-
-    function loadRom(rom, ver) {
-	var url = 'data/' + ver + '/' + rom + '.json?'+Date.now();
-        $.getJSON(url, function (data) {
-            $('.rom-title').html(data.rom);
-        });
-    }
-
-    $(document).ready(function () {
-        var rom = $.urlParam("rom");
-        var ver = $.urlParam("ver");
-        loadRom(rom, ver);
-
-	// Sort Date/Time using Moment.js
-	$.fn.dataTable.moment( 'MMM DD, YYYY | HH:mmA' );
-
-        $('#romlist').DataTable({
-            "searching": false,
-            "ajax": 'data/'  + ver + '/' + rom + '.json?'+Date.now(),
-            "order": [[0, "desc"]],
-            "columns": [
-                {"data": "filename"},
-                {"data": "filesize"},
-                {"data": "date"},
-            ],
-            "columnDefs": [
-                {
-                    "render": function (data, type, row) {
-                        return '<a href="' + row.url + '">' + data + '</a>';
-                    },
-                    "targets": 0
-                },
-            ]
-        });
-    });
-</script>
 </body>
 </html>

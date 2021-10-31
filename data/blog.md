@@ -1,3 +1,25 @@
+### Potato Open Sauce Project - Frico (Android 12)
+
+**Download:** [potato_osprey-12-20211031-frico.v5.0.0+alpha1.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-twelve/osprey/potato_osprey-12-20211031-frico.v5.0.0+alpha1.Community.zip/download)
+
+First build of Potato Open Sauce Project 5.0 based on Android 12.
+
+This is an early development build so don't expect everything to work! Please report back any issues you find (with logs)!
+
+**As with all custom ROMs - use at your own risk!**
+
+**Known Issues:**
+  - VOLTE
+  - Encryption
+  - Selinux permissive
+  - Safetynet
+
+**Useful Downloads for Android 12:**
+  - GApps: [BiTGApps-arm-12.0.0-R41_signed.zip](https://downloads.bitgapps.org/GApps/arm/S/BiTGApps-arm-12.0.0-R41_signed.zip)
+  - Magisk: [Magisk v23.0](https://github.com/topjohnwu/Magisk/releases)
+
+<hr>
+
 ### Havoc OS 4.10 (Android 11)
 
 **Download:** [Havoc-OS-v4.10-20211025-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.10-20211025-osprey-Unofficial.zip/download)
