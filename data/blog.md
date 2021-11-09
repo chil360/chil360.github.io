@@ -1,3 +1,11 @@
+### crDroid 7.12
+
+**Download:** [crDroidAndroid-11.0-20211109-osprey-v7.12.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20211109-osprey-v7.12.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the November security patches.
+
+<hr>
+
 ### Potato Open Sauce Project - Frico (Android 12)
 
 **Download:** [potato_osprey-12-20211031-frico.v5.0.0+alpha1.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-twelve/osprey/potato_osprey-12-20211031-frico.v5.0.0+alpha1.Community.zip/download)
@@ -149,11 +157,3 @@ New build of Havoc OS for Osprey with the April security patches.
 **Download:** [AOSiP-10-Quiche-osprey-20210422.zip](https://sourceforge.net/projects/chil360-android/files/aosip-10.0/osprey/AOSiP-10-Quiche-osprey-20210422.zip/download)
 
 April build of AOSiP Quiche including the latest security patches.
-
-<hr>
-
-### crDroid 7.5
-
-**Download:** [crDroidAndroid-11.0-20210414-osprey-v7.5.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210414-osprey-v7.5.zip/download)
-
-Latest build of crDroid 7 based on Android 11 including the April security patches.
