@@ -1,3 +1,11 @@
+### crDroid 7.13
+
+**Download:** [crDroidAndroid-11.0-20211215-osprey-v7.13.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20211215-osprey-v7.13.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the December security patches.
+
+<hr>
+
 ### Havoc OS 4.11 (Android 11)
 
 **Download:** [Havoc-OS-v4.11-20211118-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.11-20211118-osprey-Unofficial.zip/download)
@@ -149,11 +157,3 @@ New build of Havoc OS for Osprey with the May security patches.
 **Download:** [crDroidAndroid-11.0-20210514-osprey-v7.6.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210514-osprey-v7.6.zip/download)
 
 Latest build of crDroid 7 based on Android 11 including the May security patches.
-
-<hr>
-
-### Havoc OS 4.4 (Android 11)
-
-**Download:** [Havoc-OS-v4.4-20210422-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.4-20210422-osprey-Unofficial.zip/download)
-
-New build of Havoc OS for Osprey with the April security patches.
