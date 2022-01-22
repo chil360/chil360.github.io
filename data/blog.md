@@ -1,3 +1,11 @@
+### crDroid 7.14
+
+**Download:** [crDroidAndroid-11.0-20220122-osprey-v7.14.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20220122-osprey-v7.14.zip/download)
+
+Latest build of crDroid 7 based on Android 11 including the January security patches.
+
+<hr>
+
 ### crDroid 7.13
 
 **Download:** [crDroidAndroid-11.0-20211215-osprey-v7.13.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20211215-osprey-v7.13.zip/download)
@@ -149,11 +157,3 @@ Monthly update of POSP Dumaloo for Osprey with the June security patches.
 **Download:** [Havoc-OS-v4.5-20210520-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.5-20210520-osprey-Unofficial.zip/download)
 
 New build of Havoc OS for Osprey with the May security patches.
-
-<hr>
-
-### crDroid 7.6
-
-**Download:** [crDroidAndroid-11.0-20210514-osprey-v7.6.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20210514-osprey-v7.6.zip/download)
-
-Latest build of crDroid 7 based on Android 11 including the May security patches.
