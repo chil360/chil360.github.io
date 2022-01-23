@@ -1,3 +1,23 @@
+### crDroid 8.1 (Android 12)
+
+**Download:** [crDroidAndroid-12.0-20220123-osprey-v8.1.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-8.x/osprey/crDroidAndroid-12.0-20220123-osprey-v8.1.zip/download)
+
+First build of crDroid 8 based on Android 12 including the January security update.
+
+This is an early development build so don't expect everything to work! Please report back any issues you find (with logs)!
+
+**As with all custom ROMs - use at your own risk!**
+
+**To Test:**
+  - VOLTE
+  - Mobile data
+
+**Known Issues:**
+  - Encryption
+  - Selinux permissive
+
+<hr>
+
 ### crDroid 7.14
 
 **Download:** [crDroidAndroid-11.0-20220122-osprey-v7.14.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-7.x/osprey/crDroidAndroid-11.0-20220122-osprey-v7.14.zip/download)
