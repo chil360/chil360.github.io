@@ -1,3 +1,24 @@
+### crDroid 8.2 (Android 12)
+
+**Download:** [crDroidAndroid-12.0-20220221-osprey-v8.2.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-8.x/osprey/crDroidAndroid-12.0-20220221-osprey-v8.2.zip/download)
+
+New build of crDroid 8 based on Android 12 including the February security update.
+
+**Changes from last build:**
+  - Added some legacy telephony commits
+  - Use common MotoActions from [hardware/motorola](https://github.com/LineageOS/android_hardware_motorola/commits/lineage-19.0)
+  - Some other cleanups in device tree
+
+**To Test:**
+  - VOLTE
+  - Mobile data
+
+**Known Issues:**
+  - Encryption
+  - Selinux permissive
+
+<hr>
+
 ### crDroid 8.1 (Android 12)
 
 **Download:** [crDroidAndroid-12.0-20220123-osprey-v8.1.zip](https://sourceforge.net/projects/chil360-android/files/crdroid-8.x/osprey/crDroidAndroid-12.0-20220123-osprey-v8.1.zip/download)
@@ -169,11 +190,3 @@ Latest build of crDroid 7 based on Android 11 including the June security patche
 **Download:** [potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip](https://sourceforge.net/projects/chil360-android/files/potato-eleven/osprey/potato_osprey-11-20210609-dumaloo.v4.2.0+17.Community.zip/download)
 
 Monthly update of POSP Dumaloo for Osprey with the June security patches.
-
-<hr>
-
-### Havoc OS 4.5 (Android 11)
-
-**Download:** [Havoc-OS-v4.5-20210520-osprey-Unofficial.zip](https://sourceforge.net/projects/chil360-android/files/havoc-4.x/osprey/Havoc-OS-v4.5-20210520-osprey-Unofficial.zip/download)
-
-New build of Havoc OS for Osprey with the May security patches.
